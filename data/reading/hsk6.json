@@ -1,0 +1,950 @@
+{
+  "meta": {
+    "level": "6",
+    "displayLevel": "6",
+    "version": "7.0.0",
+    "targetCharacters": 1000,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin, highlight từ và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L6-public-space",
+      "level": "6",
+      "title": "Không gian công cộng và chất lượng đô thị",
+      "topic": "đô thị",
+      "targetCharacters": 1000,
+      "actualCharacters": 1127,
+      "sentences": [
+        {
+          "id": "READ-L6-public-space-S01",
+          "zh": "一座城市是否宜居，不能只看道路是否宽阔、建筑是否新颖，还要看普通人能不能方便地找到安全、舒适并且愿意停留的公共空间。",
+          "pinyin": "Yī zuò chéng shì shì fǒu yí jū， bù néng zhǐ kàn dào lù shì fǒu kuān kuò、 jiàn zhù shì fǒu xīn yǐng， hái yào kàn pǔ tōng rén néng bù néng fāng biàn dì zhǎo dào ān quán、 shū shì bìng qiě yuàn yì tíng liú de gōng gòng kōng jiān。",
+          "vi": "Một thành phố có đáng sống hay không không chỉ phụ thuộc đường sá rộng hay công trình mới, mà còn ở việc người bình thường có dễ tìm được không gian công cộng an toàn, thoải mái và muốn ở lại hay không."
+        },
+        {
+          "id": "READ-L6-public-space-S02",
+          "zh": "公园、广场、图书馆、河边步道和社区活动室，看似不直接创造利润，却持续影响居民的健康、交往方式和对城市的归属感。",
+          "pinyin": "Gōng yuán、 guǎng chǎng、 tú shū guǎn、 hé biān bù dào hé shè qū huó dòng shì， kàn shì bù zhí jiē chuàng zào lì rùn， què chí xù yǐng xiǎng jū mín de jiàn kāng、 jiāo wǎng fāng shì hé duì chéng shì de guī shǔ gǎn。",
+          "vi": "Công viên, quảng trường, thư viện, đường ven sông và phòng sinh hoạt cộng đồng tuy không trực tiếp tạo lợi nhuận nhưng liên tục ảnh hưởng sức khỏe, cách giao tiếp và cảm giác thuộc về thành phố của cư dân."
+        },
+        {
+          "id": "READ-L6-public-space-S03",
+          "zh": "当一个社区缺少可以坐下、散步和交流的地方时，人们往往只能在家、办公室和商业场所之间移动。",
+          "pinyin": "Dāng yí gè shè qū quē shǎo kě yǐ zuò xià、 sàn bù hé jiāo liú de dì fāng shí， rén men wǎng wǎng zhǐ néng zài jiā、 bàn gōng shì hé shāng yè chǎng suǒ zhī jiān yí dòng。",
+          "vi": "Khi cộng đồng thiếu nơi có thể ngồi, đi bộ và trò chuyện, mọi người thường chỉ di chuyển giữa nhà, văn phòng và khu thương mại."
+        },
+        {
+          "id": "READ-L6-public-space-S04",
+          "zh": "这种生活虽然效率很高，却容易使邻里关系变得陌生，也让老人、儿童和行动不便者更难参与公共生活。",
+          "pinyin": "Zhè zhǒng shēng huó suī rán xiào lǜ hěn gāo， què róng yì shǐ lín lǐ guān xì biàn dé mò shēng， yě ràng lǎo rén、 ér tóng hé xíng dòng bù biàn zhě gèng nán cān yù gōng gòng shēng huó。",
+          "vi": "Lối sống này tuy hiệu quả nhưng dễ làm quan hệ láng giềng xa lạ và khiến người già, trẻ em, người hạn chế vận động khó tham gia đời sống công cộng hơn."
+        },
+        {
+          "id": "READ-L6-public-space-S05",
+          "zh": "好的公共空间首先需要可达性，也就是说，人们不必开车很远，就能通过步行、骑车或公共交通到达。",
+          "pinyin": "Hǎo de gōng gòng kōng jiān shǒu xiān xū yào kě dá xìng， yě jiù shì shuō， rén men bù bì kāi chē hěn yuǎn， jiù néng tōng guò bù xíng、 qí chē huò gōng gòng jiāo tōng dào dá。",
+          "vi": "Không gian công cộng tốt trước hết cần dễ tiếp cận, nghĩa là mọi người không phải lái xe xa mà có thể đi bộ, đạp xe hoặc dùng giao thông công cộng để đến."
+        },
+        {
+          "id": "READ-L6-public-space-S06",
+          "zh": "其次，设计必须考虑不同年龄和身体条件，而不是只满足年轻、健康、消费能力较强的人。",
+          "pinyin": "Qí cì， shè jì bì xū kǎo lǜ bù tóng nián líng hé shēn tǐ tiáo jiàn， ér bú shì zhǐ mǎn zú nián qīng、 jiàn kāng、 xiāo fèi néng lì jiào qiáng de rén。",
+          "vi": "Thứ hai, thiết kế phải tính đến các độ tuổi và điều kiện cơ thể khác nhau, chứ không chỉ phục vụ người trẻ, khỏe và có khả năng chi tiêu cao."
+        },
+        {
+          "id": "READ-L6-public-space-S07",
+          "zh": "一条没有树荫的长路，在地图上可能距离很短，对夏天带孩子出门的家长来说却并不友好。",
+          "pinyin": "Yī tiáo méi yǒu shù yīn de zhǎng lù， zài dì tú shàng kě néng jù lí hěn duǎn， duì xià tiān dài hái zi chū mén de jiā zhǎng lái shuō què bìng bù yǒu hǎo。",
+          "vi": "Một con đường dài không có bóng cây trên bản đồ có thể trông rất gần, nhưng lại không thân thiện với phụ huynh đưa trẻ ra ngoài vào mùa hè."
+        },
+        {
+          "id": "READ-L6-public-space-S08",
+          "zh": "同样，如果座椅太少、厕所难找、夜间照明不足，许多人会被无形地排除在外。",
+          "pinyin": "Tóng yàng， rú guǒ zuò yǐ tài shǎo、 cè suǒ nán zhǎo、 yè jiān zhào míng bù zú， xǔ duō rén huì bèi wú xíng dì pái chú zài wài。",
+          "vi": "Tương tự, nếu thiếu ghế, khó tìm nhà vệ sinh hoặc ánh sáng ban đêm không đủ, nhiều người sẽ bị loại trừ một cách vô hình."
+        },
+        {
+          "id": "READ-L6-public-space-S09",
+          "zh": "公共空间还需要一定程度的开放性，让使用者可以根据自己的需要进行阅读、运动、聊天或安静休息。",
+          "pinyin": "Gōng gòng kōng jiān hái xū yào yí dìng chéng dù de kāi fàng xìng， ràng shǐ yòng zhě kě yǐ gēn jù zì jǐ de xū yào jìn xíng yuè dú、 yùn dòng、 liáo tiān huò ān jìng xiū xī。",
+          "vi": "Không gian công cộng cũng cần mức độ mở nhất định để người dùng có thể đọc sách, vận động, trò chuyện hoặc nghỉ yên tĩnh theo nhu cầu."
+        },
+        {
+          "id": "READ-L6-public-space-S10",
+          "zh": "如果每一块空地都被安排成单一用途，或者只有付费消费才能进入，空间就很难真正属于公众。",
+          "pinyin": "Rú guǒ měi yī kuài kòng dì dōu bèi ān pái chéng dān yī yòng tú， huò zhě zhǐ yǒu fù fèi xiāo fèi cái néng jìn rù， kōng jiān jiù hěn nán zhēn zhèng shǔ yú gōng zhòng。",
+          "vi": "Nếu mọi khoảng trống đều bị quy định một mục đích duy nhất, hoặc chỉ vào được khi trả phí tiêu dùng, không gian khó thực sự thuộc về công chúng."
+        },
+        {
+          "id": "READ-L6-public-space-S11",
+          "zh": "当然，开放并不意味着没有管理。",
+          "pinyin": "Dāng rán， kāi fàng bìng bù yì wèi zhe méi yǒu guǎn lǐ。",
+          "vi": "Tất nhiên, mở không có nghĩa là không quản lý."
+        },
+        {
+          "id": "READ-L6-public-space-S12",
+          "zh": "噪声、垃圾、安全和不同活动之间的冲突，都需要清楚的规则与长期维护。",
+          "pinyin": "Zào shēng、 lā jī、 ān quán hé bù tóng huó dòng zhī jiān de chōng tū， dōu xū yào qīng chǔ de guī zé yǔ cháng qī wéi hù。",
+          "vi": "Tiếng ồn, rác, an toàn và xung đột giữa các hoạt động đều cần quy tắc rõ ràng và bảo trì lâu dài."
+        },
+        {
+          "id": "READ-L6-public-space-S13",
+          "zh": "问题在于，管理不应只依靠禁止，而应通过合理分区、时间安排和现场沟通来寻找平衡。",
+          "pinyin": "Wèn tí zài yú， guǎn lǐ bù yīng zhǐ yī kào jìn zhǐ， ér yīng tōng guò hé lǐ fēn qū、 shí jiān ān pái hé xiàn chǎng gōu tōng lái xún zhǎo píng héng。",
+          "vi": "Vấn đề là quản lý không nên chỉ dựa vào cấm đoán mà cần tìm cân bằng qua phân khu hợp lý, sắp xếp thời gian và giao tiếp tại chỗ."
+        },
+        {
+          "id": "READ-L6-public-space-S14",
+          "zh": "在规划过程中，居民的经验非常重要，因为他们最了解哪些路线危险、哪些角落长期闲置，以及哪些设施真正被使用。",
+          "pinyin": "Zài guī huà guò chéng zhōng， jū mín de jīng yàn fēi cháng zhòng yào， yīn wèi tā men zuì liǎo jiě nǎ xiē lù xiàn wēi xiǎn、 nǎ xiē jiǎo luò cháng qī xián zhì， yǐ jí nǎ xiē shè shī zhēn zhèng bèi shǐ yòng。",
+          "vi": "Trong quy hoạch, kinh nghiệm của cư dân rất quan trọng vì họ hiểu nhất tuyến nào nguy hiểm, góc nào bị bỏ trống lâu và cơ sở nào thực sự được dùng."
+        },
+        {
+          "id": "READ-L6-public-space-S15",
+          "zh": "如果意见征集只是形式，最终方案仍由少数人决定，公共空间就可能漂亮却不实用。",
+          "pinyin": "Rú guǒ yì jiàn zhēng jí zhǐ shì xíng shì， zuì zhōng fāng àn réng yóu shǎo shù rén jué dìng， gōng gòng kōng jiān jiù kě néng piào liàng què bù shí yòng。",
+          "vi": "Nếu lấy ý kiến chỉ mang tính hình thức và phương án cuối vẫn do số ít quyết định, không gian có thể đẹp nhưng không thực dụng."
+        },
+        {
+          "id": "READ-L6-public-space-S16",
+          "zh": "相反，当居民参与设计、管理甚至日常活动时，他们更愿意共同维护环境，也更容易形成信任。",
+          "pinyin": "Xiāng fǎn， dāng jū mín cān yù shè jì、 guǎn lǐ shèn zhì rì cháng huó dòng shí， tā men gèng yuàn yì gòng tóng wéi hù huán jìng， yě gèng róng yì xíng chéng xìn rèn。",
+          "vi": "Ngược lại, khi cư dân tham gia thiết kế, quản lý và cả hoạt động hằng ngày, họ sẵn sàng cùng giữ gìn môi trường và dễ hình thành niềm tin hơn."
+        },
+        {
+          "id": "READ-L6-public-space-S17",
+          "zh": "近年来，一些城市把停车位改成小型花园，把废弃铁路改成步道，说明改善公共生活不一定需要大规模建设。",
+          "pinyin": "Jìn nián lái， yī xiē chéng shì bǎ tíng chē wèi gǎi chéng xiǎo xíng huā yuán， bǎ fèi qì tiě lù gǎi chéng bù dào， shuō míng gǎi shàn gōng gòng shēng huó bù yí dìng xū yào dà guī mó jiàn shè。",
+          "vi": "Những năm gần đây, một số thành phố biến chỗ đỗ xe thành vườn nhỏ, đường sắt bỏ hoang thành lối đi, cho thấy cải thiện đời sống công cộng không nhất thiết cần xây dựng quy mô lớn."
+        },
+        {
+          "id": "READ-L6-public-space-S18",
+          "zh": "有时，增加几棵树、几张长椅和一处可以避雨的地方，就能明显改变人们使用街道的方式。",
+          "pinyin": "Yǒu shí， zēng jiā jǐ kē shù、 jǐ zhāng zhǎng yǐ hé yī chù kě yǐ bì yǔ de dì fāng， jiù néng míng xiǎn gǎi biàn rén men shǐ yòng jiē dào de fāng shì。",
+          "vi": "Đôi khi chỉ cần thêm vài cây, vài ghế dài và một chỗ trú mưa đã có thể thay đổi rõ cách mọi người sử dụng đường phố."
+        },
+        {
+          "id": "READ-L6-public-space-S19",
+          "zh": "评估公共空间也不能只看开幕当天的人数，而要观察它在不同季节、不同时间和不同群体中的实际使用情况。",
+          "pinyin": "Píng gū gōng gòng kōng jiān yě bù néng zhǐ kàn kāi mù dàng tiān de rén shù， ér yào guān chá tā zài bù tóng jì jié、 bù tóng shí jiān hé bù tóng qún tǐ zhōng de shí jì shǐ yòng qíng kuàng。",
+          "vi": "Đánh giá không gian công cộng cũng không thể chỉ nhìn số người ngày khai trương mà phải quan sát việc sử dụng thực tế ở các mùa, thời điểm và nhóm người khác nhau."
+        },
+        {
+          "id": "READ-L6-public-space-S20",
+          "zh": "真正成功的空间往往并不追求夸张的外观，而是让人感到自然、方便，并愿意一再回来。",
+          "pinyin": "Zhēn zhèng chéng gōng de kōng jiān wǎng wǎng bìng bù zhuī qiú kuā zhāng de wài guān， ér shì ràng rén gǎn dào zì rán、 fāng biàn， bìng yuàn yì yī zài huí lái。",
+          "vi": "Không gian thực sự thành công thường không chạy theo vẻ ngoài phô trương mà khiến người ta thấy tự nhiên, thuận tiện và muốn quay lại nhiều lần."
+        },
+        {
+          "id": "READ-L6-public-space-S21",
+          "zh": "从这个角度看，公共空间不是城市剩余土地的装饰，而是连接陌生人、支持日常生活并体现公共价值的重要基础。",
+          "pinyin": "Cóng zhè ge jiǎo dù kàn， gōng gòng kōng jiān bú shì chéng shì shèng yú tǔ dì de zhuāng shì， ér shì lián jiē mò shēng rén、 zhī chí rì cháng shēng huó bìng tǐ xiàn gōng gòng jià zhí de zhòng yào jī chǔ。",
+          "vi": "Từ góc độ này, không gian công cộng không phải vật trang trí cho đất thừa của thành phố mà là nền tảng quan trọng kết nối người lạ, hỗ trợ đời sống hằng ngày và thể hiện giá trị công cộng."
+        },
+        {
+          "id": "READ-L6-public-space-S22",
+          "zh": "一座愿意为步行者、孩子和老人保留空间的城市，也是在表达它如何理解发展与尊严。",
+          "pinyin": "Yī zuò yuàn yì wèi bù xíng zhě、 hái zi hé lǎo rén bǎo liú kòng jiān de chéng shì， yě shì zài biǎo dá tā rú hé lǐ jiě fā zhǎn yǔ zūn yán。",
+          "vi": "Một thành phố sẵn sàng giữ không gian cho người đi bộ, trẻ em và người già cũng đang thể hiện cách nó hiểu về phát triển và phẩm giá."
+        },
+        {
+          "id": "READ-L6-public-space-S23",
+          "zh": "儿童在公共空间中的活动尤其值得观察，因为他们通常会把台阶、墙边和空地转化成成年人没有预设的游戏场所。",
+          "pinyin": "Ér tóng zài gōng gòng kōng jiān zhōng de huó dòng yóu qí zhí de guān chá， yīn wèi tā men tōng cháng huì bǎ tái jiē、 qiáng biān hé kòng dì zhuǎn huà chéng chéng nián rén méi yǒu yù shè de yóu xì chǎng suǒ。",
+          "vi": "Hoạt động của trẻ em trong không gian công cộng đặc biệt đáng quan sát vì chúng thường biến bậc thềm, mép tường và khoảng trống thành nơi chơi mà người lớn không dự tính."
+        },
+        {
+          "id": "READ-L6-public-space-S24",
+          "zh": "如果设计只强调整齐和秩序，禁止奔跑、停留或临时活动，空间就会失去适应真实生活的能力。",
+          "pinyin": "Rú guǒ shè jì zhǐ qiáng diào zhěng qí hé zhì xù， jìn zhǐ bēn pǎo、 tíng liú huò lín shí huó dòng， kōng jiān jiù huì shī qù shì yìng zhēn shí shēng huó de néng lì。",
+          "vi": "Nếu thiết kế chỉ nhấn mạnh gọn gàng và trật tự, cấm chạy, dừng hay hoạt động tạm thời, không gian sẽ mất khả năng thích ứng với đời sống thật."
+        },
+        {
+          "id": "READ-L6-public-space-S25",
+          "zh": "城市还应考虑气候变化带来的高温和强降雨，让公共空间能够提供遮阴、排水和短暂避难。",
+          "pinyin": "Chéng shì hái yìng kǎo lǜ qì hòu biàn huà dài lái de gāo wēn hé qiáng jiàng yǔ， ràng gōng gòng kōng jiān néng gòu tí gōng zhē yīn、 pái shuǐ hé duǎn zàn bì nàn。",
+          "vi": "Thành phố còn cần tính đến nóng cực đoan và mưa lớn do biến đổi khí hậu, để không gian công cộng có thể tạo bóng mát, thoát nước và nơi trú tạm."
+        },
+        {
+          "id": "READ-L6-public-space-S26",
+          "zh": "这些功能平时改善舒适度，紧急情况下也能提高社区的安全。",
+          "pinyin": "Zhè xiē gōng néng píng shí gǎi shàn shū shì dù， jǐn jí qíng kuàng xià yě néng tí gāo shè qū de ān quán。",
+          "vi": "Những chức năng này cải thiện sự thoải mái lúc bình thường và tăng an toàn cộng đồng khi khẩn cấp."
+        },
+        {
+          "id": "READ-L6-public-space-S27",
+          "zh": "商业活动可以为维护提供资金，但必须限制广告、噪声和对非消费者的排斥。",
+          "pinyin": "Shāng yè huó dòng kě yǐ wèi wéi hù tí gōng zī jīn， dàn bì xū xiàn zhì guǎng gào、 zào shēng hé duì fēi xiāo fèi zhě de pái chì。",
+          "vi": "Hoạt động thương mại có thể cung cấp kinh phí bảo trì nhưng cần hạn chế quảng cáo, tiếng ồn và việc loại trừ người không tiêu dùng."
+        },
+        {
+          "id": "READ-L6-public-space-S28",
+          "zh": "如果一个人必须不断购买东西才能坐下或使用厕所，那么所谓公共性就已经被削弱。",
+          "pinyin": "Rú guǒ yí gè rén bì xū bù duàn gòu mǎi dōng xī cái néng zuò xià huò shǐ yòng cè suǒ， nà me suǒ wèi gōng gòng xìng jiù yǐ jīng bèi xuē ruò。",
+          "vi": "Nếu một người phải liên tục mua hàng mới được ngồi hay dùng nhà vệ sinh, tính công cộng đã bị suy yếu."
+        },
+        {
+          "id": "READ-L6-public-space-S29",
+          "zh": "公共空间的公平还体现在谁有时间使用它，因为轮班劳动者、照护者和学生的作息并不相同。",
+          "pinyin": "Gōng gòng kōng jiān de gōng píng hái tǐ xiàn zài shuí yǒu shí jiān shǐ yòng tā， yīn wèi lún bān láo dòng zhě、 zhào hù zhě hé xué shēng de zuò xī bìng bù xiāng tóng。",
+          "vi": "Công bằng còn thể hiện ở ai có thời gian sử dụng, vì người làm ca, người chăm sóc và học sinh có lịch sinh hoạt khác nhau."
+        },
+        {
+          "id": "READ-L6-public-space-S30",
+          "zh": "延长部分设施开放时间、提供夜间照明并保证公共交通连接，可以让更多人真正受益。",
+          "pinyin": "Yán cháng bù fèn shè shī kāi fàng shí jiān、 tí gōng yè jiān zhào míng bìng bǎo zhèng gōng gòng jiāo tōng lián jiē， kě yǐ ràng gèng duō rén zhēn zhèng shòu yì。",
+          "vi": "Kéo dài giờ mở một số cơ sở, cung cấp ánh sáng ban đêm và kết nối giao thông công cộng giúp nhiều người thực sự hưởng lợi."
+        }
+      ]
+    },
+    {
+      "id": "READ-L6-ai-learning",
+      "level": "6",
+      "title": "AI trong học tập và năng lực phán đoán",
+      "topic": "giáo dục",
+      "targetCharacters": 1000,
+      "actualCharacters": 1072,
+      "sentences": [
+        {
+          "id": "READ-L6-ai-learning-S01",
+          "zh": "生成式人工智能进入学校以后，许多学生第一次发现，原来整理资料、修改语言甚至完成一篇结构完整的文章，都可以在很短时间内得到帮助。",
+          "pinyin": "Shēng chéng shì rén gōng zhì néng jìn rù xué xiào yǐ hòu， xǔ duō xué shēng dì yī cì fā xiàn， yuán lái zhěng lǐ zī liào、 xiū gǎi yǔ yán shèn zhì wán chéng yī piān jié gòu wán zhěng de wén zhāng， dōu kě yǐ zài hěn duǎn shí jiān nèi dé dào bāng zhù。",
+          "vi": "Sau khi AI tạo sinh vào trường học, nhiều học sinh lần đầu nhận ra việc tổng hợp tài liệu, sửa ngôn ngữ hay hoàn thành một bài viết có cấu trúc đều có thể được hỗ trợ rất nhanh."
+        },
+        {
+          "id": "READ-L6-ai-learning-S02",
+          "zh": "这种工具降低了表达门槛，也让学习者能够随时提出问题，获得不同角度的解释。",
+          "pinyin": "Zhè zhǒng gōng jù jiàng dī le biǎo dá mén kǎn， yě ràng xué xí zhě néng gòu suí shí tí chū wèn tí， huò dé bù tóng jiǎo dù de jiě shì。",
+          "vi": "Công cụ này hạ thấp rào cản biểu đạt và cho phép người học đặt câu hỏi bất cứ lúc nào để nhận giải thích từ nhiều góc độ."
+        },
+        {
+          "id": "READ-L6-ai-learning-S03",
+          "zh": "对于不敢在课堂上发言的人来说，它甚至提供了一种相对没有压力的练习环境。",
+          "pinyin": "Duì yú bù gǎn zài kè táng shàng fā yán de rén lái shuō， tā shèn zhì tí gōng le yī zhǒng xiāng duì méi yǒu yā lì de liàn xí huán jìng。",
+          "vi": "Với người ngại phát biểu trên lớp, nó còn tạo ra môi trường luyện tập tương đối ít áp lực."
+        },
+        {
+          "id": "READ-L6-ai-learning-S04",
+          "zh": "然而，便利越明显，越需要重新思考学习究竟意味着什么。",
+          "pinyin": "Rán ér， biàn lì yuè míng xiǎn， yuè xū yào chóng xīn sī kǎo xué xí jiū jìng yì wèi zhe shén me。",
+          "vi": "Tuy nhiên, càng tiện lợi càng cần suy nghĩ lại việc học thực sự có nghĩa gì."
+        },
+        {
+          "id": "READ-L6-ai-learning-S05",
+          "zh": "如果学生只把任务交给系统，再直接提交生成的结果，他们可能得到一份看起来不错的作业，却没有经历理解、选择和修改的过程。",
+          "pinyin": "Rú guǒ xué shēng zhǐ bǎ rèn wù jiāo gěi xì tǒng， zài zhí jiē tí jiāo shēng chéng de jié guǒ， tā men kě néng dé dào yī fèn kàn qǐ lái bù cuò de zuò yè， què méi yǒu jīng lì lǐ jiě、 xuǎn zé hé xiū gǎi de guò chéng。",
+          "vi": "Nếu học sinh chỉ giao nhiệm vụ cho hệ thống rồi nộp thẳng kết quả, họ có thể có một bài trông tốt nhưng không trải qua quá trình hiểu, lựa chọn và chỉnh sửa."
+        },
+        {
+          "id": "READ-L6-ai-learning-S06",
+          "zh": "长期如此，语言能力、问题意识和独立判断都可能停留在表面。",
+          "pinyin": "Cháng qī rú cǐ， yǔ yán néng lì、 wèn tí yì shí hé dú lì pàn duàn dōu kě néng tíng liú zài biǎo miàn。",
+          "vi": "Nếu kéo dài, năng lực ngôn ngữ, ý thức vấn đề và phán đoán độc lập có thể chỉ dừng ở bề mặt."
+        },
+        {
+          "id": "READ-L6-ai-learning-S07",
+          "zh": "人工智能给出的答案还可能包含错误、过时信息或没有依据的细节。",
+          "pinyin": "Rén gōng zhì néng gěi chū de dá àn hái kě néng bāo hán cuò wù、 guò shí xìn xī huò méi yǒu yī jù de xì jié。",
+          "vi": "Câu trả lời của AI còn có thể chứa lỗi, thông tin lỗi thời hoặc chi tiết không có căn cứ."
+        },
+        {
+          "id": "READ-L6-ai-learning-S08",
+          "zh": "它通常会用流畅而自信的语言表达，因此错误并不总是容易被发现。",
+          "pinyin": "Tā tōng cháng huì yòng liú chàng ér zì xìn de yǔ yán biǎo dá， yīn cǐ cuò wù bìng bù zǒng shì róng yì bèi fā xiàn。",
+          "vi": "Nó thường diễn đạt trôi chảy và tự tin nên lỗi không phải lúc nào cũng dễ phát hiện."
+        },
+        {
+          "id": "READ-L6-ai-learning-S09",
+          "zh": "这说明，使用工具的核心能力不是会不会输入提示，而是能不能检查来源、比较观点并判断结果是否适合当前情境。",
+          "pinyin": "Zhè shuō míng， shǐ yòng gōng jù de hé xīn néng lì bú shì huì bú huì shū rù tí shì， ér shì néng bù néng jiǎn chá lái yuán、 bǐ jiào guān diǎn bìng pàn duàn jié guǒ shì fǒu shì hé dāng qián qíng jìng。",
+          "vi": "Điều này cho thấy năng lực cốt lõi không phải biết nhập prompt hay không, mà là có kiểm tra nguồn, so sánh quan điểm và phán đoán kết quả có phù hợp bối cảnh hay không."
+        },
+        {
+          "id": "READ-L6-ai-learning-S10",
+          "zh": "教师也需要调整作业设计。",
+          "pinyin": "Jiào shī yě xū yào tiáo zhěng zuò yè shè jì。",
+          "vi": "Giáo viên cũng cần điều chỉnh thiết kế bài tập."
+        },
+        {
+          "id": "READ-L6-ai-learning-S11",
+          "zh": "如果题目只要求重复公开资料，学生当然容易让系统代替自己完成。",
+          "pinyin": "Rú guǒ tí mù zhǐ yào qiú chóng fù gōng kāi zī liào， xué shēng dāng rán róng yì ràng xì tǒng dài tì zì jǐ wán chéng。",
+          "vi": "Nếu đề chỉ yêu cầu lặp lại tài liệu công khai, học sinh đương nhiên dễ để hệ thống làm thay."
+        },
+        {
+          "id": "READ-L6-ai-learning-S12",
+          "zh": "更有价值的任务可以要求学生结合个人观察、展示修改过程、解释选择理由，或者在课堂上回应追问。",
+          "pinyin": "Gèng yǒu jià zhí de rèn wù kě yǐ yāo qiú xué shēng jié hé gè rén guān chá、 zhǎn shì xiū gǎi guò chéng、 jiě shì xuǎn zé lǐ yóu， huò zhě zài kè táng shàng huí yīng zhuī wèn。",
+          "vi": "Nhiệm vụ có giá trị hơn có thể yêu cầu kết hợp quan sát cá nhân, trình bày quá trình sửa, giải thích lý do lựa chọn hoặc trả lời câu hỏi tiếp theo trên lớp."
+        },
+        {
+          "id": "READ-L6-ai-learning-S13",
+          "zh": "这样一来，人工智能可以参与准备，却不能完全替代思考。",
+          "pinyin": "Zhè yàng yī lái， rén gōng zhì néng kě yǐ cān yù zhǔn bèi， què bù néng wán quán tì dài sī kǎo。",
+          "vi": "Như vậy AI có thể tham gia chuẩn bị nhưng không thể thay thế hoàn toàn suy nghĩ."
+        },
+        {
+          "id": "READ-L6-ai-learning-S14",
+          "zh": "学校还应明确哪些使用方式可以接受，哪些情况必须说明工具参与，以及如何保护学生输入的数据。",
+          "pinyin": "Xué xiào hái yīng míng què nǎ xiē shǐ yòng fāng shì kě yǐ jiē shòu， nǎ xiē qíng kuàng bì xū shuō míng gōng jù cān yù， yǐ jí rú hé bǎo hù xué shēng shū rù de shù jù。",
+          "vi": "Trường học cũng cần làm rõ cách dùng nào được chấp nhận, trường hợp nào phải khai báo sự tham gia của công cụ và cách bảo vệ dữ liệu học sinh nhập vào."
+        },
+        {
+          "id": "READ-L6-ai-learning-S15",
+          "zh": "单纯禁止往往难以执行，因为学生在校外仍然可以接触这些工具。",
+          "pinyin": "Dān chún jìn zhǐ wǎng wǎng nán yǐ zhí xíng， yīn wèi xué shēng zài xiào wài réng rán kě yǐ jiē chù zhè xiē gōng jù。",
+          "vi": "Cấm hoàn toàn thường khó thực hiện vì học sinh vẫn có thể tiếp cận công cụ ngoài trường."
+        },
+        {
+          "id": "READ-L6-ai-learning-S16",
+          "zh": "比禁止更重要的是建立透明规则，并让学生理解诚实、署名和责任为什么重要。",
+          "pinyin": "Bǐ jìn zhǐ gèng zhòng yào de shì jiàn lì tòu míng guī zé， bìng ràng xué shēng lǐ jiě chéng shí、 shǔ míng hé zé rèn wèi shén me zhòng yào。",
+          "vi": "Quan trọng hơn cấm đoán là xây dựng quy tắc minh bạch và giúp học sinh hiểu vì sao trung thực, ghi nguồn và trách nhiệm quan trọng."
+        },
+        {
+          "id": "READ-L6-ai-learning-S17",
+          "zh": "在语言学习中，人工智能可以扮演练习伙伴，帮助纠正句子、模拟对话或提供适合水平的阅读材料。",
+          "pinyin": "Zài yǔ yán xué xí zhōng， rén gōng zhì néng kě yǐ bàn yǎn liàn xí huǒ bàn， bāng zhù jiū zhèng jù zi、 mó nǐ duì huà huò tí gōng shì hé shuǐ píng de yuè dú cái liào。",
+          "vi": "Trong học ngôn ngữ, AI có thể làm bạn luyện tập, giúp sửa câu, mô phỏng hội thoại hoặc cung cấp bài đọc phù hợp trình độ."
+        },
+        {
+          "id": "READ-L6-ai-learning-S18",
+          "zh": "但学习者仍需要亲自开口、回忆词语、承受暂时说不出来的不适，因为这些困难正是能力形成的一部分。",
+          "pinyin": "Dàn xué xí zhě réng xū yào qīn zì kāi kǒu、 huí yì cí yǔ、 chéng shòu zàn shí shuō bù chū lái de bù shì， yīn wèi zhè xiē kùn nán zhèng shì néng lì xíng chéng de yī bù fèn。",
+          "vi": "Nhưng người học vẫn cần tự nói, nhớ lại từ và chịu cảm giác tạm thời không diễn đạt được, vì những khó khăn đó là một phần của quá trình hình thành năng lực."
+        },
+        {
+          "id": "READ-L6-ai-learning-S19",
+          "zh": "合理的做法不是拒绝技术，也不是把技术当成万能答案，而是为不同学习目标选择不同程度的支持。",
+          "pinyin": "Hé lǐ de zuò fǎ bú shì jù jué jì shù， yě bú shì bǎ jì shù dàng chéng wàn néng dá àn， ér shì wèi bù tóng xué xí mù biāo xuǎn zé bù tóng chéng dù de zhī chí。",
+          "vi": "Cách hợp lý không phải từ chối công nghệ hay coi nó là đáp án vạn năng, mà là chọn mức hỗ trợ khác nhau cho từng mục tiêu học."
+        },
+        {
+          "id": "READ-L6-ai-learning-S20",
+          "zh": "当目标是获得灵感时，可以让系统提供多个方向；当目标是训练写作时，则应保留独立起草和修改的阶段。",
+          "pinyin": "Dāng mù biāo shì huò dé líng gǎn shí， kě yǐ ràng xì tǒng tí gōng duō gè fāng xiàng； dāng mù biāo shì xùn liàn xiě zuò shí， zé yīng bǎo liú dú lì qǐ cǎo hé xiū gǎi de jiē duàn。",
+          "vi": "Khi mục tiêu là tìm ý tưởng, có thể để hệ thống đưa nhiều hướng; khi mục tiêu là luyện viết, cần giữ giai đoạn tự viết nháp và chỉnh sửa."
+        },
+        {
+          "id": "READ-L6-ai-learning-S21",
+          "zh": "教育真正需要保护的，不是某一种传统做法，而是学习者提出问题、理解证据、承担判断后果的能力。",
+          "pinyin": "Jiào yù zhēn zhèng xū yào bǎo hù de， bú shì mǒu yī zhǒng chuán tǒng zuò fǎ， ér shì xué xí zhě tí chū wèn tí、 lǐ jiě zhèng jù、 chéng dān pàn duàn hòu guǒ de néng lì。",
+          "vi": "Điều giáo dục thực sự cần bảo vệ không phải một cách làm truyền thống nào, mà là năng lực đặt câu hỏi, hiểu bằng chứng và chịu trách nhiệm cho phán đoán."
+        },
+        {
+          "id": "READ-L6-ai-learning-S22",
+          "zh": "只有当工具帮助人变得更主动、更诚实和更有判断力时，它才算真正改善了学习。",
+          "pinyin": "Zhǐ yǒu dāng gōng jù bāng zhù rén biàn dé gèng zhǔ dòng、 gèng chéng shí hé gèng yǒu pàn duàn lì shí， tā cái suàn zhēn zhèng gǎi shàn le xué xí。",
+          "vi": "Chỉ khi công cụ giúp con người chủ động, trung thực và có khả năng phán đoán hơn, nó mới thực sự cải thiện việc học."
+        },
+        {
+          "id": "READ-L6-ai-learning-S23",
+          "zh": "学生还应学会保存自己的草稿和修改记录，以便看清思路如何变化，而不是只保留最终文本。",
+          "pinyin": "Xué shēng huán yīng xué huì bǎo cún zì jǐ de cǎo gǎo hé xiū gǎi jì lù， yǐ biàn kàn qīng sī lù rú hé biàn huà， ér bú shì zhǐ bǎo liú zuì zhōng wén běn。",
+          "vi": "Học sinh cũng nên lưu bản nháp và lịch sử chỉnh sửa để thấy tư duy thay đổi thế nào, thay vì chỉ giữ văn bản cuối."
+        },
+        {
+          "id": "READ-L6-ai-learning-S24",
+          "zh": "这种过程证据既能帮助教师评价学习，也能让学生发现自己在哪些环节过度依赖工具。",
+          "pinyin": "Zhè zhǒng guò chéng zhèng jù jì néng bāng zhù jiào shī píng jià xué xí， yě néng ràng xué shēng fà xiàn zì jǐ zài nǎ xiē huán jié guò dù yī lài gōng jù。",
+          "vi": "Bằng chứng quá trình vừa giúp giáo viên đánh giá việc học vừa giúp học sinh nhận ra khâu nào mình phụ thuộc công cụ quá mức."
+        },
+        {
+          "id": "READ-L6-ai-learning-S25",
+          "zh": "当系统给出多个答案时，学习者可以比较它们的假设、语气和遗漏，而不是只选择最流畅的一项。",
+          "pinyin": "Dāng xì tǒng gěi chū duō gè dá àn shí， xué xí zhě kě yǐ bǐ jiào tā men de jiǎ shè、 yǔ qì hé yí lòu， ér bú shì zhǐ xuǎn zé zuì liú chàng de yī xiàng。",
+          "vi": "Khi hệ thống đưa nhiều đáp án, người học có thể so sánh giả định, giọng điệu và điều bị bỏ sót thay vì chỉ chọn phương án trôi chảy nhất."
+        },
+        {
+          "id": "READ-L6-ai-learning-S26",
+          "zh": "课堂讨论还可以分析人工智能为什么会犯错，这比单纯告诉学生“不要相信”更能培养判断力。",
+          "pinyin": "Kè táng tǎo lùn hái kě yǐ fēn xī rén gōng zhì néng wèi shén me huì fàn cuò， zhè bǐ dān chún gào sù xué shēng“bú yào xiāng xìn” gèng néng péi yǎng pàn duàn lì。",
+          "vi": "Thảo luận trên lớp có thể phân tích vì sao AI mắc lỗi; cách này nuôi dưỡng phán đoán tốt hơn việc chỉ nói “đừng tin”."
+        },
+        {
+          "id": "READ-L6-ai-learning-S27",
+          "zh": "对于年幼学生，学校应更加谨慎，因为他们尚未形成稳定知识，难以识别看似合理的错误。",
+          "pinyin": "Duì yú nián yòu xué shēng， xué xiào yīng gèng jiā jǐn shèn， yīn wèi tā men shàng wèi xíng chéng wěn dìng zhī shí， nán yǐ shí bié kàn shì hé lǐ de cuò wù。",
+          "vi": "Với học sinh nhỏ tuổi, trường cần thận trọng hơn vì các em chưa có nền kiến thức ổn định để nhận ra lỗi có vẻ hợp lý."
+        },
+        {
+          "id": "READ-L6-ai-learning-S28",
+          "zh": "家长也需要了解工具的能力和限制，避免把使用时间多少简单等同于学习效果。",
+          "pinyin": "Jiā zhǎng yě xū yào liǎo jiě gōng jù de néng lì hé xiàn zhì， bì miǎn bǎ shǐ yòng shí jiān duō shǎo jiǎn dān děng tóng yú xué xí xiào guǒ。",
+          "vi": "Phụ huynh cũng cần hiểu khả năng và giới hạn của công cụ, tránh đồng nhất thời gian sử dụng với hiệu quả học."
+        },
+        {
+          "id": "READ-L6-ai-learning-S29",
+          "zh": "未来的考试可能更重视现场解释、项目过程和口头答辩，以证明学生能够理解并承担自己的作品。",
+          "pinyin": "Wèi lái de kǎo shì kě néng gèng zhòng shì xiàn chǎng jiě shì、 xiàng mù guò chéng hé kǒu tóu dá biàn， yǐ zhèng míng xué shēng néng gòu lǐ jiě bìng chéng dān zì jǐ de zuò pǐn。",
+          "vi": "Kỳ thi tương lai có thể coi trọng giải thích tại chỗ, quá trình dự án và vấn đáp để chứng minh học sinh hiểu và chịu trách nhiệm với sản phẩm."
+        },
+        {
+          "id": "READ-L6-ai-learning-S30",
+          "zh": "无论评价形式怎样变化，教育的目标仍应是帮助人逐步获得不依赖即时提示也能思考和表达的能力。",
+          "pinyin": "Wú lùn píng jià xíng shì zěn yàng biàn huà， jiào yù de mù biāo réng yīng shì bāng zhù rén zhú bù huò dé bù yī lài jí shí tí shì yě néng sī kǎo hé biǎo dá de néng lì。",
+          "vi": "Dù hình thức đánh giá thay đổi thế nào, mục tiêu giáo dục vẫn là giúp con người dần có năng lực suy nghĩ và biểu đạt mà không phụ thuộc gợi ý tức thời."
+        }
+      ]
+    },
+    {
+      "id": "READ-L6-aging",
+      "level": "6",
+      "title": "Xã hội già hóa và hợp tác giữa các thế hệ",
+      "topic": "xã hội",
+      "targetCharacters": 1000,
+      "actualCharacters": 1012,
+      "sentences": [
+        {
+          "id": "READ-L6-aging-S01",
+          "zh": "许多国家正在进入人口老龄化阶段，老年人口增加、出生率下降以及家庭规模缩小，正在同时改变医疗、住房、就业和照护制度。",
+          "pinyin": "Xǔ duō guó jiā zhèng zài jìn rù rén kǒu lǎo líng huà jiē duàn， lǎo nián rén kǒu zēng jiā、 chū shēng lǜ xià jiàng yǐ jí jiā tíng guī mó suō xiǎo， zhèng zài tóng shí gǎi biàn yī liáo、 zhù fáng、 jiù yè hé zhào hù zhì dù。",
+          "vi": "Nhiều quốc gia đang bước vào giai đoạn già hóa; dân số cao tuổi tăng, tỷ lệ sinh giảm và quy mô gia đình thu nhỏ đang đồng thời thay đổi y tế, nhà ở, việc làm và chăm sóc."
+        },
+        {
+          "id": "READ-L6-aging-S02",
+          "zh": "讨论老龄化时，人们常把它描述成沉重负担，好像年龄增长只意味着疾病、依赖和社会成本。",
+          "pinyin": "Tǎo lùn lǎo líng huà shí， rén men cháng bǎ tā miáo shù chéng chén zhòng fù dān， hǎo xiàng nián líng zēng zhǎng zhǐ yì wèi zhe jí bìng、 yī lài hé shè huì chéng běn。",
+          "vi": "Khi bàn về già hóa, người ta thường mô tả như gánh nặng, như thể tuổi tăng chỉ đồng nghĩa bệnh tật, phụ thuộc và chi phí xã hội."
+        },
+        {
+          "id": "READ-L6-aging-S03",
+          "zh": "这种说法忽略了老年人的经验、劳动能力、家庭贡献和继续学习的愿望。",
+          "pinyin": "Zhè zhǒng shuō fǎ hū lüè le lǎo nián rén de jīng yàn、 láo dòng néng lì、 jiā tíng gòng xiàn hé jì xù xué xí de yuàn wàng。",
+          "vi": "Cách nói này bỏ qua kinh nghiệm, khả năng lao động, đóng góp gia đình và mong muốn tiếp tục học của người cao tuổi."
+        },
+        {
+          "id": "READ-L6-aging-S04",
+          "zh": "事实上，六十多岁的人可能仍然健康活跃，而同一年龄的人也可能因为职业、收入和生活环境不同，面临完全不同的需要。",
+          "pinyin": "Shì shí shàng， liù shí duō suì de rén kě néng réng rán jiàn kāng huó yuè， ér tóng yī nián líng de rén yě kě néng yīn wèi zhí yè、 shōu rù hé shēng huó huán jìng bù tóng， miàn lín wán quán bù tóng de xū yào。",
+          "vi": "Thực tế, người ngoài sáu mươi có thể vẫn khỏe và năng động, trong khi người cùng tuổi có thể có nhu cầu hoàn toàn khác do nghề nghiệp, thu nhập và môi trường sống."
+        },
+        {
+          "id": "READ-L6-aging-S05",
+          "zh": "因此，政策不能只按照年龄划分群体，而应关注真实的身体状况和生活条件。",
+          "pinyin": "Yīn cǐ， zhèng cè bù néng zhǐ àn zhào nián líng huà fēn qún tǐ， ér yīng guān zhù zhēn shí de shēn tǐ zhuàng kuàng hé shēng huó tiáo jiàn。",
+          "vi": "Vì vậy, chính sách không nên chỉ chia nhóm theo tuổi mà cần chú ý tình trạng cơ thể và điều kiện sống thực tế."
+        },
+        {
+          "id": "READ-L6-aging-S06",
+          "zh": "首先，城市和住宅需要更适合长期居住。",
+          "pinyin": "Shǒu xiān， chéng shì hé zhù zhái xū yào gèng shì hé cháng qī jū zhù。",
+          "vi": "Trước hết, thành phố và nhà ở cần phù hợp hơn cho việc sống lâu dài."
+        },
+        {
+          "id": "READ-L6-aging-S07",
+          "zh": "没有电梯的高层住宅、过快的交通信号和缺少座椅的人行道，会把许多老人困在家中。",
+          "pinyin": "Méi yǒu diàn tī de gāo céng zhù zhái、 guò kuài de jiāo tōng xìn hào hé quē shǎo zuò yǐ de rén xíng dào， huì bǎ xǔ duō lǎo rén kùn zài jiā zhōng。",
+          "vi": "Nhà cao tầng không thang máy, đèn giao thông quá nhanh và vỉa hè thiếu ghế có thể khiến nhiều người già bị kẹt trong nhà."
+        },
+        {
+          "id": "READ-L6-aging-S08",
+          "zh": "改善无障碍设施不仅帮助老人，也方便推婴儿车的家长、暂时受伤的人和携带行李的旅客。",
+          "pinyin": "Gǎi shàn wú zhàng ài shè shī bù jǐn bāng zhù lǎo rén， yě fāng biàn tuī yīng ér chē de jiā zhǎng、 zàn shí shòu shāng de rén hé xié dài xíng lǐ de lǚ kè。",
+          "vi": "Cải thiện tiếp cận không chỉ giúp người già mà còn thuận tiện cho phụ huynh đẩy xe trẻ em, người tạm bị thương và khách mang hành lý."
+        },
+        {
+          "id": "READ-L6-aging-S09",
+          "zh": "其次，照护责任不能完全落在家庭成员，尤其不能默认由女性无偿承担。",
+          "pinyin": "Qí cì， zhào hù zé rèn bù néng wán quán luò zài jiā tíng chéng yuán， yóu qí bù néng mò rèn yóu nǚ xìng wú cháng chéng dān。",
+          "vi": "Thứ hai, trách nhiệm chăm sóc không thể hoàn toàn đổ lên gia đình, đặc biệt không thể mặc định phụ nữ làm không công."
+        },
+        {
+          "id": "READ-L6-aging-S10",
+          "zh": "公共护理服务、灵活工作制度和对照护者的经济支持，可以减少家庭内部的压力。",
+          "pinyin": "Gōng gòng hù lǐ fú wù、 líng huó gōng zuò zhì dù hé duì zhào hù zhě de jīng jì zhī chí， kě yǐ jiǎn shǎo jiā tíng nèi bù de yā lì。",
+          "vi": "Dịch vụ chăm sóc công, chế độ làm việc linh hoạt và hỗ trợ tài chính cho người chăm sóc có thể giảm áp lực trong gia đình."
+        },
+        {
+          "id": "READ-L6-aging-S11",
+          "zh": "同时，专业护理人员需要合理工资和培训，否则服务质量难以稳定。",
+          "pinyin": "Tóng shí， zhuān yè hù lǐ rén yuán xū yào hé lǐ gōng zī hé péi xùn， fǒu zé fú wù zhì liàng nán yǐ wěn dìng。",
+          "vi": "Đồng thời, nhân viên chăm sóc chuyên nghiệp cần lương và đào tạo hợp lý, nếu không chất lượng dịch vụ khó ổn định."
+        },
+        {
+          "id": "READ-L6-aging-S12",
+          "zh": "就业制度也应提供更多选择。",
+          "pinyin": "Jiù yè zhì dù yě yīng tí gōng gèng duō xuǎn zé。",
+          "vi": "Chế độ việc làm cũng cần nhiều lựa chọn hơn."
+        },
+        {
+          "id": "READ-L6-aging-S13",
+          "zh": "有些人希望延迟退休并继续发挥专业经验，有些人则因为长期从事体力劳动而需要更早休息。",
+          "pinyin": "Yǒu xiē rén xī wàng yán chí tuì xiū bìng jì xù fā huī zhuān yè jīng yàn， yǒu xiē rén zé yīn wèi cháng qī cóng shì tǐ lì láo dòng ér xū yào gèng zǎo xiū xī。",
+          "vi": "Có người muốn nghỉ hưu muộn để tiếp tục phát huy kinh nghiệm chuyên môn, có người do lao động thể lực lâu năm cần nghỉ sớm hơn."
+        },
+        {
+          "id": "READ-L6-aging-S14",
+          "zh": "统一的安排看似公平，却可能忽视不同职业之间的巨大差异。",
+          "pinyin": "Tǒng yī de ān pái kàn shì gōng píng， què kě néng hū shì bù tóng zhí yè zhī jiān de jù dà chā yì。",
+          "vi": "Một sắp xếp thống nhất tưởng công bằng nhưng có thể bỏ qua khác biệt lớn giữa các nghề."
+        },
+        {
+          "id": "READ-L6-aging-S15",
+          "zh": "更灵活的退休方式、兼职机会和终身学习项目，能够让个人根据情况作出选择。",
+          "pinyin": "Gèng líng huó de tuì xiū fāng shì、 jiān zhí jī huì hé zhōng shēn xué xí xiàng mù， néng gòu ràng gè rén gēn jù qíng kuàng zuò chū xuǎn zé。",
+          "vi": "Cách nghỉ hưu linh hoạt hơn, cơ hội bán thời gian và chương trình học suốt đời giúp cá nhân lựa chọn theo hoàn cảnh."
+        },
+        {
+          "id": "READ-L6-aging-S16",
+          "zh": "老龄化社会还需要促进代际交流，而不是把不同年龄的人分开。",
+          "pinyin": "Lǎo líng huà shè huì hái xū yào cù jìn dài jì jiāo liú， ér bú shì bǎ bù tóng nián líng de rén fēn kāi。",
+          "vi": "Xã hội già hóa còn cần thúc đẩy giao lưu giữa các thế hệ thay vì tách người khác tuổi."
+        },
+        {
+          "id": "READ-L6-aging-S17",
+          "zh": "社区可以组织技能交换，让年轻人帮助老人使用数字服务，老人则分享手艺、职业经验或地方记忆。",
+          "pinyin": "Shè qū kě yǐ zǔ zhī jì néng jiāo huàn， ràng nián qīng rén bāng zhù lǎo rén shǐ yòng shù zì fú wù， lǎo rén zé fēn xiǎng shǒu yì、 zhí yè jīng yàn huò dì fāng jì yì。",
+          "vi": "Cộng đồng có thể tổ chức trao đổi kỹ năng: người trẻ giúp người già dùng dịch vụ số, người già chia sẻ nghề thủ công, kinh nghiệm nghề nghiệp hoặc ký ức địa phương."
+        },
+        {
+          "id": "READ-L6-aging-S18",
+          "zh": "这样的合作能减少偏见，也让双方认识到彼此并不是竞争资源的对手。",
+          "pinyin": "Zhè yàng de hé zuò néng jiǎn shǎo piān jiàn， yě ràng shuāng fāng rèn shí dào bǐ cǐ bìng bú shì jìng zhēng zī yuán de duì shǒu。",
+          "vi": "Sự hợp tác này giảm định kiến và giúp hai bên nhận ra họ không phải đối thủ tranh giành nguồn lực."
+        },
+        {
+          "id": "READ-L6-aging-S19",
+          "zh": "当然，代际合作不能只靠个人善意，还需要制度提供时间、场地和持续资金。",
+          "pinyin": "Dāng rán， dài jì hé zuò bù néng zhǐ kào gè rén shàn yì， hái xū yào zhì dù tí gōng shí jiān、 chǎng dì hé chí xù zī jīn。",
+          "vi": "Tất nhiên, hợp tác liên thế hệ không thể chỉ dựa vào thiện chí cá nhân mà cần thể chế cung cấp thời gian, địa điểm và tài chính bền vững."
+        },
+        {
+          "id": "READ-L6-aging-S20",
+          "zh": "面对老龄化，最危险的做法是把所有老人想象成同一种人，并把所有问题都推给家庭自己解决。",
+          "pinyin": "Miàn duì lǎo líng huà， zuì wēi xiǎn de zuò fǎ shì bǎ suǒ yǒu lǎo rén xiǎng xiàng chéng tóng yī zhǒng rén， bìng bǎ suǒ yǒu wèn tí dōu tuī gěi jiā tíng zì jǐ jiě jué。",
+          "vi": "Trước già hóa, cách nguy hiểm nhất là tưởng mọi người già giống nhau và đẩy mọi vấn đề cho gia đình tự giải quyết."
+        },
+        {
+          "id": "READ-L6-aging-S21",
+          "zh": "更成熟的社会会承认衰老是每个人生命过程的一部分，并提前建设能够支持不同阶段生活的环境。",
+          "pinyin": "Gèng chéng shú de shè huì huì chéng rèn shuāi lǎo shì měi gè rén shēng mìng guò chéng de yī bù fèn， bìng tí qián jiàn shè néng gòu zhī chí bù tóng jiē duàn shēng huó de huán jìng。",
+          "vi": "Một xã hội trưởng thành hơn sẽ thừa nhận lão hóa là một phần đời mỗi người và sớm xây dựng môi trường hỗ trợ các giai đoạn sống khác nhau."
+        },
+        {
+          "id": "READ-L6-aging-S22",
+          "zh": "当尊严、选择和相互支持成为制度目标时，人口结构变化也可以转化为重新设计社会的机会。",
+          "pinyin": "Dāng zūn yán、 xuǎn zé hé xiāng hù zhī chí chéng wéi zhì dù mù biāo shí， rén kǒu jié gòu biàn huà yě kě yǐ zhuǎn huà wèi chóng xīn shè jì shè huì de jī huì。",
+          "vi": "Khi phẩm giá, lựa chọn và hỗ trợ lẫn nhau trở thành mục tiêu thể chế, thay đổi cơ cấu dân số cũng có thể thành cơ hội thiết kế lại xã hội."
+        },
+        {
+          "id": "READ-L6-aging-S23",
+          "zh": "数字化公共服务为生活带来便利，却也可能让不会使用智能设备的老人难以办理基本事务。",
+          "pinyin": "Shù zì huà gōng gòng fú wù wéi shēng huó dài lái biàn lì， què yě kě néng ràng bú huì shǐ yòng zhì néng shè bèi de lǎo rén nán yǐ bàn lǐ jī běn shì wù。",
+          "vi": "Dịch vụ công số mang lại tiện lợi nhưng cũng có thể khiến người già không biết dùng thiết bị thông minh khó làm thủ tục cơ bản."
+        },
+        {
+          "id": "READ-L6-aging-S24",
+          "zh": "因此，线上渠道应保留人工帮助和线下选择，而不是把技术能力变成获得权利的前提。",
+          "pinyin": "Yīn cǐ， xiàn shàng qú dào yīng bǎo liú rén gōng bāng zhù hé xiàn xià xuǎn zé， ér bú shì bǎ jì shù néng lì biàn chéng huò dé quán lì de qián tí。",
+          "vi": "Vì vậy, kênh trực tuyến cần giữ hỗ trợ con người và lựa chọn trực tiếp, không biến năng lực công nghệ thành điều kiện để có quyền lợi."
+        },
+        {
+          "id": "READ-L6-aging-S25",
+          "zh": "医疗系统也应从单纯治疗疾病转向长期管理、康复和预防，帮助人们尽可能保持独立。",
+          "pinyin": "Yī liáo xì tǒng yě yìng cóng dān chún zhì liáo jí bìng zhuǎn xiàng cháng qī guǎn lǐ、 kāng fù hé yù fáng， bāng zhù rén men jǐn kě néng bǎo chí dú lì。",
+          "vi": "Hệ thống y tế cũng cần chuyển từ chỉ chữa bệnh sang quản lý dài hạn, phục hồi và phòng ngừa để giúp con người giữ độc lập tối đa."
+        },
+        {
+          "id": "READ-L6-aging-S26",
+          "zh": "家庭医生、社区护士和居家服务之间如果缺少信息共享，老人就可能反复接受检查，却仍得不到连续照护。",
+          "pinyin": "Jiā tíng yī shēng、 shè qū hù shì hé jū jiā fú wù zhī jiān rú guǒ quē shǎo xìn xī gòng xiǎng， lǎo rén jiù kě néng fǎn fù jiē shòu jiǎn chá， què réng dé bú dào lián xù zhào hù。",
+          "vi": "Nếu bác sĩ gia đình, y tá cộng đồng và dịch vụ tại nhà thiếu chia sẻ thông tin, người già có thể bị kiểm tra lặp lại nhưng vẫn không được chăm sóc liên tục."
+        },
+        {
+          "id": "READ-L6-aging-S27",
+          "zh": "社会还需要讨论孤独问题，因为缺少联系会影响心理健康，也会增加身体疾病风险。",
+          "pinyin": "Shè huì hái xū yào tǎo lùn gū dú wèn tí， yīn wèi quē shǎo lián xì huì yǐng xiǎng xīn lǐ jiàn kāng， yě huì zēng jiā shēn tǐ jí bìng fēng xiǎn。",
+          "vi": "Xã hội còn cần bàn về cô đơn vì thiếu kết nối ảnh hưởng sức khỏe tinh thần và làm tăng nguy cơ bệnh thể chất."
+        },
+        {
+          "id": "READ-L6-aging-S28",
+          "zh": "提供可负担交通、社区课程和公共活动，比只在危机出现后提供短期帮助更有效。",
+          "pinyin": "Tí gōng kě fù dān jiāo tōng、 shè qū kè chéng hé gōng gòng huó dòng， bǐ zhǐ zài wēi jī chū xiàn hòu tí gōng duǎn qī bāng zhù gèng yǒu xiào。",
+          "vi": "Cung cấp giao thông vừa túi tiền, khóa học cộng đồng và hoạt động công hiệu quả hơn hỗ trợ ngắn hạn sau khủng hoảng."
+        },
+        {
+          "id": "READ-L6-aging-S29",
+          "zh": "对衰老的积极理解并不是否认脆弱，而是承认人在需要帮助时仍然拥有选择、隐私和表达意见的权利。",
+          "pinyin": "Duì shuāi lǎo de jī jí lǐ jiě bìng bú shì fǒu rèn cuì ruò， ér shì chéng rèn rén zài xū yào bāng zhù shí réng rán yōng yǒu xuǎn zé、 yǐn sī hé biǎo dá yì jiàn de quán lì。",
+          "vi": "Hiểu tích cực về lão hóa không phải phủ nhận sự mong manh mà thừa nhận người cần giúp vẫn có quyền lựa chọn, riêng tư và bày tỏ ý kiến."
+        },
+        {
+          "id": "READ-L6-aging-S30",
+          "zh": "这种权利应体现在每天的服务细节里，而不只是写在政策文件中。",
+          "pinyin": "Zhè zhǒng quán lì yīng tǐ xiàn zài měi tiān de fú wù xì jié lǐ， ér bù zhǐ shì xiě zài zhèng cè wén jiàn zhōng。",
+          "vi": "Quyền đó cần thể hiện trong chi tiết dịch vụ hằng ngày chứ không chỉ nằm trong văn bản chính sách."
+        }
+      ]
+    },
+    {
+      "id": "READ-L6-information-bubble",
+      "level": "6",
+      "title": "Thuật toán đề xuất và bong bóng thông tin",
+      "topic": "truyền thông",
+      "targetCharacters": 1000,
+      "actualCharacters": 1056,
+      "sentences": [
+        {
+          "id": "READ-L6-information-bubble-S01",
+          "zh": "每天打开手机，新闻、短视频和商品会自动出现在屏幕上，用户不需要主动搜索，就能得到大量似乎符合兴趣的内容。",
+          "pinyin": "Měi tiān dǎ kāi shǒu jī， xīn wén、 duǎn shì pín hé shāng pǐn huì zì dòng chū xiàn zài píng mù shàng， yòng hù bù xū yào zhǔ dòng sōu suǒ， jiù néng dé dào dà liàng sì hū fú hé xìng qù de nèi róng。",
+          "vi": "Mỗi ngày mở điện thoại, tin tức, video ngắn và hàng hóa tự xuất hiện; người dùng không cần chủ động tìm vẫn nhận nhiều nội dung dường như hợp sở thích."
+        },
+        {
+          "id": "READ-L6-information-bubble-S02",
+          "zh": "这些推荐系统根据点击、停留时间、点赞和购买记录，预测人们下一步可能关注什么。",
+          "pinyin": "Zhè xiē tuī jiàn xì tǒng gēn jù diǎn jī、 tíng liú shí jiān、 diǎn zàn hé gòu mǎi jì lù， yù cè rén men xià yī bù kě néng guān zhù shén me。",
+          "vi": "Các hệ thống đề xuất dựa vào lượt nhấp, thời gian xem, thích và lịch sử mua để dự đoán điều người dùng có thể quan tâm tiếp theo."
+        },
+        {
+          "id": "READ-L6-information-bubble-S03",
+          "zh": "从效率看，这种技术帮助我们在海量信息中节省时间，也让小众创作者有机会找到真正感兴趣的观众。",
+          "pinyin": "Cóng xiào lǜ kàn， zhè zhǒng jì shù bāng zhù wǒ men zài hǎi liàng xìn xī zhōng jié shěng shí jiān， yě ràng xiǎo zhòng chuàng zuò zhě yǒu jī huì zhǎo dào zhēn zhèng gǎn xìng qù de guān zhòng。",
+          "vi": "Về hiệu quả, công nghệ giúp tiết kiệm thời gian giữa biển thông tin và cho nhà sáng tạo ngách cơ hội tìm đúng khán giả."
+        },
+        {
+          "id": "READ-L6-information-bubble-S04",
+          "zh": "但是，当平台不断提供相似内容时，用户可能逐渐进入所谓的信息茧房。",
+          "pinyin": "Dàn shì， dāng píng tái bù duàn tí gōng xiāng sì nèi róng shí， yòng hù kě néng zhú jiàn jìn rù suǒ wèi de xìn xī jiǎn fáng。",
+          "vi": "Nhưng khi nền tảng liên tục cung cấp nội dung tương tự, người dùng có thể dần bước vào “kén thông tin”."
+        },
+        {
+          "id": "READ-L6-information-bubble-S05",
+          "zh": "在这个环境里，人们经常看到支持自己观点的材料，却很少接触不同立场和完整背景。",
+          "pinyin": "Zài zhè ge huán jìng lǐ， rén men jīng cháng kàn dào zhī chí zì jǐ guān diǎn de cái liào， què hěn shǎo jiē chù bù tóng lì chǎng hé wán zhěng bèi jǐng。",
+          "vi": "Trong môi trường này, người ta thường thấy tài liệu ủng hộ quan điểm mình nhưng ít tiếp xúc lập trường khác và bối cảnh đầy đủ."
+        },
+        {
+          "id": "READ-L6-information-bubble-S06",
+          "zh": "时间久了，熟悉的观点会被误认为普遍事实，而持不同意见的人则显得难以理解。",
+          "pinyin": "Shí jiān jiǔ le， shú xī de guān diǎn huì bèi wù rèn wèi pǔ biàn shì shí， ér chí bù tóng yì jiàn de rén zé xiǎn de nán yǐ lǐ jiě。",
+          "vi": "Lâu dần, quan điểm quen thuộc bị nhầm là sự thật phổ quát, còn người khác ý trở nên khó hiểu."
+        },
+        {
+          "id": "READ-L6-information-bubble-S07",
+          "zh": "推荐系统并不一定故意制造分裂，它的主要目标通常是延长使用时间和提高互动。",
+          "pinyin": "Tuī jiàn xì tǒng bìng bù yí dìng gù yì zhì zào fēn liè， tā de zhǔ yào mù biāo tōng cháng shì yán cháng shǐ yòng shí jiān hé tí gāo hù dòng。",
+          "vi": "Hệ thống đề xuất không nhất thiết cố ý tạo chia rẽ; mục tiêu chính thường là kéo dài thời gian sử dụng và tăng tương tác."
+        },
+        {
+          "id": "READ-L6-information-bubble-S08",
+          "zh": "然而，愤怒、恐惧和冲突往往比平静、复杂的解释更容易吸引注意。",
+          "pinyin": "Rán ér， fèn nù、 kǒng jù hé chōng tū wǎng wǎng bǐ píng jìng、 fù zá de jiě shì gèng róng yì xī yǐn zhù yì。",
+          "vi": "Tuy nhiên, giận dữ, sợ hãi và xung đột thường dễ thu hút chú ý hơn lời giải thích bình tĩnh, phức tạp."
+        },
+        {
+          "id": "READ-L6-information-bubble-S09",
+          "zh": "结果是，极端标题和情绪化内容可能获得更多传播，即使它们并不准确。",
+          "pinyin": "Jié guǒ shì， jí duān biāo tí hé qíng xù huà nèi róng kě néng huò dé gèng duō chuán bō， jí shǐ tā men bìng bù zhǔn què。",
+          "vi": "Kết quả là tiêu đề cực đoan và nội dung cảm tính có thể lan truyền nhiều hơn dù không chính xác."
+        },
+        {
+          "id": "READ-L6-information-bubble-S10",
+          "zh": "个人要避免完全被算法带着走，首先需要意识到推荐结果不是客观世界的缩小版，而是经过商业目标和个人记录筛选的页面。",
+          "pinyin": "Gè rén yào bì miǎn wán quán bèi suàn fǎ dài zhe zǒu， shǒu xiān xū yào yì shí dào tuī jiàn jié guǒ bú shì kè guān shì jiè de suō xiǎo bǎn， ér shì jīng guò shāng yè mù biāo hé gè rén jì lù shāi xuǎn de yè miàn。",
+          "vi": "Để tránh bị thuật toán dẫn dắt hoàn toàn, cá nhân trước hết cần hiểu kết quả đề xuất không phải bản thu nhỏ khách quan của thế giới mà là trang đã lọc qua mục tiêu thương mại và dữ liệu cá nhân."
+        },
+        {
+          "id": "READ-L6-information-bubble-S11",
+          "zh": "我们可以主动订阅不同来源，定期阅读与自己观点不完全一致的文章，并在转发前检查原始出处。",
+          "pinyin": "Wǒ men kě yǐ zhǔ dòng dìng yuè bù tóng lái yuán， dìng qī yuè dú yǔ zì jǐ guān diǎn bù wán quán yí zhì de wén zhāng， bìng zài zhuǎn fā qián jiǎn chá yuán shǐ chū chǔ。",
+          "vi": "Ta có thể chủ động theo dõi nguồn khác nhau, định kỳ đọc bài không hoàn toàn cùng quan điểm và kiểm tra nguồn gốc trước khi chia sẻ."
+        },
+        {
+          "id": "READ-L6-information-bubble-S12",
+          "zh": "面对令人震惊的信息，暂时停止反应、寻找多个可靠来源，通常比立刻评论更有帮助。",
+          "pinyin": "Miàn duì lìng rén zhèn jīng de xìn xī， zàn shí tíng zhǐ fǎn yìng、 xún zhǎo duō gè kě kào lái yuán， tōng cháng bǐ lì kè píng lùn gèng yǒu bāng zhù。",
+          "vi": "Trước thông tin gây sốc, tạm dừng phản ứng và tìm nhiều nguồn đáng tin thường hữu ích hơn bình luận ngay."
+        },
+        {
+          "id": "READ-L6-information-bubble-S13",
+          "zh": "媒体教育也不应只教人识别假新闻，还要帮助公众理解平台如何排序内容、广告如何影响表达，以及数据如何被收集。",
+          "pinyin": "Méi tǐ jiào yù yě bù yīng zhǐ jiào rén shí bié jiǎ xīn wén， hái yào bāng zhù gōng zhòng lǐ jiě píng tái rú hé pái xù nèi róng、 guǎng gào rú hé yǐng xiǎng biǎo dá， yǐ jí shù jù rú hé bèi shōu jí。",
+          "vi": "Giáo dục truyền thông không chỉ dạy nhận biết tin giả mà còn giúp công chúng hiểu nền tảng xếp nội dung thế nào, quảng cáo ảnh hưởng biểu đạt ra sao và dữ liệu được thu thập thế nào."
+        },
+        {
+          "id": "READ-L6-information-bubble-S14",
+          "zh": "平台方面则应提供更透明的说明，让用户知道为什么看到某条内容，并允许他们调整推荐规则。",
+          "pinyin": "Píng tái fāng miàn zé yīng tí gōng gèng tòu míng de shuō míng， ràng yòng hù zhī dào wèi shén me kàn dào mǒu tiáo nèi róng， bìng yǔn xǔ tā men tiáo zhěng tuī jiàn guī zé。",
+          "vi": "Về phía nền tảng, cần giải thích minh bạch hơn vì sao người dùng thấy nội dung nào và cho phép điều chỉnh quy tắc đề xuất."
+        },
+        {
+          "id": "READ-L6-information-bubble-S15",
+          "zh": "对于涉及公共安全、选举和健康的信息，平台还需要承担更高的核查责任。",
+          "pinyin": "Duì yú shè jí gōng gòng ān quán、 xuǎn jǔ hé jiàn kāng de xìn xī， píng tái hái xū yào chéng dān gèng gāo de hé chá zé rèn。",
+          "vi": "Với thông tin liên quan an toàn công cộng, bầu cử và sức khỏe, nền tảng còn cần trách nhiệm kiểm chứng cao hơn."
+        },
+        {
+          "id": "READ-L6-information-bubble-S16",
+          "zh": "但透明并不等于公开全部技术细节，因为系统复杂且不断变化。",
+          "pinyin": "Dàn tòu míng bìng bù děng yú gōng kāi quán bù jì shù xì jié， yīn wèi xì tǒng fù zá qiě bù duàn biàn huà。",
+          "vi": "Nhưng minh bạch không có nghĩa phải công khai mọi chi tiết kỹ thuật vì hệ thống phức tạp và thay đổi liên tục."
+        },
+        {
+          "id": "READ-L6-information-bubble-S17",
+          "zh": "更现实的做法是公布原则、风险和纠错机制，并接受独立研究者的审查。",
+          "pinyin": "Gèng xiàn shí de zuò fǎ shì gōng bù yuán zé、 fēng xiǎn hé jiū cuò jī zhì， bìng jiē shòu dú lì yán jiū zhě de shěn chá。",
+          "vi": "Cách thực tế hơn là công bố nguyên tắc, rủi ro, cơ chế sửa lỗi và chấp nhận kiểm tra của nhà nghiên cứu độc lập."
+        },
+        {
+          "id": "READ-L6-information-bubble-S18",
+          "zh": "信息环境的健康也不能只依赖个人自律，因为人在疲劳、焦虑或时间不足时更容易选择简单答案。",
+          "pinyin": "Xìn xī huán jìng de jiàn kāng yě bù néng zhǐ yī lài gè rén zì lǜ， yīn wèi rén zài pí láo、 jiāo lǜ huò shí jiān bù zú shí gèng róng yì xuǎn zé jiǎn dān dá àn。",
+          "vi": "Môi trường thông tin lành mạnh cũng không thể chỉ dựa vào tự giác cá nhân vì khi mệt, lo hoặc thiếu thời gian, con người dễ chọn đáp án đơn giản."
+        },
+        {
+          "id": "READ-L6-information-bubble-S19",
+          "zh": "因此，设计者、媒体、监管者和用户都应共同承担责任。",
+          "pinyin": "Yīn cǐ， shè jì zhě、 méi tǐ、 jiān guǎn zhě hé yòng hù dōu yīng gòng tóng chéng dān zé rèn。",
+          "vi": "Vì vậy, nhà thiết kế, truyền thông, cơ quan quản lý và người dùng đều cần cùng chịu trách nhiệm."
+        },
+        {
+          "id": "READ-L6-information-bubble-S20",
+          "zh": "技术可以帮助我们发现兴趣，也可能限制我们理解世界的范围，关键在于是否保留主动选择和修正的空间。",
+          "pinyin": "Jì shù kě yǐ bāng zhù wǒ men fā xiàn xìng qù， yě kě néng xiàn zhì wǒ men lǐ jiě shì jiè de fàn wéi， guān jiàn zài yú shì fǒu bǎo liú zhǔ dòng xuǎn zé hé xiū zhèng de kōng jiān。",
+          "vi": "Công nghệ có thể giúp ta khám phá sở thích nhưng cũng giới hạn phạm vi hiểu thế giới; điều cốt lõi là có giữ được không gian lựa chọn và sửa đổi chủ động hay không."
+        },
+        {
+          "id": "READ-L6-information-bubble-S21",
+          "zh": "真正的信息自由，不是屏幕上内容无限增加，而是人们有能力知道自己为何看到这些内容，并能走出熟悉的范围。",
+          "pinyin": "Zhēn zhèng de xìn xī zì yóu， bú shì píng mù shàng nèi róng wú xiàn zēng jiā， ér shì rén men yǒu néng lì zhī dào zì jǐ wèi hé kàn dào zhè xiē nèi róng， bìng néng zǒu chū shú xī de fàn wéi。",
+          "vi": "Tự do thông tin thật sự không phải nội dung trên màn hình tăng vô hạn mà là người dùng biết vì sao mình thấy chúng và có thể bước ra khỏi vùng quen thuộc."
+        },
+        {
+          "id": "READ-L6-information-bubble-S22",
+          "zh": "学校和家庭还可以鼓励年轻人区分“我喜欢看”与“这对我理解问题有帮助”之间的差别。",
+          "pinyin": "Xué xiào hé jiā tíng hái kě yǐ gǔ lì nián qīng rén qū fēn“wǒ xǐ huān kàn” yǔ“zhè duì wǒ lǐ jiě wèn tí yǒu bāng zhù” zhī jiān de chā bié。",
+          "vi": "Trường học và gia đình có thể khuyến khích người trẻ phân biệt “tôi thích xem” với “điều này giúp tôi hiểu vấn đề”."
+        },
+        {
+          "id": "READ-L6-information-bubble-S23",
+          "zh": "娱乐内容本身没有问题，但如果所有空闲时间都被连续播放占据，人们就很难形成主动阅读和深入思考的习惯。",
+          "pinyin": "Yú lè nèi róng běn shēn méi yǒu wèn tí， dàn rú guǒ suǒ yǒu kòng xián shí jiān dōu bèi lián xù bō fàng zhàn jù， rén men jiù hěn nán xíng chéng zhǔ dòng yuè dú hé shēn rù sī kǎo de xí guàn。",
+          "vi": "Nội dung giải trí không có vấn đề, nhưng nếu mọi thời gian rảnh bị phát liên tục chiếm lấy, con người khó hình thành thói quen đọc chủ động và suy nghĩ sâu."
+        },
+        {
+          "id": "READ-L6-information-bubble-S24",
+          "zh": "平台可以设置自然停止点、使用时间提醒和按时间顺序查看的选项，帮助用户重新获得控制。",
+          "pinyin": "Píng tái kě yǐ shè zhì zì rán tíng zhǐ diǎn、 shǐ yòng shí jiān tí xǐng hé àn shí jiān shùn xù chá kàn de xuǎn xiàng， bāng zhù yòng hù chóng xīn huò dé kòng zhì。",
+          "vi": "Nền tảng có thể tạo điểm dừng tự nhiên, nhắc thời gian sử dụng và tùy chọn xem theo thứ tự thời gian để giúp người dùng giành lại quyền kiểm soát."
+        },
+        {
+          "id": "READ-L6-information-bubble-S25",
+          "zh": "这些设计可能减少短期互动，却有助于建立更健康的长期关系。",
+          "pinyin": "Zhè xiē shè jì kě néng jiǎn shǎo duǎn qī hù dòng， què yǒu zhù yú jiàn lì gèng jiàn kāng de cháng qī guān xì。",
+          "vi": "Những thiết kế này có thể giảm tương tác ngắn hạn nhưng giúp xây quan hệ dài hạn lành mạnh hơn."
+        },
+        {
+          "id": "READ-L6-information-bubble-S26",
+          "zh": "研究推荐系统还需要访问真实数据，而企业常以商业秘密和隐私为由限制外部审查。",
+          "pinyin": "Yán jiū tuī jiàn xì tǒng hái xū yào fǎng wèn zhēn shí shù jù， ér qǐ yè cháng yǐ shāng yè mì mì hé yǐn sī wèi yóu xiàn zhì wài bù shěn chá。",
+          "vi": "Nghiên cứu hệ thống đề xuất cần truy cập dữ liệu thật, trong khi doanh nghiệp thường hạn chế kiểm tra ngoài vì bí mật kinh doanh và riêng tư."
+        },
+        {
+          "id": "READ-L6-information-bubble-S27",
+          "zh": "合理制度可以要求提供经过匿名处理的数据、风险报告和独立测试，而不必公开所有用户信息。",
+          "pinyin": "Hé lǐ zhì dù kě yǐ yāo qiú tí gōng jīng guò nì míng chǔ lǐ de shù jù、 fēng xiǎn bào gào hé dú lì cè shì， ér bù bì gōng kāi suǒ yǒu yòng hù xìn xī。",
+          "vi": "Thể chế hợp lý có thể yêu cầu dữ liệu ẩn danh, báo cáo rủi ro và kiểm thử độc lập mà không phải công khai mọi thông tin người dùng."
+        },
+        {
+          "id": "READ-L6-information-bubble-S28",
+          "zh": "推荐技术不会消失，因此目标不是回到没有算法的过去，而是让算法在可以理解、质疑和选择的环境中运行。",
+          "pinyin": "Tuī jiàn jì shù bú huì xiāo shī， yīn cǐ mù biāo bú shì huí dào méi yǒu suàn fǎ de guò qù， ér shì ràng suàn fǎ zài kě yǐ lǐ jiě、 zhì yí hé xuǎn zé de huán jìng zhōng yùn xíng。",
+          "vi": "Công nghệ đề xuất sẽ không biến mất; mục tiêu không phải trở lại quá khứ không thuật toán mà là để thuật toán vận hành trong môi trường có thể hiểu, chất vấn và lựa chọn."
+        },
+        {
+          "id": "READ-L6-information-bubble-S29",
+          "zh": "当用户能够看见规则并拥有退出方式时，个性化才可能成为服务，而不是隐藏的操纵。",
+          "pinyin": "Dāng yòng hù néng gòu kàn jiàn guī zé bìng yōng yǒu tuì chū fāng shì shí， gè xìng huà cái kě néng chéng wéi fú wù， ér bú shì yǐn cáng de cāo zòng。",
+          "vi": "Khi người dùng nhìn thấy quy tắc và có cách thoát, cá nhân hóa mới có thể là dịch vụ thay vì thao túng ẩn."
+        }
+      ]
+    },
+    {
+      "id": "READ-L6-craft",
+      "level": "6",
+      "title": "Nghề thủ công truyền thống trong đời sống hiện đại",
+      "topic": "văn hóa",
+      "targetCharacters": 1000,
+      "actualCharacters": 944,
+      "sentences": [
+        {
+          "id": "READ-L6-craft-S01",
+          "zh": "传统手工艺常被当作过去生活的象征，出现在博物馆、节庆和旅游纪念品中。",
+          "pinyin": "Chuán tǒng shǒu gōng yì cháng bèi dàng zuò guò qù shēng huó de xiàng zhēng， chū xiàn zài bó wù guǎn、 jié qìng hé lǚ yóu jì niàn pǐn zhōng。",
+          "vi": "Nghề thủ công truyền thống thường được xem là biểu tượng của đời sống quá khứ, xuất hiện trong bảo tàng, lễ hội và quà lưu niệm."
+        },
+        {
+          "id": "READ-L6-craft-S02",
+          "zh": "然而，对真正从事这类工作的人来说，它不仅是文化展示，也是需要面对材料成本、市场变化和收入压力的职业。",
+          "pinyin": "Rán ér， duì zhēn zhèng cóng shì zhè lèi gōng zuò de rén lái shuō， tā bù jǐn shì wén huà zhǎn shì， yě shì xū yào miàn duì cái liào chéng běn、 shì chǎng biàn huà hé shōu rù yā lì de zhí yè。",
+          "vi": "Nhưng với người thực sự làm nghề, đó không chỉ là trưng bày văn hóa mà còn là nghề phải đối mặt chi phí vật liệu, biến động thị trường và áp lực thu nhập."
+        },
+        {
+          "id": "READ-L6-craft-S03",
+          "zh": "许多手艺需要多年训练，学习者必须反复观察、模仿和修正，才能掌握看似简单的动作。",
+          "pinyin": "Xǔ duō shǒu yì xū yào duō nián xùn liàn， xué xí zhě bì xū fǎn fù guān chá、 mó fǎng hé xiū zhèng， cái néng zhǎng wò kàn shì jiǎn dān de dòng zuò。",
+          "vi": "Nhiều nghề cần nhiều năm đào tạo; người học phải quan sát, bắt chước và sửa đi sửa lại mới nắm được động tác tưởng đơn giản."
+        },
+        {
+          "id": "READ-L6-craft-S04",
+          "zh": "当年轻人发现付出的时间很长、收入却不稳定时，他们往往选择到城市从事其他工作。",
+          "pinyin": "Dāng nián qīng rén fā xiàn fù chū de shí jiān hěn zhǎng、 shōu rù què bù wěn dìng shí， tā men wǎng wǎng xuǎn zé dào chéng shì cóng shì qí tā gōng zuò。",
+          "vi": "Khi người trẻ thấy thời gian bỏ ra dài mà thu nhập không ổn định, họ thường chọn lên thành phố làm nghề khác."
+        },
+        {
+          "id": "READ-L6-craft-S05",
+          "zh": "如果传承只依靠个人牺牲，很多技艺就可能随着老艺人离开而中断。",
+          "pinyin": "Rú guǒ chuán chéng zhǐ yī kào gè rén xī shēng， hěn duō jì yì jiù kě néng suí zhe lǎo yì rén lí kāi ér zhōng duàn。",
+          "vi": "Nếu truyền nghề chỉ dựa vào hy sinh cá nhân, nhiều kỹ thuật có thể đứt đoạn khi nghệ nhân lớn tuổi qua đời hoặc nghỉ nghề."
+        },
+        {
+          "id": "READ-L6-craft-S06",
+          "zh": "保护手工艺首先要记录知识，包括工具使用、材料处理、图案含义和制作过程中的判断。",
+          "pinyin": "Bǎo hù shǒu gōng yì shǒu xiān yào jì lù zhī shí， bāo kuò gōng jù shǐ yòng、 cái liào chǔ lǐ、 tú àn hán yì hé zhì zuò guò chéng zhōng de pàn duàn。",
+          "vi": "Bảo tồn nghề thủ công trước hết cần ghi chép kiến thức gồm cách dùng công cụ, xử lý vật liệu, ý nghĩa hoa văn và phán đoán trong quá trình làm."
+        },
+        {
+          "id": "READ-L6-craft-S07",
+          "zh": "视频和数字档案可以保存细节，但它们不能完全代替师徒之间长期的现场学习。",
+          "pinyin": "Shì pín hé shù zì dàng àn kě yǐ bǎo cún xì jié， dàn tā men bù néng wán quán dài tì shī tú zhī jiān cháng qī de xiàn chǎng xué xí。",
+          "vi": "Video và hồ sơ số có thể lưu chi tiết nhưng không thể thay thế hoàn toàn việc học trực tiếp lâu dài giữa thầy và trò."
+        },
+        {
+          "id": "READ-L6-craft-S08",
+          "zh": "手的力度、材料的湿度和制作时机，往往很难只用文字说明。",
+          "pinyin": "Shǒu de lì dù、 cái liào de shī dù hé zhì zuò shí jī， wǎng wǎng hěn nán zhǐ yòng wén zì shuō míng。",
+          "vi": "Lực tay, độ ẩm vật liệu và thời điểm thao tác thường rất khó giải thích chỉ bằng chữ."
+        },
+        {
+          "id": "READ-L6-craft-S09",
+          "zh": "因此，培训项目需要为学习者提供足够时间、基本收入和真正参与生产的机会。",
+          "pinyin": "Yīn cǐ， péi xùn xiàng mù xū yào wèi xué xí zhě tí gōng zú gòu shí jiān、 jī běn shōu rù hé zhēn zhèng cān yù shēng chǎn de jī huì。",
+          "vi": "Vì vậy, chương trình đào tạo cần cung cấp đủ thời gian, thu nhập cơ bản và cơ hội tham gia sản xuất thật."
+        },
+        {
+          "id": "READ-L6-craft-S10",
+          "zh": "与此同时，传统也不是完全不能改变。",
+          "pinyin": "Yǔ cǐ tóng shí， chuán tǒng yě bú shì wán quán bù néng gǎi biàn。",
+          "vi": "Đồng thời, truyền thống không có nghĩa là hoàn toàn không được thay đổi."
+        },
+        {
+          "id": "READ-L6-craft-S11",
+          "zh": "如果产品只复制旧样式，却无法进入现代生活，市场就会越来越小。",
+          "pinyin": "Rú guǒ chǎn pǐn zhǐ fù zhì jiù yàng shì， què wú fǎ jìn rù xiàn dài shēng huó， shì chǎng jiù huì yuè lái yuè xiǎo。",
+          "vi": "Nếu sản phẩm chỉ sao chép mẫu cũ mà không đi vào đời sống hiện đại, thị trường sẽ ngày càng nhỏ."
+        },
+        {
+          "id": "READ-L6-craft-S12",
+          "zh": "一些设计师与工匠合作，把传统技术用于灯具、家具、服装和公共空间，使材料和工艺获得新的用途。",
+          "pinyin": "Yī xiē shè jì shī yǔ gōng jiàng hé zuò， bǎ chuán tǒng jì shù yòng yú dēng jù、 jiā jù、 fú zhuāng hé gōng gòng kōng jiān， shǐ cái liào hé gōng yì huò dé xīn de yòng tú。",
+          "vi": "Một số nhà thiết kế hợp tác với thợ thủ công, dùng kỹ thuật truyền thống vào đèn, nội thất, quần áo và không gian công cộng, tạo công dụng mới cho vật liệu và nghề."
+        },
+        {
+          "id": "READ-L6-craft-S13",
+          "zh": "这种合作可以带来机会，也可能造成不平等。",
+          "pinyin": "Zhè zhǒng hé zuò kě yǐ dài lái jī huì， yě kě néng zào chéng bù píng děng。",
+          "vi": "Sự hợp tác này có thể tạo cơ hội nhưng cũng có thể gây bất bình đẳng."
+        },
+        {
+          "id": "READ-L6-craft-S14",
+          "zh": "如果品牌只使用“传统”作为宣传，却不给工匠合理报酬或署名，文化就会变成被利用的装饰。",
+          "pinyin": "Rú guǒ pǐn pái zhǐ shǐ yòng“chuán tǒng” zuò wéi xuān chuán， què bù gěi gōng jiàng hé lǐ bào chóu huò shǔ míng， wén huà jiù huì biàn chéng bèi lì yòng de zhuāng shì。",
+          "vi": "Nếu thương hiệu chỉ dùng “truyền thống” để quảng bá mà không trả công hợp lý hay ghi tên thợ, văn hóa sẽ thành vật trang trí bị lợi dụng."
+        },
+        {
+          "id": "READ-L6-craft-S15",
+          "zh": "合作前应明确知识来源、利益分配和谁有权决定图案如何使用。",
+          "pinyin": "Hé zuò qián yīng míng què zhī shí lái yuán、 lì yì fēn pèi hé shuí yǒu quán jué dìng tú àn rú hé shǐ yòng。",
+          "vi": "Trước hợp tác cần làm rõ nguồn tri thức, phân chia lợi ích và ai có quyền quyết định cách dùng hoa văn."
+        },
+        {
+          "id": "READ-L6-craft-S16",
+          "zh": "地方政府和学校也可以通过公共采购、课程和展览建立稳定需求，而不是只在节日短暂关注。",
+          "pinyin": "Dì fāng zhèng fǔ hé xué xiào yě kě yǐ tōng guò gōng gòng cǎi gòu、 kè chéng hé zhǎn lǎn jiàn lì wěn dìng xū qiú， ér bú shì zhǐ zài jié rì duǎn zàn guān zhù。",
+          "vi": "Chính quyền địa phương và trường học có thể tạo nhu cầu ổn định qua mua sắm công, khóa học và triển lãm, thay vì chỉ chú ý ngắn hạn vào dịp lễ."
+        },
+        {
+          "id": "READ-L6-craft-S17",
+          "zh": "消费者则可以了解产品背后的时间与技术，接受手工制品之间自然存在的差异。",
+          "pinyin": "Xiāo fèi zhě zé kě yǐ liǎo jiě chǎn pǐn bèi hòu de shí jiān yǔ jì shù， jiē shòu shǒu gōng zhì pǐn zhī jiān zì rán cún zài de chā yì。",
+          "vi": "Người tiêu dùng có thể tìm hiểu thời gian và kỹ thuật phía sau sản phẩm, chấp nhận khác biệt tự nhiên giữa đồ thủ công."
+        },
+        {
+          "id": "READ-L6-craft-S18",
+          "zh": "手工艺的价值不一定在于每件作品都完美一致，而在于材料、劳动和地方经验留下了可以被看见的痕迹。",
+          "pinyin": "Shǒu gōng yì de jià zhí bù yí dìng zài yú měi jiàn zuò pǐn dōu wán měi yí zhì， ér zài yú cái liào、 láo dòng hé dì fāng jīng yàn liú xià le kě yǐ bèi kàn jiàn de hén jì。",
+          "vi": "Giá trị nghề thủ công không nhất thiết ở việc mọi sản phẩm giống hệt hoàn hảo mà ở dấu vết có thể thấy của vật liệu, lao động và kinh nghiệm địa phương."
+        },
+        {
+          "id": "READ-L6-craft-S19",
+          "zh": "真正的传承既不是把过去封闭起来，也不是为了市场随意改变一切。",
+          "pinyin": "Zhēn zhèng de chuán chéng jì bú shì bǎ guò qù fēng bì qǐ lái， yě bú shì wèi le shì chǎng suí yì gǎi biàn yī qiè。",
+          "vi": "Truyền thừa thật sự không phải đóng kín quá khứ cũng không phải tùy ý đổi mọi thứ vì thị trường."
+        },
+        {
+          "id": "READ-L6-craft-S20",
+          "zh": "它需要在尊重核心知识的同时，允许新一代根据生活条件继续创造。",
+          "pinyin": "Tā xū yào zài zūn zhòng hé xīn zhī shí de tóng shí， yǔn xǔ xīn yí dài gēn jù shēng huó tiáo jiàn jì xù chuàng zào。",
+          "vi": "Nó cần tôn trọng tri thức cốt lõi đồng thời cho phép thế hệ mới tiếp tục sáng tạo theo điều kiện sống."
+        },
+        {
+          "id": "READ-L6-craft-S21",
+          "zh": "只有当手艺人能够有尊严地生活，传统文化才不会停留在口号和展柜里。",
+          "pinyin": "Zhǐ yǒu dāng shǒu yì rén néng gòu yǒu zūn yán dì shēng huó， chuán tǒng wén huà cái bú huì tíng liú zài kǒu hào hé zhǎn guì lǐ。",
+          "vi": "Chỉ khi người làm nghề có thể sống có phẩm giá, văn hóa truyền thống mới không dừng ở khẩu hiệu và tủ trưng bày."
+        },
+        {
+          "id": "READ-L6-craft-S22",
+          "zh": "旅游市场能够提高知名度，却也容易要求工匠快速生产统一、便宜并方便运输的商品。",
+          "pinyin": "Lǚ yóu shì chǎng néng gòu tí gāo zhī míng dù， què yě róng yì yāo qiú gōng jiàng kuài sù shēng chǎn tǒng yī、 pián yi bìng fāng biàn yùn shū de shāng pǐn。",
+          "vi": "Thị trường du lịch có thể tăng độ nhận biết nhưng cũng dễ buộc thợ sản xuất nhanh hàng đồng nhất, rẻ và dễ vận chuyển."
+        },
+        {
+          "id": "READ-L6-craft-S23",
+          "zh": "如果这种需求长期主导生产，复杂技法和地方差异可能逐渐被简化。",
+          "pinyin": "Rú guǒ zhè zhǒng xū qiú cháng qī zhǔ dǎo shēng chǎn， fù zá jì fǎ hé dì fāng chā yì kě néng zhú jiàn bèi jiǎn huà。",
+          "vi": "Nếu nhu cầu này chi phối lâu dài, kỹ thuật phức tạp và khác biệt địa phương có thể dần bị đơn giản hóa."
+        },
+        {
+          "id": "READ-L6-craft-S24",
+          "zh": "电商平台扩大了销售范围，但照片、包装、物流和售后也增加了工匠不熟悉的新劳动。",
+          "pinyin": "Diàn shāng píng tái kuò dà le xiāo shòu fàn wéi， dàn zhào piān、 bāo zhuāng、 wù liú hé shòu hòu yě zēng jiā le gōng jiàng bù shú xī de xīn láo dòng。",
+          "vi": "Thương mại điện tử mở rộng thị trường nhưng ảnh, đóng gói, logistics và hậu mãi cũng tạo thêm loại lao động mới mà thợ chưa quen."
+        },
+        {
+          "id": "READ-L6-craft-S25",
+          "zh": "合作机构可以提供这些公共服务，让工匠把更多时间用于制作和教学。",
+          "pinyin": "Hé zuò jī gòu kě yǐ tí gōng zhè xiē gōng gòng fú wù， ràng gōng jiàng bǎ gèng duō shí jiān yòng yú zhì zuò hé jiào xué。",
+          "vi": "Tổ chức hợp tác có thể cung cấp các dịch vụ chung để thợ dành nhiều thời gian hơn cho sản xuất và giảng dạy."
+        },
+        {
+          "id": "READ-L6-craft-S26",
+          "zh": "知识产权制度对传统文化并不总是适用，因为许多图案由社区长期共同创造，无法归属于单一作者。",
+          "pinyin": "Zhī shí chǎn quán zhì dù duì chuán tǒng wén huà bìng bù zǒng shì shì yòng， yīn wèi xǔ duō tú àn yóu shè qū cháng qī gòng tóng chuàng zào， wú fǎ guī shǔ yú dān yī zuò zhě。",
+          "vi": "Chế độ sở hữu trí tuệ không phải lúc nào cũng phù hợp với văn hóa truyền thống vì nhiều hoa văn do cộng đồng cùng tạo qua thời gian dài, không thuộc một tác giả."
+        },
+        {
+          "id": "READ-L6-craft-S27",
+          "zh": "因此，需要探索集体标识、地理来源认证和社区协议等更适合的保护方式。",
+          "pinyin": "Yīn cǐ， xū yào tàn suǒ jí tǐ biāo shí、 dì lǐ lái yuán rèn zhèng hé shè qū xié yì děng gèng shì hé de bǎo hù fāng shì。",
+          "vi": "Vì vậy, cần tìm các cách bảo vệ phù hợp hơn như nhãn hiệu tập thể, chứng nhận nguồn gốc địa lý và thỏa thuận cộng đồng."
+        },
+        {
+          "id": "READ-L6-craft-S28",
+          "zh": "传承成果也不应只用销售额衡量，还要看年轻人是否愿意加入、核心知识是否保存，以及社区是否保持决定权。",
+          "pinyin": "Chuán chéng chéng guǒ yě bù yīng zhǐ yòng xiāo shòu é héng liáng， hái yào kàn nián qīng rén shì fǒu yuàn yì jiā rù、 hé xīn zhī shí shì fǒu bǎo cún， yǐ jí shè qū shì fǒu bǎo chí jué dìng quán。",
+          "vi": "Kết quả truyền nghề không nên chỉ đo bằng doanh số mà còn phải xem người trẻ có muốn tham gia, tri thức cốt lõi có được giữ và cộng đồng có còn quyền quyết định hay không."
+        },
+        {
+          "id": "READ-L6-craft-S29",
+          "zh": "当经济、教育和文化目标能够相互支持时，传统手工艺才可能成为活着的实践，而不是被复制的符号。",
+          "pinyin": "Dāng jīng jì、 jiào yù hé wén huà mù biāo néng gòu xiāng hù zhī chí shí， chuán tǒng shǒu gōng yì cái kě néng chéng wéi huó zhe de shí jiàn， ér bú shì bèi fù zhì de fú hào。",
+          "vi": "Khi mục tiêu kinh tế, giáo dục và văn hóa hỗ trợ lẫn nhau, nghề thủ công mới có thể là thực hành sống chứ không phải biểu tượng bị sao chép."
+        }
+      ]
+    }
+  ]
+}

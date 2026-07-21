@@ -8,8 +8,8 @@
  * Không bao giờ đặt service_role key vào mã nguồn GitHub.
  */
 export const SUPABASE_CONFIG = {
-  enabled: true,
-  url: 'https://ygjmluollrrvoxmnfsbx.supabase.co',
-  anonKey: 'sb_publishable_TSoPLQKHSUeYwlsRtgYJdg_kvqHB77x',
+  enabled: false,
+  url: '',
+  anonKey: '',
   table: 'hsk_slots'
 };

@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "level": "4",
+    "displayLevel": "4",
+    "version": "6.0.0",
+    "targetCharacters": 300,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L4-choice",
+      "level": "4",
+      "title": "Một lựa chọn nghề nghiệp",
+      "topic": "công việc",
+      "targetCharacters": 300,
+      "actualCharacters": 276,
+      "sentences": [
+        {
+          "id": "READ-L4-choice-S01",
+          "zh": "大学毕业前，我一直认为找到一份工资高的工作就是最重要的目标。",
+          "pinyin": "Dà xué bì yè qián， wǒ yì zhí rèn wéi zhǎo dào yī fèn gōng zī gāo de gōng zuò jiù shì zuì zhòng yào de mù biāo。",
+          "vi": "Trước khi tốt nghiệp đại học, tôi luôn cho rằng tìm được việc lương cao là mục tiêu quan trọng nhất."
+        },
+        {
+          "id": "READ-L4-choice-S02",
+          "zh": "因此，当两家公司同时给我机会时，我首先比较的是收入和办公室的位置。",
+          "pinyin": "Yīn cǐ， dāng liǎng jiā gōng sī tóng shí gěi wǒ jī huì shí， wǒ shǒu xiān bǐ jiào de shì shōu rù hé bàn gōng shì de wèi zhì。",
+          "vi": "Vì vậy, khi hai công ty cùng cho cơ hội, điều đầu tiên tôi so sánh là thu nhập và vị trí văn phòng."
+        },
+        {
+          "id": "READ-L4-choice-S03",
+          "zh": "第一家公司规模很大，工资也更高，可是工作内容比较单一，而且每天需要很长时间坐车。",
+          "pinyin": "Dì yī jiā gōng sī guī mó hěn dà， gōng zī yě gèng gāo， kě shì gōng zuò nèi róng bǐ jiào dān yī， ér qiě měi tiān xū yào hěn zhǎng shí jiān zuò chē。",
+          "vi": "Công ty thứ nhất quy mô lớn, lương cao hơn nhưng nội dung công việc khá đơn điệu và mỗi ngày phải đi xe rất lâu."
+        },
+        {
+          "id": "READ-L4-choice-S04",
+          "zh": "第二家公司虽然不大，却愿意让我参加不同的项目，负责人也认真地了解了我的兴趣和长期计划。",
+          "pinyin": "Dì èr jiā gōng sī suī rán bù dà， què yuàn yì ràng wǒ cān jiā bù tóng de xiàng mù， fù zé rén yě rèn zhēn dì liǎo jiě le wǒ de xìng qù hé cháng qī jì huà。",
+          "vi": "Công ty thứ hai tuy không lớn nhưng cho tôi tham gia nhiều dự án; người phụ trách cũng tìm hiểu nghiêm túc sở thích và kế hoạch dài hạn của tôi."
+        },
+        {
+          "id": "READ-L4-choice-S05",
+          "zh": "我和家人、老师谈了很多次，最后选择了第二家公司。",
+          "pinyin": "Wǒ hé jiā rén、 lǎo shī tán le hěn duō cì， zuì hòu xuǎn zé le dì èr jiā gōng sī。",
+          "vi": "Tôi đã nói chuyện nhiều lần với gia đình và giáo viên, cuối cùng chọn công ty thứ hai."
+        },
+        {
+          "id": "READ-L4-choice-S06",
+          "zh": "刚开始，有些朋友觉得我放弃高工资很可惜。",
+          "pinyin": "Gāng kāi shǐ， yǒu xiē péng yǒu jué de wǒ fàng qì gāo gōng zī hěn kě xī。",
+          "vi": "Ban đầu, một số bạn thấy tiếc vì tôi bỏ lương cao."
+        },
+        {
+          "id": "READ-L4-choice-S07",
+          "zh": "但是半年以后，我已经学会独立完成项目，也越来越清楚自己想发展的方向。",
+          "pinyin": "Dàn shì bàn nián yǐ hòu， wǒ yǐ jīng xué huì dú lì wán chéng xiàng mù， yě yuè lái yuè qīng chǔ zì jǐ xiǎng fā zhǎn de fāng xiàng。",
+          "vi": "Nhưng sau nửa năm, tôi đã học được cách tự hoàn thành dự án và càng rõ hướng mình muốn phát triển."
+        },
+        {
+          "id": "READ-L4-choice-S08",
+          "zh": "这段经历让我明白，选择工作不能只看眼前的条件，还要考虑学习机会、生活质量和个人价值。",
+          "pinyin": "Zhè duàn jīng lì ràng wǒ míng bái， xuǎn zé gōng zuò bù néng zhǐ kàn yǎn qián de tiáo jiàn， hái yào kǎo lǜ xué xí jī huì、 shēng huó zhì liàng hé gè rén jià zhí。",
+          "vi": "Trải nghiệm này giúp tôi hiểu chọn việc không thể chỉ nhìn điều kiện trước mắt mà còn phải cân nhắc cơ hội học tập, chất lượng sống và giá trị cá nhân."
+        },
+        {
+          "id": "READ-L4-choice-S09",
+          "zh": "这种思考方式不一定能保证每次都做对，却能帮助我们更清楚地承担自己的选择。",
+          "pinyin": "Zhè zhǒng sī kǎo fāng shì bù yí dìng néng bǎo zhèng měi cì dōu zuò duì， què néng bāng zhù wǒ men gèng qīng chǔ dì chéng dān zì jǐ de xuǎn zé。",
+          "vi": "Cách suy nghĩ này không bảo đảm lần nào cũng đúng nhưng giúp ta chịu trách nhiệm rõ ràng hơn với lựa chọn của mình."
+        }
+      ]
+    },
+    {
+      "id": "READ-L4-citybike",
+      "level": "4",
+      "title": "Xe đạp công cộng trong thành phố",
+      "topic": "giao thông",
+      "targetCharacters": 300,
+      "actualCharacters": 279,
+      "sentences": [
+        {
+          "id": "READ-L4-citybike-S01",
+          "zh": "为了减少交通压力和空气污染，很多城市开始发展公共自行车。",
+          "pinyin": "Wèi le jiǎn shǎo jiāo tōng yā lì hé kōng qì wū rǎn， hěn duō chéng shì kāi shǐ fā zhǎn gōng gòng zì xíng chē。",
+          "vi": "Để giảm áp lực giao thông và ô nhiễm không khí, nhiều thành phố bắt đầu phát triển xe đạp công cộng."
+        },
+        {
+          "id": "READ-L4-citybike-S02",
+          "zh": "使用者只要用手机找到附近的车辆，扫描二维码以后就可以骑走。",
+          "pinyin": "Shǐ yòng zhě zhǐ yào yòng shǒu jī zhǎo dào fù jìn de chē liàng， sǎo miáo èr wéi mǎ yǐ hòu jiù kě yǐ qí zǒu。",
+          "vi": "Người dùng chỉ cần dùng điện thoại tìm xe gần đó, quét mã là có thể đi."
+        },
+        {
+          "id": "READ-L4-citybike-S03",
+          "zh": "这种方式价格不高，停车也方便，特别适合距离不太远的出行。",
+          "pinyin": "Zhè zhǒng fāng shì jià gé bù gāo， tíng chē yě fāng biàn， tè bié shì hé jù lí bù tài yuǎn de chū xíng。",
+          "vi": "Cách này giá không cao, đỗ xe tiện, đặc biệt phù hợp quãng đường không xa."
+        },
+        {
+          "id": "READ-L4-citybike-S04",
+          "zh": "不过，公共自行车带来方便的同时，也出现了一些问题。",
+          "pinyin": "Bù guò， gōng gòng zì xíng chē dài lái fāng biàn de tóng shí， yě chū xiàn le yī xiē wèn tí。",
+          "vi": "Tuy nhiên, cùng với tiện lợi, xe đạp công cộng cũng gây ra một số vấn đề."
+        },
+        {
+          "id": "READ-L4-citybike-S05",
+          "zh": "有人把车停在路中间，影响行人；有的车辆没有及时修理，使用起来不够安全。",
+          "pinyin": "Yǒu rén bǎ chē tíng zài lù zhōng jiān， yǐng xiǎng xíng rén； yǒu de chē liàng méi yǒu jí shí xiū lǐ， shǐ yòng qǐ lái bù gòu ān quán。",
+          "vi": "Có người đỗ xe giữa đường ảnh hưởng người đi bộ; có xe không được sửa kịp thời nên không an toàn."
+        },
+        {
+          "id": "READ-L4-citybike-S06",
+          "zh": "为了解决这些问题，管理部门设置了更多停车点，并要求公司定期检查车辆。",
+          "pinyin": "Wèi le jiě jué zhè xiē wèn tí， guǎn lǐ bù mén shè zhì le gèng duō tíng chē diǎn， bìng yāo qiú gōng sī dìng qī jiǎn chá chē liàng。",
+          "vi": "Để giải quyết, cơ quan quản lý đặt thêm điểm đỗ và yêu cầu công ty kiểm tra xe định kỳ."
+        },
+        {
+          "id": "READ-L4-citybike-S07",
+          "zh": "市民也应该遵守规则，把车放在正确的位置，发现问题时及时报告。",
+          "pinyin": "Shì mín yě yīng gāi zūn shǒu guī zé， bǎ chē fàng zài zhèng què de wèi zhì， fā xiàn wèn tí shí jí shí bào gào。",
+          "vi": "Người dân cũng nên tuân thủ quy tắc, đặt xe đúng chỗ và báo kịp thời khi thấy vấn đề."
+        },
+        {
+          "id": "READ-L4-citybike-S08",
+          "zh": "只有管理者、企业和使用者共同负责，这种绿色交通方式才能真正长期发展。",
+          "pinyin": "Zhǐ yǒu guǎn lǐ zhě、 qǐ yè hé shǐ yòng zhě gòng tóng fù zé， zhè zhǒng lǜ sè jiāo tōng fāng shì cái néng zhēn zhèng cháng qī fā zhǎn。",
+          "vi": "Chỉ khi cơ quan quản lý, doanh nghiệp và người dùng cùng chịu trách nhiệm, phương thức giao thông xanh này mới phát triển lâu dài."
+        },
+        {
+          "id": "READ-L4-citybike-S09",
+          "zh": "如果只看到事情的一面，就很容易得出过于简单的结论。",
+          "pinyin": "Rú guǒ zhǐ kàn dào shì qíng de yí miàn， jiù hěn róng yì dé chū guò yú jiǎn dān de jié lùn。",
+          "vi": "Nếu chỉ nhìn một mặt của sự việc, rất dễ đưa ra kết luận quá đơn giản."
+        },
+        {
+          "id": "READ-L4-citybike-S10",
+          "zh": "因此，在作出决定以前，我们应该了解事实、比较选择，也要考虑决定可能带来的长期影响。",
+          "pinyin": "Yīn cǐ， zài zuò chū jué dìng yǐ qián， wǒ men yīng gāi liǎo jiě shì shí、 bǐ jiào xuǎn zé， yě yào kǎo lǜ jué dìng kě néng dài lái de cháng qī yǐng xiǎng。",
+          "vi": "Vì vậy, trước khi quyết định, chúng ta nên hiểu sự thật, so sánh lựa chọn và cân nhắc ảnh hưởng lâu dài."
+        }
+      ]
+    },
+    {
+      "id": "READ-L4-mistake",
+      "level": "4",
+      "title": "Giá trị của một sai lầm",
+      "topic": "học tập",
+      "targetCharacters": 300,
+      "actualCharacters": 275,
+      "sentences": [
+        {
+          "id": "READ-L4-mistake-S01",
+          "zh": "读高中的时候，我参加过一次重要的演讲比赛。",
+          "pinyin": "Dú gāo zhōng de shí hòu， wǒ cān jiā guò yī cì zhòng yào de yǎn jiǎng bǐ sài。",
+          "vi": "Khi học trung học, tôi từng tham gia một cuộc thi diễn thuyết quan trọng."
+        },
+        {
+          "id": "READ-L4-mistake-S02",
+          "zh": "为了得到好成绩，我准备了很久，甚至把每一句话都背了下来。",
+          "pinyin": "Wèi le dé dào hǎo chéng jì， wǒ zhǔn bèi le hěn jiǔ， shèn zhì bǎ měi yī jù huà dōu bèi le xià lái。",
+          "vi": "Để đạt kết quả tốt, tôi chuẩn bị rất lâu, thậm chí học thuộc từng câu."
+        },
+        {
+          "id": "READ-L4-mistake-S03",
+          "zh": "比赛开始以后，我因为太紧张，突然忘记了下一段内容。",
+          "pinyin": "Bǐ sài kāi shǐ yǐ hòu， wǒ yīn wèi tài jǐn zhāng， tū rán wàng jì le xià yī duàn nèi róng。",
+          "vi": "Sau khi cuộc thi bắt đầu, vì quá căng thẳng tôi đột nhiên quên đoạn tiếp theo."
+        },
+        {
+          "id": "READ-L4-mistake-S04",
+          "zh": "我站在台上沉默了十几秒，最后只好提前结束。",
+          "pinyin": "Wǒ zhàn zài tái shàng chén mò le shí jǐ miǎo， zuì hòu zhǐ hǎo tí qián jié shù。",
+          "vi": "Tôi đứng im trên sân khấu hơn mười giây và đành kết thúc sớm."
+        },
+        {
+          "id": "READ-L4-mistake-S05",
+          "zh": "当时我觉得非常丢脸，回家以后也不想和任何人说话。",
+          "pinyin": "Dāng shí wǒ jué de fēi cháng diū liǎn， huí jiā yǐ hòu yě bù xiǎng hé rèn hé rén shuō huà。",
+          "vi": "Lúc đó tôi rất xấu hổ, về nhà không muốn nói với ai."
+        },
+        {
+          "id": "READ-L4-mistake-S06",
+          "zh": "老师没有批评我，而是让我重新看比赛录像，找出真正的问题。",
+          "pinyin": "Lǎo shī méi yǒu pī píng wǒ， ér shì ràng wǒ chóng xīn kàn bǐ sài lù xiàng， zhǎo chū zhēn zhèng de wèn tí。",
+          "vi": "Giáo viên không phê bình mà bảo tôi xem lại video để tìm vấn đề thật sự."
+        },
+        {
+          "id": "READ-L4-mistake-S07",
+          "zh": "我发现自己只注意记住文字，却没有真正理解内容，也没有练习在意外情况下继续表达。",
+          "pinyin": "Wǒ fā xiàn zì jǐ zhǐ zhù yì jì zhù wén zì， què méi yǒu zhēn zhèng lǐ jiě nèi róng， yě méi yǒu liàn xí zài yì wài qíng kuàng xià jì xù biǎo dá。",
+          "vi": "Tôi nhận ra mình chỉ chú ý nhớ chữ mà chưa hiểu nội dung, cũng chưa luyện tiếp tục diễn đạt khi có tình huống bất ngờ."
+        },
+        {
+          "id": "READ-L4-mistake-S08",
+          "zh": "后来我改变了准备方法，先整理观点，再用不同的话练习说明。",
+          "pinyin": "Hòu lái wǒ gǎi biàn le zhǔn bèi fāng fǎ， xiān zhěng lǐ guān diǎn， zài yòng bù tóng de huà liàn xí shuō míng。",
+          "vi": "Sau đó tôi đổi cách chuẩn bị: sắp xếp quan điểm rồi luyện giải thích bằng cách nói khác nhau."
+        },
+        {
+          "id": "READ-L4-mistake-S09",
+          "zh": "第二年我没有得到第一名，却完整、自信地讲完了自己的故事。",
+          "pinyin": "Dì èr nián wǒ méi yǒu dé dào dì yì míng， què wán zhěng、 zì xìn dì jiǎng wán le zì jǐ de gù shì。",
+          "vi": "Năm sau tôi không đạt giải nhất nhưng đã kể trọn câu chuyện một cách tự tin."
+        },
+        {
+          "id": "READ-L4-mistake-S10",
+          "zh": "那次失败让我懂得，错误并不可怕，重要的是能不能从中找到下一步的方向。",
+          "pinyin": "Nà cì shī bài ràng wǒ dǒng de， cuò wù bìng bù kě pà， zhòng yào de shì néng bù néng cóng zhōng zhǎo dào xià yī bù de fāng xiàng。",
+          "vi": "Thất bại đó giúp tôi hiểu sai lầm không đáng sợ; quan trọng là có tìm được hướng đi tiếp theo hay không."
+        },
+        {
+          "id": "READ-L4-mistake-S11",
+          "zh": "后来，我又从网上查找了一些相关资料，也听取了不同人的意见。",
+          "pinyin": "Hòu lái， wǒ yòu cóng wǎng shàng chá zhǎo le yī xiē xiāng guān zī liào， yě tīng qǔ le bù tóng rén de yì jiàn。",
+          "vi": "Sau đó, tôi tìm thêm tài liệu liên quan trên mạng và lắng nghe ý kiến của nhiều người."
+        }
+      ]
+    },
+    {
+      "id": "READ-L4-neighbors",
+      "level": "4",
+      "title": "Những người hàng xóm",
+      "topic": "cộng đồng",
+      "targetCharacters": 300,
+      "actualCharacters": 286,
+      "sentences": [
+        {
+          "id": "READ-L4-neighbors-S01",
+          "zh": "我搬到现在的小区时，对周围的人和环境都不熟悉。",
+          "pinyin": "Wǒ bān dào xiàn zài de xiǎo qū shí， duì zhōu wéi de rén hé huán jìng dōu bù shú xī。",
+          "vi": "Khi chuyển đến khu nhà hiện tại, tôi không quen người và môi trường xung quanh."
+        },
+        {
+          "id": "READ-L4-neighbors-S02",
+          "zh": "每天上下班，我只是和邻居点点头，很少停下来交流。",
+          "pinyin": "Měi tiān shàng xià bān， wǒ zhǐ shì hé lín jū diǎn diǎn tóu， hěn shǎo tíng xià lái jiāo liú。",
+          "vi": "Mỗi ngày đi làm, tôi chỉ gật đầu với hàng xóm, hiếm khi dừng lại trò chuyện."
+        },
+        {
+          "id": "READ-L4-neighbors-S03",
+          "zh": "有一天晚上，楼里的电梯突然坏了，一位住在六楼的老人提着很重的东西。",
+          "pinyin": "Yǒu yī tiān wǎn shàng， lóu lǐ de diàn tī tū rán huài le， yī wèi zhù zài liù lóu de lǎo rén tí zhe hěn zhòng de dōng xī。",
+          "vi": "Một tối, thang máy trong tòa nhà hỏng, một cụ ở tầng sáu đang xách đồ nặng."
+        },
+        {
+          "id": "READ-L4-neighbors-S04",
+          "zh": "我帮她把东西送上楼，她请我进屋喝水，我们才第一次认真聊天。",
+          "pinyin": "Wǒ bāng tā bǎ dōng xī sòng shàng lóu， tā qǐng wǒ jìn wū hē shuǐ， wǒ men cái dì yī cì rèn zhēn liáo tiān。",
+          "vi": "Tôi giúp mang đồ lên, bà mời vào uống nước và lần đầu chúng tôi trò chuyện nghiêm túc."
+        },
+        {
+          "id": "READ-L4-neighbors-S05",
+          "zh": "后来我知道，她的孩子住在别的城市，平时只有她一个人在家。",
+          "pinyin": "Hòu lái wǒ zhī dào， tā de hái zi zhù zài bié de chéng shì， píng shí zhǐ yǒu tā yí gè rén zài jiā。",
+          "vi": "Sau đó tôi biết con bà sống ở thành phố khác, thường bà ở nhà một mình."
+        },
+        {
+          "id": "READ-L4-neighbors-S06",
+          "zh": "从那以后，我去超市时会问她需不需要买什么，她也常常把自己做的点心送给我。",
+          "pinyin": "Cóng nà yǐ hòu， wǒ qù chāo shì shí huì wèn tā xū bù xū yào mǎi shén me， tā yě cháng cháng bǎ zì jǐ zuò de diǎn xīn sòng gěi wǒ。",
+          "vi": "Từ đó, khi đi siêu thị tôi hỏi bà cần mua gì, bà cũng thường tặng tôi bánh tự làm."
+        },
+        {
+          "id": "READ-L4-neighbors-S07",
+          "zh": "慢慢地，更多邻居开始互相认识。",
+          "pinyin": "Màn màn dì， gèng duō lín jū kāi shǐ hù xiāng rèn shí。",
+          "vi": "Dần dần, nhiều hàng xóm bắt đầu biết nhau."
+        },
+        {
+          "id": "READ-L4-neighbors-S08",
+          "zh": "有人建立了信息群，分享维修通知；有人周末带孩子一起活动。",
+          "pinyin": "Yǒu rén jiàn lì le xìn xī qún， fēn xiǎng wéi xiū tōng zhī； yǒu rén zhōu mò dài hái zi yì qǐ huó dòng。",
+          "vi": "Có người lập nhóm thông tin chia sẻ thông báo sửa chữa; có người cuối tuần cho trẻ hoạt động cùng nhau."
+        },
+        {
+          "id": "READ-L4-neighbors-S09",
+          "zh": "原来，一个社区是否温暖，不只取决于房子和设备，也取决于人们愿不愿意主动关心彼此。",
+          "pinyin": "Yuán lái， yí gè shè qū shì fǒu wēn nuǎn， bù zhǐ qǔ jué yú fáng zi hé shè bèi， yě qǔ jué yú rén men yuàn bù yuàn yì zhǔ dòng guān xīn bǐ cǐ。",
+          "vi": "Hóa ra một cộng đồng có ấm áp hay không không chỉ phụ thuộc nhà cửa và thiết bị mà còn ở việc mọi người có chủ động quan tâm nhau không."
+        },
+        {
+          "id": "READ-L4-neighbors-S10",
+          "zh": "这些信息让我发现，很多问题没有唯一的答案，而是需要根据具体情况进行判断。",
+          "pinyin": "Zhè xiē xìn xī ràng wǒ fā xiàn， hěn duō wèn tí méi yǒu wéi yī de dá àn， ér shì xū yào gēn jù jù tǐ qíng kuàng jìn xíng pàn duàn。",
+          "vi": "Những thông tin này giúp tôi nhận ra nhiều vấn đề không có đáp án duy nhất mà cần phán đoán theo tình huống cụ thể."
+        },
+        {
+          "id": "READ-L4-neighbors-S11",
+          "zh": "如果只看到事情的一面，就很容易得出过于简单的结论。",
+          "pinyin": "Rú guǒ zhǐ kàn dào shì qíng de yí miàn， jiù hěn róng yì dé chū guò yú jiǎn dān de jié lùn。",
+          "vi": "Nếu chỉ nhìn một mặt của sự việc, rất dễ đưa ra kết luận quá đơn giản."
+        }
+      ]
+    },
+    {
+      "id": "READ-L4-museum",
+      "level": "4",
+      "title": "Một chuyến tham quan bảo tàng",
+      "topic": "văn hóa",
+      "targetCharacters": 300,
+      "actualCharacters": 297,
+      "sentences": [
+        {
+          "id": "READ-L4-museum-S01",
+          "zh": "上个月，老师带我们参观了城市历史博物馆。",
+          "pinyin": "Shàng gè yuè， lǎo shī dài wǒ men cān guān le chéng shì lì shǐ bó wù guǎn。",
+          "vi": "Tháng trước, giáo viên dẫn chúng tôi tham quan bảo tàng lịch sử thành phố."
+        },
+        {
+          "id": "READ-L4-museum-S02",
+          "zh": "出发以前，我以为博物馆只是把旧东西放在玻璃柜里，可能会很无聊。",
+          "pinyin": "Chū fā yǐ qián， wǒ yǐ wéi bó wù guǎn zhǐ shì bǎ jiù dōng xī fàng zài bō lí guì lǐ， kě néng huì hěn wú liáo。",
+          "vi": "Trước khi đi, tôi nghĩ bảo tàng chỉ đặt đồ cũ trong tủ kính, có lẽ rất chán."
+        },
+        {
+          "id": "READ-L4-museum-S03",
+          "zh": "到了以后，讲解员先给每个人一张旧地图，让我们寻找现在学校所在的位置。",
+          "pinyin": "Dào le yǐ hòu， jiǎng jiě yuán xiān gěi měi gè rén yī zhāng jiù dì tú， ràng wǒ men xún zhǎo xiàn zài xué xiào suǒ zài de wèi zhì。",
+          "vi": "Khi đến, thuyết minh viên phát mỗi người một bản đồ cũ và cho tìm vị trí trường hiện nay."
+        },
+        {
+          "id": "READ-L4-museum-S04",
+          "zh": "我们发现，一百年前那里还是一片农田，附近只有一条很小的路。",
+          "pinyin": "Wǒ men fā xiàn， yì bǎi nián qián nà lǐ hái shì yī piàn nóng tián， fù jìn zhǐ yǒu yī tiáo hěn xiǎo de lù。",
+          "vi": "Chúng tôi phát hiện một trăm năm trước nơi đó vẫn là ruộng, gần đó chỉ có con đường nhỏ."
+        },
+        {
+          "id": "READ-L4-museum-S05",
+          "zh": "展厅里还有过去的车票、商店广告和普通家庭使用的生活用品。",
+          "pinyin": "Zhǎn tīng lǐ hái yǒu guò qù de chē piào、 shāng diàn guǎng gào hé pǔ tōng jiā tíng shǐ yòng de shēng huó yòng pǐn。",
+          "vi": "Phòng trưng bày còn có vé xe, quảng cáo cửa hàng và đồ sinh hoạt của gia đình xưa."
+        },
+        {
+          "id": "READ-L4-museum-S06",
+          "zh": "这些看起来平常的东西，让我第一次感觉历史并不是遥远的故事，而是很多普通人的日常生活。",
+          "pinyin": "Zhè xiē kàn qǐ lái píng cháng de dōng xī， ràng wǒ dì yī cì gǎn jué lì shǐ bìng bú shì yáo yuǎn de gù shì， ér shì hěn duō pǔ tōng rén de rì cháng shēng huó。",
+          "vi": "Những vật bình thường này khiến tôi lần đầu cảm thấy lịch sử không phải chuyện xa xôi mà là đời sống thường ngày của nhiều người bình thường."
+        },
+        {
+          "id": "READ-L4-museum-S07",
+          "zh": "参观结束后，我们分组采访了家里的老人，记录他们年轻时城市的样子。",
+          "pinyin": "Cān guān jié shù hòu， wǒ men fēn zǔ cǎi fǎng le jiā lǐ de lǎo rén， jì lù tā men nián qīng shí chéng shì de yàng zi。",
+          "vi": "Sau tham quan, chúng tôi chia nhóm phỏng vấn người lớn tuổi trong nhà và ghi lại diện mạo thành phố khi họ trẻ."
+        },
+        {
+          "id": "READ-L4-museum-S08",
+          "zh": "通过这次活动，我不但了解了城市的变化，也更愿意听长辈讲过去的经历。",
+          "pinyin": "Tōng guò zhè cì huó dòng， wǒ bù dàn liǎo jiě le chéng shì de biàn huà， yě gèng yuàn yì tīng zhǎng bèi jiǎng guò qù de jīng lì。",
+          "vi": "Qua hoạt động này, tôi không chỉ hiểu sự thay đổi của thành phố mà còn muốn nghe người lớn kể chuyện xưa hơn."
+        },
+        {
+          "id": "READ-L4-museum-S09",
+          "zh": "因此，在作出决定以前，我们应该了解事实、比较选择，也要考虑决定可能带来的长期影响。",
+          "pinyin": "Yīn cǐ， zài zuò chū jué dìng yǐ qián， wǒ men yīng gāi liǎo jiě shì shí、 bǐ jiào xuǎn zé， yě yào kǎo lǜ jué dìng kě néng dài lái de cháng qī yǐng xiǎng。",
+          "vi": "Vì vậy, trước khi quyết định, chúng ta nên hiểu sự thật, so sánh lựa chọn và cân nhắc ảnh hưởng lâu dài."
+        },
+        {
+          "id": "READ-L4-museum-S10",
+          "zh": "这种思考方式不一定能保证每次都做对，却能帮助我们更清楚地承担自己的选择。",
+          "pinyin": "Zhè zhǒng sī kǎo fāng shì bù yí dìng néng bǎo zhèng měi cì dōu zuò duì， què néng bāng zhù wǒ men gèng qīng chǔ dì chéng dān zì jǐ de xuǎn zé。",
+          "vi": "Cách suy nghĩ này không bảo đảm lần nào cũng đúng nhưng giúp ta chịu trách nhiệm rõ ràng hơn với lựa chọn của mình."
+        }
+      ]
+    }
+  ]
+}

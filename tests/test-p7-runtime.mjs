@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const root = new URL('../', import.meta.url);
+globalThis.fetch = async url => {
+  const relative = String(url).replace(/^\.\//,'');
+  const text = fs.readFileSync(new URL(relative, root), 'utf8');
+  return new Response(text, { status: 200, headers: { 'content-type': 'application/json' } });
+};
+const reading = await import(`../js/modules/reading.js?p7=${Date.now()}`);
+const payload = await reading.loadStandardizedExamples();
+const raw = JSON.parse(fs.readFileSync(new URL('../data/levels/hsk1.json', import.meta.url), 'utf8')).words.slice(0, 20);
+const attached = reading.attachStandardizedExamples(raw, payload);
+assert.equal(attached.length, 20);
+assert.ok(attached.every(word => word.examples?.length >= 3 && word.example));
+const matcher = reading.buildVocabularyMatcher(attached);
+const tokens = reading.tokenizeChinese(`我爱我的家人。`, matcher);
+assert.ok(tokens.some(token => token.type === 'word'));
+const pack = await reading.loadReadingLevel('1');
+const stats = reading.passageVocabularyStats(pack.passages[0], matcher);
+assert.ok(stats.uniqueWords >= 1);
+const adminWord = reading.attachStandardizedExamples([{ ...raw[0], contentSource:'admin', example:{ zh:'这是管理员修改的句子。', pinyin:'Zhè shì guǎnlǐyuán xiūgǎi de jùzi.', vi:'Đây là câu do quản trị viên sửa.', exerciseEligible:true } }], payload)[0];
+assert.equal(adminWord.examples[0].status, 'admin_da_sua');
+assert.equal(adminWord.example.zh, '这是管理员修改的句子。');
+console.log('✓ P7 runtime: gắn câu ví dụ, tokenize highlight, tải bài đọc và ưu tiên câu admin.');

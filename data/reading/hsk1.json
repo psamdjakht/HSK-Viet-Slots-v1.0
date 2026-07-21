@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "level": "1",
+    "displayLevel": "1",
+    "version": "6.0.0",
+    "targetCharacters": 50,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L1-morning",
+      "level": "1",
+      "title": "Buổi sáng của tôi",
+      "topic": "sinh hoạt",
+      "targetCharacters": 50,
+      "actualCharacters": 50,
+      "sentences": [
+        {
+          "id": "READ-L1-morning-S01",
+          "zh": "我每天六点起床。",
+          "pinyin": "Wǒ měi tiān liù diǎn qǐ chuáng。",
+          "vi": "Mỗi ngày tôi thức dậy lúc sáu giờ."
+        },
+        {
+          "id": "READ-L1-morning-S02",
+          "zh": "我先喝水，再吃早饭。",
+          "pinyin": "Wǒ xiān hē shuǐ， zài chī zǎo fàn。",
+          "vi": "Tôi uống nước trước, sau đó ăn sáng."
+        },
+        {
+          "id": "READ-L1-morning-S03",
+          "zh": "七点半，我坐车去学校。",
+          "pinyin": "Qī diǎn bàn， wǒ zuò chē qù xué xiào。",
+          "vi": "Bảy giờ rưỡi, tôi đi xe đến trường."
+        },
+        {
+          "id": "READ-L1-morning-S04",
+          "zh": "老师和同学都很好。",
+          "pinyin": "Lǎo shī hé tóng xué dōu hěn hǎo。",
+          "vi": "Thầy cô và các bạn đều rất tốt."
+        },
+        {
+          "id": "READ-L1-morning-S05",
+          "zh": "我喜欢每天学习汉语。",
+          "pinyin": "Wǒ xǐ huān měi tiān xué xí hàn yǔ。",
+          "vi": "Tôi thích học tiếng Trung mỗi ngày."
+        },
+        {
+          "id": "READ-L1-morning-S06",
+          "zh": "明天我还想再去一次。",
+          "pinyin": "Míng tiān wǒ hái xiǎng zài qù yī cì。",
+          "vi": "Ngày mai tôi vẫn muốn đi thêm một lần."
+        }
+      ]
+    },
+    {
+      "id": "READ-L1-family",
+      "level": "1",
+      "title": "Gia đình nhỏ",
+      "topic": "gia đình",
+      "targetCharacters": 50,
+      "actualCharacters": 47,
+      "sentences": [
+        {
+          "id": "READ-L1-family-S01",
+          "zh": "我家有四个人。",
+          "pinyin": "Wǒ jiā yǒu sì gè rén。",
+          "vi": "Gia đình tôi có bốn người."
+        },
+        {
+          "id": "READ-L1-family-S02",
+          "zh": "爸爸在公司工作，妈妈是老师。",
+          "pinyin": "Bà bà zài gōng sī gōng zuò， mā mā shì lǎo shī。",
+          "vi": "Bố làm việc ở công ty, mẹ là giáo viên."
+        },
+        {
+          "id": "READ-L1-family-S03",
+          "zh": "我有一个妹妹，她五岁。",
+          "pinyin": "Wǒ yǒu yí gè mèi mèi， tā wǔ suì。",
+          "vi": "Tôi có một em gái, em ấy năm tuổi."
+        },
+        {
+          "id": "READ-L1-family-S04",
+          "zh": "晚上我们一起吃饭，也一起说话。",
+          "pinyin": "Wǎn shàng wǒ men yì qǐ chī fàn， yě yì qǐ shuō huà。",
+          "vi": "Buổi tối chúng tôi cùng ăn cơm và trò chuyện."
+        },
+        {
+          "id": "READ-L1-family-S05",
+          "zh": "我很爱我的家人。",
+          "pinyin": "Wǒ hěn ài wǒ de jiā rén。",
+          "vi": "Tôi rất yêu gia đình mình."
+        }
+      ]
+    },
+    {
+      "id": "READ-L1-weekend",
+      "level": "1",
+      "title": "Cuối tuần vui vẻ",
+      "topic": "giải trí",
+      "targetCharacters": 50,
+      "actualCharacters": 48,
+      "sentences": [
+        {
+          "id": "READ-L1-weekend-S01",
+          "zh": "星期六天气很好。",
+          "pinyin": "Xīng qī liù tiān qì hěn hǎo。",
+          "vi": "Thứ Bảy thời tiết rất đẹp."
+        },
+        {
+          "id": "READ-L1-weekend-S02",
+          "zh": "我和朋友去公园。",
+          "pinyin": "Wǒ hé péng yǒu qù gōng yuán。",
+          "vi": "Tôi và bạn đi công viên."
+        },
+        {
+          "id": "READ-L1-weekend-S03",
+          "zh": "我们走路、看花，还喝茶。",
+          "pinyin": "Wǒ men zǒu lù、 kàn huā， hái hē chá。",
+          "vi": "Chúng tôi đi bộ, ngắm hoa và uống trà."
+        },
+        {
+          "id": "READ-L1-weekend-S04",
+          "zh": "下午三点，我们回家。",
+          "pinyin": "Xià wǔ sān diǎn， wǒ men huí jiā。",
+          "vi": "Ba giờ chiều, chúng tôi về nhà."
+        },
+        {
+          "id": "READ-L1-weekend-S05",
+          "zh": "今天大家都很高兴。",
+          "pinyin": "Jīn tiān dà jiā dōu hěn gāo xìng。",
+          "vi": "Hôm nay mọi người đều rất vui."
+        },
+        {
+          "id": "READ-L1-weekend-S06",
+          "zh": "我觉得今天过得很快。",
+          "pinyin": "Wǒ jué de jīn tiān guò dé hěn kuài。",
+          "vi": "Tôi thấy hôm nay trôi qua rất nhanh."
+        }
+      ]
+    },
+    {
+      "id": "READ-L1-shopping",
+      "level": "1",
+      "title": "Đi mua đồ",
+      "topic": "mua sắm",
+      "targetCharacters": 50,
+      "actualCharacters": 49,
+      "sentences": [
+        {
+          "id": "READ-L1-shopping-S01",
+          "zh": "妈妈要买水果。",
+          "pinyin": "Mā mā yào mǎi shuǐ guǒ。",
+          "vi": "Mẹ muốn mua trái cây."
+        },
+        {
+          "id": "READ-L1-shopping-S02",
+          "zh": "我和妈妈一起去商店。",
+          "pinyin": "Wǒ hé mā mā yì qǐ qù shāng diàn。",
+          "vi": "Tôi cùng mẹ đi cửa hàng."
+        },
+        {
+          "id": "READ-L1-shopping-S03",
+          "zh": "苹果五块钱一斤，香蕉也不贵。",
+          "pinyin": "Píng guǒ wǔ kuài qián yī jīn， xiāng jiāo yě bù guì。",
+          "vi": "Táo năm tệ một cân, chuối cũng không đắt."
+        },
+        {
+          "id": "READ-L1-shopping-S04",
+          "zh": "我们买了苹果、香蕉和牛奶。",
+          "pinyin": "Wǒ men mǎi le píng guǒ、 xiāng jiāo hé niú nǎi。",
+          "vi": "Chúng tôi mua táo, chuối và sữa."
+        },
+        {
+          "id": "READ-L1-shopping-S05",
+          "zh": "回家以后，我帮妈妈拿东西。",
+          "pinyin": "Huí jiā yǐ hòu， wǒ bāng mā mā ná dōng xī。",
+          "vi": "Sau khi về nhà, tôi giúp mẹ cầm đồ."
+        }
+      ]
+    },
+    {
+      "id": "READ-L1-newfriend",
+      "level": "1",
+      "title": "Người bạn mới",
+      "topic": "giao tiếp",
+      "targetCharacters": 50,
+      "actualCharacters": 45,
+      "sentences": [
+        {
+          "id": "READ-L1-newfriend-S01",
+          "zh": "今天班里来了一位新同学。",
+          "pinyin": "Jīn tiān bān lǐ lái le yī wèi xīn tóng xué。",
+          "vi": "Hôm nay lớp có một bạn học mới."
+        },
+        {
+          "id": "READ-L1-newfriend-S02",
+          "zh": "他叫王明，今年十岁。",
+          "pinyin": "Tā jiào wáng míng， jīn nián shí suì。",
+          "vi": "Bạn ấy tên Vương Minh, năm nay mười tuổi."
+        },
+        {
+          "id": "READ-L1-newfriend-S03",
+          "zh": "他会说汉语和英语。",
+          "pinyin": "Tā huì shuō hàn yǔ hé yīng yǔ。",
+          "vi": "Bạn ấy biết nói tiếng Trung và tiếng Anh."
+        },
+        {
+          "id": "READ-L1-newfriend-S04",
+          "zh": "下课以后，我们一起看书。",
+          "pinyin": "Xià kè yǐ hòu， wǒ men yì qǐ kàn shū。",
+          "vi": "Sau giờ học, chúng tôi cùng đọc sách."
+        },
+        {
+          "id": "READ-L1-newfriend-S05",
+          "zh": "现在我们是好朋友。",
+          "pinyin": "Xiàn zài wǒ men shì hǎo péng yǒu。",
+          "vi": "Bây giờ chúng tôi là bạn tốt."
+        }
+      ]
+    }
+  ]
+}

@@ -1,35 +1,32 @@
-HƯỚNG DẪN CẬP NHẬT HSK VIỆT V5.0 LÊN GITHUB PAGES
+HƯỚNG DẪN CẬP NHẬT HSK VIỆT V7.0 LÊN GITHUB PAGES
 
-A. BẢO TOÀN CẤU HÌNH
+A. BẢO TOÀN DỮ LIỆU
 1. Tạo commit hoặc sao lưu repository hiện tại.
-2. Sao chép riêng js/config.js nếu file đã có Supabase URL và anon key.
-3. Không xóa dữ liệu Supabase và không chạy lại SQL nếu bản hiện tại đang hoạt động.
+2. Sao chép riêng js/config.js nếu đã có Supabase URL và anon key.
+3. Không xóa localStorage nếu chưa xuất sao lưu slot.
+4. Không xóa bảng Supabase và không chạy lại SQL.
 
-B. CẬP NHẬT REPOSITORY
-1. Giải nén ZIP mới.
-2. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v5.0 vào repository cũ.
-3. Chọn Replace khi Windows hỏi ghi đè.
-4. Nếu config.js bị thay bằng mẫu trống, chép lại URL và anon key đã lưu.
-5. Commit và Push bằng GitHub Desktop.
-6. Không cần npm build.
-7. Sau khi GitHub Pages deploy, mở trang và nhấn Ctrl+F5 một lần.
+B. CẬP NHẬT
+1. Giải nén file ZIP.
+2. Mở thư mục HSK-Viet-Slots-v7.0.
+3. Chép toàn bộ nội dung bên trong vào repository GitHub cũ.
+4. Chọn Replace khi Windows hỏi ghi đè.
+5. Chép lại js/config.js đã lưu nếu file cấu hình bị thay bằng mẫu trống.
+6. Commit và Push bằng GitHub Desktop.
+7. Không cần npm build.
+8. Sau khi GitHub Pages cập nhật, mở trang và nhấn Ctrl+F5 một lần.
 
 C. KHÔNG CẦN NÂNG CẤP SUPABASE
-1. Dùng nguyên bảng hsk_slots và hsk_content_overrides.
-2. Dùng nguyên RPC quản trị từ v3.0.
-3. Không chạy file SQL mới.
-4. Nội dung sửa HSK 5, HSK 6 và HSK 7–9 tự lưu bằng ID L5-..., L6-..., L7-....
+- Dùng nguyên schema.sql, upgrade_v3.sql, bảng và RPC hiện tại.
+- Nội dung admin cũ vẫn giữ nguyên theo word_id.
+- Không đưa service_role key lên GitHub.
 
 D. KIỂM TRA SAU KHI DEPLOY
-1. Kiểm tra đủ 10 slot và tiến độ cũ còn nguyên.
-2. Mở thư viện và chuyển lần lượt HSK 1, 2, 3, 4, 5, 6, 7–9.
-3. Xác nhận số từ: 500, 772, 973, 1000, 1071, 1140, 5636.
-4. Mở quản trị và sửa thử một từ HSK 5 hoặc HSK 7–9.
-5. Tải lại trang để kiểm tra nội dung sửa vẫn còn.
-6. Kiểm tra nội dung HSK 1–4 cũ và các bản admin đã sửa trước đây không mất.
-7. Nếu PWA còn cache cũ, nhấn Ctrl+F5 hoặc gỡ rồi cài lại PWA.
-
-LƯU Ý
-- Không xóa localStorage nếu chưa xuất sao lưu tiến độ.
-- Không đưa service_role key vào GitHub.
-- Gói chuẩn hóa là nền biên tập; admin nên sửa khi phát hiện nội dung chưa phù hợp.
+1. Kiểm tra đủ 10 slot và tiến độ cũ.
+2. Mở Thư viện, chọn một từ và kiểm tra danh sách Câu ví dụ chuẩn hóa.
+3. Mở Đọc hiểu HSK 1–7–9.
+4. Chuyển thử HSK 6 và HSK 7–9, chọn bài, bật/tắt pinyin và dịch từng câu.
+5. Bấm một từ được highlight để xem nghĩa.
+6. Nghe thử một câu và toàn bài.
+7. Mở quản trị, sửa thử câu ví dụ của một từ rồi tải lại trang.
+8. Nếu giao diện cũ vẫn xuất hiện, nhấn Ctrl+F5 hoặc gỡ và cài lại PWA.

@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "level": "3",
+    "displayLevel": "3",
+    "version": "6.0.0",
+    "targetCharacters": 180,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L3-habit",
+      "level": "3",
+      "title": "Thói quen đọc sách",
+      "topic": "học tập",
+      "targetCharacters": 180,
+      "actualCharacters": 170,
+      "sentences": [
+        {
+          "id": "READ-L3-habit-S01",
+          "zh": "以前我不太喜欢看书，放学以后总是先打开手机。",
+          "pinyin": "Yǐ qián wǒ bù tài xǐ huān kàn shū， fàng xué yǐ hòu zǒng shì xiān dǎ kāi shǒu jī。",
+          "vi": "Trước đây tôi không thích đọc sách lắm, tan học luôn mở điện thoại trước."
+        },
+        {
+          "id": "READ-L3-habit-S02",
+          "zh": "后来老师建议我们每天安静地阅读二十分钟，并把有意思的内容写在笔记本上。",
+          "pinyin": "Hòu lái lǎo shī jiàn yì wǒ men měi tiān ān jìng dì yuè dú èr shí fēn zhōng， bìng bǎ yǒu yì si de nèi róng xiě zài bǐ jì běn shàng。",
+          "vi": "Sau đó giáo viên đề nghị mỗi ngày đọc yên tĩnh hai mươi phút và ghi nội dung thú vị vào sổ."
+        },
+        {
+          "id": "READ-L3-habit-S03",
+          "zh": "刚开始我觉得时间过得很慢，可是一个月以后，我发现自己能更快地理解文章，也学会了不少新词。",
+          "pinyin": "Gāng kāi shǐ wǒ jué de shí jiān guò dé hěn màn， kě shì yí gè yuè yǐ hòu， wǒ fā xiàn zì jǐ néng gèng kuài dì lǐ jiě wén zhāng， yě xué huì le bù shǎo xīn cí。",
+          "vi": "Ban đầu tôi thấy thời gian trôi rất chậm, nhưng sau một tháng tôi nhận ra mình hiểu bài nhanh hơn và học được nhiều từ mới."
+        },
+        {
+          "id": "READ-L3-habit-S04",
+          "zh": "现在，睡觉以前读几页书已经成了我的习惯。",
+          "pinyin": "Xiàn zài， shuì jiào yǐ qián dú jǐ yè shū yǐ jīng chéng le wǒ de xí guàn。",
+          "vi": "Bây giờ đọc vài trang trước khi ngủ đã thành thói quen."
+        },
+        {
+          "id": "READ-L3-habit-S05",
+          "zh": "我也常常和同学交换书，听听他们对故事的看法。",
+          "pinyin": "Wǒ yě cháng cháng hé tóng xué jiāo huàn shū， tīng tīng tā men duì gù shì de kàn fǎ。",
+          "vi": "Tôi cũng thường đổi sách với bạn và nghe quan điểm của họ về câu chuyện."
+        },
+        {
+          "id": "READ-L3-habit-S06",
+          "zh": "读书不但让我得到知识，还让我学会从不同的角度想问题。",
+          "pinyin": "Dú shū bù dàn ràng wǒ dé dào zhī shí， hái ràng wǒ xué huì cóng bù tóng de jiǎo dù xiǎng wèn tí。",
+          "vi": "Đọc sách không chỉ cho tôi kiến thức mà còn giúp tôi suy nghĩ từ nhiều góc độ."
+        },
+        {
+          "id": "READ-L3-habit-S07",
+          "zh": "回家以后，我把这次经历写进了日记。",
+          "pinyin": "Huí jiā yǐ hòu， wǒ bǎ zhè cì jīng lì xiě jìn le rì jì。",
+          "vi": "Sau khi về nhà, tôi ghi trải nghiệm này vào nhật ký."
+        }
+      ]
+    },
+    {
+      "id": "READ-L3-volunteer",
+      "level": "3",
+      "title": "Một ngày làm tình nguyện",
+      "topic": "xã hội",
+      "targetCharacters": 180,
+      "actualCharacters": 171,
+      "sentences": [
+        {
+          "id": "READ-L3-volunteer-S01",
+          "zh": "上个星期六，学校组织我们去社区帮助老人。",
+          "pinyin": "Shàng gè xīng qī liù， xué xiào zǔ zhī wǒ men qù shè qū bāng zhù lǎo rén。",
+          "vi": "Thứ Bảy tuần trước, trường tổ chức chúng tôi đến khu dân cư giúp người cao tuổi."
+        },
+        {
+          "id": "READ-L3-volunteer-S02",
+          "zh": "早上八点，我们带着水果和清洁工具来到活动中心。",
+          "pinyin": "Zǎo shàng bā diǎn， wǒ men dài zhe shuǐ guǒ hé qīng jié gōng jù lái dào huó dòng zhōng xīn。",
+          "vi": "Tám giờ sáng, chúng tôi mang trái cây và dụng cụ vệ sinh đến trung tâm hoạt động."
+        },
+        {
+          "id": "READ-L3-volunteer-S03",
+          "zh": "有的同学打扫房间，有的同学陪老人聊天，我负责教他们使用手机拍照。",
+          "pinyin": "Yǒu de tóng xué dǎ sǎo fáng jiān， yǒu de tóng xué péi lǎo rén liáo tiān， wǒ fù zé jiào tā men shǐ yòng shǒu jī pāi zhào。",
+          "vi": "Có bạn dọn phòng, có bạn trò chuyện với các cụ, tôi phụ trách dạy họ dùng điện thoại chụp ảnh."
+        },
+        {
+          "id": "READ-L3-volunteer-S04",
+          "zh": "一位爷爷开始很担心自己学不会，我就一步一步地给他说明。",
+          "pinyin": "Yī wèi yé yé kāi shǐ hěn dān xīn zì jǐ xué bú huì， wǒ jiù yí bù yí bù dì gěi tā shuō míng。",
+          "vi": "Một ông ban đầu lo mình không học được, tôi giải thích từng bước."
+        },
+        {
+          "id": "READ-L3-volunteer-S05",
+          "zh": "当他第一次把照片发给家人时，脸上出现了开心的笑容。",
+          "pinyin": "Dāng tā dì yī cì bǎ zhào piān fā gěi jiā rén shí， liǎn shàng chū xiàn le kāi xīn de xiào róng。",
+          "vi": "Khi ông lần đầu gửi ảnh cho gia đình, gương mặt nở nụ cười vui."
+        },
+        {
+          "id": "READ-L3-volunteer-S06",
+          "zh": "这次活动让我明白，帮助别人不一定要做很大的事情，耐心和陪伴也非常重要。",
+          "pinyin": "Zhè cì huó dòng ràng wǒ míng bái， bāng zhù bié rén bù yí dìng yào zuò hěn dà de shì qíng， nài xīn hé péi bàn yě fēi cháng zhòng yào。",
+          "vi": "Hoạt động này giúp tôi hiểu giúp người khác không nhất thiết phải làm việc lớn; kiên nhẫn và đồng hành cũng rất quan trọng."
+        },
+        {
+          "id": "READ-L3-volunteer-S07",
+          "zh": "我也认真想了想自己做得好的地方和需要改进的地方。",
+          "pinyin": "Wǒ yě rèn zhēn xiǎng le xiǎng zì jǐ zuò dé hǎo de dì fāng hé xū yào gǎi jìn de dì fāng。",
+          "vi": "Tôi cũng suy nghĩ nghiêm túc về điểm mình làm tốt và điểm cần cải thiện."
+        }
+      ]
+    },
+    {
+      "id": "READ-L3-lostwallet",
+      "level": "3",
+      "title": "Chiếc ví bị mất",
+      "topic": "đời sống",
+      "targetCharacters": 180,
+      "actualCharacters": 176,
+      "sentences": [
+        {
+          "id": "READ-L3-lostwallet-S01",
+          "zh": "昨天中午，我在饭店吃完饭以后，发现钱包不见了。",
+          "pinyin": "Zuó tiān zhōng wǔ， wǒ zài fàn diàn chī wán fàn yǐ hòu， fā xiàn qián bāo bú jiàn le。",
+          "vi": "Trưa hôm qua, sau khi ăn ở nhà hàng, tôi phát hiện mất ví."
+        },
+        {
+          "id": "READ-L3-lostwallet-S02",
+          "zh": "钱包里有一些钱、银行卡，还有一张对我很重要的照片。",
+          "pinyin": "Qián bāo lǐ yǒu yī xiē qián、 yín háng kǎ， hái yǒu yī zhāng duì wǒ hěn zhòng yào de zhào piān。",
+          "vi": "Trong ví có ít tiền, thẻ ngân hàng và một bức ảnh rất quan trọng với tôi."
+        },
+        {
+          "id": "READ-L3-lostwallet-S03",
+          "zh": "我马上回到座位附近寻找，也问了服务员，但是谁都没有看见。",
+          "pinyin": "Wǒ mǎ shàng huí dào zuò wèi fù jìn xún zhǎo， yě wèn le fú wù yuán， dàn shì shéi dōu méi yǒu kàn jiàn。",
+          "vi": "Tôi lập tức quay lại tìm gần chỗ ngồi và hỏi nhân viên nhưng không ai thấy."
+        },
+        {
+          "id": "READ-L3-lostwallet-S04",
+          "zh": "正在我着急的时候，手机突然响了。",
+          "pinyin": "Zhèng zài wǒ zháo jí de shí hòu， shǒu jī tū rán xiǎng le。",
+          "vi": "Khi tôi đang lo lắng, điện thoại đột nhiên reo."
+        },
+        {
+          "id": "READ-L3-lostwallet-S05",
+          "zh": "原来一位客人在门口捡到了钱包，他从里面的名片上找到了我的号码。",
+          "pinyin": "Yuán lái yī wèi kè rén zài mén kǒu jiǎn dào le qián bāo， tā cóng lǐ miàn de míng piàn shàng zhǎo dào le wǒ de hào mǎ。",
+          "vi": "Hóa ra một vị khách nhặt được ví ở cửa, tìm thấy số của tôi trên danh thiếp."
+        },
+        {
+          "id": "READ-L3-lostwallet-S06",
+          "zh": "我赶过去向他道谢，他却说这只是每个人都应该做的事。",
+          "pinyin": "Wǒ gǎn guò qù xiàng tā dào xiè， tā què shuō zhè zhǐ shì měi gè rén dōu yīng gāi zuò de shì。",
+          "vi": "Tôi vội đến cảm ơn, nhưng ông nói đây chỉ là việc ai cũng nên làm."
+        },
+        {
+          "id": "READ-L3-lostwallet-S07",
+          "zh": "从那以后，我每次离开座位前都会认真检查自己的东西。",
+          "pinyin": "Cóng nà yǐ hòu， wǒ měi cì lí kāi zuò wèi qián dū huì rèn zhēn jiǎn chá zì jǐ de dōng xī。",
+          "vi": "Từ đó, mỗi lần rời chỗ tôi đều kiểm tra đồ cẩn thận."
+        },
+        {
+          "id": "READ-L3-lostwallet-S08",
+          "zh": "通过交流，我发现每个人看问题的角度都不一样。",
+          "pinyin": "Tōng guò jiāo liú， wǒ fā xiàn měi gè rén kàn wèn tí de jiǎo dù dōu bù yí yàng。",
+          "vi": "Qua trao đổi, tôi nhận ra mỗi người nhìn vấn đề từ góc độ khác nhau."
+        }
+      ]
+    },
+    {
+      "id": "READ-L3-onlineclass",
+      "level": "3",
+      "title": "Học trực tuyến hiệu quả",
+      "topic": "học tập",
+      "targetCharacters": 180,
+      "actualCharacters": 170,
+      "sentences": [
+        {
+          "id": "READ-L3-onlineclass-S01",
+          "zh": "刚开始上网络课的时候，我以为在家学习会很轻松。",
+          "pinyin": "Gāng kāi shǐ shàng wǎng luò kè de shí hòu， wǒ yǐ wéi zài jiā xué xí huì hěn qīng sōng。",
+          "vi": "Khi mới học trực tuyến, tôi nghĩ học ở nhà sẽ rất thoải mái."
+        },
+        {
+          "id": "READ-L3-onlineclass-S02",
+          "zh": "可是没有老师在旁边提醒，我常常一边听课一边看别的信息。",
+          "pinyin": "Kě shì méi yǒu lǎo shī zài páng biān tí xǐng， wǒ cháng cháng yī biān tīng kè yī biān kàn bié de xìn xī。",
+          "vi": "Nhưng không có giáo viên nhắc bên cạnh, tôi thường vừa nghe giảng vừa xem thông tin khác."
+        },
+        {
+          "id": "READ-L3-onlineclass-S03",
+          "zh": "结果到了晚上，很多作业都没有完成。",
+          "pinyin": "Jié guǒ dào le wǎn shàng， hěn duō zuò yè dōu méi yǒu wán chéng。",
+          "vi": "Kết quả đến tối nhiều bài tập chưa xong."
+        },
+        {
+          "id": "READ-L3-onlineclass-S04",
+          "zh": "后来我给自己做了一张时间表，上课时把手机放在另一个房间，休息十分钟以后再继续学习。",
+          "pinyin": "Hòu lái wǒ gěi zì jǐ zuò le yī zhāng shí jiān biǎo， shàng kè shí bǎ shǒu jī fàng zài lìng yí gè fáng jiān， xiū xī shí fēn zhōng yǐ hòu zài jì xù xué xí。",
+          "vi": "Sau đó tôi lập thời gian biểu, khi học để điện thoại ở phòng khác và nghỉ mười phút rồi học tiếp."
+        },
+        {
+          "id": "READ-L3-onlineclass-S05",
+          "zh": "我还和同学建立了一个小组，每天互相报告学习进度。",
+          "pinyin": "Wǒ hái hé tóng xué jiàn lì le yí gè xiǎo zǔ， měi tiān hù xiāng bào gào xué xí jìn dù。",
+          "vi": "Tôi còn lập nhóm với bạn, mỗi ngày báo cáo tiến độ cho nhau."
+        },
+        {
+          "id": "READ-L3-onlineclass-S06",
+          "zh": "这些简单的方法让我变得更专心，也让我发现，自由并不等于没有计划。",
+          "pinyin": "Zhè xiē jiǎn dān de fāng fǎ ràng wǒ biàn dé gèng zhuān xīn， yě ràng wǒ fā xiàn， zì yóu bìng bù děng yú méi yǒu jì huà。",
+          "vi": "Những cách đơn giản này giúp tôi tập trung hơn và nhận ra tự do không có nghĩa là không có kế hoạch."
+        },
+        {
+          "id": "READ-L3-onlineclass-S07",
+          "zh": "通过交流，我发现每个人看问题的角度都不一样。",
+          "pinyin": "Tōng guò jiāo liú， wǒ fā xiàn měi gè rén kàn wèn tí de jiǎo dù dōu bù yí yàng。",
+          "vi": "Qua trao đổi, tôi nhận ra mỗi người nhìn vấn đề từ góc độ khác nhau."
+        }
+      ]
+    },
+    {
+      "id": "READ-L3-grandpa",
+      "level": "3",
+      "title": "Khu vườn của ông",
+      "topic": "thiên nhiên",
+      "targetCharacters": 180,
+      "actualCharacters": 180,
+      "sentences": [
+        {
+          "id": "READ-L3-grandpa-S01",
+          "zh": "爷爷家后面有一个不大的菜园，里面种着西红柿、黄瓜和很多青菜。",
+          "pinyin": "Yé yé jiā hòu miàn yǒu yí gè bù dà de cài yuán， lǐ miàn zhǒng zhe xī hóng shì、 huáng guā hé hěn duō qīng cài。",
+          "vi": "Sau nhà ông có một vườn rau không lớn, trồng cà chua, dưa chuột và nhiều rau xanh."
+        },
+        {
+          "id": "READ-L3-grandpa-S02",
+          "zh": "小时候我只喜欢在旁边玩，不明白爷爷为什么每天都要去看一看。",
+          "pinyin": "Xiǎo shí hòu wǒ zhǐ xǐ huān zài páng biān wán， bù míng bái yé yé wèi shén me měi tiān dōu yào qù kàn yī kàn。",
+          "vi": "Hồi nhỏ tôi chỉ thích chơi bên cạnh, không hiểu vì sao ông ngày nào cũng ra xem."
+        },
+        {
+          "id": "READ-L3-grandpa-S03",
+          "zh": "今年春天，爷爷让我自己种一棵小苗。",
+          "pinyin": "Jīn nián chūn tiān， yé yé ràng wǒ zì jǐ zhǒng yī kē xiǎo miáo。",
+          "vi": "Mùa xuân năm nay, ông cho tôi tự trồng một cây con."
+        },
+        {
+          "id": "READ-L3-grandpa-S04",
+          "zh": "我给它浇水、除草，还记录它每天长高了多少。",
+          "pinyin": "Wǒ gěi tā jiāo shuǐ、 chú cǎo， hái jì lù tā měi tiān zhǎng gāo le duō shǎo。",
+          "vi": "Tôi tưới nước, nhổ cỏ và ghi lại mỗi ngày nó cao thêm bao nhiêu."
+        },
+        {
+          "id": "READ-L3-grandpa-S05",
+          "zh": "几个星期以后，小苗开出了黄色的花，后来结了三个红红的西红柿。",
+          "pinyin": "Jǐ gè xīng qī yǐ hòu， xiǎo miáo kāi chū le huáng sè de huā， hòu lái jié le sān gè hóng hóng de xī hóng shì。",
+          "vi": "Vài tuần sau cây ra hoa vàng rồi kết ba quả cà chua đỏ."
+        },
+        {
+          "id": "READ-L3-grandpa-S06",
+          "zh": "吃到自己种的西红柿时，我第一次真正理解了爷爷的快乐。",
+          "pinyin": "Chī dào zì jǐ zhǒng de xī hóng shì shí， wǒ dì yī cì zhēn zhèng lǐ jiě le yé yé de kuài lè。",
+          "vi": "Khi ăn cà chua do mình trồng, lần đầu tôi thực sự hiểu niềm vui của ông."
+        },
+        {
+          "id": "READ-L3-grandpa-S07",
+          "zh": "原来等待一件事慢慢成长，也是一种很特别的幸福。",
+          "pinyin": "Yuán lái děng dài yī jiàn shì màn màn chéng zhǎng， yě shì yī zhǒng hěn tè bié de xìng fú。",
+          "vi": "Hóa ra chờ một điều dần trưởng thành cũng là một niềm hạnh phúc đặc biệt."
+        },
+        {
+          "id": "READ-L3-grandpa-S08",
+          "zh": "我还把自己的想法告诉了朋友，听取了他们的建议。",
+          "pinyin": "Wǒ hái bǎ zì jǐ de xiǎng fǎ gào sù le péng yǒu， tīng qǔ le tā men de jiàn yì。",
+          "vi": "Tôi còn nói suy nghĩ với bạn và nghe lời khuyên của họ."
+        }
+      ]
+    }
+  ]
+}

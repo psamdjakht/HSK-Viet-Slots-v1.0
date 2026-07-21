@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "level": "2",
+    "displayLevel": "2",
+    "version": "6.0.0",
+    "targetCharacters": 100,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L2-rainyday",
+      "level": "2",
+      "title": "Một ngày mưa",
+      "topic": "thời tiết",
+      "targetCharacters": 100,
+      "actualCharacters": 97,
+      "sentences": [
+        {
+          "id": "READ-L2-rainyday-S01",
+          "zh": "今天早上突然下雨了，我出门的时候没有带伞。",
+          "pinyin": "Jīn tiān zǎo shàng tū rán xià yǔ le， wǒ chū mén de shí hòu méi yǒu dài sǎn。",
+          "vi": "Sáng nay trời đột nhiên mưa, lúc ra khỏi nhà tôi không mang ô."
+        },
+        {
+          "id": "READ-L2-rainyday-S02",
+          "zh": "走到车站以后，雨越来越大。",
+          "pinyin": "Zǒu dào chē zhàn yǐ hòu， yǔ yuè lái yuè dà。",
+          "vi": "Sau khi đi đến trạm xe, mưa càng lúc càng lớn."
+        },
+        {
+          "id": "READ-L2-rainyday-S03",
+          "zh": "一位阿姨看见我，就让我和她一起打伞。",
+          "pinyin": "Yī wèi ā yí kàn jiàn wǒ， jiù ràng wǒ hé tā yì qǐ dǎ sǎn。",
+          "vi": "Một cô nhìn thấy tôi nên cho tôi đi chung ô."
+        },
+        {
+          "id": "READ-L2-rainyday-S04",
+          "zh": "到学校以后，我对她说了好几次谢谢。",
+          "pinyin": "Dào xué xiào yǐ hòu， wǒ duì tā shuō le hǎo jǐ cì xiè xiè。",
+          "vi": "Sau khi đến trường, tôi đã cảm ơn cô ấy nhiều lần."
+        },
+        {
+          "id": "READ-L2-rainyday-S05",
+          "zh": "这件小事让我觉得城市里有很多温暖的人。",
+          "pinyin": "Zhè jiàn xiǎo shì ràng wǒ jué de chéng shì lǐ yǒu hěn duō wēn nuǎn de rén。",
+          "vi": "Việc nhỏ này khiến tôi cảm thấy trong thành phố có rất nhiều người ấm áp."
+        },
+        {
+          "id": "READ-L2-rainyday-S06",
+          "zh": "晚上回家以后，我把今天的事情告诉了家人。",
+          "pinyin": "Wǎn shàng huí jiā yǐ hòu， wǒ bǎ jīn tiān de shì qíng gào sù le jiā rén。",
+          "vi": "Buổi tối về nhà, tôi kể chuyện hôm nay cho gia đình."
+        }
+      ]
+    },
+    {
+      "id": "READ-L2-birthday",
+      "level": "2",
+      "title": "Sinh nhật của bà",
+      "topic": "gia đình",
+      "targetCharacters": 100,
+      "actualCharacters": 90,
+      "sentences": [
+        {
+          "id": "READ-L2-birthday-S01",
+          "zh": "星期天是奶奶的生日，全家人早早来到她家。",
+          "pinyin": "Xīng qī tiān shì nǎi nǎi de shēng rì， quán jiā rén zǎo zǎo lái dào tā jiā。",
+          "vi": "Chủ nhật là sinh nhật bà, cả nhà đến nhà bà từ sớm."
+        },
+        {
+          "id": "READ-L2-birthday-S02",
+          "zh": "妈妈做了长寿面，爸爸买了一个大蛋糕。",
+          "pinyin": "Mā mā zuò le cháng shòu miàn， bà bà mǎi le yí gè dà dàn gāo。",
+          "vi": "Mẹ nấu mì trường thọ, bố mua một chiếc bánh lớn."
+        },
+        {
+          "id": "READ-L2-birthday-S03",
+          "zh": "我和妹妹画了一张生日卡，还给奶奶唱了一首歌。",
+          "pinyin": "Wǒ hé mèi mèi huà le yī zhāng shēng rì kǎ， huán gěi nǎi nǎi chàng le yī shǒu gē。",
+          "vi": "Tôi và em gái vẽ thiệp sinh nhật và hát tặng bà một bài."
+        },
+        {
+          "id": "READ-L2-birthday-S04",
+          "zh": "奶奶笑着说，大家能回来吃饭就是最好的礼物。",
+          "pinyin": "Nǎi nǎi xiào zhe shuō， dà jiā néng huí lái chī fàn jiù shì zuì hǎo de lǐ wù。",
+          "vi": "Bà cười nói mọi người về ăn cơm đã là món quà tốt nhất."
+        },
+        {
+          "id": "READ-L2-birthday-S05",
+          "zh": "那天我们拍了很多照片，每个人都很开心。",
+          "pinyin": "Nà tiān wǒ men pāi le hěn duō zhào piān， měi gè rén dōu hěn kāi xīn。",
+          "vi": "Hôm đó chúng tôi chụp nhiều ảnh, ai cũng vui."
+        }
+      ]
+    },
+    {
+      "id": "READ-L2-library",
+      "level": "2",
+      "title": "Buổi chiều ở thư viện",
+      "topic": "học tập",
+      "targetCharacters": 100,
+      "actualCharacters": 101,
+      "sentences": [
+        {
+          "id": "READ-L2-library-S01",
+          "zh": "下午没有课，我和小林去了学校图书馆。",
+          "pinyin": "Xià wǔ méi yǒu kè， wǒ hé xiǎo lín qù le xué xiào tú shū guǎn。",
+          "vi": "Buổi chiều không có tiết, tôi và Tiểu Lâm đến thư viện trường."
+        },
+        {
+          "id": "READ-L2-library-S02",
+          "zh": "那里很安静，桌子旁边还有很多绿色的植物。",
+          "pinyin": "Nà lǐ hěn ān jìng， zhuō zi páng biān hái yǒu hěn duō lǜ sè de zhí wù。",
+          "vi": "Ở đó rất yên tĩnh, cạnh bàn còn có nhiều cây xanh."
+        },
+        {
+          "id": "READ-L2-library-S03",
+          "zh": "我想找一本介绍中国城市的书，小林要准备明天的考试。",
+          "pinyin": "Wǒ xiǎng zhǎo yī běn jiè shào zhōng guó chéng shì de shū， xiǎo lín yào zhǔn bèi míng tiān de kǎo shì。",
+          "vi": "Tôi muốn tìm sách giới thiệu các thành phố Trung Quốc, còn Tiểu Lâm chuẩn bị cho kỳ thi ngày mai."
+        },
+        {
+          "id": "READ-L2-library-S04",
+          "zh": "我们学习了两个小时，中间只休息了十分钟。",
+          "pinyin": "Wǒ men xué xí le liǎng gè xiǎo shí， zhōng jiān zhǐ xiū xī le shí fēn zhōng。",
+          "vi": "Chúng tôi học hai giờ, giữa giờ chỉ nghỉ mười phút."
+        },
+        {
+          "id": "READ-L2-library-S05",
+          "zh": "离开以前，我们约好下周再来。",
+          "pinyin": "Lí kāi yǐ qián， wǒ men yuē hǎo xià zhōu zài lái。",
+          "vi": "Trước khi rời đi, chúng tôi hẹn tuần sau lại đến."
+        },
+        {
+          "id": "READ-L2-library-S06",
+          "zh": "这次经历也让我学到了新的东西。",
+          "pinyin": "Zhè cì jīng lì yě ràng wǒ xué dào le xīn de dōng xī。",
+          "vi": "Trải nghiệm này cũng giúp tôi học được điều mới."
+        }
+      ]
+    },
+    {
+      "id": "READ-L2-exercise",
+      "level": "2",
+      "title": "Tập thể dục cùng bố",
+      "topic": "sức khỏe",
+      "targetCharacters": 100,
+      "actualCharacters": 101,
+      "sentences": [
+        {
+          "id": "READ-L2-exercise-S01",
+          "zh": "爸爸每天工作很忙，但是他一直注意身体健康。",
+          "pinyin": "Bà bà měi tiān gōng zuò hěn máng， dàn shì tā yì zhí zhù yì shēn tǐ jiàn kāng。",
+          "vi": "Bố mỗi ngày rất bận nhưng luôn chú ý sức khỏe."
+        },
+        {
+          "id": "READ-L2-exercise-S02",
+          "zh": "晚上吃完饭以后，他常常带我到小区里跑步。",
+          "pinyin": "Wǎn shàng chī wán fàn yǐ hòu， tā cháng cháng dài wǒ dào xiǎo qū lǐ pǎo bù。",
+          "vi": "Sau bữa tối, bố thường dẫn tôi chạy bộ trong khu nhà."
+        },
+        {
+          "id": "READ-L2-exercise-S03",
+          "zh": "开始的时候我跑得很慢，也觉得很累。",
+          "pinyin": "Kāi shǐ de shí hòu wǒ pǎo dé hěn màn， yě jué de hěn lèi。",
+          "vi": "Lúc đầu tôi chạy rất chậm và cảm thấy mệt."
+        },
+        {
+          "id": "READ-L2-exercise-S04",
+          "zh": "爸爸告诉我，不需要跑得快，只要每天坚持就会进步。",
+          "pinyin": "Bà bà gào sù wǒ， bù xū yào pǎo dé kuài， zhǐ yào měi tiān jiān chí jiù huì jìn bù。",
+          "vi": "Bố nói không cần chạy nhanh, chỉ cần kiên trì mỗi ngày sẽ tiến bộ."
+        },
+        {
+          "id": "READ-L2-exercise-S05",
+          "zh": "现在我已经能跟他一起跑三公里了。",
+          "pinyin": "Xiàn zài wǒ yǐ jīng néng gēn tā yì qǐ pǎo sān gōng lǐ le。",
+          "vi": "Bây giờ tôi đã có thể chạy ba kilômét cùng bố."
+        },
+        {
+          "id": "READ-L2-exercise-S06",
+          "zh": "大家听了以后都觉得很有意思。",
+          "pinyin": "Dà jiā tīng le yǐ hòu dōu jué de hěn yǒu yì si。",
+          "vi": "Mọi người nghe xong đều thấy rất thú vị."
+        }
+      ]
+    },
+    {
+      "id": "READ-L2-trip",
+      "level": "2",
+      "title": "Chuyến đi bằng tàu",
+      "topic": "du lịch",
+      "targetCharacters": 100,
+      "actualCharacters": 92,
+      "sentences": [
+        {
+          "id": "READ-L2-trip-S01",
+          "zh": "去年暑假，我们一家坐火车去北方旅行。",
+          "pinyin": "Qù nián shǔ jià， wǒ men yī jiā zuò huǒ chē qù běi fāng lǚ xíng。",
+          "vi": "Kỳ nghỉ hè năm ngoái, gia đình tôi đi tàu hỏa du lịch miền Bắc."
+        },
+        {
+          "id": "READ-L2-trip-S02",
+          "zh": "这是妹妹第一次坐火车，所以她看什么都觉得新鲜。",
+          "pinyin": "Zhè shì mèi mèi dì yī cì zuò huǒ chē， suǒ yǐ tā kàn shén me dōu jué de xīn xiān。",
+          "vi": "Đây là lần đầu em gái đi tàu nên nhìn gì cũng thấy mới lạ."
+        },
+        {
+          "id": "READ-L2-trip-S03",
+          "zh": "窗外有田地、河流和很远的山。",
+          "pinyin": "Chuāng wài yǒu tián dì、 hé liú hé hěn yuǎn de shān。",
+          "vi": "Ngoài cửa sổ có đồng ruộng, sông và núi xa."
+        },
+        {
+          "id": "READ-L2-trip-S04",
+          "zh": "我们在车上吃饭、聊天，还认识了一位热心的爷爷。",
+          "pinyin": "Wǒ men zài chē shàng chī fàn、 liáo tiān， hái rèn shí le yī wèi rè xīn de yé yé。",
+          "vi": "Chúng tôi ăn, trò chuyện trên tàu và làm quen một ông rất nhiệt tình."
+        },
+        {
+          "id": "READ-L2-trip-S05",
+          "zh": "虽然路上用了很长时间，但是大家一点儿也不觉得无聊。",
+          "pinyin": "Suī rán lù shàng yòng le hěn zhǎng shí jiān， dàn shì dà jiā yì diǎn ér yě bù jué dé wú liáo。",
+          "vi": "Dù đi đường khá lâu nhưng mọi người không thấy chán chút nào."
+        }
+      ]
+    }
+  ]
+}

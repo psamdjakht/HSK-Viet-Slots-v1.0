@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "level": "5",
+    "displayLevel": "5",
+    "version": "6.0.0",
+    "targetCharacters": 600,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L5-remote",
+      "level": "5",
+      "title": "Làm việc từ xa và ranh giới cuộc sống",
+      "topic": "công việc",
+      "targetCharacters": 600,
+      "actualCharacters": 550,
+      "sentences": [
+        {
+          "id": "READ-L5-remote-S01",
+          "zh": "近几年，远程工作从少数行业的特殊安排，逐渐变成许多公司可以选择的工作方式。",
+          "pinyin": "Jìn jǐ nián， yuǎn chéng gōng zuò cóng shǎo shù háng yè de tè shū ān pái， zhú jiàn biàn chéng xǔ duō gōng sī kě yǐ xuǎn zé de gōng zuò fāng shì。",
+          "vi": "Những năm gần đây, làm việc từ xa từ một sắp xếp đặc biệt của ít ngành đã dần trở thành lựa chọn của nhiều công ty."
+        },
+        {
+          "id": "READ-L5-remote-S02",
+          "zh": "它最明显的优点是减少通勤时间，使员工能够更自由地安排工作地点。",
+          "pinyin": "Tā zuì míng xiǎn de yōu diǎn shì jiǎn shǎo tōng qín shí jiān， shǐ yuán gōng néng gòu gèng zì yóu dì ān pái gōng zuò dì diǎn。",
+          "vi": "Ưu điểm rõ nhất là giảm thời gian đi lại và giúp nhân viên tự do hơn trong việc sắp xếp nơi làm việc."
+        },
+        {
+          "id": "READ-L5-remote-S03",
+          "zh": "一些住得离公司很远的人因此可以多陪伴家人，也能把原来花在路上的时间用于运动或学习。",
+          "pinyin": "Yī xiē zhù dé lí gōng sī hěn yuǎn de rén yīn cǐ kě yǐ duō péi bàn jiā rén， yě néng bǎ yuán lái huā zài lù shàng de shí jiān yòng yú yùn dòng huò xué xí。",
+          "vi": "Một số người sống xa công ty nhờ đó có thêm thời gian bên gia đình và dùng thời gian đi đường trước đây để tập thể dục hoặc học tập."
+        },
+        {
+          "id": "READ-L5-remote-S04",
+          "zh": "然而，远程工作并不等于压力一定会减少。",
+          "pinyin": "Rán ér， yuǎn chéng gōng zuò bìng bù děng yú yā lì yí dìng huì jiǎn shǎo。",
+          "vi": "Tuy nhiên, làm việc từ xa không có nghĩa áp lực chắc chắn giảm."
+        },
+        {
+          "id": "READ-L5-remote-S05",
+          "zh": "当办公室和家庭处在同一个空间里，工作时间很容易不断延长。",
+          "pinyin": "Dāng bàn gōng shì hé jiā tíng chù zài tóng yī gè kōng jiān lǐ， gōng zuò shí jiān hěn róng yì bù duàn yán cháng。",
+          "vi": "Khi văn phòng và gia đình ở cùng một không gian, giờ làm rất dễ kéo dài liên tục."
+        },
+        {
+          "id": "READ-L5-remote-S06",
+          "zh": "有的人早上醒来就开始回复信息，晚上休息时仍然担心错过同事的通知。",
+          "pinyin": "Yǒu de rén zǎo shàng xǐng lái jiù kāi shǐ huí fù xìn xī， wǎn shàng xiū xī shí réng rán dān xīn cuò guò tóng shì de tōng zhī。",
+          "vi": "Có người vừa thức dậy đã trả lời tin nhắn, tối nghỉ vẫn lo bỏ lỡ thông báo của đồng nghiệp."
+        },
+        {
+          "id": "READ-L5-remote-S07",
+          "zh": "如果团队主要依靠文字交流，一些本来几分钟就能说明的问题，也可能因为理解不同而反复讨论。",
+          "pinyin": "Rú guǒ tuán duì zhǔ yào yī kào wén zì jiāo liú， yī xiē běn lái jǐ fēn zhōng jiù néng shuō míng de wèn tí， yě kě néng yīn wèi lǐ jiě bù tóng ér fǎn fù tǎo lùn。",
+          "vi": "Nếu nhóm chủ yếu giao tiếp bằng văn bản, vấn đề vốn giải thích vài phút có thể bị bàn đi bàn lại do hiểu khác nhau."
+        },
+        {
+          "id": "READ-L5-remote-S08",
+          "zh": "此外，新员工缺少面对面的观察和帮助，往往需要更长时间才能了解团队的习惯。",
+          "pinyin": "Cǐ wài， xīn yuán gōng quē shǎo miàn duì miàn de guān chá hé bāng zhù， wǎng wǎng xū yào gèng zhǎng shí jiān cái néng liǎo jiě tuán duì de xí guàn。",
+          "vi": "Ngoài ra, nhân viên mới thiếu quan sát và hỗ trợ trực tiếp nên thường cần lâu hơn để hiểu thói quen nhóm."
+        },
+        {
+          "id": "READ-L5-remote-S09",
+          "zh": "要让远程工作真正有效，公司和个人都需要建立清楚的规则。",
+          "pinyin": "Yào ràng yuǎn chéng gōng zuò zhēn zhèng yǒu xiào， gōng sī hé gè rén dōu xū yào jiàn lì qīng chǔ de guī zé。",
+          "vi": "Để làm việc từ xa thực sự hiệu quả, cả công ty và cá nhân cần xây dựng quy tắc rõ ràng."
+        },
+        {
+          "id": "READ-L5-remote-S10",
+          "zh": "公司应该明确任务目标、沟通渠道和回复时间，而不是把“随时在线”当作认真工作的证明。",
+          "pinyin": "Gōng sī yīng gāi míng què rèn wù mù biāo、 gōu tōng qú dào hé huí fù shí jiān， ér bú shì bǎ“suí shí zài xiàn” dàng zuò rèn zhēn gōng zuò de zhèng míng。",
+          "vi": "Công ty nên xác định mục tiêu, kênh giao tiếp và thời gian phản hồi, thay vì coi “luôn trực tuyến” là bằng chứng làm việc nghiêm túc."
+        },
+        {
+          "id": "READ-L5-remote-S11",
+          "zh": "员工则可以设置固定的开始与结束时间，把工作设备放在相对独立的位置，并在休息时真正离开屏幕。",
+          "pinyin": "Yuán gōng zé kě yǐ shè zhì gù dìng de kāi shǐ yǔ jié shù shí jiān， bǎ gōng zuò shè bèi fàng zài xiāng duì dú lì de wèi zhì， bìng zài xiū xī shí zhēn zhèng lí kāi píng mù。",
+          "vi": "Nhân viên có thể đặt giờ bắt đầu và kết thúc cố định, để thiết bị làm việc ở vị trí tương đối riêng và thực sự rời màn hình khi nghỉ."
+        },
+        {
+          "id": "READ-L5-remote-S12",
+          "zh": "团队还应定期安排视频会议或线下活动，让成员有机会交流工作以外的想法。",
+          "pinyin": "Tuán duì hái yīng dìng qī ān pái shì pín huì yì huò xiàn xià huó dòng， ràng chéng yuán yǒu jī huì jiāo liú gōng zuò yǐ wài de xiǎng fǎ。",
+          "vi": "Nhóm cũng nên định kỳ họp video hoặc hoạt động trực tiếp để thành viên trao đổi những ý tưởng ngoài công việc."
+        },
+        {
+          "id": "READ-L5-remote-S13",
+          "zh": "远程工作不是传统办公室的简单替代，而是一种需要重新设计管理方式和生活边界的制度。",
+          "pinyin": "Yuǎn chéng gōng zuò bú shì chuán tǒng bàn gōng shì de jiǎn dān tì dài， ér shì yī zhǒng xū yào chóng xīn shè jì guǎn lǐ fāng shì hé shēng huó biān jiè de zhì dù。",
+          "vi": "Làm việc từ xa không phải sự thay thế đơn giản cho văn phòng truyền thống mà là chế độ cần thiết kế lại cách quản lý và ranh giới cuộc sống."
+        },
+        {
+          "id": "READ-L5-remote-S14",
+          "zh": "只有当效率、信任和休息得到平衡时，它的优势才能长期存在。",
+          "pinyin": "Zhǐ yǒu dāng xiào lǜ、 xìn rèn hé xiū xī dé dào píng héng shí， tā de yōu shì cái néng cháng qī cún zài。",
+          "vi": "Chỉ khi hiệu suất, niềm tin và nghỉ ngơi được cân bằng, ưu thế của nó mới tồn tại lâu dài."
+        },
+        {
+          "id": "READ-L5-remote-S15",
+          "zh": "在执行过程中，公开的信息和清楚的责任分工尤其重要。",
+          "pinyin": "Zài zhí xíng guò chéng zhōng， gōng kāi de xìn xī hé qīng chǔ de zé rèn fēn gōng yóu qí zhòng yào。",
+          "vi": "Trong quá trình thực hiện, thông tin công khai và phân công trách nhiệm rõ ràng đặc biệt quan trọng."
+        },
+        {
+          "id": "READ-L5-remote-S16",
+          "zh": "如果参与者不知道目标、标准和反馈渠道，再好的计划也可能因为误解而失去效果。",
+          "pinyin": "Rú guǒ cān yù zhě bù zhī dào mù biāo、 biāo zhǔn hé fǎn kuì qú dào， zài hǎo de jì huà yě kě néng yīn wèi wù jiě ér shī qù xiào guǒ。",
+          "vi": "Nếu người tham gia không biết mục tiêu, tiêu chuẩn và kênh phản hồi, kế hoạch tốt đến đâu cũng có thể mất hiệu quả vì hiểu lầm."
+        },
+        {
+          "id": "READ-L5-remote-S17",
+          "zh": "另一方面，规则也不能完全固定不变。",
+          "pinyin": "Lìng yì fāng miàn， guī zé yě bù néng wán quán gù dìng bù biàn。",
+          "vi": "Mặt khác, quy tắc cũng không thể hoàn toàn cố định."
+        },
+        {
+          "id": "READ-L5-remote-S18",
+          "zh": "当环境、技术或人们的需求发生变化时，管理者应该根据可靠的证据及时调整。",
+          "pinyin": "Dāng huán jìng、 jì shù huò rén men de xū qiú fā shēng biàn huà shí， guǎn lǐ zhě yīng gāi gēn jù kě kào de zhèng jù jí shí diào zhěng。",
+          "vi": "Khi môi trường, công nghệ hoặc nhu cầu thay đổi, người quản lý nên kịp thời điều chỉnh theo bằng chứng đáng tin."
+        }
+      ]
+    },
+    {
+      "id": "READ-L5-learning",
+      "level": "5",
+      "title": "Học một kỹ năng trong thời đại thông tin",
+      "topic": "học tập",
+      "targetCharacters": 600,
+      "actualCharacters": 541,
+      "sentences": [
+        {
+          "id": "READ-L5-learning-S01",
+          "zh": "互联网让学习资料变得前所未有地丰富。",
+          "pinyin": "Hù lián wǎng ràng xué xí zī liào biàn dé qián suǒ wèi yǒu dì fēng fù。",
+          "vi": "Internet khiến tài liệu học tập phong phú hơn bao giờ hết."
+        },
+        {
+          "id": "READ-L5-learning-S02",
+          "zh": "无论想学外语、摄影、编程还是做饭，人们都能很快找到课程、文章和视频。",
+          "pinyin": "Wú lùn xiǎng xué wài yǔ、 shè yǐng、 biān chéng hái shì zuò fàn， rén men dōu néng hěn kuài zhǎo dào kè chéng、 wén zhāng hé shì pín。",
+          "vi": "Dù muốn học ngoại ngữ, nhiếp ảnh, lập trình hay nấu ăn, mọi người đều nhanh chóng tìm được khóa học, bài viết và video."
+        },
+        {
+          "id": "READ-L5-learning-S03",
+          "zh": "但是，资料越来越多并不代表学习一定越来越容易。",
+          "pinyin": "Dàn shì， zī liào yuè lái yuè duō bìng bù dài biǎo xué xí yí dìng yuè lái yuè róng yì。",
+          "vi": "Nhưng tài liệu càng nhiều không có nghĩa việc học chắc chắn dễ hơn."
+        },
+        {
+          "id": "READ-L5-learning-S04",
+          "zh": "许多人花了大量时间比较课程、收藏链接，却很少真正完成练习。",
+          "pinyin": "Xǔ duō rén huā le dà liàng shí jiān bǐ jiào kè chéng、 shōu cáng liàn jiē， què hěn shǎo zhēn zhèng wán chéng liàn xí。",
+          "vi": "Nhiều người dành nhiều thời gian so sánh khóa học, lưu liên kết nhưng hiếm khi thật sự hoàn thành bài tập."
+        },
+        {
+          "id": "READ-L5-learning-S05",
+          "zh": "他们常常误以为“看懂了”就是“学会了”，直到需要独立完成任务时才发现知识并不牢固。",
+          "pinyin": "Tā men cháng cháng wù yǐ wéi“kàn dǒng le” jiù shì“xué huì le”， zhí dào xū yào dú lì wán chéng rèn wù shí cái fā xiàn zhī shí bìng bù láo gù。",
+          "vi": "Họ thường tưởng “xem hiểu” là “đã học được”, đến khi cần tự làm mới phát hiện kiến thức chưa vững."
+        },
+        {
+          "id": "READ-L5-learning-S06",
+          "zh": "有效学习首先需要一个清楚而具体的目标。",
+          "pinyin": "Yǒu xiào xué xí shǒu xiān xū yào yí gè qīng chǔ ér jù tǐ de mù biāo。",
+          "vi": "Học hiệu quả trước hết cần một mục tiêu rõ và cụ thể."
+        },
+        {
+          "id": "READ-L5-learning-S07",
+          "zh": "“提高英语”太宽泛，而“一个月内听懂十段两分钟的日常对话”更容易执行和检查。",
+          "pinyin": "“tí gāo yīng yǔ” tài kuān fàn， ér“yí gè yuè nèi tīng dǒng shí duàn liǎng fēn zhōng de rì cháng duì huà” gèng róng yì zhí xíng hé jiǎn chá。",
+          "vi": "“Nâng cao tiếng Anh” quá rộng; còn “trong một tháng nghe hiểu mười đoạn hội thoại đời thường dài hai phút” dễ thực hiện và kiểm tra hơn."
+        },
+        {
+          "id": "READ-L5-learning-S08",
+          "zh": "其次，学习者应该尽快从输入转向输出。",
+          "pinyin": "Qí cì， xué xí zhě yīng gāi jǐn kuài cóng shū rù zhuǎn xiàng shū chū。",
+          "vi": "Thứ hai, người học nên sớm chuyển từ tiếp nhận sang tạo ra."
+        },
+        {
+          "id": "READ-L5-learning-S09",
+          "zh": "看完一个解释以后，可以试着用自己的话总结；学了一个新词，就应在真实句子里使用；读完一章内容，则可以做一个小项目。",
+          "pinyin": "Kàn wán yí gè jiě shì yǐ hòu， kě yǐ shì zhe yòng zì jǐ de huà zǒng jié； xué le yí gè xīn cí， jiù yīng zài zhēn shí jù zi lǐ shǐ yòng； dú wán yī zhāng nèi róng， zé kě yǐ zuò yí gè xiǎo xiàng mù。",
+          "vi": "Sau khi xem giải thích, có thể thử tóm tắt bằng lời mình; học từ mới nên dùng trong câu thật; đọc xong một chương có thể làm dự án nhỏ."
+        },
+        {
+          "id": "READ-L5-learning-S10",
+          "zh": "错误在这个过程中并不是失败，而是帮助我们发现理解漏洞的信号。",
+          "pinyin": "Cuò wù zài zhè ge guò chéng zhōng bìng bú shì shī bài， ér shì bāng zhù wǒ men fā xiàn lǐ jiě lòu dòng de xìn hào。",
+          "vi": "Sai lầm trong quá trình này không phải thất bại mà là tín hiệu giúp phát hiện lỗ hổng hiểu biết."
+        },
+        {
+          "id": "READ-L5-learning-S11",
+          "zh": "再次，重复必须有间隔。",
+          "pinyin": "Zài cì， chóng fù bì xū yǒu jiàn gé。",
+          "vi": "Thứ ba, lặp lại cần có khoảng cách."
+        },
+        {
+          "id": "READ-L5-learning-S12",
+          "zh": "同一天反复看十遍会产生熟悉感，却不一定形成长期记忆。",
+          "pinyin": "Tóng yī tiān fǎn fù kàn shí biàn huì chǎn shēng shú xī gǎn， què bù yí dìng xíng chéng zhǎng qī jì yì。",
+          "vi": "Xem đi xem lại mười lần trong một ngày tạo cảm giác quen nhưng chưa chắc tạo trí nhớ dài hạn."
+        },
+        {
+          "id": "READ-L5-learning-S13",
+          "zh": "在第二天、一周后和一个月后重新回忆，通常更能检验是否真正掌握。",
+          "pinyin": "Zài dì èr tiān、 yī zhōu hòu hé yí gè yuè hòu chóng xīn huí yì， tōng cháng gèng néng jiǎn yàn shì fǒu zhēn zhèng zhǎng wò。",
+          "vi": "Nhớ lại vào ngày hôm sau, một tuần và một tháng sau thường kiểm tra tốt hơn việc đã nắm thật sự hay chưa."
+        },
+        {
+          "id": "READ-L5-learning-S14",
+          "zh": "最后，学习计划必须允许调整。",
+          "pinyin": "Zuì hòu， xué xí jì huà bì xū yǔn xǔ tiáo zhěng。",
+          "vi": "Cuối cùng, kế hoạch học phải cho phép điều chỉnh."
+        },
+        {
+          "id": "READ-L5-learning-S15",
+          "zh": "如果某种方法长期没有效果，就应该根据记录改变材料、难度或练习方式，而不是只责怪自己不够努力。",
+          "pinyin": "Rú guǒ mǒu zhǒng fāng fǎ cháng qī méi yǒu xiào guǒ， jiù yīng gāi gēn jù jì lù gǎi biàn cái liào、 nán dù huò liàn xí fāng shì， ér bú shì zhǐ zé guài zì jǐ bù gòu nǔ lì。",
+          "vi": "Nếu một phương pháp lâu không hiệu quả, nên dựa vào ghi chép để thay tài liệu, độ khó hoặc cách luyện thay vì chỉ trách mình chưa đủ cố gắng."
+        },
+        {
+          "id": "READ-L5-learning-S16",
+          "zh": "在信息丰富的时代，真正稀缺的不是内容，而是选择、实践和持续反思的能力。",
+          "pinyin": "Zài xìn xī fēng fù de shí dài， zhēn zhèng xī quē de bú shì nèi róng， ér shì xuǎn zé、 shí jiàn hé chí xù fǎn sī de néng lì。",
+          "vi": "Trong thời đại thông tin phong phú, thứ thực sự khan hiếm không phải nội dung mà là khả năng lựa chọn, thực hành và liên tục suy ngẫm."
+        },
+        {
+          "id": "READ-L5-learning-S17",
+          "zh": "真正有价值的改变通常不是一次完成的，而是在不断检查和修正中形成的。",
+          "pinyin": "Zhēn zhèng yǒu jià zhí de gǎi biàn tōng cháng bú shì yī cì wán chéng de， ér shì zài bù duàn jiǎn chá hé xiū zhèng zhōng xíng chéng de。",
+          "vi": "Thay đổi thực sự có giá trị thường không hoàn thành trong một lần mà hình thành qua kiểm tra và sửa đổi liên tục."
+        },
+        {
+          "id": "READ-L5-learning-S18",
+          "zh": "因此，面对复杂问题时，耐心、证据和合作往往比一个简单而响亮的答案更重要。",
+          "pinyin": "Yīn cǐ， miàn duì fù zá wèn tí shí， nài xīn、 zhèng jù hé hé zuò wǎng wǎng bǐ yí gè jiǎn dān ér xiǎng liàng de dá àn gèng zhòng yào。",
+          "vi": "Vì vậy, khi đối mặt vấn đề phức tạp, kiên nhẫn, bằng chứng và hợp tác thường quan trọng hơn một câu trả lời đơn giản nhưng kêu vang."
+        },
+        {
+          "id": "READ-L5-learning-S19",
+          "zh": "从更长远的角度看，一个办法是否成功，不能只用短期的数据来判断。",
+          "pinyin": "Cóng gèng cháng yuǎn de jiǎo dù kàn， yí gè bàn fǎ shì fǒu chéng gōng， bù néng zhǐ yòng duǎn qī de shù jù lái pàn duàn。",
+          "vi": "Từ góc nhìn dài hạn, một biện pháp có thành công hay không không thể chỉ đánh giá bằng dữ liệu ngắn hạn."
+        },
+        {
+          "id": "READ-L5-learning-S20",
+          "zh": "我们还需要观察它对不同群体的影响，以及这些影响是否能够公平地被承担。",
+          "pinyin": "Wǒ men hái xū yào guān chá tā duì bù tóng qún tǐ de yǐng xiǎng， yǐ jí zhè xiē yǐng xiǎng shì fǒu néng gòu gōng píng dì bèi chéng dān。",
+          "vi": "Chúng ta còn cần quan sát ảnh hưởng của nó với các nhóm khác nhau và liệu các ảnh hưởng đó có được gánh chịu công bằng hay không."
+        }
+      ]
+    },
+    {
+      "id": "READ-L5-tourism",
+      "level": "5",
+      "title": "Du lịch và đời sống địa phương",
+      "topic": "du lịch",
+      "targetCharacters": 600,
+      "actualCharacters": 555,
+      "sentences": [
+        {
+          "id": "READ-L5-tourism-S01",
+          "zh": "旅游业能够为一个地区带来收入、就业机会和更完善的公共设施。",
+          "pinyin": "Lǚ yóu yè néng gòu wèi yí gè dì qū dài lái shōu rù、 jiù yè jī huì hé gèng wán shàn de gōng gòng shè shī。",
+          "vi": "Du lịch có thể mang lại thu nhập, việc làm và cơ sở công cộng tốt hơn cho một khu vực."
+        },
+        {
+          "id": "READ-L5-tourism-S02",
+          "zh": "当越来越多游客到来时，餐馆、交通、住宿和文化服务都会得到发展。",
+          "pinyin": "Dāng yuè lái yuè duō yóu kè dào lái shí， cān guǎn、 jiāo tōng、 zhù sù hé wén huà fú wù dū huì dé dào fā zhǎn。",
+          "vi": "Khi ngày càng nhiều du khách đến, nhà hàng, giao thông, lưu trú và dịch vụ văn hóa đều phát triển."
+        },
+        {
+          "id": "READ-L5-tourism-S03",
+          "zh": "一些原来不被外界了解的传统手工艺，也可能通过旅游重新受到关注。",
+          "pinyin": "Yī xiē yuán lái bù bèi wài jiè liǎo jiě de chuán tǒng shǒu gōng yì， yě kě néng tōng guò lǚ yóu chóng xīn shòu dào guān zhù。",
+          "vi": "Một số nghề thủ công truyền thống trước đây ít được biết đến cũng có thể được chú ý trở lại nhờ du lịch."
+        },
+        {
+          "id": "READ-L5-tourism-S04",
+          "zh": "然而，如果发展速度过快，旅游也会给当地生活带来压力。",
+          "pinyin": "Rán ér， rú guǒ fā zhǎn sù dù guò kuài， lǚ yóu yě huì gěi dāng dì shēng huó dài lái yā lì。",
+          "vi": "Tuy nhiên, nếu phát triển quá nhanh, du lịch cũng gây áp lực cho đời sống địa phương."
+        },
+        {
+          "id": "READ-L5-tourism-S05",
+          "zh": "热门地区的房租和物价可能上涨，居民熟悉的商店逐渐被纪念品店取代。",
+          "pinyin": "Rè mén dì qū de fáng zū hé wù jià kě néng shàng zhǎng， jū mín shú xī de shāng diàn zhú jiàn bèi jì niàn pǐn diàn qǔ dài。",
+          "vi": "Tiền thuê và giá cả ở nơi nổi tiếng có thể tăng; cửa hàng quen thuộc dần bị thay bằng cửa hàng lưu niệm."
+        },
+        {
+          "id": "READ-L5-tourism-S06",
+          "zh": "在节假日，大量车辆和游客还会造成拥堵、噪声和垃圾问题。",
+          "pinyin": "Zài jié jià rì， dà liàng chē liàng hé yóu kè hái huì zào chéng yōng dǔ、 zào shēng hé lā jī wèn tí。",
+          "vi": "Vào ngày lễ, lượng lớn xe và khách còn gây tắc nghẽn, tiếng ồn và rác thải."
+        },
+        {
+          "id": "READ-L5-tourism-S07",
+          "zh": "更重要的是，当文化活动完全按照游客的期待进行表演时，它可能失去原来的意义。",
+          "pinyin": "Gèng zhòng yào de shì， dāng wén huà huó dòng wán quán àn zhào yóu kè de qī dài jìn xíng biǎo yǎn shí， tā kě néng shī qù yuán lái de yì yì。",
+          "vi": "Quan trọng hơn, khi hoạt động văn hóa hoàn toàn biểu diễn theo kỳ vọng du khách, nó có thể mất ý nghĩa ban đầu."
+        },
+        {
+          "id": "READ-L5-tourism-S08",
+          "zh": "可持续旅游因此强调一个原则：游客的体验不能以降低居民的生活质量为代价。",
+          "pinyin": "Kě chí xù lǚ yóu yīn cǐ qiáng diào yí gè yuán zé： yóu kè de tǐ yàn bù néng yǐ jiàng dī jū mín de shēng huó zhì liàng wèi dài jià。",
+          "vi": "Du lịch bền vững vì thế nhấn mạnh nguyên tắc: trải nghiệm của du khách không được đánh đổi bằng chất lượng sống của cư dân."
+        },
+        {
+          "id": "READ-L5-tourism-S09",
+          "zh": "地方政府可以限制某些区域每天的游客数量，改善公共交通，并把部分收入用于环境保护。",
+          "pinyin": "Dì fāng zhèng fǔ kě yǐ xiàn zhì mǒu xiē qū yù měi tiān de yóu kè shù liàng， gǎi shàn gōng gòng jiāo tōng， bìng bǎ bù fèn shōu rù yòng yú huán jìng bǎo hù。",
+          "vi": "Chính quyền có thể giới hạn số khách mỗi ngày ở một số khu vực, cải thiện giao thông công cộng và dùng một phần thu nhập bảo vệ môi trường."
+        },
+        {
+          "id": "READ-L5-tourism-S10",
+          "zh": "企业应该减少一次性用品，尊重劳动者权益，也应优先采购当地产品。",
+          "pinyin": "Qǐ yè yīng gāi jiǎn shǎo yí cì xìng yòng pǐn， zūn zhòng láo dòng zhě quán yì， yě yīng yōu xiān cǎi gòu dāng dì chǎn pǐn。",
+          "vi": "Doanh nghiệp nên giảm đồ dùng một lần, tôn trọng quyền người lao động và ưu tiên mua sản phẩm địa phương."
+        },
+        {
+          "id": "READ-L5-tourism-S11",
+          "zh": "游客同样负有责任。",
+          "pinyin": "Yóu kè tóng yàng fù yǒu zé rèn。",
+          "vi": "Du khách cũng có trách nhiệm."
+        },
+        {
+          "id": "READ-L5-tourism-S12",
+          "zh": "出发前了解当地规则，进入宗教或历史场所时保持礼貌，不随意拍摄他人，都是基本的尊重。",
+          "pinyin": "Chū fā qián liǎo jiě dāng dì guī zé， jìn rù zōng jiào huò lì shǐ chǎng suǒ shí bǎo chí lǐ mào， bù suí yì pāi shè tā rén， dōu shì jī běn de zūn zhòng。",
+          "vi": "Tìm hiểu quy định trước khi đi, giữ lịch sự ở nơi tôn giáo hoặc lịch sử, không tùy tiện chụp người khác đều là tôn trọng cơ bản."
+        },
+        {
+          "id": "READ-L5-tourism-S13",
+          "zh": "与其只去拍一张相同的照片，不如多花时间听当地人介绍他们的生活。",
+          "pinyin": "Yǔ qí zhǐ qù pāi yī zhāng xiāng tóng de zhào piān， bù rú duō huā shí jiān tīng dāng dì rén jiè shào tā men de shēng huó。",
+          "vi": "Thay vì chỉ chụp một bức ảnh giống mọi người, nên dành thời gian nghe người địa phương giới thiệu cuộc sống."
+        },
+        {
+          "id": "READ-L5-tourism-S14",
+          "zh": "一次负责任的旅行，不只是“看到了什么”，还包括我们以什么方式到达、消费和离开。",
+          "pinyin": "Yī cì fù zé rèn de lǚ xíng， bù zhǐ shì“kàn dào le shén me”， hái bāo kuò wǒ men yǐ shén me fāng shì dào dá、 xiāo fèi hé lí kāi。",
+          "vi": "Một chuyến đi có trách nhiệm không chỉ là “đã thấy gì” mà còn gồm cách chúng ta đến, tiêu dùng và rời đi."
+        },
+        {
+          "id": "READ-L5-tourism-S15",
+          "zh": "当旅游者与居民都能分享发展带来的好处时，旅行才会成为真正长久的交流。",
+          "pinyin": "Dāng lǚ yóu zhě yǔ jū mín dōu néng fēn xiǎng fā zhǎn dài lái de hǎo chù shí， lǚ xíng cái huì chéng wéi zhēn zhèng cháng jiǔ de jiāo liú。",
+          "vi": "Khi du khách và cư dân cùng chia sẻ lợi ích phát triển, du lịch mới trở thành sự giao lưu lâu dài thực sự."
+        },
+        {
+          "id": "READ-L5-tourism-S16",
+          "zh": "通过记录实际结果、比较不同经验并持续讨论，我们才能逐步找到更合适的平衡。",
+          "pinyin": "Tōng guò jì lù shí jì jié guǒ、 bǐ jiào bù tóng jīng yàn bìng chí xù tǎo lùn， wǒ men cái néng zhú bù zhǎo dào gèng hé shì de píng héng。",
+          "vi": "Bằng cách ghi lại kết quả thực tế, so sánh kinh nghiệm và thảo luận liên tục, chúng ta mới dần tìm được sự cân bằng phù hợp hơn."
+        },
+        {
+          "id": "READ-L5-tourism-S17",
+          "zh": "真正有价值的改变通常不是一次完成的，而是在不断检查和修正中形成的。",
+          "pinyin": "Zhēn zhèng yǒu jià zhí de gǎi biàn tōng cháng bú shì yī cì wán chéng de， ér shì zài bù duàn jiǎn chá hé xiū zhèng zhōng xíng chéng de。",
+          "vi": "Thay đổi thực sự có giá trị thường không hoàn thành trong một lần mà hình thành qua kiểm tra và sửa đổi liên tục."
+        },
+        {
+          "id": "READ-L5-tourism-S18",
+          "zh": "因此，面对复杂问题时，耐心、证据和合作往往比一个简单而响亮的答案更重要。",
+          "pinyin": "Yīn cǐ， miàn duì fù zá wèn tí shí， nài xīn、 zhèng jù hé hé zuò wǎng wǎng bǐ yí gè jiǎn dān ér xiǎng liàng de dá àn gèng zhòng yào。",
+          "vi": "Vì vậy, khi đối mặt vấn đề phức tạp, kiên nhẫn, bằng chứng và hợp tác thường quan trọng hơn một câu trả lời đơn giản nhưng kêu vang."
+        },
+        {
+          "id": "READ-L5-tourism-S19",
+          "zh": "从更长远的角度看，一个办法是否成功，不能只用短期的数据来判断。",
+          "pinyin": "Cóng gèng cháng yuǎn de jiǎo dù kàn， yí gè bàn fǎ shì fǒu chéng gōng， bù néng zhǐ yòng duǎn qī de shù jù lái pàn duàn。",
+          "vi": "Từ góc nhìn dài hạn, một biện pháp có thành công hay không không thể chỉ đánh giá bằng dữ liệu ngắn hạn."
+        }
+      ]
+    },
+    {
+      "id": "READ-L5-healthinfo",
+      "level": "5",
+      "title": "Đọc thông tin sức khỏe trên mạng",
+      "topic": "sức khỏe",
+      "targetCharacters": 600,
+      "actualCharacters": 540,
+      "sentences": [
+        {
+          "id": "READ-L5-healthinfo-S01",
+          "zh": "身体不舒服时，很多人的第一反应是拿出手机搜索症状。",
+          "pinyin": "Shēn tǐ bù shū fú shí， hěn duō rén de dì yī fǎn yìng shì ná chū shǒu jī sōu suǒ zhèng zhuàng。",
+          "vi": "Khi cơ thể khó chịu, phản ứng đầu tiên của nhiều người là lấy điện thoại tìm triệu chứng."
+        },
+        {
+          "id": "READ-L5-healthinfo-S02",
+          "zh": "网络信息可以帮助我们了解常见问题，也能提醒人们及时就医。",
+          "pinyin": "Wǎng luò xìn xī kě yǐ bāng zhù wǒ men liǎo jiě cháng jiàn wèn tí， yě néng tí xǐng rén men jí shí jiù yī。",
+          "vi": "Thông tin trên mạng có thể giúp hiểu vấn đề thường gặp và nhắc đi khám kịp thời."
+        },
+        {
+          "id": "READ-L5-healthinfo-S03",
+          "zh": "但是，健康内容的质量差别很大。",
+          "pinyin": "Dàn shì， jiàn kāng nèi róng de zhì liàng chā bié hěn dà。",
+          "vi": "Nhưng chất lượng nội dung sức khỏe rất khác nhau."
+        },
+        {
+          "id": "READ-L5-healthinfo-S04",
+          "zh": "有些文章由专业机构发布，说明了资料来源和适用范围；有些内容却只用夸张的标题吸引注意。",
+          "pinyin": "Yǒu xiē wén zhāng yóu zhuān yè jī gòu fā bù， shuō míng le zī liào lái yuán hé shì yòng fàn wéi； yǒu xiē nèi róng què zhǐ yòng kuā zhāng de biāo tí xī yǐn zhù yì。",
+          "vi": "Có bài do cơ quan chuyên môn đăng, nêu nguồn và phạm vi áp dụng; có nội dung chỉ dùng tiêu đề giật gân để thu hút."
+        },
+        {
+          "id": "READ-L5-healthinfo-S05",
+          "zh": "如果读者只根据一两个相似的症状判断疾病，很容易过度担心，或者错过真正需要处理的问题。",
+          "pinyin": "Rú guǒ dú zhě zhǐ gēn jù yī liǎng gè xiāng sì de zhèng zhuàng pàn duàn jí bìng， hěn róng yì guò dù dān xīn， huò zhě cuò guò zhēn zhèng xū yào chǔ lǐ de wèn tí。",
+          "vi": "Nếu chỉ dựa vào một hai triệu chứng giống nhau để đoán bệnh, người đọc dễ lo quá mức hoặc bỏ lỡ vấn đề thật sự cần xử lý."
+        },
+        {
+          "id": "READ-L5-healthinfo-S06",
+          "zh": "判断健康信息是否可靠，可以先检查发布者是谁。",
+          "pinyin": "Pàn duàn jiàn kāng xìn xī shì fǒu kě kào， kě yǐ xiān jiǎn chá fā bù zhě shì shuí。",
+          "vi": "Để đánh giá thông tin sức khỏe đáng tin hay không, trước tiên có thể kiểm tra người công bố."
+        },
+        {
+          "id": "READ-L5-healthinfo-S07",
+          "zh": "医院、大学、公共卫生机构和经过认证的专业组织通常比匿名账号更值得参考。",
+          "pinyin": "Yī yuàn、 dà xué、 gōng gòng wèi shēng jī gòu hé jīng guò rèn zhèng de zhuān yè zǔ zhī tōng cháng bǐ nì míng zhàng hào gèng zhí de cān kǎo。",
+          "vi": "Bệnh viện, đại học, cơ quan y tế công cộng và tổ chức chuyên môn được chứng nhận thường đáng tham khảo hơn tài khoản ẩn danh."
+        },
+        {
+          "id": "READ-L5-healthinfo-S08",
+          "zh": "其次，要看文章是否提供证据，是否说明研究对象、时间和限制。",
+          "pinyin": "Qí cì， yào kàn wén zhāng shì fǒu tí gōng zhèng jù， shì fǒu shuō míng yán jiū duì xiàng、 shí jiān hé xiàn zhì。",
+          "vi": "Thứ hai, xem bài có cung cấp bằng chứng và nêu đối tượng nghiên cứu, thời gian, hạn chế hay không."
+        },
+        {
+          "id": "READ-L5-healthinfo-S09",
+          "zh": "一项规模很小的研究，不能直接证明某种方法对所有人都有效。",
+          "pinyin": "Yī xiàng guī mó hěn xiǎo de yán jiū， bù néng zhí jiē zhèng míng mǒu zhǒng fāng fǎ duì suǒ yǒu rén dōu yǒu xiào。",
+          "vi": "Một nghiên cứu quy mô nhỏ không thể trực tiếp chứng minh một phương pháp hiệu quả với mọi người."
+        },
+        {
+          "id": "READ-L5-healthinfo-S10",
+          "zh": "还要注意信息的日期，因为医学建议会随着新的证据而变化。",
+          "pinyin": "Hái yào zhù yì xìn xī de rì qī， yīn wèi yī xué jiàn yì huì suí zhe xīn de zhèng jù ér biàn huà。",
+          "vi": "Cũng cần chú ý ngày thông tin vì khuyến nghị y khoa thay đổi theo bằng chứng mới."
+        },
+        {
+          "id": "READ-L5-healthinfo-S11",
+          "zh": "最重要的是，网络资料不能代替医生对个人情况的检查。",
+          "pinyin": "Zuì zhòng yào de shì， wǎng luò zī liào bù néng dài tì yī shēng duì gè rén qíng kuàng de jiǎn chá。",
+          "vi": "Quan trọng nhất, tài liệu mạng không thể thay thế việc bác sĩ kiểm tra tình trạng cá nhân."
+        },
+        {
+          "id": "READ-L5-healthinfo-S12",
+          "zh": "当症状严重、持续或突然出现时，应尽快寻求专业帮助，而不是不断更换关键词继续搜索。",
+          "pinyin": "Dāng zhèng zhuàng yán zhòng、 chí xù huò tū rán chū xiàn shí， yīng jǐn kuài xún qiú zhuān yè bāng zhù， ér bú shì bù duàn gēng huàn guān jiàn cí jì xù sōu suǒ。",
+          "vi": "Khi triệu chứng nghiêm trọng, kéo dài hoặc xuất hiện đột ngột, nên sớm tìm trợ giúp chuyên môn thay vì liên tục đổi từ khóa để tìm."
+        },
+        {
+          "id": "READ-L5-healthinfo-S13",
+          "zh": "对于药物、治疗和饮食限制，也不应只听网友经验。",
+          "pinyin": "Duì yú yào wù、 zhì liáo hé yǐn shí xiàn zhì， yě bù yīng zhǐ tīng wǎng yǒu jīng yàn。",
+          "vi": "Với thuốc, điều trị và hạn chế ăn uống, cũng không nên chỉ nghe kinh nghiệm trên mạng."
+        },
+        {
+          "id": "READ-L5-healthinfo-S14",
+          "zh": "正确使用网络健康信息的目的，不是自己完成诊断，而是更清楚地观察身体、准备问题，并与专业人员进行有效沟通。",
+          "pinyin": "Zhèng què shǐ yòng wǎng luò jiàn kāng xìn xī de mù dì， bú shì zì jǐ wán chéng zhěn duàn， ér shì gèng qīng chǔ dì guān chá shēn tǐ、 zhǔn bèi wèn tí， bìng yǔ zhuān yè rén yuán jìn xíng yǒu xiào gōu tōng。",
+          "vi": "Mục đích đúng của việc dùng thông tin sức khỏe trên mạng không phải tự chẩn đoán mà là quan sát cơ thể rõ hơn, chuẩn bị câu hỏi và giao tiếp hiệu quả với chuyên gia."
+        },
+        {
+          "id": "READ-L5-healthinfo-S15",
+          "zh": "真正有价值的改变通常不是一次完成的，而是在不断检查和修正中形成的。",
+          "pinyin": "Zhēn zhèng yǒu jià zhí de gǎi biàn tōng cháng bú shì yī cì wán chéng de， ér shì zài bù duàn jiǎn chá hé xiū zhèng zhōng xíng chéng de。",
+          "vi": "Thay đổi thực sự có giá trị thường không hoàn thành trong một lần mà hình thành qua kiểm tra và sửa đổi liên tục."
+        },
+        {
+          "id": "READ-L5-healthinfo-S16",
+          "zh": "因此，面对复杂问题时，耐心、证据和合作往往比一个简单而响亮的答案更重要。",
+          "pinyin": "Yīn cǐ， miàn duì fù zá wèn tí shí， nài xīn、 zhèng jù hé hé zuò wǎng wǎng bǐ yí gè jiǎn dān ér xiǎng liàng de dá àn gèng zhòng yào。",
+          "vi": "Vì vậy, khi đối mặt vấn đề phức tạp, kiên nhẫn, bằng chứng và hợp tác thường quan trọng hơn một câu trả lời đơn giản nhưng kêu vang."
+        },
+        {
+          "id": "READ-L5-healthinfo-S17",
+          "zh": "从更长远的角度看，一个办法是否成功，不能只用短期的数据来判断。",
+          "pinyin": "Cóng gèng cháng yuǎn de jiǎo dù kàn， yí gè bàn fǎ shì fǒu chéng gōng， bù néng zhǐ yòng duǎn qī de shù jù lái pàn duàn。",
+          "vi": "Từ góc nhìn dài hạn, một biện pháp có thành công hay không không thể chỉ đánh giá bằng dữ liệu ngắn hạn."
+        },
+        {
+          "id": "READ-L5-healthinfo-S18",
+          "zh": "我们还需要观察它对不同群体的影响，以及这些影响是否能够公平地被承担。",
+          "pinyin": "Wǒ men hái xū yào guān chá tā duì bù tóng qún tǐ de yǐng xiǎng， yǐ jí zhè xiē yǐng xiǎng shì fǒu néng gòu gōng píng dì bèi chéng dān。",
+          "vi": "Chúng ta còn cần quan sát ảnh hưởng của nó với các nhóm khác nhau và liệu các ảnh hưởng đó có được gánh chịu công bằng hay không."
+        },
+        {
+          "id": "READ-L5-healthinfo-S19",
+          "zh": "在执行过程中，公开的信息和清楚的责任分工尤其重要。",
+          "pinyin": "Zài zhí xíng guò chéng zhōng， gōng kāi de xìn xī hé qīng chǔ de zé rèn fēn gōng yóu qí zhòng yào。",
+          "vi": "Trong quá trình thực hiện, thông tin công khai và phân công trách nhiệm rõ ràng đặc biệt quan trọng."
+        }
+      ]
+    },
+    {
+      "id": "READ-L5-repair",
+      "level": "5",
+      "title": "Văn hóa sửa chữa và tiêu dùng",
+      "topic": "môi trường",
+      "targetCharacters": 600,
+      "actualCharacters": 557,
+      "sentences": [
+        {
+          "id": "READ-L5-repair-S01",
+          "zh": "现代商品更新很快，手机、家电和衣服还没有完全坏，人们就可能因为出现新款而想要更换。",
+          "pinyin": "Xiàn dài shāng pǐn gēng xīn hěn kuài， shǒu jī、 jiā diàn hé yī fú hái méi yǒu wán quán huài， rén men jiù kě néng yīn wèi chū xiàn xīn kuǎn ér xiǎng yào gēng huàn。",
+          "vi": "Hàng hóa hiện đại đổi mới nhanh; điện thoại, đồ gia dụng và quần áo chưa hỏng hẳn, người ta đã muốn thay vì có mẫu mới."
+        },
+        {
+          "id": "READ-L5-repair-S02",
+          "zh": "这种消费方式给生活带来便利，也制造了大量资源浪费和垃圾。",
+          "pinyin": "Zhè zhǒng xiāo fèi fāng shì gěi shēng huó dài lái biàn lì， yě zhì zào le dà liàng zī yuán làng fèi hé lā jī。",
+          "vi": "Cách tiêu dùng này mang lại tiện lợi nhưng cũng tạo lãng phí tài nguyên và rác thải lớn."
+        },
+        {
+          "id": "READ-L5-repair-S03",
+          "zh": "一些产品设计得越来越难拆开，维修费用甚至接近购买新产品的价格。",
+          "pinyin": "Yī xiē chǎn pǐn shè jì dé yuè lái yuè nán chāi kāi， wéi xiū fèi yòng shèn zhì jiē jìn gòu mǎi xīn chǎn pǐn de jià gé。",
+          "vi": "Một số sản phẩm được thiết kế ngày càng khó tháo, chi phí sửa thậm chí gần giá mua mới."
+        },
+        {
+          "id": "READ-L5-repair-S04",
+          "zh": "于是，“坏了就换”逐渐成为常见选择。",
+          "pinyin": "Yú shì，“huài le jiù huàn” zhú jiàn chéng wéi cháng jiàn xuǎn zé。",
+          "vi": "Vì thế, “hỏng thì thay” dần thành lựa chọn phổ biến."
+        },
+        {
+          "id": "READ-L5-repair-S05",
+          "zh": "近年来，许多城市开始重新重视维修文化。",
+          "pinyin": "Jìn nián lái， xǔ duō chéng shì kāi shǐ chóng xīn zhòng shì wéi xiū wén huà。",
+          "vi": "Những năm gần đây, nhiều thành phố bắt đầu coi trọng lại văn hóa sửa chữa."
+        },
+        {
+          "id": "READ-L5-repair-S06",
+          "zh": "社区里出现了维修活动，志愿者帮助居民检查小家电、缝补衣物或修理自行车。",
+          "pinyin": "Shè qū lǐ chū xiàn le wéi xiū huó dòng， zhì yuàn zhě bāng zhù jū mín jiǎn chá xiǎo jiā diàn、 féng bǔ yī wù huò xiū lǐ zì xíng chē。",
+          "vi": "Trong cộng đồng xuất hiện hoạt động sửa chữa; tình nguyện viên giúp cư dân kiểm tra đồ điện nhỏ, vá quần áo hoặc sửa xe đạp."
+        },
+        {
+          "id": "READ-L5-repair-S07",
+          "zh": "这些活动的意义不只是节省钱。",
+          "pinyin": "Zhè xiē huó dòng de yì yì bù zhǐ shì jié shěng qián。",
+          "vi": "Ý nghĩa của những hoạt động này không chỉ là tiết kiệm tiền."
+        },
+        {
+          "id": "READ-L5-repair-S08",
+          "zh": "参与者能够了解物品的结构，学习基本工具的使用，也会更珍惜自己已经拥有的东西。",
+          "pinyin": "Cān yù zhě néng gòu liǎo jiě wù pǐn de jié gòu， xué xí jī běn gōng jù de shǐ yòng， yě huì gèng zhēn xī zì jǐ yǐ jīng yōng yǒu de dōng xī。",
+          "vi": "Người tham gia hiểu cấu tạo đồ vật, học dùng công cụ cơ bản và trân trọng hơn những gì đang có."
+        },
+        {
+          "id": "READ-L5-repair-S09",
+          "zh": "对老人来说，修好一台用了多年的收音机，可能还保留着重要的家庭记忆。",
+          "pinyin": "Duì lǎo rén lái shuō， xiū hǎo yī tái yòng le duō nián de shōu yīn jī， kě néng hái bǎo liú zhuó zhòng yào de jiā tíng jì yì。",
+          "vi": "Với người cao tuổi, sửa được chiếc radio dùng nhiều năm có thể giữ lại ký ức gia đình quan trọng."
+        },
+        {
+          "id": "READ-L5-repair-S10",
+          "zh": "当然，维修并不适合所有情况。",
+          "pinyin": "Dāng rán， wéi xiū bìng bú shì hé suǒ yǒu qíng kuàng。",
+          "vi": "Tất nhiên, sửa chữa không phù hợp mọi trường hợp."
+        },
+        {
+          "id": "READ-L5-repair-S11",
+          "zh": "涉及电池、高压电或重要安全功能的设备，需要由专业人员处理。",
+          "pinyin": "Shè jí diàn chí、 gāo yā diàn huò zhòng yào ān quán gōng néng de shè bèi， xū yào yóu zhuān yè rén yuán chǔ lǐ。",
+          "vi": "Thiết bị liên quan pin, điện áp cao hoặc chức năng an toàn quan trọng cần chuyên gia xử lý."
+        },
+        {
+          "id": "READ-L5-repair-S12",
+          "zh": "如果产品耗能很高，继续使用也可能比更换节能设备造成更大的环境负担。",
+          "pinyin": "Rú guǒ chǎn pǐn hào néng hěn gāo， jì xù shǐ yòng yě kě néng bǐ gēng huàn jié néng shè bèi zào chéng gèng dà de huán jìng fù dān。",
+          "vi": "Nếu sản phẩm tiêu thụ năng lượng cao, tiếp tục dùng có thể tạo gánh nặng môi trường lớn hơn thay bằng thiết bị tiết kiệm."
+        },
+        {
+          "id": "READ-L5-repair-S13",
+          "zh": "因此，合理的维修文化不是拒绝购买新东西，而是在更换以前认真判断：问题能否修复、修复是否安全、产品还能使用多久。",
+          "pinyin": "Yīn cǐ， hé lǐ de wéi xiū wén huà bú shì jù jué gòu mǎi xīn dōng xī， ér shì zài gēng huàn yǐ qián rèn zhēn pàn duàn： wèn tí néng fǒu xiū fù、 xiū fù shì fǒu ān quán、 chǎn pǐn hái néng shǐ yòng duō jiǔ。",
+          "vi": "Vì vậy, văn hóa sửa chữa hợp lý không phải từ chối mua đồ mới mà là cân nhắc trước khi thay: có sửa được không, có an toàn không, còn dùng được bao lâu."
+        },
+        {
+          "id": "READ-L5-repair-S14",
+          "zh": "企业也应提供零件、说明和合理的维修服务，让消费者真正拥有选择。",
+          "pinyin": "Qǐ yè yě yīng tí gōng líng jiàn、 shuō míng hé hé lǐ de wéi xiū fú wù， ràng xiāo fèi zhě zhēn zhèng yōng yǒu xuǎn zé。",
+          "vi": "Doanh nghiệp cũng nên cung cấp linh kiện, hướng dẫn và dịch vụ sửa hợp lý để người tiêu dùng thực sự có lựa chọn."
+        },
+        {
+          "id": "READ-L5-repair-S15",
+          "zh": "当设计者、生产者和使用者共同考虑产品的整个生命过程时，消费才可能变得更负责任。",
+          "pinyin": "Dāng shè jì zhě、 shēng chǎn zhě hé shǐ yòng zhě gòng tóng kǎo lǜ chǎn pǐn de zhěng gè shēng mìng guò chéng shí， xiāo fèi cái kě néng biàn dé gèng fù zé rèn。",
+          "vi": "Khi nhà thiết kế, nhà sản xuất và người dùng cùng cân nhắc toàn bộ vòng đời sản phẩm, tiêu dùng mới có thể có trách nhiệm hơn."
+        },
+        {
+          "id": "READ-L5-repair-S16",
+          "zh": "如果参与者不知道目标、标准和反馈渠道，再好的计划也可能因为误解而失去效果。",
+          "pinyin": "Rú guǒ cān yù zhě bù zhī dào mù biāo、 biāo zhǔn hé fǎn kuì qú dào， zài hǎo de jì huà yě kě néng yīn wèi wù jiě ér shī qù xiào guǒ。",
+          "vi": "Nếu người tham gia không biết mục tiêu, tiêu chuẩn và kênh phản hồi, kế hoạch tốt đến đâu cũng có thể mất hiệu quả vì hiểu lầm."
+        },
+        {
+          "id": "READ-L5-repair-S17",
+          "zh": "另一方面，规则也不能完全固定不变。",
+          "pinyin": "Lìng yì fāng miàn， guī zé yě bù néng wán quán gù dìng bù biàn。",
+          "vi": "Mặt khác, quy tắc cũng không thể hoàn toàn cố định."
+        },
+        {
+          "id": "READ-L5-repair-S18",
+          "zh": "当环境、技术或人们的需求发生变化时，管理者应该根据可靠的证据及时调整。",
+          "pinyin": "Dāng huán jìng、 jì shù huò rén men de xū qiú fā shēng biàn huà shí， guǎn lǐ zhě yīng gāi gēn jù kě kào de zhèng jù jí shí diào zhěng。",
+          "vi": "Khi môi trường, công nghệ hoặc nhu cầu thay đổi, người quản lý nên kịp thời điều chỉnh theo bằng chứng đáng tin."
+        },
+        {
+          "id": "READ-L5-repair-S19",
+          "zh": "个人同样需要保留独立判断，而不是因为某种做法流行就直接接受。",
+          "pinyin": "Gè rén tóng yàng xū yào bǎo liú dú lì pàn duàn， ér bú shì yīn wèi mǒu zhǒng zuò fǎ liú xíng jiù zhí jiē jiē shòu。",
+          "vi": "Cá nhân cũng cần giữ phán đoán độc lập thay vì chấp nhận ngay chỉ vì một cách làm đang thịnh hành."
+        },
+        {
+          "id": "READ-L5-repair-S20",
+          "zh": "通过记录实际结果、比较不同经验并持续讨论，我们才能逐步找到更合适的平衡。",
+          "pinyin": "Tōng guò jì lù shí jì jié guǒ、 bǐ jiào bù tóng jīng yàn bìng chí xù tǎo lùn， wǒ men cái néng zhú bù zhǎo dào gèng hé shì de píng héng。",
+          "vi": "Bằng cách ghi lại kết quả thực tế, so sánh kinh nghiệm và thảo luận liên tục, chúng ta mới dần tìm được sự cân bằng phù hợp hơn."
+        }
+      ]
+    }
+  ]
+}

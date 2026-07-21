@@ -1,7 +1,7 @@
 {
-  "name": "HSK Việt – HSK 1–6 và HSK 7–9 chuẩn hóa",
+  "name": "HSK Việt – Câu ví dụ & Đọc hiểu",
   "short_name": "HSK Việt",
-  "description": "Học HSK tiếng Việt với 10 slot, gói chuẩn hóa HSK 1–6 và HSK 7–9, ngữ pháp, SRS, luyện thi và quản trị học liệu.",
+  "description": "Ứng dụng học HSK tiếng Việt với câu ví dụ chuẩn hóa, đọc hiểu HSK 1–7–9, SRS, 10 slot và Supabase tùy chọn.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

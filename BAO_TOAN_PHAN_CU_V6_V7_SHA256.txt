@@ -1,0 +1,87 @@
+BẢO TOÀN PHẦN CŨ V6.0 → V7.0 (SHA-256)
+
+Tệp cũ giữ nguyên byte: 85
+Tệp cũ bị thiếu: 0
+Tệp cũ được chỉnh có chủ đích: 11
+
+CÁC TỆP ĐƯỢC CHỈNH CÓ CHỦ ĐÍCH:
+- js/modules/reading.js
+  cũ: e03dc7dd6cb1037e73eb655a67411ba2bfb216dfa3aecf959f264ec82cbbf643
+  mới: 26bcf0a892214933c1e2c2d04b2ebe93d66f7abefa4441dd374a1ff94bdf7ddb
+- js/app.js
+  cũ: 5dc9e9cb2200b6e217f9a10d0a2ef51fb4300c3917c3a3f4e0cb5fdd048cf1e6
+  mới: 54a5ecc2bbffede93ede4cc1ef16736349a5230412848c00eb5d5e31ebfc56eb
+- data/reading/meta.json
+  cũ: 3be660deff08a966e284f634c2a18e39d5615768b3653ddd0c816505d3d0f908
+  mới: 2e367b6fc27b129c91d17ebfaf27afaeaa144cb57d2a66746fa52ed538dbd79d
+- tests/run-tests.mjs
+  cũ: ab1c166d68b6cda10d5f5ac8fe22aff455cd1f74337f0daa8ca0716ba2547ee1
+  mới: 7442e3119c079f1ed43a279f451baf9458ad8e1b9bf4203fa79ecc4201dafef1
+- index.html
+  cũ: 684c91712eccd17bb57fe34cd1b37439af3c1cb36ab113fb4248632d60b3c4e2
+  mới: f8736aa829527b33507a1e298d19c5fb107a948dd3fc7b75c04cc11f5f510490
+- manifest.webmanifest
+  cũ: 2d43c78a894b754f82b99f9e1093efccf761cf20db1022ada6f2cb87c4c5f86a
+  mới: 8338f1496982820a2a843da74497c719e6eb1cba5c459d2306235ec20a72de29
+- sw.js
+  cũ: 5dfde7502ddbde04054baf8ac8c2ed0815234e8597e4c3841e5c9d9758fe0254
+  mới: 80c60ea1532d8a253a686819362efd94962a86fb0b8c59fcd93ff65c5072775e
+- package.json
+  cũ: fa9a6a652e462b5a18025e309efba79b540802bbaf96e48af0a42356ac501b23
+  mới: 0951ddbd57ede76d25559b1af631077a7ddcaff026fd82d4c56a278582191bec
+- README.md
+  cũ: ac2201863f59a48a59446ba1a1476afa5654f85329a4abcd872409c953223d0c
+  mới: a774600689f78c86e61e2fe2091efe42a087cc5b5b62bf92ac23c3fa843c06b1
+- DATA_SOURCES.md
+  cũ: 2c44d0a76bedb6cf9560afddfd61ca444b60368e73acf9c7f70af329c38da433
+  mới: dba2ab63efb06a531615725ce45bf56104d49e859d76ee04b1ef14fbe01328d2
+- HUONG_DAN_UPLOAD_GITHUB.txt
+  cũ: 3c4868a914e4b505c90463fe07780b5af31971d2dfe3c5eb44fd936b3a513bcb
+  mới: dc385f00d1e1deca6924fc45aa0c2510fb8411ef13527b6b678ae8db2c2db349
+
+CÁC TỆP DỮ LIỆU/LÕI GIỮ NGUYÊN:
+- js/modules/storage.js
+- js/modules/data.js
+- js/modules/srs.js
+- js/modules/quiz.js
+- js/modules/audio.js
+- js/modules/ui.js
+- js/modules/sync.js
+- js/modules/activities.js
+- js/modules/weak.js
+- js/modules/plan.js
+- js/modules/stats.js
+- js/modules/exam.js
+- js/modules/content.js
+- js/modules/admin.js
+- data/levels/hsk1.json
+- data/levels/hsk2.json
+- data/levels/hsk3.json
+- data/levels/hsk4.json
+- data/levels/hsk5.json
+- data/levels/hsk6.json
+- data/levels/hsk7.json
+- data/meta.json
+- data/examples.json
+- data/hsk1-quality.json
+- data/hsk1-grammar.json
+- data/hsk2-quality.json
+- data/hsk2-grammar.json
+- data/hsk3-quality.json
+- data/hsk3-grammar.json
+- data/hsk4-quality.json
+- data/hsk4-grammar.json
+- data/hsk5-quality.json
+- data/hsk5-grammar.json
+- data/hsk6-quality.json
+- data/hsk6-grammar.json
+- data/hsk7-quality.json
+- data/hsk7-grammar.json
+- data/reading/hsk1.json
+- data/reading/hsk2.json
+- data/reading/hsk3.json
+- data/reading/hsk4.json
+- data/reading/hsk5.json
+- data/standardized-examples.json
+- supabase/schema.sql
+- supabase/upgrade_v3.sql

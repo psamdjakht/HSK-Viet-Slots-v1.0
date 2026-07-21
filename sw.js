@@ -1,15 +1,16 @@
-const CACHE_VERSION = 'hsk-viet-slots-v5.0.0';
+const CACHE_VERSION = 'hsk-viet-slots-v7.0.0';
 const CORE = [
   './','./index.html','./css/app.css','./js/app.js','./js/config.js',
   './js/modules/storage.js','./js/modules/data.js','./js/modules/srs.js','./js/modules/quiz.js',
   './js/modules/audio.js','./js/modules/ui.js','./js/modules/activities.js','./js/modules/weak.js',
   './js/modules/plan.js','./js/modules/stats.js','./js/modules/exam.js','./js/modules/sync.js',
-  './js/modules/content.js','./js/modules/admin.js',
+  './js/modules/content.js','./js/modules/admin.js','./js/modules/reading.js',
   './manifest.webmanifest','./data/meta.json','./data/examples.json',
   './data/hsk1-quality.json','./data/hsk1-grammar.json','./data/hsk2-quality.json','./data/hsk2-grammar.json',
   './data/hsk3-quality.json','./data/hsk3-grammar.json','./data/hsk4-quality.json','./data/hsk4-grammar.json',
   './data/hsk5-quality.json','./data/hsk5-grammar.json','./data/hsk6-quality.json','./data/hsk6-grammar.json',
-  './data/hsk7-quality.json','./data/hsk7-grammar.json',
+  './data/hsk7-quality.json','./data/hsk7-grammar.json','./data/standardized-examples.json',
+  './data/reading/meta.json','./data/reading/hsk1.json','./data/reading/hsk2.json','./data/reading/hsk3.json','./data/reading/hsk4.json','./data/reading/hsk5.json','./data/reading/hsk6.json','./data/reading/hsk7.json',
   './assets/icons/icon-192.png','./assets/icons/icon-512.png'
 ];
 self.addEventListener('install', event => {

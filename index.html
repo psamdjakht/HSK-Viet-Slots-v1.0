@@ -9,7 +9,7 @@
   <link rel="icon" href="./assets/icons/icon-192.png">
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
   <link rel="stylesheet" href="./css/app.css">
-  <title>HSK Việt – HSK 1–6 và HSK 7–9 chuẩn hóa & 10 Slot</title>
+  <title>HSK Việt – Câu ví dụ chuẩn hóa & Đọc hiểu HSK 1–7–9</title>
 </head>
 <body>
   <div id="toast" role="status" aria-live="polite"></div>
@@ -71,6 +71,7 @@
           <article class="feature-card"><span class="feature-icon">弱</span><div><h3>Sổ từ yếu</h3><p>Ưu tiên từ sai nhiều, khó nhớ hoặc hay quên.</p></div><button id="weak-book-btn" class="btn secondary">Mở sổ từ yếu</button></article>
           <article class="feature-card"><span class="feature-icon">复</span><div><h3>Ôn đến hạn</h3><p id="review-due-note">Chưa có từ đến hạn.</p></div><button id="review-due-btn" class="btn secondary">Ôn SRS</button></article>
           <article class="feature-card quality-card"><span class="feature-icon">书</span><div><h3>HSK 1–6 và HSK 7–9 chuẩn hóa</h3><p>Tra nghĩa, cách dùng, cụm từ, từ dễ nhầm và ngữ pháp theo từng cấp.</p></div><button id="open-hsk1-library-btn" class="btn secondary">Mở thư viện</button></article>
+          <article class="feature-card reading-card"><span class="feature-icon">读</span><div><h3>Đọc hiểu HSK 1–7–9</h3><p>Bài đọc đúng độ dài từng cấp, highlight từ vựng, pinyin và dịch từng câu.</p></div><button id="open-reading-btn" class="btn secondary">Bắt đầu đọc</button></article>
         </div>
 
         <section class="exam-card">
@@ -102,6 +103,27 @@
           </div>
           <button id="next-word-btn" class="btn primary large" hidden>Tiếp tục với mức “Nhớ”</button>
         </article>
+      </section>
+
+
+      <section id="reading-view" hidden>
+        <div class="study-topline"><button id="back-reading-dashboard-btn" class="btn ghost small">← Trang chính</button><span id="reading-progress-label">Đọc hiểu HSK 1</span></div>
+        <section class="reading-toolbar-card">
+          <div><p class="eyebrow">Luyện đọc theo cấp</p><h2 id="reading-title">Đọc hiểu HSK 1</h2><p id="reading-meta"></p></div>
+          <div class="reading-controls">
+            <label>Cấp HSK<select id="reading-level-select"><option value="1">HSK 1 · khoảng 50 chữ</option><option value="2">HSK 2 · khoảng 100 chữ</option><option value="3">HSK 3 · khoảng 180 chữ</option><option value="4">HSK 4 · khoảng 300 chữ</option><option value="5">HSK 5 · khoảng 600 chữ</option><option value="6">HSK 6 · khoảng 1.000 chữ</option><option value="7">HSK 7–9 · khoảng 1.500 chữ</option></select></label>
+            <label class="switch-line compact"><span>Hiện pinyin</span><input id="reading-pinyin-toggle" type="checkbox"></label>
+            <label class="switch-line compact"><span>Hiện dịch từng câu</span><input id="reading-translation-toggle" type="checkbox" checked></label>
+          </div>
+        </section>
+        <div class="reading-layout">
+          <aside class="reading-sidebar"><h3>Danh sách bài</h3><div id="reading-passage-list" class="reading-passage-list"></div></aside>
+          <article class="reading-article-card">
+            <header class="reading-article-head"><div><span id="reading-topic" class="pill"></span><h2 id="reading-passage-title"></h2><small id="reading-length"></small></div><button id="reading-speak-all-btn" class="btn secondary">🔊 Nghe toàn bài</button></header>
+            <div id="reading-sentences" class="reading-sentences"></div>
+          </article>
+          <aside id="reading-word-detail" class="reading-word-detail info-card"><strong>Chạm vào từ được highlight</strong><p>App sẽ hiện pinyin, nghĩa và cách dùng của từ tại đây.</p></aside>
+        </div>
       </section>
 
       <section id="exam-view" hidden>

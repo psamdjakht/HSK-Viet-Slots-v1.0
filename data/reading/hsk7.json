@@ -1,0 +1,1412 @@
+{
+  "meta": {
+    "level": "7",
+    "displayLevel": "7–9",
+    "version": "7.0.0",
+    "targetCharacters": 1500,
+    "passageCount": 5,
+    "description": "Bài đọc biên soạn theo độ dài mục tiêu, có pinyin, highlight từ và dịch từng câu."
+  },
+  "passages": [
+    {
+      "id": "READ-L7-work-meaning",
+      "level": "7",
+      "title": "Tiến bộ công nghệ và ý nghĩa của lao động",
+      "topic": "công nghệ xã hội",
+      "targetCharacters": 1500,
+      "actualCharacters": 1682,
+      "sentences": [
+        {
+          "id": "READ-L7-work-meaning-S01",
+          "zh": "每一轮技术革命都会重新定义哪些工作值得由人完成，哪些任务可以交给机器，以及社会应如何分配由生产率提高所带来的收益。",
+          "pinyin": "Měi yī lún jì shù gé mìng dū huì chóng xīn dìng yì nǎ xiē gōng zuò zhí de yóu rén wán chéng， nǎ xiē rèn wù kě yǐ jiāo gěi jī qì， yǐ jí shè huì yīng rú hé fēn pèi yóu shēng chǎn lǜ tí gāo suǒ dài lái de shōu yì。",
+          "vi": "Mỗi cuộc cách mạng công nghệ đều định nghĩa lại công việc nào đáng để con người làm, nhiệm vụ nào có thể giao cho máy và xã hội nên phân phối lợi ích từ năng suất tăng ra sao."
+        },
+        {
+          "id": "READ-L7-work-meaning-S02",
+          "zh": "从蒸汽机到自动化生产线，再到今天能够生成文字、图像和程序的人工智能，技术一直在减少某些劳动，同时创造新的职业与依赖。",
+          "pinyin": "Cóng zhēng qì jī dào zì dòng huà shēng chǎn xiàn， zài dào jīn tiān néng gòu shēng chéng wén zì、 tú xiàng hé chéng xù de rén gōng zhì néng， jì shù yì zhí zài jiǎn shǎo mǒu xiē láo dòng， tóng shí chuàng zào xīn de zhí yè yǔ yī lài。",
+          "vi": "Từ máy hơi nước, dây chuyền tự động đến AI tạo văn bản, hình ảnh và chương trình, công nghệ luôn làm giảm một số loại lao động đồng thời tạo nghề và sự phụ thuộc mới."
+        },
+        {
+          "id": "READ-L7-work-meaning-S03",
+          "zh": "公众讨论往往集中在“机器会不会抢走工作”，但这个问题过于简单，因为工作并不是固定数量的岗位，也不只是获得工资的手段。",
+          "pinyin": "Gōng zhòng tǎo lùn wǎng wǎng jí zhōng zài“jī qì huì bú huì qiǎng zǒu gōng zuò”， dàn zhè ge wèn tí guò yú jiǎn dān， yīn wèi gōng zuò bìng bú shì gù dìng shù liàng de gǎng wèi， yě bù zhǐ shì huò dé gōng zī de shǒu duàn。",
+          "vi": "Thảo luận công chúng thường tập trung vào “máy có cướp việc không”, nhưng câu hỏi này quá đơn giản vì việc làm không phải số vị trí cố định và cũng không chỉ là phương tiện nhận lương."
+        },
+        {
+          "id": "READ-L7-work-meaning-S04",
+          "zh": "劳动还提供日常结构、社会关系、身份认同和参与共同生活的方式。",
+          "pinyin": "Láo dòng hái tí gōng rì cháng jié gòu、 shè huì guān xì、 shēn fèn rèn tóng hé cān yù gòng tóng shēng huó de fāng shì。",
+          "vi": "Lao động còn cung cấp cấu trúc hằng ngày, quan hệ xã hội, bản sắc và cách tham gia đời sống chung."
+        },
+        {
+          "id": "READ-L7-work-meaning-S05",
+          "zh": "如果技术替代了重复、危险和损害健康的任务，它可以让人从不必要的消耗中解放出来。",
+          "pinyin": "Rú guǒ jì shù tì dài le chóng fù、 wēi xiǎn hé sǔn hài jiàn kāng de rèn wù， tā kě yǐ ràng rén cóng bù bì yào de xiāo hào zhōng jiě fàng chū lái。",
+          "vi": "Nếu công nghệ thay thế nhiệm vụ lặp lại, nguy hiểm và hại sức khỏe, nó có thể giải phóng con người khỏi hao mòn không cần thiết."
+        },
+        {
+          "id": "READ-L7-work-meaning-S06",
+          "zh": "然而，如果节省下来的时间只转化为裁员、收入下降和工作强度增加，那么生产率进步就不会自动带来更好的生活。",
+          "pinyin": "Rán ér， rú guǒ jié shěng xià lái de shí jiān zhǐ zhuǎn huà wèi cái yuán、 shōu rù xià jiàng hé gōng zuò qiáng dù zēng jiā， nà me shēng chǎn lǜ jìn bù jiù bú huì zì dòng dài lái gèng hǎo de shēng huó。",
+          "vi": "Nhưng nếu thời gian tiết kiệm chỉ chuyển thành sa thải, giảm thu nhập và cường độ cao hơn, tiến bộ năng suất sẽ không tự động mang lại cuộc sống tốt hơn."
+        },
+        {
+          "id": "READ-L7-work-meaning-S07",
+          "zh": "关键不在于技术本身是否先进，而在于所有权、谈判能力和制度如何决定收益流向。",
+          "pinyin": "Guān jiàn bù zài yú jì shù běn shēn shì fǒu xiān jìn， ér zài yú suǒ yǒu quán、 tán pàn néng lì hé zhì dù rú hé jué dìng shōu yì liú xiàng。",
+          "vi": "Điểm mấu chốt không phải công nghệ tiên tiến đến đâu mà là quyền sở hữu, năng lực thương lượng và thể chế quyết định lợi ích chảy về đâu."
+        },
+        {
+          "id": "READ-L7-work-meaning-S08",
+          "zh": "当少数企业掌握数据、计算资源和市场入口时，劳动者可能更难分享自己帮助创造的价值。",
+          "pinyin": "Dāng shǎo shù qǐ yè zhǎng wò shù jù、 jì suàn zī yuán hé shì chǎng rù kǒu shí， láo dòng zhě kě néng gèng nán fēn xiǎng zì jǐ bāng zhù chuàng zào de jià zhí。",
+          "vi": "Khi số ít doanh nghiệp nắm dữ liệu, tài nguyên tính toán và lối vào thị trường, người lao động có thể khó chia sẻ giá trị mình góp phần tạo ra."
+        },
+        {
+          "id": "READ-L7-work-meaning-S09",
+          "zh": "平台化工作就是一个例子：算法表面上提高了匹配效率，却也可能通过不透明评分、动态定价和随时变化的规则，把风险转移给个人。",
+          "pinyin": "Píng tái huà gōng zuò jiù shì yí gè lì zi： suàn fǎ biǎo miàn shàng tí gāo le pǐ pèi xiào lǜ， què yě kě néng tōng guò bú tòu míng píng fēn、 dòng tài dìng jià hé suí shí biàn huà de guī zé， bǎ fēng xiǎn zhuǎn yí gěi gè rén。",
+          "vi": "Lao động nền tảng là một ví dụ: thuật toán bề ngoài tăng hiệu quả ghép nối nhưng có thể chuyển rủi ro sang cá nhân bằng chấm điểm mờ, định giá động và quy tắc thay đổi bất ngờ."
+        },
+        {
+          "id": "READ-L7-work-meaning-S10",
+          "zh": "在这种环境中，劳动者看似拥有自由时间，实际上却必须不断等待订单，并承担设备、保险和空闲时间的成本。",
+          "pinyin": "Zài zhè zhǒng huán jìng zhōng， láo dòng zhě kàn shì yōng yǒu zì yóu shí jiān， shí jì shàng què bì xū bù duàn děng dài dìng dān， bìng chéng dān shè bèi、 bǎo xiǎn hé kòng xián shí jiān de chéng běn。",
+          "vi": "Trong môi trường ấy, người lao động có vẻ tự do thời gian nhưng thực tế phải liên tục chờ đơn và gánh chi phí thiết bị, bảo hiểm, thời gian trống."
+        },
+        {
+          "id": "READ-L7-work-meaning-S11",
+          "zh": "人工智能进入办公室以后，也可能改变专业工作的内部结构。",
+          "pinyin": "Rén gōng zhì néng jìn rù bàn gōng shì yǐ hòu， yě kě néng gǎi biàn zhuān yè gōng zuò de nèi bù jié gòu。",
+          "vi": "Khi AI vào văn phòng, nó cũng có thể thay đổi cấu trúc bên trong của lao động chuyên môn."
+        },
+        {
+          "id": "READ-L7-work-meaning-S12",
+          "zh": "初级人员过去通过整理资料、起草文件和检查细节来学习，现在这些任务若完全自动化，组织可能失去培养经验的阶梯。",
+          "pinyin": "Chū jí rén yuán guò qù tōng guò zhěng lǐ zī liào、 qǐ cǎo wén jiàn hé jiǎn chá xì jié lái xué xí， xiàn zài zhè xiē rèn wù ruò wán quán zì dòng huà， zǔ zhī kě néng shī qù péi yǎng jīng yàn de jiē tī。",
+          "vi": "Nhân sự mới trước đây học qua tổng hợp tài liệu, soạn thảo và kiểm tra chi tiết; nếu các việc này tự động hóa hoàn toàn, tổ chức có thể mất nấc thang đào tạo kinh nghiệm."
+        },
+        {
+          "id": "READ-L7-work-meaning-S13",
+          "zh": "短期效率因此可能与长期能力建设发生冲突。",
+          "pinyin": "Duǎn qī xiào lǜ yīn cǐ kě néng yǔ cháng qī néng lì jiàn shè fā shēng chōng tū。",
+          "vi": "Hiệu quả ngắn hạn vì thế có thể xung đột với xây dựng năng lực dài hạn."
+        },
+        {
+          "id": "READ-L7-work-meaning-S14",
+          "zh": "管理者若只计算完成一项任务所需的分钟数，就会忽略学习、判断和责任无法被简单压缩。",
+          "pinyin": "Guǎn lǐ zhě ruò zhǐ jì suàn wán chéng yī xiàng rèn wù suǒ xū de fēn zhōng shù， jiù huì hū lüè xué xí、 pàn duàn hé zé rèn wú fǎ bèi jiǎn dān yā suō。",
+          "vi": "Nếu nhà quản lý chỉ tính số phút hoàn thành nhiệm vụ, họ sẽ bỏ qua việc học, phán đoán và trách nhiệm không thể nén đơn giản."
+        },
+        {
+          "id": "READ-L7-work-meaning-S15",
+          "zh": "另一个问题是，自动化系统常常把复杂决策拆成标准指标，而指标一旦成为考核目标，人们就会围绕指标行动。",
+          "pinyin": "Lìng yí gè wèn tí shì， zì dòng huà xì tǒng cháng cháng bǎ fù zá jué cè chāi chéng biāo zhǔn zhǐ biāo， ér zhǐ biāo yí dàn chéng wéi kǎo hé mù biāo， rén men jiù huì wéi rào zhǐ biāo xíng dòng。",
+          "vi": "Một vấn đề khác là hệ thống tự động thường chia quyết định phức tạp thành chỉ số chuẩn; khi chỉ số trở thành mục tiêu đánh giá, con người sẽ hành động xoay quanh chỉ số."
+        },
+        {
+          "id": "READ-L7-work-meaning-S16",
+          "zh": "医院可能追求处理数量而忽视交流质量，学校可能追求分数而减少探索，客服可能追求通话时长而不真正解决问题。",
+          "pinyin": "Yī yuàn kě néng zhuī qiú chǔ lǐ shù liàng ér hū shì jiāo liú zhì liàng， xué xiào kě néng zhuī qiú fēn shù ér jiǎn shǎo tàn suǒ， kè fú kě néng zhuī qiú tōng huà shí cháng ér bù zhēn zhèng jiě jué wèn tí。",
+          "vi": "Bệnh viện có thể chạy theo số lượng xử lý mà bỏ chất lượng giao tiếp; trường chạy theo điểm mà giảm khám phá; chăm sóc khách hàng chạy theo thời lượng gọi mà không giải quyết thật sự."
+        },
+        {
+          "id": "READ-L7-work-meaning-S17",
+          "zh": "这并不说明数据无用，而是说明任何测量都只能代表现实的一部分。",
+          "pinyin": "Zhè bìng bù shuō míng shù jù wú yòng， ér shì shuō míng rèn hé cè liáng dōu zhǐ néng dài biǎo xiàn shí de yī bù fèn。",
+          "vi": "Điều này không có nghĩa dữ liệu vô dụng mà cho thấy mọi đo lường chỉ đại diện một phần thực tế."
+        },
+        {
+          "id": "READ-L7-work-meaning-S18",
+          "zh": "保留人工判断，并让受影响的人能够质疑系统，是避免效率逻辑压倒公共价值的重要条件。",
+          "pinyin": "Bǎo liú rén gōng pàn duàn， bìng ràng shòu yǐng xiǎng de rén néng gòu zhì yí xì tǒng， shì bì miǎn xiào lǜ luó jí yā dǎo gōng gòng jià zhí de zhòng yào tiáo jiàn。",
+          "vi": "Giữ phán đoán của con người và cho người bị ảnh hưởng quyền chất vấn hệ thống là điều kiện quan trọng để logic hiệu quả không lấn át giá trị công."
+        },
+        {
+          "id": "READ-L7-work-meaning-S19",
+          "zh": "面对技术变化，教育政策通常强调“提高技能”，但把全部责任放在个人身上并不公平。",
+          "pinyin": "Miàn duì jì shù biàn huà， jiào yù zhèng cè tōng cháng qiáng diào“tí gāo jì néng”， dàn bǎ quán bù zé rèn fàng zài gè rén shēn shàng bìng bù gōng píng。",
+          "vi": "Trước thay đổi công nghệ, chính sách giáo dục thường nhấn mạnh “nâng kỹ năng”, nhưng đặt toàn bộ trách nhiệm lên cá nhân là không công bằng."
+        },
+        {
+          "id": "READ-L7-work-meaning-S20",
+          "zh": "一个中年劳动者即使愿意学习，也可能缺少时间、资金和明确的就业机会。",
+          "pinyin": "Yí gè zhōng nián láo dòng zhě jí shǐ yuàn yì xué xí， yě kě néng quē shǎo shí jiān、 zī jīn hé míng què de jiù yè jī huì。",
+          "vi": "Một lao động trung niên dù muốn học vẫn có thể thiếu thời gian, tiền và cơ hội việc làm rõ ràng."
+        },
+        {
+          "id": "READ-L7-work-meaning-S21",
+          "zh": "有效的转型需要企业承担培训义务，公共机构提供收入支持，并让职业教育与真实岗位需求相连接。",
+          "pinyin": "Yǒu xiào de zhuǎn xíng xū yào qǐ yè chéng dān péi xùn yì wù， gōng gòng jī gòu tí gōng shōu rù zhī chí， bìng ràng zhí yè jiào yù yǔ zhēn shí gǎng wèi xū qiú xiāng lián jiē。",
+          "vi": "Chuyển đổi hiệu quả cần doanh nghiệp chịu nghĩa vụ đào tạo, cơ quan công hỗ trợ thu nhập và giáo dục nghề gắn với nhu cầu việc làm thật."
+        },
+        {
+          "id": "READ-L7-work-meaning-S22",
+          "zh": "同时，社会还应重新评价照护、教育、维护环境和社区服务等难以完全自动化的劳动。",
+          "pinyin": "Tóng shí， shè huì hái yīng chóng xīn píng jià zhào hù、 jiào yù、 wéi hù huán jìng hé shè qū fú wù děng nán yǐ wán quán zì dòng huà de láo dòng。",
+          "vi": "Đồng thời, xã hội cần đánh giá lại lao động chăm sóc, giáo dục, bảo trì môi trường và dịch vụ cộng đồng vốn khó tự động hóa hoàn toàn."
+        },
+        {
+          "id": "READ-L7-work-meaning-S23",
+          "zh": "这些工作常常创造巨大的社会价值，却因为无法快速扩大规模或产生直接利润而被低估。",
+          "pinyin": "Zhè xiē gōng zuò cháng cháng chuàng zào jù dà de shè huì jià zhí， què yīn wèi wú fǎ kuài sù kuò dà guī mó huò chǎn shēng zhí jiē lì rùn ér bèi dī gū。",
+          "vi": "Những công việc này thường tạo giá trị xã hội lớn nhưng bị đánh giá thấp vì không thể mở rộng nhanh hoặc sinh lợi trực tiếp."
+        },
+        {
+          "id": "READ-L7-work-meaning-S24",
+          "zh": "如果技术让商品生产更便宜，却没有改善照护者、教师和基础服务人员的待遇，所谓进步就仍然是不完整的。",
+          "pinyin": "Rú guǒ jì shù ràng shāng pǐn shēng chǎn gèng pián yi， què méi yǒu gǎi shàn zhào hù zhě、 jiào shī hé jī chǔ fú wù rén yuán de dài yù， suǒ wèi jìn bù jiù réng rán shì bù wán zhěng de。",
+          "vi": "Nếu công nghệ làm hàng hóa rẻ hơn nhưng không cải thiện đãi ngộ người chăm sóc, giáo viên và nhân viên dịch vụ thiết yếu, tiến bộ vẫn chưa đầy đủ."
+        },
+        {
+          "id": "READ-L7-work-meaning-S25",
+          "zh": "缩短工作时间是另一种可能的制度回应。",
+          "pinyin": "Suō duǎn gōng zuò shí jiān shì lìng yī zhǒng kě néng de zhì dù huí yìng。",
+          "vi": "Rút ngắn thời gian làm việc là một phản ứng thể chế khả thi khác."
+        },
+        {
+          "id": "READ-L7-work-meaning-S26",
+          "zh": "当生产率提高时，社会可以选择把一部分收益转化为更多休息、学习和家庭时间，而不是只追求产量继续增长。",
+          "pinyin": "Dāng shēng chǎn lǜ tí gāo shí， shè huì kě yǐ xuǎn zé bǎ yī bù fèn shōu yì zhuǎn huà wèi gèng duō xiū xī、 xué xí hé jiā tíng shí jiān， ér bú shì zhǐ zhuī qiú chǎn liàng jì xù zēng zhǎng。",
+          "vi": "Khi năng suất tăng, xã hội có thể chuyển một phần lợi ích thành thêm thời gian nghỉ, học và gia đình thay vì chỉ tiếp tục tăng sản lượng."
+        },
+        {
+          "id": "READ-L7-work-meaning-S27",
+          "zh": "这需要改变把长时间工作等同于勤奋的文化，也需要保证低收入者不会因为减少工时而失去基本生活保障。",
+          "pinyin": "Zhè xū yào gǎi biàn bǎ zhǎng shí jiān gōng zuò děng tóng yú qín fèn de wén huà， yě xū yào bǎo zhèng dī shōu rù zhě bú huì yīn wèi jiǎn shǎo gōng shí ér shī qù jī běn shēng huó bǎo zhàng。",
+          "vi": "Điều này cần thay đổi văn hóa đồng nhất làm lâu với chăm chỉ, đồng thời bảo đảm người thu nhập thấp không mất sinh kế cơ bản khi giảm giờ."
+        },
+        {
+          "id": "READ-L7-work-meaning-S28",
+          "zh": "有些人提出基本收入，以便在岗位快速变化时提供安全网；另一些人担心它会削弱公共服务或掩盖不平等的劳动关系。",
+          "pinyin": "Yǒu xiē rén tí chū jī běn shōu rù， yǐ biàn zài gǎng wèi kuài sù biàn huà shí tí gōng ān quán wǎng； lìng yī xiē rén dān xīn tā huì xuē ruò gōng gòng fú wù huò yǎn gài bù píng děng de láo dòng guān xì。",
+          "vi": "Một số người đề xuất thu nhập cơ bản để tạo lưới an toàn khi việc làm đổi nhanh; người khác lo nó làm yếu dịch vụ công hoặc che giấu quan hệ lao động bất bình đẳng."
+        },
+        {
+          "id": "READ-L7-work-meaning-S29",
+          "zh": "这些方案没有简单答案，但共同指出一个事实：技术造成的风险不能只由最脆弱的人承担。",
+          "pinyin": "Zhè xiē fāng àn méi yǒu jiǎn dān dá àn， dàn gòng tóng zhǐ chū yí gè shì shí： jì shù zào chéng de fēng xiǎn bù néng zhǐ yóu zuì cuì ruò de rén chéng dān。",
+          "vi": "Các phương án không có đáp án đơn giản nhưng cùng chỉ ra rằng rủi ro do công nghệ tạo ra không thể chỉ do người yếu thế nhất gánh."
+        },
+        {
+          "id": "READ-L7-work-meaning-S30",
+          "zh": "此外，我们还需要警惕把所有人的价值都与市场就业绑定。",
+          "pinyin": "Cǐ wài， wǒ men hái xū yào jǐng tì bǎ suǒ yǒu rén de jià zhí dōu yǔ shì chǎng jiù yè bǎng dìng。",
+          "vi": "Ngoài ra, cần cảnh giác việc buộc giá trị của mọi người vào việc làm thị trường."
+        },
+        {
+          "id": "READ-L7-work-meaning-S31",
+          "zh": "照顾家人、参与社区、创作、学习和休息，都是有意义的人类活动，即使它们没有工资。",
+          "pinyin": "Zhào gù jiā rén、 cān yù shè qū、 chuàng zuò、 xué xí hé xiū xī， dōu shì yǒu yì yì de rén lèi huó dòng， jí shǐ tā men méi yǒu gōng zī。",
+          "vi": "Chăm sóc gia đình, tham gia cộng đồng, sáng tạo, học và nghỉ đều là hoạt động có ý nghĩa dù không có lương."
+        },
+        {
+          "id": "READ-L7-work-meaning-S32",
+          "zh": "当自动化减少必要劳动时，真正值得追问的不是如何制造更多忙碌，而是如何让人拥有选择有意义活动的条件。",
+          "pinyin": "Dāng zì dòng huà jiǎn shǎo bì yào láo dòng shí， zhēn zhèng zhí de zhuī wèn de bú shì rú hé zhì zào gèng duō máng lù， ér shì rú hé ràng rén yōng yǒu xuǎn zé yǒu yì yì huó dòng de tiáo jiàn。",
+          "vi": "Khi tự động hóa giảm lao động cần thiết, câu hỏi đáng hỏi không phải làm sao tạo thêm bận rộn mà là làm sao để con người có điều kiện lựa chọn hoạt động có ý nghĩa."
+        },
+        {
+          "id": "READ-L7-work-meaning-S33",
+          "zh": "这要求社会同时讨论收入分配、公共服务、时间权利和民主参与，而不能把未来交给技术企业单独决定。",
+          "pinyin": "Zhè yāo qiú shè huì tóng shí tǎo lùn shōu rù fēn pèi、 gōng gòng fú wù、 shí jiān quán lì hé mín zhǔ cān yù， ér bù néng bǎ wèi lái jiāo gěi jì shù qǐ yè dān dú jué dìng。",
+          "vi": "Điều này đòi hỏi xã hội cùng bàn về phân phối thu nhập, dịch vụ công, quyền về thời gian và tham gia dân chủ, không thể để doanh nghiệp công nghệ đơn độc quyết định tương lai."
+        },
+        {
+          "id": "READ-L7-work-meaning-S34",
+          "zh": "技术确实会改变工作，但工作的未来从来不是技术预测的自然结果，而是政治选择、社会谈判和日常实践共同形成的。",
+          "pinyin": "Jì shù què shí huì gǎi biàn gōng zuò， dàn gōng zuò de wèi lái cóng lái bú shì jì shù yù cè de zì rán jié guǒ， ér shì zhèng zhì xuǎn zé、 shè huì tán pàn hé rì cháng shí jiàn gòng tóng xíng chéng de。",
+          "vi": "Công nghệ đúng là sẽ thay đổi việc làm, nhưng tương lai lao động chưa bao giờ là kết quả tự nhiên của dự báo kỹ thuật mà do lựa chọn chính trị, thương lượng xã hội và thực hành hằng ngày cùng tạo nên."
+        },
+        {
+          "id": "READ-L7-work-meaning-S35",
+          "zh": "如果进步能够减少痛苦、扩大自主并让更多人分享安全与尊严，它才不仅是机器能力的增长，也是社会能力的增长。",
+          "pinyin": "Rú guǒ jìn bù néng gòu jiǎn shǎo tòng kǔ、 kuò dà zì zhǔ bìng ràng gèng duō rén fēn xiǎng ān quán yǔ zūn yán， tā cái bù jǐn shì jī qì néng lì de zēng zhǎng， yě shì shè huì néng lì de zēng zhǎng。",
+          "vi": "Nếu tiến bộ giảm đau khổ, mở rộng tự chủ và giúp nhiều người cùng chia sẻ an toàn và phẩm giá, nó mới không chỉ là tăng năng lực máy mà còn là tăng năng lực xã hội."
+        },
+        {
+          "id": "READ-L7-work-meaning-S36",
+          "zh": "企业在引入自动化之前，还应评估它对工作质量的影响，而不只是计算能够减少多少岗位。",
+          "pinyin": "Qǐ yè zài yǐn rù zì dòng huà zhī qián， hái yīng píng gū tā duì gōng zuò zhì liàng de yǐng xiǎng， ér bù zhǐ shì jì suàn néng gòu jiǎn shǎo duō shǎo gǎng wèi。",
+          "vi": "Trước khi tự động hóa, doanh nghiệp cần đánh giá ảnh hưởng đến chất lượng công việc chứ không chỉ tính giảm được bao nhiêu vị trí."
+        },
+        {
+          "id": "READ-L7-work-meaning-S37",
+          "zh": "如果系统让劳动者失去理解完整流程的机会，他们在出现异常时反而更难处理。",
+          "pinyin": "Rú guǒ xì tǒng ràng láo dòng zhě shī qù lǐ jiě wán zhěng liú chéng de jī huì， tā men zài chū xiàn yì cháng shí fǎn ér gèng nán chǔ lǐ。",
+          "vi": "Nếu hệ thống khiến người lao động mất cơ hội hiểu toàn bộ quy trình, họ sẽ khó xử lý hơn khi có bất thường."
+        },
+        {
+          "id": "READ-L7-work-meaning-S38",
+          "zh": "保留一定的人工练习、轮岗和解释权，可以避免组织能力被表面效率逐渐掏空。",
+          "pinyin": "Bǎo liú yí dìng de rén gōng liàn xí、 lún gǎng hé jiě shì quán， kě yǐ bì miǎn zǔ zhī néng lì bèi biǎo miàn xiào lǜ zhú jiàn tāo kōng。",
+          "vi": "Giữ một mức thực hành thủ công, luân chuyển và quyền giải thích có thể ngăn năng lực tổ chức bị hiệu quả bề mặt làm rỗng dần."
+        },
+        {
+          "id": "READ-L7-work-meaning-S39",
+          "zh": "工会和专业协会也需要参与技术采购与部署，因为一线人员最了解哪些指标会扭曲实际工作。",
+          "pinyin": "Gōng huì hé zhuān yè xié huì yě xū yào cān yù jì shù cǎi gòu yǔ bù shǔ， yīn wèi yī xiàn rén yuán zuì liǎo jiě nǎ xiē zhǐ biāo huì niǔ qū shí jì gōng zuò。",
+          "vi": "Công đoàn và hiệp hội nghề nghiệp cần tham gia mua sắm và triển khai công nghệ vì người tuyến đầu hiểu nhất chỉ số nào làm méo công việc thật."
+        },
+        {
+          "id": "READ-L7-work-meaning-S40",
+          "zh": "公共部门使用算法时尤其要谨慎，因为错误决定可能影响福利、教育、医疗甚至人身自由。",
+          "pinyin": "Gōng gòng bù mén shǐ yòng suàn fǎ shí yóu qí yào jǐn shèn， yīn wèi cuò wù jué dìng kě néng yǐng xiǎng fú lì、 jiào yù、 yī liáo shèn zhì rén shēn zì yóu。",
+          "vi": "Khu vực công dùng thuật toán cần đặc biệt thận trọng vì quyết định sai có thể ảnh hưởng phúc lợi, giáo dục, y tế và cả tự do cá nhân."
+        },
+        {
+          "id": "READ-L7-work-meaning-S41",
+          "zh": "受影响者应有权获得理由、要求人工复核并纠正错误数据。",
+          "pinyin": "Shòu yǐng xiǎng zhě yīng yǒu quán huò dé lǐ yóu、 yāo qiú rén gōng fù hé bìng jiū zhèng cuò wù shù jù。",
+          "vi": "Người bị ảnh hưởng cần có quyền nhận lý do, yêu cầu xem xét bởi con người và sửa dữ liệu sai."
+        },
+        {
+          "id": "READ-L7-work-meaning-S42",
+          "zh": "劳动政策还应考虑无偿照护者，因为技术转型可能把更多服务责任转移到家庭。",
+          "pinyin": "Láo dòng zhèng cè hái yìng kǎo lǜ wú cháng zhào hù zhě， yīn wèi jì shù zhuǎn xíng kě néng bǎ gèng duō fú wù zé rèn zhuǎn yí dào jiā tíng。",
+          "vi": "Chính sách lao động còn cần tính người chăm sóc không lương vì chuyển đổi công nghệ có thể chuyển thêm trách nhiệm dịch vụ về gia đình."
+        },
+        {
+          "id": "READ-L7-work-meaning-S43",
+          "zh": "如果公共服务数字化后减少线下支持，节省的行政成本可能由老人、残障者和家属以时间承担。",
+          "pinyin": "Rú guǒ gōng gòng fú wù shù zì huà hòu jiǎn shǎo xiàn xià zhī chí， jié shěng de xíng zhèng chéng běn kě néng yóu lǎo rén、 cán zhàng zhě hé jiā shǔ yǐ shí jiān chéng dān。",
+          "vi": "Nếu số hóa dịch vụ công làm giảm hỗ trợ trực tiếp, chi phí hành chính tiết kiệm được có thể do người già, người khuyết tật và gia đình gánh bằng thời gian."
+        },
+        {
+          "id": "READ-L7-work-meaning-S44",
+          "zh": "因此，评价技术效率必须计算被隐藏和转移的劳动，而不能只看机构账面。",
+          "pinyin": "Yīn cǐ， píng jià jì shù xiào lǜ bì xū jì suàn bèi yǐn cáng hé zhuǎn yí de láo dòng， ér bù néng zhǐ kàn jī gòu zhàng miàn。",
+          "vi": "Vì vậy, đánh giá hiệu quả công nghệ phải tính cả lao động bị che giấu và chuyển giao, không thể chỉ nhìn sổ sách cơ quan."
+        }
+      ]
+    },
+    {
+      "id": "READ-L7-climate-fairness",
+      "level": "7",
+      "title": "Công bằng trong quản trị khí hậu",
+      "topic": "môi trường chính sách",
+      "targetCharacters": 1500,
+      "actualCharacters": 1555,
+      "sentences": [
+        {
+          "id": "READ-L7-climate-fairness-S01",
+          "zh": "气候变化是一个全球问题，但它造成的影响与应对成本并不会平均分配。",
+          "pinyin": "Qì hòu biàn huà shì yí gè quán qiú wèn tí， dàn tā zào chéng de yǐng xiǎng yǔ yìng duì chéng běn bìng bú huì píng jūn fēn pèi。",
+          "vi": "Biến đổi khí hậu là vấn đề toàn cầu nhưng tác động và chi phí ứng phó không được phân bổ đồng đều."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S02",
+          "zh": "历史上排放较多的国家积累了财富和基础设施，而许多排放较少的地区却更容易遭受高温、洪水、干旱和海平面上升。",
+          "pinyin": "Lì shǐ shàng pái fàng jiào duō de guó jiā jī lěi le cái fù hé jī chǔ shè shī， ér xǔ duō pái fàng jiào shǎo de dì qū què gèng róng yì zāo shòu gāo wēn、 hóng shuǐ、 gān hàn hé hǎi píng miàn shàng shēng。",
+          "vi": "Các nước phát thải nhiều trong lịch sử tích lũy của cải và hạ tầng, trong khi nhiều vùng phát thải ít lại dễ chịu nóng cực đoan, lũ, hạn và nước biển dâng."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S03",
+          "zh": "同一个城市内部也存在类似差异：富裕社区通常拥有更多树木、较好的住房和保险，低收入居民则可能住在热岛、污染源或容易积水的地区。",
+          "pinyin": "Tóng yī gè chéng shì nèi bù yě cún zài lèi sì chā yì： fù yù shè qū tōng cháng yōng yǒu gèng duō shù mù、 jiào hǎo de zhù fáng hé bǎo xiǎn， dī shōu rù jū mín zé kě néng zhù zài rè dǎo、 wū rǎn yuán huò róng yì jī shuǐ de dì qū。",
+          "vi": "Trong cùng thành phố cũng có khác biệt: khu giàu thường nhiều cây, nhà tốt và có bảo hiểm; người thu nhập thấp có thể sống ở đảo nhiệt, gần nguồn ô nhiễm hoặc nơi dễ ngập."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S04",
+          "zh": "因此，气候政策不仅是减少多少吨排放的问题，也是由谁决定、谁付费、谁得到保护的问题。",
+          "pinyin": "Yīn cǐ， qì hòu zhèng cè bù jǐn shì jiǎn shǎo duō shǎo dūn pái fàng de wèn tí， yě shì yóu shuí jué dìng、 shuí fù fèi、 shuí dé dào bǎo hù de wèn tí。",
+          "vi": "Vì vậy, chính sách khí hậu không chỉ là giảm bao nhiêu tấn phát thải mà còn là ai quyết định, ai trả và ai được bảo vệ."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S05",
+          "zh": "碳税被认为能够通过价格信号减少化石能源使用，但如果没有配套措施，它可能使能源费用在低收入家庭预算中占据更高比例。",
+          "pinyin": "Tàn shuì bèi rèn wéi néng gòu tōng guò jià gé xìn hào jiǎn shǎo huà shí néng yuán shǐ yòng， dàn rú guǒ méi yǒu pèi tào cuò shī， tā kě néng shǐ néng yuán fèi yòng zài dī shōu rù jiā tíng yù suàn zhōng zhàn jù gèng gāo bǐ lì。",
+          "vi": "Thuế carbon được cho là giảm dùng nhiên liệu hóa thạch qua tín hiệu giá, nhưng nếu không có hỗ trợ, chi phí năng lượng có thể chiếm tỷ trọng cao hơn trong ngân sách hộ thu nhập thấp."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S06",
+          "zh": "公平的设计可以把税收返还给居民，补贴节能改造和公共交通，并优先帮助最难承担成本的人。",
+          "pinyin": "Gōng píng de shè jì kě yǐ bǎ shuì shōu fǎn huán gěi jū mín， bǔ tiē jié néng gǎi zào hé gōng gòng jiāo tōng， bìng yōu xiān bāng zhù zuì nán chéng dān chéng běn de rén。",
+          "vi": "Thiết kế công bằng có thể hoàn trả thuế cho dân, trợ cấp cải tạo tiết kiệm năng lượng và giao thông công cộng, ưu tiên người khó gánh chi phí nhất."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S07",
+          "zh": "能源转型还会改变就业。",
+          "pinyin": "Néng yuán zhuǎn xíng hái huì gǎi biàn jiù yè。",
+          "vi": "Chuyển đổi năng lượng còn làm thay đổi việc làm."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S08",
+          "zh": "关闭煤矿和高污染工厂有利于环境与健康，却可能使依赖单一产业的地区失去收入来源。",
+          "pinyin": "Guān bì méi kuàng hé gāo wū rǎn gōng chǎng yǒu lì yú huán jìng yǔ jiàn kāng， què kě néng shǐ yī lài dān yī chǎn yè de dì qū shī qù shōu rù lái yuán。",
+          "vi": "Đóng mỏ than và nhà máy ô nhiễm có lợi cho môi trường, sức khỏe nhưng có thể khiến vùng phụ thuộc một ngành mất nguồn thu."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S09",
+          "zh": "所谓“公正转型”要求提前规划培训、社会保障和新的投资，而不是在企业关闭以后才让工人自己寻找出路。",
+          "pinyin": "Suǒ wèi“gōng zhèng zhuǎn xíng” yāo qiú tí qián guī huà péi xùn、 shè huì bǎo zhàng hé xīn de tóu zī， ér bú shì zài qǐ yè guān bì yǐ hòu cái ràng gōng rén zì jǐ xún zhǎo chū lù。",
+          "vi": "“Chuyển đổi công bằng” đòi hỏi lên kế hoạch trước về đào tạo, an sinh và đầu tư mới, không phải để công nhân tự xoay xở sau khi doanh nghiệp đóng cửa."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S10",
+          "zh": "新产业提供的岗位是否稳定、工资是否合理、是否位于原有社区，也同样重要。",
+          "pinyin": "Xīn chǎn yè tí gōng de gǎng wèi shì fǒu wěn dìng、 gōng zī shì fǒu hé lǐ、 shì fǒu wèi yú yuán yǒu shè qū， yě tóng yàng zhòng yào。",
+          "vi": "Việc làm ngành mới có ổn định, lương hợp lý và nằm tại cộng đồng cũ hay không cũng quan trọng."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S11",
+          "zh": "在国际层面，发展中国家常指出，它们仍需要改善住房、交通和能源服务，不能简单复制富裕国家过去高排放的发展道路。",
+          "pinyin": "Zài guó jì céng miàn， fā zhǎn zhōng guó jiā cháng zhǐ chū， tā men réng xū yào gǎi shàn zhù fáng、 jiāo tōng hé néng yuán fú wù， bù néng jiǎn dān fù zhì fù yù guó jiā guò qù gāo pái fàng de fā zhǎn dào lù。",
+          "vi": "Ở cấp quốc tế, các nước đang phát triển thường nói họ vẫn cần cải thiện nhà ở, giao thông và năng lượng, không thể đơn giản lặp lại con đường phát thải cao của nước giàu."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S12",
+          "zh": "富裕国家若只要求他国迅速减排，却不提供资金、技术和政策空间，就很难建立长期信任。",
+          "pinyin": "Fù yù guó jiā ruò zhǐ yào qiú tā guó xùn sù jiǎn pái， què bù tí gōng zī jīn、 jì shù hé zhèng cè kōng jiān， jiù hěn nán jiàn lì cháng qī xìn rèn。",
+          "vi": "Nếu nước giàu chỉ yêu cầu nước khác giảm nhanh mà không cung cấp tài chính, công nghệ và không gian chính sách, rất khó xây dựng niềm tin lâu dài."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S13",
+          "zh": "气候融资因此不应只是贷款，因为让受灾国家为并非主要由它们造成的问题承担更多债务，本身就可能加深不平等。",
+          "pinyin": "Qì hòu róng zī yīn cǐ bù yīng zhǐ shì dài kuǎn， yīn wèi ràng shòu zāi guó jiā wèi bìng fēi zhǔ yào yóu tā men zào chéng de wèn tí chéng dān gèng duō zhài wù， běn shēn jiù kě néng jiā shēn bù píng děng。",
+          "vi": "Tài chính khí hậu vì thế không nên chỉ là khoản vay, vì buộc nước chịu thiên tai gánh thêm nợ cho vấn đề không chủ yếu do họ gây ra có thể làm bất bình đẳng sâu hơn."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S14",
+          "zh": "赠款、技术共享和损失损害资金，是承认历史责任的不同方式。",
+          "pinyin": "Zèng kuǎn、 jì shù gòng xiǎng hé sǔn shī sǔn hài zī jīn， shì chéng rèn lì shǐ zé rèn de bù tóng fāng shì。",
+          "vi": "Viện trợ không hoàn lại, chia sẻ công nghệ và quỹ tổn thất thiệt hại là những cách khác nhau để thừa nhận trách nhiệm lịch sử."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S15",
+          "zh": "适应政策同样需要公平视角。",
+          "pinyin": "Shì yìng zhèng cè tóng yàng xū yào gōng píng shì jiǎo。",
+          "vi": "Chính sách thích ứng cũng cần góc nhìn công bằng."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S16",
+          "zh": "修建海堤可以保护中心城区，却可能把洪水风险转移到邻近地区；扩大水库能保障城市供水，却可能影响上游社区和生态系统。",
+          "pinyin": "Xiū jiàn hǎi dī kě yǐ bǎo hù zhōng xīn chéng qū， què kě néng bǎ hóng shuǐ fēng xiǎn zhuǎn yí dào lín jìn dì qū； kuò dà shuǐ kù néng bǎo zhàng chéng shì gōng shuǐ， què kě néng yǐng xiǎng shàng yóu shè qū hé shēng tài xì tǒng。",
+          "vi": "Xây đê biển có thể bảo vệ trung tâm nhưng chuyển rủi ro lũ sang vùng lân cận; mở rộng hồ chứa bảo đảm nước đô thị nhưng có thể ảnh hưởng cộng đồng thượng nguồn và hệ sinh thái."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S17",
+          "zh": "如果只根据经济资产价值排序，贫困社区往往会被认为“不值得优先保护”。",
+          "pinyin": "Rú guǒ zhǐ gēn jù jīng jì zī chǎn jià zhí pái xù， pín kùn shè qū wǎng wǎng huì bèi rèn wéi“bù zhí dé yōu xiān bǎo hù”。",
+          "vi": "Nếu chỉ xếp ưu tiên theo giá trị tài sản kinh tế, cộng đồng nghèo thường bị coi là “không đáng bảo vệ trước”."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S18",
+          "zh": "更合理的评估应考虑生命安全、文化意义、社会联系和恢复能力。",
+          "pinyin": "Gèng hé lǐ de píng gū yìng kǎo lǜ shēng mìng ān quán、 wén huà yì yì、 shè huì lián xì hé huī fù néng lì。",
+          "vi": "Đánh giá hợp lý hơn cần tính đến an toàn tính mạng, ý nghĩa văn hóa, liên kết xã hội và khả năng phục hồi."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S19",
+          "zh": "原住民和地方社区拥有长期观察土地、水源和季节变化的知识，但他们的意见常在大型项目中被忽视。",
+          "pinyin": "Yuán zhù mín hé dì fāng shè qū yōng yǒu cháng qī guān chá tǔ dì、 shuǐ yuán hé jì jié biàn huà de zhī shí， dàn tā men de yì jiàn cháng zài dà xíng xiàng mù zhōng bèi hū shì。",
+          "vi": "Cộng đồng bản địa và địa phương có tri thức quan sát đất, nước và mùa qua thời gian dài nhưng ý kiến thường bị bỏ qua trong dự án lớn."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S20",
+          "zh": "真正的参与不是在方案完成后举行一次说明会，而是让受影响者从问题定义、方案选择到监督执行都拥有实质权力。",
+          "pinyin": "Zhēn zhèng de cān yù bú shì zài fāng àn wán chéng hòu jǔ xíng yī cì shuō míng huì， ér shì ràng shòu yǐng xiǎng zhě cóng wèn tí dìng yì、 fāng àn xuǎn zé dào jiān dū zhí xíng dōu yōng yǒu shí zhì quán lì。",
+          "vi": "Tham gia thật sự không phải họp giải thích một lần sau khi phương án xong, mà là để người bị ảnh hưởng có quyền thực chất từ xác định vấn đề, chọn phương án đến giám sát thực hiện."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S21",
+          "zh": "个人消费当然会影响排放，但把气候责任主要归结为少开车、少用塑料或选择某种商品，会掩盖能源系统、城市规划和企业投资的结构性作用。",
+          "pinyin": "Gè rén xiāo fèi dāng rán huì yǐng xiǎng pái fàng， dàn bǎ qì hòu zé rèn zhǔ yào guī jié wèi shǎo kāi chē、 shǎo yòng sù liào huò xuǎn zé mǒu zhǒng shāng pǐn， huì yǎn gài néng yuán xì tǒng、 chéng shì guī huà hé qǐ yè tóu zī de jié gòu xìng zuò yòng。",
+          "vi": "Tiêu dùng cá nhân có ảnh hưởng phát thải, nhưng quy trách nhiệm chủ yếu cho việc lái xe ít, dùng ít nhựa hay chọn sản phẩm sẽ che vai trò cấu trúc của hệ thống năng lượng, quy hoạch đô thị và đầu tư doanh nghiệp."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S22",
+          "zh": "很多人想选择低碳生活，却住在没有公共交通的地区，或者租住无法自行改造的房屋。",
+          "pinyin": "Hěn duō rén xiǎng xuǎn zé dī tàn shēng huó， què zhù zài méi yǒu gōng gòng jiāo tōng de dì qū， huò zhě zū zhù wú fǎ zì xíng gǎi zào de fáng wū。",
+          "vi": "Nhiều người muốn sống carbon thấp nhưng ở nơi không có giao thông công cộng hoặc thuê nhà không thể tự cải tạo."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S23",
+          "zh": "政策应扩大实际可选项，而不是在选择不存在时责备个人。",
+          "pinyin": "Zhèng cè yìng kuò dà shí jì kě xuǎn xiàng， ér bú shì zài xuǎn zé bù cún zài shí zé bèi gè rén。",
+          "vi": "Chính sách cần mở rộng lựa chọn thực tế thay vì trách cá nhân khi lựa chọn không tồn tại."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S24",
+          "zh": "企业的气候承诺也需要可核查的标准。",
+          "pinyin": "Qǐ yè de qì hòu chéng nuò yě xū yào kě hé chá de biāo zhǔn。",
+          "vi": "Cam kết khí hậu của doanh nghiệp cũng cần tiêu chuẩn có thể kiểm chứng."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S25",
+          "zh": "如果一家公司依靠购买质量不明的碳抵消，却继续扩大化石能源使用，它的“净零”目标可能只是延迟真正减排。",
+          "pinyin": "Rú guǒ yī jiā gōng sī yī kào gòu mǎi zhì liàng bù míng de tàn dǐ xiāo， què jì xù kuò dà huà shí néng yuán shǐ yòng， tā de“jìng líng” mù biāo kě néng zhǐ shì yán chí zhēn zhèng jiǎn pái。",
+          "vi": "Nếu công ty dựa vào mua bù trừ carbon chất lượng không rõ trong khi tiếp tục mở rộng nhiên liệu hóa thạch, mục tiêu “net zero” có thể chỉ trì hoãn giảm phát thải thật."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S26",
+          "zh": "公开完整排放、供应链影响和投资计划，能够减少绿色宣传与实际行动之间的差距。",
+          "pinyin": "Gōng kāi wán zhěng pái fàng、 gōng yìng liàn yǐng xiǎng hé tóu zī jì huà， néng gòu jiǎn shǎo lǜ sè xuān chuán yǔ shí jì xíng dòng zhī jiān de chā jù。",
+          "vi": "Công khai đầy đủ phát thải, tác động chuỗi cung ứng và kế hoạch đầu tư có thể giảm khoảng cách giữa quảng bá xanh và hành động thật."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S27",
+          "zh": "气候决策还必须面对不确定性。",
+          "pinyin": "Qì hòu jué cè hái bì xū miàn duì bù què dìng xìng。",
+          "vi": "Quyết định khí hậu còn phải đối mặt bất định."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S28",
+          "zh": "科学无法精确预测每个地区在每一年会发生什么，但不确定并不意味着可以等待所有细节确定后再行动。",
+          "pinyin": "Kē xué wú fǎ jīng què yù cè měi gè dì qū zài měi yī nián huì fā shēng shén me， dàn bù què dìng bìng bù yì wèi zhe kě yǐ děng dài suǒ yǒu xì jié què dìng hòu zài xíng dòng。",
+          "vi": "Khoa học không thể dự đoán chính xác mọi vùng từng năm, nhưng bất định không có nghĩa có thể chờ mọi chi tiết rõ rồi mới hành động."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S29",
+          "zh": "当潜在损失巨大且难以逆转时，预防原则要求提前降低风险，同时根据新证据不断调整。",
+          "pinyin": "Dāng qián zài sǔn shī jù dà qiě nán yǐ nì zhuǎn shí， yù fáng yuán zé yāo qiú tí qián jiàng dī fēng xiǎn， tóng shí gēn jù xīn zhèng jù bù duàn tiáo zhěng。",
+          "vi": "Khi tổn thất tiềm ẩn lớn và khó đảo ngược, nguyên tắc phòng ngừa yêu cầu giảm rủi ro sớm và liên tục điều chỉnh theo bằng chứng mới."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S30",
+          "zh": "公平也包含代际维度，因为今天的基础设施和排放会影响尚未参与决策的人。",
+          "pinyin": "Gōng píng yě bāo hán dài jì wéi dù， yīn wèi jīn tiān de jī chǔ shè shī hé pái fàng huì yǐng xiǎng shàng wèi cān yù jué cè de rén。",
+          "vi": "Công bằng còn có chiều kích liên thế hệ vì hạ tầng và phát thải hôm nay ảnh hưởng người chưa tham gia quyết định."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S31",
+          "zh": "然而，不能为了抽象的未来利益而牺牲当下最贫困者的基本需求。",
+          "pinyin": "Rán ér， bù néng wèi le chōu xiàng de wèi lái lì yì ér xī shēng dāng xià zuì pín kùn zhě de jī běn xū qiú。",
+          "vi": "Tuy nhiên, không thể vì lợi ích tương lai trừu tượng mà hy sinh nhu cầu cơ bản của người nghèo nhất hiện tại."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S32",
+          "zh": "真正公正的政策应同时减少长期风险与当前不平等，使清洁空气、可靠能源和安全住房成为共同收益。",
+          "pinyin": "Zhēn zhèng gōng zhèng de zhèng cè yìng tóng shí jiǎn shǎo cháng qī fēng xiǎn yǔ dāng qián bù píng děng， shǐ qīng jié kōng qì、 kě kào néng yuán hé ān quán zhù fáng chéng wéi gòng tóng shōu yì。",
+          "vi": "Chính sách thực sự công bằng cần đồng thời giảm rủi ro dài hạn và bất bình đẳng hiện tại, biến không khí sạch, năng lượng đáng tin và nhà an toàn thành lợi ích chung."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S33",
+          "zh": "气候治理之所以困难，不是因为公平会妨碍效率，而是因为忽视公平的政策通常缺少社会支持，最终也难以持续。",
+          "pinyin": "Qì hòu zhì lǐ zhī suǒ yǐ kùn nán， bú shì yīn wèi gōng píng huì fáng ài xiào lǜ， ér shì yīn wèi hū shì gōng píng de zhèng cè tōng cháng quē shǎo shè huì zhī chí， zuì zhōng yě nán yǐ chí xù。",
+          "vi": "Quản trị khí hậu khó không phải vì công bằng cản hiệu quả, mà vì chính sách bỏ qua công bằng thường thiếu ủng hộ xã hội và khó bền vững."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S34",
+          "zh": "只有当人们相信成本与收益分配合理，并能参与影响自身生活的决定时，深刻转型才可能获得合法性。",
+          "pinyin": "Zhǐ yǒu dāng rén men xiāng xìn chéng běn yǔ shōu yì fēn pèi hé lǐ， bìng néng cān yù yǐng xiǎng zì shēn shēng huó de jué dìng shí， shēn kè zhuǎn xíng cái kě néng huò dé hé fǎ xìng。",
+          "vi": "Chỉ khi mọi người tin chi phí và lợi ích được phân bổ hợp lý và có thể tham gia quyết định ảnh hưởng đời sống, chuyển đổi sâu mới có tính chính danh."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S35",
+          "zh": "因此，气候行动不仅是技术工程，也是重新讨论责任、权力与共同未来的社会工程。",
+          "pinyin": "Yīn cǐ， qì hòu xíng dòng bù jǐn shì jì shù gōng chéng， yě shì chóng xīn tǎo lùn zé rèn、 quán lì yǔ gòng tóng wèi lái de shè huì gōng chéng。",
+          "vi": "Vì vậy, hành động khí hậu không chỉ là công trình kỹ thuật mà còn là công trình xã hội bàn lại trách nhiệm, quyền lực và tương lai chung."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S36",
+          "zh": "粮食系统也是气候公平的重要领域，因为农民既承受极端天气，又常缺少改变生产方式所需的资金。",
+          "pinyin": "Liáng shí xì tǒng yě shì qì hòu gōng píng de zhòng yào lǐng yù， yīn wèi nóng mín jì chéng shòu jí duān tiān qì， yòu cháng quē shǎo gǎi biàn shēng chǎn fāng shì suǒ xū de zī jīn。",
+          "vi": "Hệ thống lương thực cũng là lĩnh vực quan trọng của công bằng khí hậu vì nông dân vừa chịu thời tiết cực đoan vừa thường thiếu vốn để đổi cách sản xuất."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S37",
+          "zh": "要求小农立即承担全部转型成本，可能导致土地集中和生计丧失。",
+          "pinyin": "Yāo qiú xiǎo nóng lì jí chéng dān quán bù zhuǎn xíng chéng běn， kě néng dǎo zhì tǔ dì jí zhōng hé shēng jì sàng shī。",
+          "vi": "Yêu cầu nông hộ nhỏ lập tức gánh toàn bộ chi phí chuyển đổi có thể dẫn đến tập trung đất và mất sinh kế."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S38",
+          "zh": "长期信贷、农业保险、技术服务和公平采购，可以让减排与农村发展相互支持。",
+          "pinyin": "Cháng qī xìn dài、 nóng yè bǎo xiǎn、 jì shù fú wù hé gōng píng cǎi gòu， kě yǐ ràng jiǎn pái yǔ nóng cūn fā zhǎn xiāng hù zhī chí。",
+          "vi": "Tín dụng dài hạn, bảo hiểm nông nghiệp, dịch vụ kỹ thuật và mua sắm công bằng có thể giúp giảm phát thải hỗ trợ phát triển nông thôn."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S39",
+          "zh": "城市中的绿色改造也需要防止租金上涨，否则原本承受污染的人可能在环境改善后被迫搬走。",
+          "pinyin": "Chéng shì zhōng de lǜ sè gǎi zào yě xū yào fáng zhǐ zū jīn shàng zhǎng， fǒu zé yuán běn chéng shòu wū rǎn de rén kě néng zài huán jìng gǎi shàn hòu bèi pò bān zǒu。",
+          "vi": "Cải tạo xanh đô thị cũng cần ngăn giá thuê tăng, nếu không người từng chịu ô nhiễm có thể bị buộc chuyển đi sau khi môi trường tốt lên."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S40",
+          "zh": "把社区土地信托、保障性住房和能源补贴结合起来，能够减少这种矛盾。",
+          "pinyin": "Bǎ shè qū tǔ dì xìn tuō、 bǎo zhàng xìng zhù fáng hé néng yuán bǔ tiē jié hé qǐ lái， néng gòu jiǎn shǎo zhè zhǒng máo dùn。",
+          "vi": "Kết hợp quỹ đất cộng đồng, nhà ở bảo đảm và trợ cấp năng lượng có thể giảm mâu thuẫn này."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S41",
+          "zh": "此外，气候政策应关注性别差异，因为照护责任、财产权和灾后资源分配常使女性承担不同风险。",
+          "pinyin": "Cǐ wài， qì hòu zhèng cè yìng guān zhù xìng bié chā yì， yīn wèi zhào hù zé rèn、 cái chǎn quán hé zāi hòu zī yuán fēn pèi cháng shǐ nǚ xìng chéng dān bù tóng fēng xiǎn。",
+          "vi": "Ngoài ra, chính sách khí hậu cần chú ý khác biệt giới vì trách nhiệm chăm sóc, quyền tài sản và phân phối nguồn lực sau thiên tai thường khiến phụ nữ chịu rủi ro khác."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S42",
+          "zh": "收集分类数据并让女性参与决策，可以避免所谓中性方案重复既有不平等。",
+          "pinyin": "Shōu jí fēn lèi shù jù bìng ràng nǚ xìng cān yù jué cè， kě yǐ bì miǎn suǒ wèi zhōng xìng fāng àn chóng fù jì yǒu bù píng děng。",
+          "vi": "Thu thập dữ liệu phân loại và để phụ nữ tham gia quyết định giúp tránh phương án tưởng trung tính lặp lại bất bình đẳng sẵn có."
+        },
+        {
+          "id": "READ-L7-climate-fairness-S43",
+          "zh": "公平不是完成减排以后再考虑的附加条件，而是决定政策能否被接受、执行和长期维持的核心。",
+          "pinyin": "Gōng píng bú shì wán chéng jiǎn pái yǐ hòu zài kǎo lǜ de fù jiā tiáo jiàn， ér shì jué dìng zhèng cè néng fǒu bèi jiē shòu、 zhí xíng hé cháng qī wéi chí de hé xīn。",
+          "vi": "Công bằng không phải điều kiện phụ được xét sau khi giảm phát thải, mà là cốt lõi quyết định chính sách có được chấp nhận, thực hiện và duy trì lâu dài hay không."
+        }
+      ]
+    },
+    {
+      "id": "READ-L7-public-memory",
+      "level": "7",
+      "title": "Ký ức công cộng, lịch sử và trách nhiệm",
+      "topic": "lịch sử văn hóa",
+      "targetCharacters": 1500,
+      "actualCharacters": 1536,
+      "sentences": [
+        {
+          "id": "READ-L7-public-memory-S01",
+          "zh": "社会如何记住过去，并不是一个只属于历史学家的问题。",
+          "pinyin": "Shè huì rú hé jì zhù guò qù， bìng bú shì yí gè zhǐ shǔ yú lì shǐ xué jiā de wèn tí。",
+          "vi": "Xã hội nhớ quá khứ thế nào không phải vấn đề chỉ thuộc về sử gia."
+        },
+        {
+          "id": "READ-L7-public-memory-S02",
+          "zh": "纪念碑、博物馆、教科书、地名、电影和家庭故事，都在决定哪些经验被看见，哪些声音被遗忘，以及今天的人如何理解自己的位置。",
+          "pinyin": "Jì niàn bēi、 bó wù guǎn、 jiào kē shū、 dì míng、 diàn yǐng hé jiā tíng gù shì， dōu zài jué dìng nǎ xiē jīng yàn bèi kàn jiàn， nǎ xiē shēng yīn bèi yí wàng， yǐ jí jīn tiān de rén rú hé lǐ jiě zì jǐ de wèi zhì。",
+          "vi": "Tượng đài, bảo tàng, sách giáo khoa, địa danh, phim và chuyện gia đình đều quyết định kinh nghiệm nào được thấy, tiếng nói nào bị quên và con người hôm nay hiểu vị trí mình ra sao."
+        },
+        {
+          "id": "READ-L7-public-memory-S03",
+          "zh": "公共记忆看似在保存事实，实际上也包含选择、解释和权力。",
+          "pinyin": "Gōng gòng jì yì kàn shì zài bǎo cún shì shí， shí jì shàng yě bāo hán xuǎn zé、 jiě shì hé quán lì。",
+          "vi": "Ký ức công cộng có vẻ lưu giữ sự thật nhưng thực tế còn chứa lựa chọn, diễn giải và quyền lực."
+        },
+        {
+          "id": "READ-L7-public-memory-S04",
+          "zh": "任何展览都必须从大量材料中选择有限内容，任何纪念仪式也会通过时间、地点和语言强调某种意义。",
+          "pinyin": "Rèn hé zhǎn lǎn dōu bì xū cóng dà liàng cái liào zhōng xuǎn zé yǒu xiàn nèi róng， rèn hé jì niàn yí shì yě huì tōng guò shí jiān、 dì diǎn hé yǔ yán qiáng diào mǒu zhǒng yì yì。",
+          "vi": "Mọi triển lãm phải chọn nội dung hữu hạn từ lượng tư liệu lớn; mọi nghi lễ tưởng niệm cũng nhấn mạnh ý nghĩa qua thời gian, địa điểm và ngôn ngữ."
+        },
+        {
+          "id": "READ-L7-public-memory-S05",
+          "zh": "选择本身不可避免，问题在于选择过程是否透明，是否允许被排除的人提出质疑。",
+          "pinyin": "Xuǎn zé běn shēn bù kě bì miǎn， wèn tí zài yú xuǎn zé guò chéng shì fǒu tòu míng， shì fǒu yǔn xǔ bèi pái chú de rén tí chū zhì yí。",
+          "vi": "Lựa chọn là không tránh khỏi; vấn đề là quá trình có minh bạch và cho người bị loại trừ quyền chất vấn hay không."
+        },
+        {
+          "id": "READ-L7-public-memory-S06",
+          "zh": "胜利者、国家机构和社会精英通常拥有更多资源建立纪念物，因此官方叙事容易集中于英雄、战争和重大政治事件。",
+          "pinyin": "Shèng lì zhě、 guó jiā jī gòu hé shè huì jīng yīng tōng cháng yōng yǒu gèng duō zī yuán jiàn lì jì niàn wù， yīn cǐ guān fāng xù shì róng yì jí zhōng yú yīng xióng、 zhàn zhēng hé zhòng dà zhèng zhì shì jiàn。",
+          "vi": "Bên chiến thắng, cơ quan nhà nước và giới tinh hoa thường có nhiều nguồn lực dựng công trình tưởng niệm, nên tự sự chính thức dễ tập trung vào anh hùng, chiến tranh và sự kiện chính trị lớn."
+        },
+        {
+          "id": "READ-L7-public-memory-S07",
+          "zh": "普通人的劳动、迁移、照护经验以及少数群体遭受的损失，则可能缺少记录。",
+          "pinyin": "Pǔ tōng rén de láo dòng、 qiān yí、 zhào hù jīng yàn yǐ jí shǎo shù qún tǐ zāo shòu de sǔn shī， zé kě néng quē shǎo jì lù。",
+          "vi": "Lao động, di cư, kinh nghiệm chăm sóc của người thường và mất mát của nhóm thiểu số có thể ít được ghi chép."
+        },
+        {
+          "id": "READ-L7-public-memory-S08",
+          "zh": "近年来，口述历史和社区档案尝试补充这些空白，让没有留下正式文件的人也能讲述自己的经历。",
+          "pinyin": "Jìn nián lái， kǒu shù lì shǐ hé shè qū dàng àn cháng shì bǔ chōng zhè xiē kòng bái， ràng méi yǒu liú xià zhèng shì wén jiàn de rén yě néng jiǎng shù zì jǐ de jīng lì。",
+          "vi": "Những năm gần đây, lịch sử truyền miệng và kho lưu trữ cộng đồng cố bổ sung khoảng trống, để người không để lại tài liệu chính thức cũng kể trải nghiệm."
+        },
+        {
+          "id": "READ-L7-public-memory-S09",
+          "zh": "口述材料非常珍贵，但记忆会受到时间、情感和后来知识的影响，因此不能被简单当作完全准确的录像。",
+          "pinyin": "Kǒu shù cái liào fēi cháng zhēn guì， dàn jì yì huì shòu dào shí jiān、 qíng gǎn hé hòu lái zhī shí de yǐng xiǎng， yīn cǐ bù néng bèi jiǎn dān dàng zuò wán quán zhǔn què de lù xiàng。",
+          "vi": "Tư liệu truyền miệng rất quý nhưng ký ức chịu ảnh hưởng của thời gian, cảm xúc và hiểu biết sau này nên không thể coi như bản ghi hoàn toàn chính xác."
+        },
+        {
+          "id": "READ-L7-public-memory-S10",
+          "zh": "历史研究需要把个人叙述与其他来源相互比较，同时尊重讲述者对创伤和隐私的边界。",
+          "pinyin": "Lì shǐ yán jiū xū yào bǎ gè rén xù shù yǔ qí tā lái yuán xiāng hù bǐ jiào， tóng shí zūn zhòng jiǎng shù zhě duì chuāng shāng hé yǐn sī de biān jiè。",
+          "vi": "Nghiên cứu lịch sử cần so sánh lời kể cá nhân với nguồn khác đồng thời tôn trọng ranh giới tổn thương và riêng tư của người kể."
+        },
+        {
+          "id": "READ-L7-public-memory-S11",
+          "zh": "当社会面对暴力、压迫或制度性不公的历史时，纪念常常伴随争议。",
+          "pinyin": "Dāng shè huì miàn duì bào lì、 yā pò huò zhì dù xìng bù gōng de lì shǐ shí， jì niàn cháng cháng bàn suí zhēng yì。",
+          "vi": "Khi xã hội đối diện lịch sử bạo lực, áp bức hoặc bất công thể chế, tưởng niệm thường đi cùng tranh cãi."
+        },
+        {
+          "id": "READ-L7-public-memory-S12",
+          "zh": "有人担心重新讨论会撕裂社会，希望尽快“向前看”；另一些人认为，没有承认事实和责任，就不可能建立真正的和解。",
+          "pinyin": "Yǒu rén dān xīn chóng xīn tǎo lùn huì sī liè shè huì， xī wàng jǐn kuài“xiàng qián kàn”； lìng yī xiē rén rèn wéi， méi yǒu chéng rèn shì shí hé zé rèn， jiù bù kě néng jiàn lì zhēn zhèng de hé jiě。",
+          "vi": "Có người lo thảo luận lại sẽ chia rẽ và muốn nhanh chóng “nhìn về phía trước”; người khác cho rằng nếu không thừa nhận sự thật và trách nhiệm thì không thể hòa giải thật."
+        },
+        {
+          "id": "READ-L7-public-memory-S13",
+          "zh": "这两种立场之间的冲突说明，遗忘并不等于问题消失。",
+          "pinyin": "Zhè liǎng zhǒng lì chǎng zhī jiān de chōng tū shuō míng， yí wàng bìng bù děng yú wèn tí xiāo shī。",
+          "vi": "Xung đột giữa hai lập trường cho thấy lãng quên không đồng nghĩa vấn đề biến mất."
+        },
+        {
+          "id": "READ-L7-public-memory-S14",
+          "zh": "被压抑的记忆可能继续影响家庭关系、土地争议、社会信任和不同群体对国家的态度。",
+          "pinyin": "Bèi yā yì de jì yì kě néng jì xù yǐng xiǎng jiā tíng guān xì、 tǔ dì zhēng yì、 shè huì xìn rèn hé bù tóng qún tǐ duì guó jiā de tài dù。",
+          "vi": "Ký ức bị dồn nén có thể tiếp tục ảnh hưởng quan hệ gia đình, tranh chấp đất, niềm tin xã hội và thái độ các nhóm với nhà nước."
+        },
+        {
+          "id": "READ-L7-public-memory-S15",
+          "zh": "道歉、赔偿、司法调查和纪念设施是处理历史伤害的不同工具，但没有一种措施能够单独完成修复。",
+          "pinyin": "Dào qiàn、 péi cháng、 sī fǎ diào chá hé jì niàn shè shī shì chǔ lǐ lì shǐ shāng hài de bù tóng gōng jù， dàn méi yǒu yī zhǒng cuò shī néng gòu dān dú wán chéng xiū fù。",
+          "vi": "Xin lỗi, bồi thường, điều tra tư pháp và công trình tưởng niệm là các công cụ khác nhau để xử lý tổn thương lịch sử, nhưng không biện pháp nào tự mình hoàn tất sửa chữa."
+        },
+        {
+          "id": "READ-L7-public-memory-S16",
+          "zh": "形式化道歉如果没有制度改变，容易被视为空洞；经济赔偿如果忽视尊严和真相，也可能无法回应受害者的核心需要。",
+          "pinyin": "Xíng shì huà dào qiàn rú guǒ méi yǒu zhì dù gǎi biàn， róng yì bèi shì wéi kōng dòng； jīng jì péi cháng rú guǒ hū shì zūn yán hé zhēn xiàng， yě kě néng wú fǎ huí yìng shòu hài zhě de hé xīn xū yào。",
+          "vi": "Lời xin lỗi hình thức không kèm thay đổi thể chế dễ bị xem là rỗng; bồi thường kinh tế nếu bỏ qua phẩm giá và sự thật cũng có thể không đáp ứng nhu cầu cốt lõi của nạn nhân."
+        },
+        {
+          "id": "READ-L7-public-memory-S17",
+          "zh": "公共空间中的争议雕像尤其能体现记忆政治。",
+          "pinyin": "Gōng gòng kōng jiān zhōng de zhēng yì diāo xiàng yóu qí néng tǐ xiàn jì yì zhèng zhì。",
+          "vi": "Tượng gây tranh cãi trong không gian công cộng thể hiện rõ chính trị ký ức."
+        },
+        {
+          "id": "READ-L7-public-memory-S18",
+          "zh": "支持保留的人可能认为拆除等于删除历史，反对者则指出，雕像不是中立资料，而是在公共场所持续表达尊敬。",
+          "pinyin": "Zhī chí bǎo liú de rén kě néng rèn wéi chāi chú děng yú shān chú lì shǐ， fǎn duì zhě zé zhǐ chū， diāo xiàng bú shì zhōng lì zī liào， ér shì zài gōng gòng chǎng suǒ chí xù biǎo dá zūn jìng。",
+          "vi": "Người ủng hộ giữ lại có thể cho rằng dỡ bỏ là xóa lịch sử; người phản đối chỉ ra tượng không phải tư liệu trung lập mà liên tục biểu đạt sự tôn vinh ở nơi công cộng."
+        },
+        {
+          "id": "READ-L7-public-memory-S19",
+          "zh": "解决办法并不只有保留或拆除两种。",
+          "pinyin": "Jiě jué bàn fǎ bìng bù zhǐ yǒu bǎo liú huò chāi chú liǎng zhǒng。",
+          "vi": "Giải pháp không chỉ có giữ hoặc dỡ."
+        },
+        {
+          "id": "READ-L7-public-memory-S20",
+          "zh": "移动到博物馆、增加背景说明、设置反向纪念物或重新设计空间，都可能使公众看到争议本身。",
+          "pinyin": "Yí dòng dào bó wù guǎn、 zēng jiā bèi jǐng shuō míng、 shè zhì fǎn xiàng jì niàn wù huò chóng xīn shè jì kōng jiān， dōu kě néng shǐ gōng zhòng kàn dào zhēng yì běn shēn。",
+          "vi": "Chuyển vào bảo tàng, thêm thuyết minh bối cảnh, dựng công trình đối thoại hoặc thiết kế lại không gian đều có thể giúp công chúng thấy chính tranh cãi."
+        },
+        {
+          "id": "READ-L7-public-memory-S21",
+          "zh": "重要的是，不要把历史人物从时代背景中完全抽离，也不要用“时代不同”来免除一切责任。",
+          "pinyin": "Zhòng yào de shì， bú yào bǎ lì shǐ rén wù cóng shí dài bèi jǐng zhōng wán quán chōu lí， yě bú yào yòng“shí dài bù tóng” lái miǎn chú yī qiè zé rèn。",
+          "vi": "Điều quan trọng là không tách nhân vật lịch sử hoàn toàn khỏi bối cảnh thời đại, cũng không dùng “thời khác” để miễn mọi trách nhiệm."
+        },
+        {
+          "id": "READ-L7-public-memory-S22",
+          "zh": "历史理解需要同时承认结构限制和个人选择。",
+          "pinyin": "Lì shǐ lǐ jiě xū yào tóng shí chéng rèn jié gòu xiàn zhì hé gè rén xuǎn zé。",
+          "vi": "Hiểu lịch sử cần đồng thời thừa nhận giới hạn cấu trúc và lựa chọn cá nhân."
+        },
+        {
+          "id": "READ-L7-public-memory-S23",
+          "zh": "教育在公共记忆中具有特殊作用。",
+          "pinyin": "Jiào yù zài gōng gòng jì yì zhōng jù yǒu tè shū zuò yòng。",
+          "vi": "Giáo dục có vai trò đặc biệt trong ký ức công cộng."
+        },
+        {
+          "id": "READ-L7-public-memory-S24",
+          "zh": "如果教科书只提供唯一结论，学生可能记住事件，却没有学会如何分析证据和面对相互冲突的解释。",
+          "pinyin": "Rú guǒ jiào kē shū zhǐ tí gōng wéi yī jié lùn， xué shēng kě néng jì zhù shì jiàn， què méi yǒu xué huì rú hé fēn xī zhèng jù huó miàn duì xiāng hù chōng tū de jiě shì。",
+          "vi": "Nếu sách giáo khoa chỉ cho một kết luận, học sinh có thể nhớ sự kiện nhưng không học cách phân tích bằng chứng và đối diện diễn giải xung đột."
+        },
+        {
+          "id": "READ-L7-public-memory-S25",
+          "zh": "更成熟的历史教育会展示来源如何形成、哪些材料缺失，以及为什么研究者会得出不同判断。",
+          "pinyin": "Gèng chéng shú de lì shǐ jiào yù huì zhǎn shì lái yuán rú hé xíng chéng、 nǎ xiē cái liào quē shī， yǐ jí wèi shén me yán jiū zhě huì dé chū bù tóng pàn duàn。",
+          "vi": "Giáo dục lịch sử trưởng thành hơn sẽ cho thấy nguồn hình thành thế nào, tư liệu nào thiếu và vì sao nhà nghiên cứu có phán đoán khác nhau."
+        },
+        {
+          "id": "READ-L7-public-memory-S26",
+          "zh": "这并不是说所有观点都同样可靠。",
+          "pinyin": "Zhè bìng bú shì shuō suǒ yǒu guān diǎn dōu tóng yàng kě kào。",
+          "vi": "Điều này không có nghĩa mọi quan điểm đều đáng tin như nhau."
+        },
+        {
+          "id": "READ-L7-public-memory-S27",
+          "zh": "否认有充分证据支持的暴力事实，不能被包装成普通意见；开放讨论仍然需要证据标准。",
+          "pinyin": "Fǒu rèn yǒu chōng fèn zhèng jù zhī chí de bào lì shì shí， bù néng bèi bāo zhuāng chéng pǔ tōng yì jiàn； kāi fàng tǎo lùn réng rán xū yào zhèng jù biāo zhǔn。",
+          "vi": "Phủ nhận sự kiện bạo lực có bằng chứng đầy đủ không thể được bọc thành ý kiến thông thường; thảo luận mở vẫn cần tiêu chuẩn bằng chứng."
+        },
+        {
+          "id": "READ-L7-public-memory-S28",
+          "zh": "数字技术为保存记忆提供了新机会，也带来新风险。",
+          "pinyin": "Shù zì jì shù wèi bǎo cún jì yì tí gōng le xīn jī huì， yě dài lái xīn fēng xiǎn。",
+          "vi": "Công nghệ số mở ra cơ hội lưu giữ ký ức nhưng cũng tạo rủi ro mới."
+        },
+        {
+          "id": "READ-L7-public-memory-S29",
+          "zh": "大量照片、视频和私人记录可以被保存与搜索，但平台关闭、格式过时和数据所有权问题也可能造成新的遗失。",
+          "pinyin": "Dà liàng zhào piān、 shì pín hé sī rén jì lù kě yǐ bèi bǎo cún yǔ sōu suǒ， dàn píng tái guān bì、 gé shì guò shí hé shù jù suǒ yǒu quán wèn tí yě kě néng zào chéng xīn de yí shī。",
+          "vi": "Lượng lớn ảnh, video và ghi chép riêng có thể được lưu và tìm kiếm, nhưng nền tảng đóng cửa, định dạng lỗi thời và quyền sở hữu dữ liệu cũng có thể gây mất mát mới."
+        },
+        {
+          "id": "READ-L7-public-memory-S30",
+          "zh": "人工智能能够修复影像、生成声音，却也可能制造看似真实的伪造材料，使未来研究者更难判断来源。",
+          "pinyin": "Rén gōng zhì néng néng gòu xiū fù yǐng xiàng、 shēng chéng shēng yīn， què yě kě néng zhì zào kàn shì zhēn shí de wěi zào cái liào， shǐ wèi lái yán jiū zhě gèng nán pàn duàn lái yuán。",
+          "vi": "AI có thể phục hồi hình ảnh, tạo giọng nói nhưng cũng có thể tạo tư liệu giả trông thật, khiến nhà nghiên cứu tương lai khó đánh giá nguồn."
+        },
+        {
+          "id": "READ-L7-public-memory-S31",
+          "zh": "因此，数字档案必须保留元数据、修改记录和可验证的来源链。",
+          "pinyin": "Yīn cǐ， shù zì dàng àn bì xū bǎo liú yuán shù jù、 xiū gǎi jì lù hé kě yàn zhèng de lái yuán liàn。",
+          "vi": "Vì vậy, kho lưu trữ số phải giữ siêu dữ liệu, lịch sử chỉnh sửa và chuỗi nguồn có thể xác minh."
+        },
+        {
+          "id": "READ-L7-public-memory-S32",
+          "zh": "个人和家庭在决定公开资料时，还需要考虑逝者尊严、后代隐私和社区文化规范。",
+          "pinyin": "Gè rén hé jiā tíng zài jué dìng gōng kāi zī liào shí， hái xū yào kǎo lǜ shì zhě zūn yán、 hòu dài yǐn sī hé shè qū wén huà guī fàn。",
+          "vi": "Cá nhân và gia đình khi công khai tư liệu còn cần cân nhắc phẩm giá người đã mất, riêng tư hậu thế và chuẩn mực văn hóa cộng đồng."
+        },
+        {
+          "id": "READ-L7-public-memory-S33",
+          "zh": "公共记忆的目标不应是建立一个永远不变的统一故事。",
+          "pinyin": "Gōng gòng jì yì de mù biāo bù yīng shì jiàn lì yí gè yǒng yuǎn bù biàn de tǒng yī gù shì。",
+          "vi": "Mục tiêu ký ức công cộng không nên là tạo một câu chuyện thống nhất bất biến."
+        },
+        {
+          "id": "READ-L7-public-memory-S34",
+          "zh": "一个民主社会更需要的是能够持续修正叙事、承认新证据，并让不同群体在共同空间中表达经验的机制。",
+          "pinyin": "Yí gè mín zhǔ shè huì gèng xū yào de shì néng gòu chí xù xiū zhèng xù shì、 chéng rèn xīn zhèng jù， bìng ràng bù tóng qún tǐ zài gòng tóng kōng jiān zhōng biǎo dá jīng yàn de jī zhì。",
+          "vi": "Một xã hội dân chủ cần cơ chế liên tục sửa tự sự, thừa nhận bằng chứng mới và cho các nhóm biểu đạt trải nghiệm trong không gian chung."
+        },
+        {
+          "id": "READ-L7-public-memory-S35",
+          "zh": "记住过去也不是为了让后代继承仇恨，而是为了理解制度如何造成伤害，以及今天有哪些责任可以避免重复。",
+          "pinyin": "Jì zhù guò qù yě bú shì wèi le ràng hòu dài jì chéng chóu hèn， ér shì wèi le lǐ jiě zhì dù rú hé zào chéng shāng hài， yǐ jí jīn tiān yǒu nǎ xiē zé rèn kě yǐ bì miǎn chóng fù。",
+          "vi": "Nhớ quá khứ không nhằm để hậu thế kế thừa thù hận mà để hiểu thể chế gây tổn thương thế nào và hôm nay có trách nhiệm gì để tránh lặp lại."
+        },
+        {
+          "id": "READ-L7-public-memory-S36",
+          "zh": "当纪念能够连接事实、同情与行动时，历史才不只是过去的负担，也会成为建设更公正未来的资源。",
+          "pinyin": "Dāng jì niàn néng gòu lián jiē shì shí、 tóng qíng yǔ xíng dòng shí， lì shǐ cái bù zhǐ shì guò qù de fù dān， yě huì chéng wéi jiàn shè gèng gōng zhèng wèi lái de zī yuán。",
+          "vi": "Khi tưởng niệm kết nối sự thật, đồng cảm và hành động, lịch sử không chỉ là gánh nặng quá khứ mà còn là nguồn lực xây tương lai công bằng hơn."
+        },
+        {
+          "id": "READ-L7-public-memory-S37",
+          "zh": "旅游产业也会塑造公共记忆，因为城市常把复杂历史压缩成容易消费的路线和故事。",
+          "pinyin": "Lǚ yóu chǎn yè yě huì sù zào gōng gòng jì yì， yīn wèi chéng shì cháng bǎ fù zá lì shǐ yā suō chéng róng yì xiāo fèi de lù xiàn hé gù shì。",
+          "vi": "Du lịch cũng định hình ký ức công cộng vì thành phố thường nén lịch sử phức tạp thành tuyến và câu chuyện dễ tiêu dùng."
+        },
+        {
+          "id": "READ-L7-public-memory-S38",
+          "zh": "如果痛苦经验只被包装成景点，受影响群体可能再次失去解释自身历史的权力。",
+          "pinyin": "Rú guǒ tòng kǔ jīng yàn zhǐ bèi bāo zhuāng chéng jǐng diǎn， shòu yǐng xiǎng qún tǐ kě néng zài cì shī qù jiě shì zì shēn lì shǐ de quán lì。",
+          "vi": "Nếu trải nghiệm đau khổ chỉ bị đóng gói thành điểm tham quan, nhóm bị ảnh hưởng có thể lại mất quyền giải thích lịch sử của mình."
+        },
+        {
+          "id": "READ-L7-public-memory-S39",
+          "zh": "纪念场所应与社区合作，说明收入用途，并避免把创伤转化成猎奇娱乐。",
+          "pinyin": "Jì niàn chǎng suǒ yīng yǔ shè qū hé zuò， shuō míng shōu rù yòng tú， bìng bì miǎn bǎ chuāng shāng zhuǎn huà chéng liè qí yú lè。",
+          "vi": "Địa điểm tưởng niệm nên hợp tác với cộng đồng, giải thích cách dùng doanh thu và tránh biến tổn thương thành giải trí tò mò."
+        },
+        {
+          "id": "READ-L7-public-memory-S40",
+          "zh": "家庭档案同样值得保护，因为信件、照片和日常物品能够展示宏大事件如何进入普通生活。",
+          "pinyin": "Jiā tíng dàng àn tóng yàng zhí de bǎo hù， yīn wèi xìn jiàn、 zhào piān hé rì cháng wù pǐn néng gòu zhǎn shì hóng dà shì jiàn rú hé jìn rù pǔ tōng shēng huó。",
+          "vi": "Kho tư liệu gia đình cũng đáng được bảo vệ vì thư, ảnh và vật dụng hằng ngày cho thấy sự kiện lớn đi vào đời thường thế nào."
+        },
+        {
+          "id": "READ-L7-public-memory-S41",
+          "zh": "公共机构可以提供数字化与保存支持，同时让所有者保留对访问范围的决定。",
+          "pinyin": "Gōng gòng jī gòu kě yǐ tí gōng shù zì huà yǔ bǎo cún zhī chí， tóng shí ràng suǒ yǒu zhě bǎo liú duì fǎng wèn fàn wéi de jué dìng。",
+          "vi": "Cơ quan công có thể hỗ trợ số hóa và bảo quản đồng thời để chủ sở hữu giữ quyền quyết định phạm vi truy cập."
+        },
+        {
+          "id": "READ-L7-public-memory-S42",
+          "zh": "当代社会还会产生新的记忆争议，例如网络事件应该保存多久，删除权与公共利益如何平衡。",
+          "pinyin": "Dāng dài shè huì hái huì chǎn shēng xīn de jì yì zhēng yì， lì rú wǎng luò shì jiàn yīng gāi bǎo cún duō jiǔ， shān chú quán yǔ gōng gòng lì yì rú hé píng héng。",
+          "vi": "Xã hội hiện đại còn tạo tranh cãi ký ức mới như sự kiện trên mạng nên được lưu bao lâu và cân bằng quyền xóa với lợi ích công ra sao."
+        },
+        {
+          "id": "READ-L7-public-memory-S43",
+          "zh": "一个人在年轻时发布的错误言论，不应必然成为终身标签；但涉及公共责任的记录也不能任意消失。",
+          "pinyin": "Yí gè rén zài nián qīng shí fā bù de cuò wù yán lùn， bù yīng bì rán chéng wéi zhōng shēn biāo qiān； dàn shè jí gōng gòng zé rèn de jì lù yě bù néng rèn yì xiāo shī。",
+          "vi": "Phát ngôn sai lúc trẻ không nhất thiết phải thành nhãn suốt đời, nhưng hồ sơ liên quan trách nhiệm công cũng không thể tùy ý biến mất."
+        },
+        {
+          "id": "READ-L7-public-memory-S44",
+          "zh": "这要求根据身份、影响和时间制定细致规则，而不是用永久保存或彻底删除处理所有情况。",
+          "pinyin": "Zhè yāo qiú gēn jù shēn fèn、 yǐng xiǎng hé shí jiān zhì dìng xì zhì guī zé， ér bú shì yòng yǒng jiǔ bǎo cún huò chè dǐ shān chú chǔ lǐ suǒ yǒu qíng kuàng。",
+          "vi": "Điều này đòi hỏi quy tắc tinh tế theo danh tính, tác động và thời gian, thay vì dùng lưu vĩnh viễn hoặc xóa sạch cho mọi trường hợp."
+        },
+        {
+          "id": "READ-L7-public-memory-S45",
+          "zh": "公共记忆最终是一种关系实践：活着的人不断与过去对话，并决定哪些责任应被带入未来。",
+          "pinyin": "Gōng gòng jì yì zuì zhōng shì yī zhǒng guān xì shí jiàn： huó zhe de rén bù duàn yǔ guò qù duì huà， bìng jué dìng nǎ xiē zé rèn yīng bèi dài rù wèi lái。",
+          "vi": "Ký ức công cộng cuối cùng là một thực hành quan hệ: người sống liên tục đối thoại với quá khứ và quyết định trách nhiệm nào cần mang vào tương lai."
+        }
+      ]
+    },
+    {
+      "id": "READ-L7-science-uncertainty",
+      "level": "7",
+      "title": "Bất định khoa học và quyết định công",
+      "topic": "khoa học chính sách",
+      "targetCharacters": 1500,
+      "actualCharacters": 1492,
+      "sentences": [
+        {
+          "id": "READ-L7-science-uncertainty-S01",
+          "zh": "公众常希望科学能够给出明确答案：某种物质是否安全，一项政策是否有效，一种疾病会如何传播。",
+          "pinyin": "Gōng zhòng cháng xī wàng kē xué néng gòu gěi chū míng què dá àn： mǒu zhǒng wù zhì shì fǒu ān quán， yī xiàng zhèng cè shì fǒu yǒu xiào， yī zhǒng jí bìng huì rú hé chuán bō。",
+          "vi": "Công chúng thường muốn khoa học cho đáp án rõ: một chất có an toàn không, chính sách có hiệu quả không, bệnh sẽ lây ra sao."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S02",
+          "zh": "然而，科学知识通常不是一次完成的结论，而是在证据积累、方法改进和同行批评中不断变化的判断。",
+          "pinyin": "Rán ér， kē xué zhī shí tōng cháng bú shì yī cì wán chéng de jié lùn， ér shì zài zhèng jù jī lěi、 fāng fǎ gǎi jìn hé tóng háng pī píng zhōng bù duàn biàn huà de pàn duàn。",
+          "vi": "Nhưng tri thức khoa học thường không phải kết luận hoàn tất một lần mà là phán đoán thay đổi qua tích lũy bằng chứng, cải tiến phương pháp và phê bình đồng nghiệp."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S03",
+          "zh": "不确定性因此不是科学失败的标志，而是对证据边界的诚实描述。",
+          "pinyin": "Bù què dìng xìng yīn cǐ bú shì kē xué shī bài de biāo zhì， ér shì duì zhèng jù biān jiè de chéng shí miáo shù。",
+          "vi": "Bất định vì thế không phải dấu hiệu khoa học thất bại mà là mô tả trung thực về ranh giới bằng chứng."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S04",
+          "zh": "问题在于，公共决策往往不能等待所有疑问消失。",
+          "pinyin": "Wèn tí zài yú， gōng gòng jué cè wǎng wǎng bù néng děng dài suǒ yǒu yí wèn xiāo shī。",
+          "vi": "Vấn đề là quyết định công thường không thể chờ mọi nghi vấn biến mất."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S05",
+          "zh": "面对传染病、环境污染或新技术风险，政府必须在信息不完整时采取行动，并承担行动过早或过晚的后果。",
+          "pinyin": "Miàn duì chuán rǎn bìng、 huán jìng wū rǎn huò xīn jì shù fēng xiǎn， zhèng fǔ bì xū zài xìn xī bù wán zhěng shí cǎi qǔ xíng dòng， bìng chéng dān xíng dòng guò zǎo huò guò wǎn de hòu guǒ。",
+          "vi": "Trước dịch bệnh, ô nhiễm môi trường hay rủi ro công nghệ mới, chính phủ phải hành động khi thông tin chưa đầy đủ và chịu hậu quả của hành động quá sớm hoặc quá muộn."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S06",
+          "zh": "这要求区分不同类型的不确定性。",
+          "pinyin": "Zhè yāo qiú qū fēn bù tóng lèi xíng de bù què dìng xìng。",
+          "vi": "Điều này đòi hỏi phân biệt các loại bất định."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S07",
+          "zh": "有时数据不足，但可以通过更多测量降低不确定；有时模型对复杂系统作出不同预测；还有些风险来自人类行为，本身会随着政策和信息改变。",
+          "pinyin": "Yǒu shí shù jù bù zú， dàn kě yǐ tōng guò gèng duō cè liáng jiàng dī bù què dìng； yǒu shí mó xíng duì fù zá xì tǒng zuò chū bù tóng yù cè； hái yǒu xiē fēng xiǎn lái zì rén lèi xíng wéi， běn shēn huì suí zhe zhèng cè hé xìn xī gǎi biàn。",
+          "vi": "Đôi khi thiếu dữ liệu nhưng có thể giảm bất định bằng đo thêm; đôi khi mô hình dự báo khác nhau về hệ phức tạp; có rủi ro đến từ hành vi con người và thay đổi theo chính sách, thông tin."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S08",
+          "zh": "把所有不确定性用一个百分比表示，可能掩盖这些差别。",
+          "pinyin": "Bǎ suǒ yǒu bù què dìng xìng yòng yí gè bǎi fēn bǐ biǎo shì， kě néng yǎn gài zhè xiē chā bié。",
+          "vi": "Biểu diễn mọi bất định bằng một tỷ lệ có thể che lấp khác biệt đó."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S09",
+          "zh": "科学顾问需要说明哪些事实较稳定、哪些结论依赖假设，以及什么新证据会改变建议。",
+          "pinyin": "Kē xué gù wèn xū yào shuō míng nǎ xiē shì shí jiào wěn dìng、 nǎ xiē jié lùn yī lài jiǎ shè， yǐ jí shén me xīn zhèng jù huì gǎi biàn jiàn yì。",
+          "vi": "Cố vấn khoa học cần nói rõ sự kiện nào khá ổn định, kết luận nào phụ thuộc giả định và bằng chứng mới nào sẽ làm thay đổi khuyến nghị."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S10",
+          "zh": "这种透明表达有时会被误解为专家没有把握。",
+          "pinyin": "Zhè zhǒng tòu míng biǎo dá yǒu shí huì bèi wù jiě wèi zhuān jiā méi yǒu bǎ wò。",
+          "vi": "Cách diễn đạt minh bạch đôi khi bị hiểu lầm là chuyên gia thiếu chắc chắn."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S11",
+          "zh": "政治传播则倾向于简单口号，因为复杂说明难以在短时间内吸引注意。",
+          "pinyin": "Zhèng zhì chuán bō zé qīng xiàng yú jiǎn dān kǒu hào， yīn wèi fù zá shuō míng nán yǐ zài duǎn shí jiān nèi xī yǐn zhù yì。",
+          "vi": "Truyền thông chính trị lại thiên về khẩu hiệu đơn giản vì giải thích phức tạp khó thu hút chú ý trong thời gian ngắn."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S12",
+          "zh": "如果官员为了显示权威而隐藏不确定性，当建议后来调整时，公众可能认为之前的说法都是欺骗。",
+          "pinyin": "Rú guǒ guān yuán wèi le xiǎn shì quán wēi ér yǐn cáng bù què dìng xìng， dāng jiàn yì hòu lái tiáo zhěng shí， gōng zhòng kě néng rèn wéi zhī qián de shuō fǎ dōu shì qī piàn。",
+          "vi": "Nếu quan chức giấu bất định để tỏ ra có quyền uy, khi khuyến nghị sau đó điều chỉnh, công chúng có thể cho rằng lời trước đều là lừa dối."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S13",
+          "zh": "相反，提前说明“我们目前知道什么、还不知道什么、下一步如何学习”，更有助于建立可持续信任。",
+          "pinyin": "Xiāng fǎn， tí qián shuō míng“wǒ men mù qián zhī dào shén me、 hái bù zhī dào shén me、 xià yī bù rú hé xué xí”， gèng yǒu zhù yú jiàn lì kě chí xù xìn rèn。",
+          "vi": "Ngược lại, nói trước “hiện biết gì, chưa biết gì, bước tiếp theo học thế nào” giúp xây niềm tin bền vững hơn."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S14",
+          "zh": "风险沟通还必须区分相对风险和绝对风险。",
+          "pinyin": "Fēng xiǎn gōu tōng hái bì xū qū fēn xiāng duì fēng xiǎn hé jué duì fēng xiǎn。",
+          "vi": "Truyền thông rủi ro còn phải phân biệt rủi ro tương đối và tuyệt đối."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S15",
+          "zh": "一种干预把风险降低一半听起来非常显著，但如果原始风险是万分之二，实际变化可能只是降到万分之一。",
+          "pinyin": "Yī zhǒng gān yù bǎ fēng xiǎn jiàng dī yí bàn tīng qǐ lái fēi cháng xiǎn zhù， dàn rú guǒ yuán shǐ fēng xiǎn shì wàn fēn zhī èr， shí jì biàn huà kě néng zhǐ shì jiàng dào wàn fēn zhī yī。",
+          "vi": "Một can thiệp giảm rủi ro một nửa nghe rất lớn, nhưng nếu rủi ro gốc là hai trên mười nghìn thì thay đổi thực tế chỉ còn một trên mười nghìn."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S16",
+          "zh": "同样，只报道单个严重案例会放大恐惧，却不能说明总体发生概率。",
+          "pinyin": "Tóng yàng， zhǐ bào dào dān gè yán zhòng àn lì huì fàng dà kǒng jù， què bù néng shuō míng zǒng tǐ fā shēng gài lǜ。",
+          "vi": "Tương tự, chỉ đưa tin một ca nghiêm trọng làm tăng sợ hãi nhưng không cho biết xác suất chung."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S17",
+          "zh": "媒体和机构应提供可比较的数字、时间范围和受影响人群，而不是只选择最戏剧化的表达。",
+          "pinyin": "Méi tǐ hé jī gòu yīng tí gōng kě bǐ jiào de shù zì、 shí jiān fàn wéi hé shòu yǐng xiǎng rén qún， ér bú shì zhǐ xuǎn zé zuì xì jù huà de biǎo dá。",
+          "vi": "Truyền thông và cơ quan nên cung cấp số liệu có thể so sánh, phạm vi thời gian và nhóm bị ảnh hưởng thay vì chỉ chọn cách diễn đạt kịch tính."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S18",
+          "zh": "预防原则常用于处理潜在损害巨大、不可逆转而证据尚不完整的风险。",
+          "pinyin": "Yù fáng yuán zé cháng yòng yú chǔ lǐ qián zài sǔn hài jù dà、 bù kě nì zhuǎn ér zhèng jù shàng bù wán zhěng de fēng xiǎn。",
+          "vi": "Nguyên tắc phòng ngừa thường dùng cho rủi ro có tổn hại tiềm ẩn lớn, không thể đảo ngược trong khi bằng chứng chưa đầy đủ."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S19",
+          "zh": "它并不意味着只要存在任何怀疑就全面禁止，因为过度限制本身也会产生健康、经济和自由方面的成本。",
+          "pinyin": "Tā bìng bù yì wèi zhe zhǐ yào cún zài rèn hé huái yí jiù quán miàn jìn zhǐ， yīn wèi guò dù xiàn zhì běn shēn yě huì chǎn shēng jiàn kāng、 jīng jì hé zì yóu fāng miàn de chéng běn。",
+          "vi": "Nó không có nghĩa hễ có nghi ngờ là cấm toàn diện, vì hạn chế quá mức cũng tạo chi phí về sức khỏe, kinh tế và tự do."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S20",
+          "zh": "合理应用需要比较不同选择的潜在损害，考虑可逆性，并设计能够随着证据更新的措施。",
+          "pinyin": "Hé lǐ yìng yòng xū yào bǐ jiào bù tóng xuǎn zé de qián zài sǔn hài， kǎo lǜ kě nì xìng， bìng shè jì néng gòu suí zhe zhèng jù gēng xīn de cuò shī。",
+          "vi": "Áp dụng hợp lý cần so sánh tổn hại tiềm ẩn của các lựa chọn, xét khả năng đảo ngược và thiết kế biện pháp cập nhật theo bằng chứng."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S21",
+          "zh": "例如，可以先限制高风险用途、加强监测和要求报告，而不是立即在所有场景采取同样规则。",
+          "pinyin": "Lì rú， kě yǐ xiān xiàn zhì gāo fēng xiǎn yòng tú、 jiā qiáng jiān cè hé yāo qiú bào gào， ér bú shì lì jí zài suǒ yǒu chǎng jǐng cǎi qǔ tóng yàng guī zé。",
+          "vi": "Ví dụ có thể trước hết hạn chế mục đích rủi ro cao, tăng giám sát và yêu cầu báo cáo thay vì áp một quy tắc cho mọi bối cảnh."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S22",
+          "zh": "公共决策还包含价值判断，这是科学数据无法单独决定的。",
+          "pinyin": "Gōng gòng jué cè hái bāo hán jià zhí pàn duàn， zhè shì kē xué shù jù wú fǎ dān dú jué dìng de。",
+          "vi": "Quyết định công còn chứa phán đoán giá trị mà dữ liệu khoa học không thể tự quyết định."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S23",
+          "zh": "即使专家能够估计政策的成本和收益，社会仍需决定如何看待公平、隐私、个人选择和对弱势群体的责任。",
+          "pinyin": "Jí shǐ zhuān jiā néng gòu gū jì zhèng cè de chéng běn hé shōu yì， shè huì réng xū jué dìng rú hé kàn dài gōng píng、 yǐn sī、 gè rén xuǎn zé hé duì ruò shì qún tǐ de zé rèn。",
+          "vi": "Dù chuyên gia ước tính được chi phí và lợi ích, xã hội vẫn phải quyết định nhìn nhận công bằng, riêng tư, lựa chọn cá nhân và trách nhiệm với nhóm yếu thế ra sao."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S24",
+          "zh": "把价值选择包装成“科学要求”，会隐藏政治责任；反过来，否认事实并声称一切只是价值，则会破坏理性讨论。",
+          "pinyin": "Bǎ jià zhí xuǎn zé bāo zhuāng chéng“kē xué yāo qiú”， huì yǐn cáng zhèng zhì zé rèn； fǎn guò lái， fǒu rèn shì shí bìng shēng chēng yī qiè zhǐ shì jià zhí， zé huì pò huài lǐ xìng tǎo lùn。",
+          "vi": "Đóng gói lựa chọn giá trị thành “khoa học yêu cầu” sẽ che trách nhiệm chính trị; ngược lại, phủ nhận sự kiện và nói mọi thứ chỉ là giá trị sẽ phá hỏng thảo luận lý tính."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S25",
+          "zh": "更好的制度应明确区分证据分析、伦理权衡和最终决策，并记录每一步的理由。",
+          "pinyin": "Gèng hǎo de zhì dù yīng míng què qū fēn zhèng jù fēn xī、 lún lǐ quán héng hé zuì zhōng jué cè， bìng jì lù měi yī bù de lǐ yóu。",
+          "vi": "Thể chế tốt hơn cần phân biệt rõ phân tích bằng chứng, cân nhắc đạo đức và quyết định cuối cùng, đồng thời ghi lại lý do từng bước."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S26",
+          "zh": "独立审查和公开数据能够减少利益冲突。",
+          "pinyin": "Dú lì shěn chá hé gōng kāi shù jù néng gòu jiǎn shǎo lì yì chōng tū。",
+          "vi": "Thẩm định độc lập và dữ liệu mở có thể giảm xung đột lợi ích."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S27",
+          "zh": "研究由谁资助、负面结果是否发表、模型参数是否可以检查，都会影响结论的可信度。",
+          "pinyin": "Yán jiū yóu shuí zī zhù、 fù miàn jié guǒ shì fǒu fā biǎo、 mó xíng cān shù shì fǒu kě yǐ jiǎn chá， dū huì yǐng xiǎng jié lùn de kě xìn dù。",
+          "vi": "Nghiên cứu do ai tài trợ, kết quả tiêu cực có được công bố, tham số mô hình có thể kiểm tra hay không đều ảnh hưởng độ tin cậy kết luận."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S28",
+          "zh": "但开放数据也要保护个人隐私，尤其在医疗、教育和社会福利领域。",
+          "pinyin": "Dàn kāi fàng shù jù yě yào bǎo hù gè rén yǐn sī， yóu qí zài yī liáo、 jiào yù hé shè huì fú lì lǐng yù。",
+          "vi": "Nhưng dữ liệu mở cũng phải bảo vệ riêng tư cá nhân, nhất là trong y tế, giáo dục và phúc lợi xã hội."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S29",
+          "zh": "这再次说明，透明不是简单地把所有资料上传，而是建立可追踪、可质疑且有边界的制度。",
+          "pinyin": "Zhè zài cì shuō míng， tòu míng bú shì jiǎn dān dì bǎ suǒ yǒu zī liào shàng chuán， ér shì jiàn lì kě zhuī zōng、 kě zhì yí qiě yǒu biān jiè de zhì dù。",
+          "vi": "Điều này một lần nữa cho thấy minh bạch không phải tải mọi tài liệu lên mà là xây hệ thống có thể truy vết, chất vấn và có ranh giới."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S30",
+          "zh": "公众参与可以改善决策，因为当地居民往往知道模型没有包含的实际条件。",
+          "pinyin": "Gōng zhòng cān yù kě yǐ gǎi shàn jué cè， yīn wèi dāng dì jū mín wǎng wǎng zhī dào mó xíng méi yǒu bāo hán de shí jì tiáo jiàn。",
+          "vi": "Sự tham gia của công chúng có thể cải thiện quyết định vì cư dân địa phương thường biết điều kiện thực tế mà mô hình không chứa."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S31",
+          "zh": "然而，参与也需要足够时间、易懂信息和回应机制，否则听证会只会成为形式。",
+          "pinyin": "Rán ér， cān yù yě xū yào zú gòu shí jiān、 yì dǒng xìn xī hé huí yìng jī zhì， fǒu zé tīng zhèng huì zhǐ huì chéng wéi xíng shì。",
+          "vi": "Nhưng tham gia cần đủ thời gian, thông tin dễ hiểu và cơ chế phản hồi, nếu không điều trần chỉ là hình thức."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S32",
+          "zh": "在危机中，政策必须迅速，但快速行动不应取消事后评估。",
+          "pinyin": "Zài wēi jī zhōng， zhèng cè bì xū xùn sù， dàn kuài sù xíng dòng bù yīng qǔ xiāo shì hòu píng gū。",
+          "vi": "Trong khủng hoảng, chính sách phải nhanh nhưng hành động nhanh không nên loại bỏ đánh giá sau đó."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S33",
+          "zh": "临时措施应设定期限、复审条件和退出机制，以免在风险下降后仍然永久存在。",
+          "pinyin": "Lín shí cuò shī yīng shè dìng qī xiàn、 fù shěn tiáo jiàn hé tuì chū jī zhì， yǐ miǎn zài fēng xiǎn xià jiàng hòu réng rán yǒng jiǔ cún zài。",
+          "vi": "Biện pháp tạm thời nên có thời hạn, điều kiện xem xét lại và cơ chế chấm dứt để không tồn tại vĩnh viễn sau khi rủi ro giảm."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S34",
+          "zh": "学习型治理的核心，是承认错误可能发生，并让制度能够发现、纠正和补偿错误。",
+          "pinyin": "Xué xí xíng zhì lǐ de hé xīn， shì chéng rèn cuò wù kě néng fā shēng， bìng ràng zhì dù néng gòu fā xiàn、 jiū zhèng hé bǔ cháng cuò wù。",
+          "vi": "Cốt lõi của quản trị học hỏi là thừa nhận lỗi có thể xảy ra và để thể chế phát hiện, sửa và bồi thường lỗi."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S35",
+          "zh": "一个从不修改政策的政府未必更可靠，可能只是拒绝承认新证据。",
+          "pinyin": "Yí gè cóng bù xiū gǎi zhèng cè de zhèng fǔ wèi bì gèng kě kào， kě néng zhǐ shì jù jué chéng rèn xīn zhèng jù。",
+          "vi": "Một chính phủ không bao giờ sửa chính sách chưa chắc đáng tin hơn, có thể chỉ là từ chối thừa nhận bằng chứng mới."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S36",
+          "zh": "科学不确定性真正考验的不是我们能否消除所有疑问，而是能否在有限知识下作出负责、可修正并可解释的选择。",
+          "pinyin": "Kē xué bù què dìng xìng zhēn zhèng kǎo yàn de bú shì wǒ men néng fǒu xiāo chú suǒ yǒu yí wèn， ér shì néng fǒu zài yǒu xiàn zhī shí xià zuò chū fù zé、 kě xiū zhèng bìng kě jiě shì de xuǎn zé。",
+          "vi": "Bất định khoa học thực sự thử thách không phải khả năng xóa mọi nghi vấn, mà là có thể đưa ra lựa chọn có trách nhiệm, sửa được và giải thích được dưới tri thức hữu hạn hay không."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S37",
+          "zh": "专家之间出现分歧时，媒体不应只追求“双方各一句”的表面对称，而应说明各自证据的数量与质量。",
+          "pinyin": "Zhuān jiā zhī jiān chū xiàn fēn qí shí， méi tǐ bù yīng zhǐ zhuī qiú“shuāng fāng gè yī jù” de biǎo miàn duì chèn， ér yīng shuō míng gè zì zhèng jù de shù liàng yǔ zhì liàng。",
+          "vi": "Khi chuyên gia bất đồng, truyền thông không nên chỉ theo đuổi đối xứng bề mặt “mỗi bên một câu” mà cần giải thích số lượng và chất lượng bằng chứng của mỗi bên."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S38",
+          "zh": "少数意见有时后来会被证明正确，但它并不会仅因为是少数就自动更勇敢或更可靠。",
+          "pinyin": "Shǎo shù yì jiàn yǒu shí hòu lái huì bèi zhèng míng zhèng què， dàn tā bìng bú huì jǐn yīn wèi shì shǎo shù jiù zì dòng gèng yǒng gǎn huò gèng kě kào。",
+          "vi": "Ý kiến thiểu số đôi khi về sau được chứng minh đúng, nhưng không tự động dũng cảm hay đáng tin chỉ vì là thiểu số."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S39",
+          "zh": "判断争议需要查看研究是否重复、方法是否透明，以及结论是否经得起独立检验。",
+          "pinyin": "Pàn duàn zhēng yì xū yào chá kàn yán jiū shì fǒu chóng fù、 fāng fǎ shì fǒu tòu míng， yǐ jí jié lùn shì fǒu jīng dé qǐ dú lì jiǎn yàn。",
+          "vi": "Đánh giá tranh cãi cần xem nghiên cứu có lặp lại được, phương pháp có minh bạch và kết luận có chịu được kiểm chứng độc lập hay không."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S40",
+          "zh": "政府还应建立利益冲突申报制度，让公众知道顾问与企业、政治组织之间的关系。",
+          "pinyin": "Zhèng fǔ hái yīng jiàn lì lì yì chōng tū shēn bào zhì dù， ràng gōng zhòng zhī dào gù wèn yǔ qǐ yè、 zhèng zhì zǔ zhī zhī jiān de guān xì。",
+          "vi": "Chính phủ còn nên có chế độ khai báo xung đột lợi ích để công chúng biết quan hệ giữa cố vấn với doanh nghiệp, tổ chức chính trị."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S41",
+          "zh": "利益关系并不必然使研究无效，但隐藏关系会削弱信任，也妨碍他人判断偏差风险。",
+          "pinyin": "Lì yì guān xì bìng bù bì rán shǐ yán jiū wú xiào， dàn yǐn cáng guān xì huì xuē ruò xìn rèn， yě fáng ài tā rén pàn duàn piān chā fēng xiǎn。",
+          "vi": "Quan hệ lợi ích không nhất thiết làm nghiên cứu vô hiệu, nhưng giấu quan hệ sẽ làm suy yếu niềm tin và cản người khác đánh giá nguy cơ thiên lệch."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S42",
+          "zh": "在教育中，学生应练习阅读图表、理解概率并区分相关与因果，而不是只记住结论。",
+          "pinyin": "Zài jiào yù zhōng， xué shēng yīng liàn xí yuè dú tú biǎo、 lǐ jiě gài lǜ bìng qū fēn xiāng guān yǔ yīn guǒ， ér bú shì zhǐ jì zhù jié lùn。",
+          "vi": "Trong giáo dục, học sinh nên luyện đọc biểu đồ, hiểu xác suất và phân biệt tương quan với nhân quả thay vì chỉ nhớ kết luận."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S43",
+          "zh": "这种能力能帮助公众在危机之外也更理性地处理健康、经济和环境信息。",
+          "pinyin": "Zhè zhǒng néng lì néng bāng zhù gōng zhòng zài wēi jī zhī wài yě gèng lǐ xìng dì chǔ lǐ jiàn kāng、 jīng jì hé huán jìng xìn xī。",
+          "vi": "Năng lực này giúp công chúng xử lý thông tin sức khỏe, kinh tế và môi trường lý tính hơn cả ngoài khủng hoảng."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S44",
+          "zh": "科学素养的目的不是让每个人都成为专家，而是让人知道何时需要专家、如何提出问题以及怎样判断证据。",
+          "pinyin": "Kē xué sù yǎng de mù dì bú shì ràng měi gè rén dōu chéng wéi zhuān jiā， ér shì ràng rén zhī dào hé shí xū yào zhuān jiā、 rú hé tí chū wèn tí yǐ jí zěn yàng pàn duàn zhèng jù。",
+          "vi": "Mục đích của hiểu biết khoa học không phải biến mọi người thành chuyên gia mà là biết khi nào cần chuyên gia, hỏi thế nào và đánh giá bằng chứng ra sao."
+        },
+        {
+          "id": "READ-L7-science-uncertainty-S45",
+          "zh": "当制度允许公开纠错而不把修正视为软弱时，科学与民主都更有可能保持活力。",
+          "pinyin": "Dāng zhì dù yǔn xǔ gōng kāi jiū cuò ér bù bǎ xiū zhèng shì wèi ruǎn ruò shí， kē xué yǔ mín zhǔ dōu gèng yǒu kě néng bǎo chí huó lì。",
+          "vi": "Khi thể chế cho phép sửa lỗi công khai mà không coi điều chỉnh là yếu đuối, cả khoa học và dân chủ đều có khả năng giữ sức sống hơn."
+        }
+      ]
+    },
+    {
+      "id": "READ-L7-urban-resilience",
+      "level": "7",
+      "title": "Khả năng chống chịu đô thị trong hệ thống phức tạp",
+      "topic": "đô thị hệ thống",
+      "targetCharacters": 1500,
+      "actualCharacters": 1511,
+      "sentences": [
+        {
+          "id": "READ-L7-urban-resilience-S01",
+          "zh": "城市通常被描述成建筑、道路和人口的集合，但从系统角度看，它更像由能源、水、交通、通信、医疗、市场和社会关系相互连接的网络。",
+          "pinyin": "Chéng shì tōng cháng bèi miáo shù chéng jiàn zhù、 dào lù hé rén kǒu de jí hé， dàn cóng xì tǒng jiǎo dù kàn， tā gèng xiàng yóu néng yuán、 shuǐ、 jiāo tōng、 tōng xìn、 yī liáo、 shì chǎng hé shè huì guān xì xiāng hù lián jiē de wǎng luò。",
+          "vi": "Thành phố thường được mô tả là tập hợp công trình, đường sá và dân số, nhưng từ góc hệ thống, nó giống mạng lưới liên kết năng lượng, nước, giao thông, thông tin, y tế, thị trường và quan hệ xã hội."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S02",
+          "zh": "这些网络在日常生活中高度依赖彼此，因此一个局部故障可能通过连锁反应迅速扩大。",
+          "pinyin": "Zhè xiē wǎng luò zài rì cháng shēng huó zhōng gāo dù yī lài bǐ cǐ， yīn cǐ yí gè jú bù gù zhàng kě néng tōng guò lián suǒ fǎn yìng xùn sù kuò dà。",
+          "vi": "Các mạng này phụ thuộc mạnh vào nhau trong đời sống hằng ngày, nên một sự cố cục bộ có thể nhanh chóng lan rộng qua phản ứng dây chuyền."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S03",
+          "zh": "停电不仅让灯熄灭，还可能影响供水泵、手机基站、交通信号、医院设备和电子支付。",
+          "pinyin": "Tíng diàn bù jǐn ràng dēng xī miè， hái kě néng yǐng xiǎng gōng shuǐ bèng、 shǒu jī jī zhàn、 jiāo tōng xìn hào、 yī yuàn shè bèi hé diàn zi zhī fù。",
+          "vi": "Mất điện không chỉ làm tắt đèn mà còn ảnh hưởng bơm nước, trạm di động, tín hiệu giao thông, thiết bị bệnh viện và thanh toán điện tử."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S04",
+          "zh": "洪水不仅损坏房屋，也可能阻断道路，使救护车无法到达，并导致食品和药品供应中断。",
+          "pinyin": "Hóng shuǐ bù jǐn sǔn huài fáng wū， yě kě néng zǔ duàn dào lù， shǐ jiù hù chē wú fǎ dào dá， bìng dǎo zhì shí pǐn huò yào pǐn gōng yìng zhōng duàn。",
+          "vi": "Lũ không chỉ làm hỏng nhà mà còn chặn đường, khiến xe cứu thương không đến được và làm gián đoạn thực phẩm, thuốc."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S05",
+          "zh": "所谓城市韧性，是指城市面对冲击时维持核心功能、保护居民，并在事后学习和调整的能力。",
+          "pinyin": "Suǒ wèi chéng shì rèn xìng， shì zhǐ chéng shì miàn duì chōng jī shí wéi chí hé xīn gōng néng、 bǎo hù jū mín， bìng zài shì hòu xué xí hé tiáo zhěng de néng lì。",
+          "vi": "Khả năng chống chịu đô thị là năng lực duy trì chức năng cốt lõi, bảo vệ cư dân và học hỏi, điều chỉnh sau cú sốc."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S06",
+          "zh": "它并不意味着城市能够避免所有灾害，也不是简单地恢复到原来的状态。",
+          "pinyin": "Tā bìng bù yì wèi zhe chéng shì néng gòu bì miǎn suǒ yǒu zāi hài， yě bú shì jiǎn dān dì huī fù dào yuán lái de zhuàng tài。",
+          "vi": "Nó không có nghĩa thành phố tránh được mọi thảm họa hay chỉ khôi phục trạng thái cũ."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S07",
+          "zh": "如果原有系统本来就不公平、污染严重或容易失败，完全恢复反而会重新制造同样风险。",
+          "pinyin": "Rú guǒ yuán yǒu xì tǒng běn lái jiù bù gōng píng、 wū rǎn yán zhòng huò róng yì shī bài， wán quán huī fù fǎn ér huì chóng xīn zhì zào tóng yàng fēng xiǎn。",
+          "vi": "Nếu hệ thống cũ vốn bất công, ô nhiễm hoặc dễ thất bại, khôi phục hoàn toàn sẽ tái tạo cùng rủi ro."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S08",
+          "zh": "更积极的韧性强调“向前恢复”，也就是利用危机暴露的问题改善制度。",
+          "pinyin": "Gèng jī jí de rèn xìng qiáng diào“xiàng qián huī fù”， yě jiù shì lì yòng wēi jī bào lù de wèn tí gǎi shàn zhì dù。",
+          "vi": "Khả năng chống chịu tích cực nhấn mạnh “phục hồi tiến lên”, tức dùng vấn đề lộ ra trong khủng hoảng để cải thiện thể chế."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S09",
+          "zh": "基础设施的冗余是重要原则之一。",
+          "pinyin": "Jī chǔ shè shī de rǒng yú shì zhòng yào yuán zé zhī yī。",
+          "vi": "Dự phòng hạ tầng là một nguyên tắc quan trọng."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S10",
+          "zh": "如果城市只有一个供水来源、一条主要通道或单一数据中心，效率可能很高，但任何故障都会造成巨大影响。",
+          "pinyin": "Rú guǒ chéng shì zhǐ yǒu yí gè gōng shuǐ lái yuán、 yī tiáo zhǔ yào tōng dào huò dān yī shù jù zhōng xīn， xiào lǜ kě néng hěn gāo， dàn rèn hé gù zhàng dū huì zào chéng jù dà yǐng xiǎng。",
+          "vi": "Nếu thành phố chỉ có một nguồn nước, một tuyến chính hoặc một trung tâm dữ liệu, hiệu quả có thể cao nhưng bất kỳ sự cố nào cũng gây tác động lớn."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S11",
+          "zh": "备用系统、分布式能源和多种交通方式会增加短期成本，却能降低全面瘫痪的概率。",
+          "pinyin": "Bèi yòng xì tǒng、 fēn bù shì néng yuán hé duō zhǒng jiāo tōng fāng shì huì zēng jiā duǎn qī chéng běn， què néng jiàng dī quán miàn tān huàn de gài lǜ。",
+          "vi": "Hệ thống dự phòng, năng lượng phân tán và nhiều phương thức giao thông tăng chi phí ngắn hạn nhưng giảm xác suất tê liệt toàn diện."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S12",
+          "zh": "多样性同样重要，因为不同系统对同一种冲击的反应并不相同。",
+          "pinyin": "Duō yàng xìng tóng yàng zhòng yào， yīn wèi bù tóng xì tǒng duì tóng yī zhǒng chōng jī de fǎn yìng bìng bù xiāng tóng。",
+          "vi": "Đa dạng cũng quan trọng vì các hệ thống phản ứng khác nhau trước cùng cú sốc."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S13",
+          "zh": "在公共交通中，地铁、公交、步行和自行车相互补充，可以在某一方式中断时提供替代。",
+          "pinyin": "Zài gōng gòng jiāo tōng zhōng， dì tiě、 gōng jiāo、 bù xíng hé zì xíng chē xiāng hù bǔ chōng， kě yǐ zài mǒu yī fāng shì zhōng duàn shí tí gōng tì dài。",
+          "vi": "Trong giao thông công cộng, metro, xe buýt, đi bộ và xe đạp bổ sung nhau, cung cấp thay thế khi một phương thức gián đoạn."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S14",
+          "zh": "但冗余和多样性不能只服务中心区。",
+          "pinyin": "Dàn rǒng yú hé duō yàng xìng bù néng zhǐ fú wù zhōng xīn qū。",
+          "vi": "Nhưng dự phòng và đa dạng không thể chỉ phục vụ khu trung tâm."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S15",
+          "zh": "低收入社区往往处在风险更高、投资更少的地方，灾害发生后也更难获得保险、储蓄和搬迁选择。",
+          "pinyin": "Dī shōu rù shè qū wǎng wǎng chù zài fēng xiǎn gèng gāo、 tóu zī gèng shǎo de dì fāng， zāi hài fā shēng hòu yě gèng nán huò dé bǎo xiǎn、 chǔ xù hé bān qiān xuǎn zé。",
+          "vi": "Cộng đồng thu nhập thấp thường ở nơi rủi ro cao, đầu tư ít và sau thiên tai khó có bảo hiểm, tiết kiệm hay lựa chọn di dời."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S16",
+          "zh": "如果韧性项目提高地价并迫使原居民离开，所谓安全改善就可能变成“绿色驱逐”。",
+          "pinyin": "Rú guǒ rèn xìng xiàng mù tí gāo dì jià bìng pò shǐ yuán jū mín lí kāi， suǒ wèi ān quán gǎi shàn jiù kě néng biàn chéng“lǜ sè qū zhú”。",
+          "vi": "Nếu dự án chống chịu làm tăng giá đất và buộc cư dân cũ rời đi, cải thiện an toàn có thể thành “trục xuất xanh”."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S17",
+          "zh": "规划必须把住房可负担性、租户保护和社区所有权纳入设计。",
+          "pinyin": "Guī huà bì xū bǎ zhù fáng kě fù dān xìng、 zū hù bǎo hù hé shè qū suǒ yǒu quán nà rù shè jì。",
+          "vi": "Quy hoạch phải đưa khả năng chi trả nhà ở, bảo vệ người thuê và sở hữu cộng đồng vào thiết kế."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S18",
+          "zh": "社会关系也是基础设施，虽然它不像桥梁和管道那样容易被看见。",
+          "pinyin": "Shè huì guān xì yě shì jī chǔ shè shī， suī rán tā bù xiàng qiáo liáng hé guǎn dào nà yàng róng yì bèi kàn jiàn。",
+          "vi": "Quan hệ xã hội cũng là hạ tầng dù không dễ thấy như cầu và đường ống."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S19",
+          "zh": "灾害中，邻居往往是最先提供信息、食物、交通和照护的人。",
+          "pinyin": "Zāi hài zhōng， lín jū wǎng wǎng shì zuì xiān tí gōng xìn xī、 shí wù、 jiāo tōng hé zhào hù de rén。",
+          "vi": "Trong thiên tai, hàng xóm thường là người đầu tiên cung cấp thông tin, thực phẩm, di chuyển và chăm sóc."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S20",
+          "zh": "长期缺乏信任的社区，即使拥有先进设备，也可能因为沟通失败而无法有效行动。",
+          "pinyin": "Cháng qī quē fá xìn rèn de shè qū， jí shǐ yōng yǒu xiān jìn shè bèi， yě kě néng yīn wèi gōu tōng shī bài ér wú fǎ yǒu xiào xíng dòng。",
+          "vi": "Cộng đồng thiếu niềm tin lâu dài dù có thiết bị tiên tiến vẫn có thể không hành động hiệu quả vì giao tiếp thất bại."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S21",
+          "zh": "社区组织、学校、宗教场所和地方商店可以成为平时建立联系、危机时传递资源的节点。",
+          "pinyin": "Shè qū zǔ zhī、 xué xiào、 zōng jiào chǎng suǒ hé dì fāng shāng diàn kě yǐ chéng wéi píng shí jiàn lì lián xì、 wēi jī shí chuán dì zī yuán de jié diǎn。",
+          "vi": "Tổ chức cộng đồng, trường, nơi tôn giáo và cửa hàng địa phương có thể là nút xây liên hệ lúc bình thường và truyền nguồn lực khi khủng hoảng."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S22",
+          "zh": "政府应在灾害前与这些组织合作，而不是只在紧急状态下临时寻找联系人。",
+          "pinyin": "Zhèng fǔ yīng zài zāi hài qián yǔ zhè xiē zǔ zhī hé zuò， ér bú shì zhǐ zài jǐn jí zhuàng tài xià lín shí xún zhǎo lián xì rén。",
+          "vi": "Chính quyền nên hợp tác với các tổ chức này trước thiên tai, không phải chỉ tìm người liên hệ tạm thời khi khẩn cấp."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S23",
+          "zh": "信息系统需要可靠，也需要可理解。",
+          "pinyin": "Xìn xī xì tǒng xū yào kě kào， yě xū yào kě lǐ jiě。",
+          "vi": "Hệ thống thông tin cần đáng tin và dễ hiểu."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S24",
+          "zh": "警报如果只通过智能手机发送，会遗漏没有设备、网络不稳定或不熟悉技术的人。",
+          "pinyin": "Jǐng bào rú guǒ zhǐ tōng guò zhì néng shǒu jī fā sòng， huì yí lòu méi yǒu shè bèi、 wǎng luò bù wěn dìng huò bù shú xī jì shù de rén。",
+          "vi": "Cảnh báo nếu chỉ gửi qua smartphone sẽ bỏ sót người không có thiết bị, mạng không ổn định hoặc không thạo công nghệ."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S25",
+          "zh": "多语言广播、社区志愿者、公共屏幕和传统媒体仍然不可缺少。",
+          "pinyin": "Duō yǔ yán guǎng bō、 shè qū zhì yuàn zhě、 gōng gòng píng mù hé chuán tǒng méi tǐ réng rán bù kě quē shǎo。",
+          "vi": "Phát thanh đa ngôn ngữ, tình nguyện viên cộng đồng, màn hình công cộng và truyền thông truyền thống vẫn không thể thiếu."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S26",
+          "zh": "信息过多也可能造成混乱，因此需要统一来源、清楚行动指引和及时纠错。",
+          "pinyin": "Xìn xī guò duō yě kě néng zào chéng hùn luàn， yīn cǐ xū yào tǒng yī lái yuán、 qīng chǔ xíng dòng zhǐ yǐn hé jí shí jiū cuò。",
+          "vi": "Quá nhiều thông tin cũng gây hỗn loạn, nên cần nguồn thống nhất, chỉ dẫn hành động rõ và sửa lỗi kịp thời."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S27",
+          "zh": "数据和模型能够帮助识别高风险区域，但它们往往依赖历史记录。",
+          "pinyin": "Shù jù hé mó xíng néng gòu bāng zhù shí bié gāo fēng xiǎn qū yù， dàn tā men wǎng wǎng yī lài lì shǐ jì lù。",
+          "vi": "Dữ liệu và mô hình giúp nhận diện vùng rủi ro cao nhưng thường phụ thuộc hồ sơ lịch sử."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S28",
+          "zh": "在气候变化和快速城市化背景下，过去频率不一定代表未来。",
+          "pinyin": "Zài qì hòu biàn huà hé kuài sù chéng shì huà bèi jǐng xià， guò qù pín lǜ bù yí dìng dài biǎo wèi lái。",
+          "vi": "Trong bối cảnh biến đổi khí hậu và đô thị hóa nhanh, tần suất quá khứ không nhất thiết đại diện tương lai."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S29",
+          "zh": "规划者需要使用不同情景，考虑极端但可能发生的事件，而不是只准备最常见情况。",
+          "pinyin": "Guī huà zhě xū yào shǐ yòng bù tóng qíng jǐng， kǎo lǜ jí duān dàn kě néng fā shēng de shì jiàn， ér bú shì zhǐ zhǔn bèi zuì cháng jiàn qíng kuàng。",
+          "vi": "Nhà quy hoạch cần dùng nhiều kịch bản, tính đến sự kiện cực đoan nhưng có thể xảy ra, không chỉ chuẩn bị cho trường hợp phổ biến nhất."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S30",
+          "zh": "同时，模型的假设和局限应向公众说明，避免技术图表替代民主讨论。",
+          "pinyin": "Tóng shí， mó xíng de jiǎ shè hé jú xiàn yīng xiàng gōng zhòng shuō míng， bì miǎn jì shù tú biǎo tì dài mín zhǔ tǎo lùn。",
+          "vi": "Đồng thời, giả định và giới hạn mô hình cần được giải thích cho công chúng để tránh biểu đồ kỹ thuật thay thế thảo luận dân chủ."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S31",
+          "zh": "灾后重建常面临速度与参与之间的矛盾。",
+          "pinyin": "Zāi hòu chóng jiàn cháng miàn lín sù dù yǔ cān yù zhī jiān de máo dùn。",
+          "vi": "Tái thiết sau thiên tai thường đối mặt mâu thuẫn giữa tốc độ và tham gia."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S32",
+          "zh": "受灾者急需住房和收入，快速行动非常重要；但如果为了速度跳过咨询，重建项目可能不符合真实需要。",
+          "pinyin": "Shòu zāi zhě jí xū zhù fáng hé shōu rù， kuài sù xíng dòng fēi cháng zhòng yào； dàn rú guǒ wèi le sù dù tiào guò zī xún， chóng jiàn xiàng mù kě néng bù fú hé zhēn shí xū yào。",
+          "vi": "Người bị nạn cần nhà và thu nhập khẩn cấp nên hành động nhanh rất quan trọng; nhưng nếu bỏ tư vấn vì tốc độ, dự án có thể không phù hợp nhu cầu thật."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S33",
+          "zh": "可以通过灾前制定参与框架、预先确认土地权利和建立透明采购规则来减少这种冲突。",
+          "pinyin": "Kě yǐ tōng guò zāi qián zhì dìng cān yù kuāng jià、 yù xiān què rèn tǔ dì quán lì hé jiàn lì tòu míng cǎi gòu guī zé lái jiǎn shǎo zhè zhǒng chōng tū。",
+          "vi": "Có thể giảm xung đột bằng khung tham gia trước thiên tai, xác nhận trước quyền đất và xây quy tắc mua sắm minh bạch."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S34",
+          "zh": "韧性评估不应只统计修复了多少公里道路，还要看最脆弱的人是否恢复了安全生活。",
+          "pinyin": "Rèn xìng píng gū bù yīng zhǐ tǒng jì xiū fù le duō shǎo gōng lǐ dào lù， hái yào kàn zuì cuì ruò de rén shì fǒu huī fù le ān quán shēng huó。",
+          "vi": "Đánh giá khả năng chống chịu không chỉ đếm bao nhiêu km đường đã sửa mà còn phải xem người dễ tổn thương nhất có khôi phục cuộc sống an toàn hay không."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S35",
+          "zh": "有些损失无法用金钱衡量，例如社区网络、文化场所和对家园的信任。",
+          "pinyin": "Yǒu xiē sǔn shī wú fǎ yòng jīn qián héng liáng， lì rú shè qū wǎng luò、 wén huà chǎng suǒ hé duì jiā yuán de xìn rèn。",
+          "vi": "Một số mất mát không thể đo bằng tiền như mạng lưới cộng đồng, địa điểm văn hóa và niềm tin vào quê nhà."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S36",
+          "zh": "真正有韧性的城市不会把危机视为偶然中断，而会把日常维护、公平投资和持续学习当作安全的一部分。",
+          "pinyin": "Zhēn zhèng yǒu rèn xìng de chéng shì bú huì bǎ wēi jī shì wèi ǒu rán zhōng duàn， ér huì bǎ rì cháng wéi hù、 gōng píng tóu zī hé chí xù xué xí dàng zuò ān quán de yī bù fèn。",
+          "vi": "Thành phố thực sự chống chịu không coi khủng hoảng là gián đoạn ngẫu nhiên mà xem bảo trì hằng ngày, đầu tư công bằng và học hỏi liên tục là một phần của an toàn."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S37",
+          "zh": "它承认复杂系统不可能被完全控制，却可以通过多样性、信任和可修正的制度减少灾害转化为灾难的可能。",
+          "pinyin": "Tā chéng rèn fù zá xì tǒng bù kě néng bèi wán quán kòng zhì， què kě yǐ tōng guò duō yàng xìng、 xìn rèn hé kě xiū zhèng de zhì dù jiǎn shǎo zāi hài zhuǎn huà wèi zāi nàn de kě néng。",
+          "vi": "Nó thừa nhận hệ thống phức tạp không thể kiểm soát hoàn toàn nhưng có thể giảm khả năng thiên tai biến thành thảm họa bằng đa dạng, niềm tin và thể chế có thể sửa."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S38",
+          "zh": "城市财政安排会直接影响韧性，因为预防性维护通常不如新建工程容易获得政治关注。",
+          "pinyin": "Chéng shì cái zhèng ān pái huì zhí jiē yǐng xiǎng rèn xìng， yīn wèi yù fáng xìng wéi hù tōng cháng bù rú xīn jiàn gōng chéng róng yì huò dé zhèng zhì guān zhù。",
+          "vi": "Sắp xếp tài chính đô thị ảnh hưởng trực tiếp đến khả năng chống chịu vì bảo trì phòng ngừa thường khó thu hút chú ý chính trị bằng công trình mới."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S39",
+          "zh": "管道检查、树木护理和人员培训看起来普通，却可能比灾后昂贵重建更有效。",
+          "pinyin": "Guǎn dào jiǎn chá、 shù mù hù lǐ hé rén yuán péi xùn kàn qǐ lái pǔ tōng， què kě néng bǐ zāi hòu áng guì zhòng jiàn gèng yǒu xiào。",
+          "vi": "Kiểm tra đường ống, chăm cây và đào tạo nhân sự trông bình thường nhưng có thể hiệu quả hơn tái thiết đắt đỏ sau thiên tai."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S40",
+          "zh": "预算制度应为长期维护保留稳定资金，并公开设施状况与延期维修的风险。",
+          "pinyin": "Yù suàn zhì dù yīng wèi cháng qī wéi hù bǎo liú wěn dìng zī jīn， bìng gōng kāi shè shī zhuàng kuàng yǔ yán qī wéi xiū de fēng xiǎn。",
+          "vi": "Chế độ ngân sách nên dành kinh phí ổn định cho bảo trì dài hạn và công khai tình trạng cơ sở cùng rủi ro trì hoãn sửa chữa."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S41",
+          "zh": "保险可以分散损失，但若保费完全按风险定价，最危险地区的居民可能恰好最无力购买。",
+          "pinyin": "Bǎo xiǎn kě yǐ fēn sàn sǔn shī， dàn ruò bǎo fèi wán quán àn fēng xiǎn dìng jià， zuì wēi xiǎn dì qū de jū mín kě néng qià hǎo zuì wú lì gòu mǎi。",
+          "vi": "Bảo hiểm có thể phân tán tổn thất, nhưng nếu phí hoàn toàn theo rủi ro, cư dân vùng nguy hiểm nhất có thể lại ít khả năng mua nhất."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S42",
+          "zh": "公共保险、风险减缓补贴和有计划的搬迁需要结合，而不能只依赖市场。",
+          "pinyin": "Gōng gòng bǎo xiǎn、 fēng xiǎn jiǎn huǎn bǔ tiē hé yǒu jì huà de bān qiān xū yào jié hé， ér bù néng zhǐ yī lài shì chǎng。",
+          "vi": "Bảo hiểm công, trợ cấp giảm rủi ro và di dời có kế hoạch cần kết hợp, không thể chỉ dựa vào thị trường."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S43",
+          "zh": "搬迁政策必须尊重社区联系和生计来源，并让居民参与选择地点与补偿方式。",
+          "pinyin": "Bān qiān zhèng cè bì xū zūn zhòng shè qū lián xì hé shēng jì lái yuán， bìng ràng jū mín cān yù xuǎn zé dì diǎn yǔ bǔ cháng fāng shì。",
+          "vi": "Chính sách di dời phải tôn trọng liên kết cộng đồng, nguồn sinh kế và cho cư dân tham gia chọn nơi cùng cách bồi thường."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S44",
+          "zh": "对历史建筑和文化景观的保护也需要纳入风险规划，因为它们承载身份与集体记忆。",
+          "pinyin": "Duì lì shǐ jiàn zhù hé wén huà jǐng guān de bǎo hù yě xū yào nà rù fēng xiǎn guī huà， yīn wèi tā men chéng zài shēn fèn yǔ jí tǐ jì yì。",
+          "vi": "Bảo vệ công trình lịch sử và cảnh quan văn hóa cũng cần đưa vào quy hoạch rủi ro vì chúng chứa bản sắc và ký ức tập thể."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S45",
+          "zh": "有些设施无法完全加固，就需要数字记录、可移动藏品和灾后修复方案。",
+          "pinyin": "Yǒu xiē shè shī wú fǎ wán quán jiā gù， jiù xū yào shù zì jì lù、 kě yí dòng cáng pǐn hé zāi hòu xiū fù fāng àn。",
+          "vi": "Một số cơ sở không thể gia cố hoàn toàn thì cần hồ sơ số, hiện vật có thể di chuyển và phương án phục hồi sau thiên tai."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S46",
+          "zh": "跨行政区域的合作同样关键，因为河流、交通和电网不会在城市边界停止。",
+          "pinyin": "Kuà xíng zhèng qū yù de hé zuò tóng yàng guān jiàn， yīn wèi hé liú、 jiāo tōng hé diàn wǎng bú huì zài chéng shì biān jiè tíng zhǐ。",
+          "vi": "Hợp tác liên vùng hành chính cũng rất quan trọng vì sông, giao thông và lưới điện không dừng ở ranh giới thành phố."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S47",
+          "zh": "如果上游与下游、中心与郊区各自规划，局部安全可能以增加其他地区风险为代价。",
+          "pinyin": "Rú guǒ shàng yóu yǔ xià yóu、 zhōng xīn yǔ jiāo qū gè zì guī huà， jú bù ān quán kě néng yǐ zēng jiā qí tā dì qū fēng xiǎn wèi dài jià。",
+          "vi": "Nếu thượng nguồn, hạ nguồn, trung tâm và ngoại ô tự quy hoạch riêng, an toàn cục bộ có thể đổi bằng tăng rủi ro nơi khác."
+        },
+        {
+          "id": "READ-L7-urban-resilience-S48",
+          "zh": "区域数据共享、联合演练和明确责任能够减少危机中的协调失败。",
+          "pinyin": "Qū yù shù jù gòng xiǎng、 lián hé yǎn liàn hé míng què zé rèn néng gòu jiǎn shǎo wēi jī zhōng de xié tiáo shī bài。",
+          "vi": "Chia sẻ dữ liệu vùng, diễn tập chung và trách nhiệm rõ có thể giảm thất bại phối hợp trong khủng hoảng."
+        }
+      ]
+    }
+  ]
+}

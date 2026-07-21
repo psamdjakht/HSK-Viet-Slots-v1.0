@@ -60,3 +60,22 @@ Các tệp `data/hsk5-quality.json`, `data/hsk6-quality.json` và `data/hsk7-qua
 Quy trình giữ nguyên ID từ gốc, làm sạch nghĩa, phân loại chủ đề, thêm ghi chú cách dùng, cụm từ tuyển chọn và câu ví dụ an toàn. Từ dễ nhầm được tìm bằng chỉ mục chữ Hán, pinyin, chủ đề và từ loại để xử lý hiệu quả tập dữ liệu 5.636 từ.
 
 Các tệp `data/hsk5-grammar.json`, `data/hsk6-grammar.json` và `data/hsk7-grammar.json` là thư viện cấu trúc trọng tâm được biên soạn riêng cho ứng dụng. Pinyin câu ví dụ được tạo bằng thư viện `pypinyin` trong công cụ xây dữ liệu và vẫn nên được rà soát khi sử dụng thực tế.
+
+## P7 – Câu ví dụ chuẩn hóa và đọc hiểu
+
+`data/standardized-examples.json` được tạo bằng `tools/build_examples_reading.py` trên nền các gói chất lượng P4–P6. Mỗi từ có ba mục học theo schema thống nhất:
+
+1. Câu dùng thực tế hiện có, nếu gói chất lượng đã có câu `kind: usage`.
+2. Mẫu ngữ cảnh có kiểm soát theo từ loại.
+3. Mẫu gợi nhớ chủ động hoặc gợi ý tự đặt câu.
+
+Các mẫu số 2–3 được đánh dấu `exerciseEligible: false`. Chúng hỗ trợ việc học và không được coi là bằng chứng rằng cách dùng thực tế của mọi từ đã được giáo viên duyệt.
+
+25 bài đọc trong `data/reading/` được biên soạn riêng cho ứng dụng, chia câu và dịch tiếng Việt từng câu. Pinyin được tạo bằng `pypinyin`; với tên riêng, từ đa âm hoặc hiện tượng biến điệu, người quản trị vẫn nên rà soát khi phát hiện điểm chưa tự nhiên.
+
+
+## P8 – Đọc hiểu HSK 6 và HSK 7–9
+
+Mười bài đọc mới trong `data/reading/hsk6.json` và `data/reading/hsk7.json` được biên soạn riêng cho ứng dụng. Mỗi cấp có năm chủ đề, câu được tách riêng và dịch sang tiếng Việt. Pinyin được tạo bằng `pypinyin`; tên riêng, từ đa âm và biến điệu vẫn nên được quản trị viên rà soát khi sử dụng thực tế.
+
+P8 không tạo lại hoặc chỉnh nội dung các tệp đọc HSK 1–5. Báo cáo SHA-256 xác nhận toàn bộ năm gói cũ và dữ liệu học lõi được giữ nguyên.
