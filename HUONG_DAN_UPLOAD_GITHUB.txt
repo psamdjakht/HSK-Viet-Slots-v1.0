@@ -1,0 +1,38 @@
+HƯỚNG DẪN ĐƯA HSK VIỆT P0–P3 LÊN GITHUB PAGES
+
+A. CẬP NHẬT REPOSITORY ĐANG CÓ
+1. Sao lưu repository hiện tại.
+2. Giải nén ZIP mới.
+3. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v2.0 vào repository cũ, chọn Replace khi được hỏi.
+4. Không xóa thư mục data/levels.
+5. Commit và Push bằng GitHub Desktop.
+6. Dữ liệu người học của bản P0/P1 sẽ tự chuyển từ schema v2 sang v3 khi mở trang.
+
+B. BẬT GITHUB PAGES
+1. GitHub > repository > Settings > Pages.
+2. Source: Deploy from a branch.
+3. Branch: main, Folder: /(root).
+4. Save.
+
+C. CẤU HÌNH SUPABASE TÙY CHỌN
+1. Tạo Supabase project.
+2. Chạy file supabase/schema.sql trong SQL Editor.
+3. Authentication > Providers > bật Anonymous Sign-Ins.
+4. Mở js/config.js.
+5. Đổi enabled thành true, điền Project URL và publishable/anon key.
+6. Tuyệt đối không dùng service_role key.
+7. Commit và Push lại.
+
+D. KIỂM TRA SAU KHI DEPLOY
+1. Trang chọn đủ 10 slot.
+2. Dòng trạng thái ghi “Đã đồng bộ Supabase” nếu đã cấu hình.
+3. Tạo Slot 1, làm vài câu, tải lại trang và kiểm tra tiến độ còn nguyên.
+4. Vào Cài đặt, nhấn Đồng bộ ngay.
+5. Thử Nghe chép chính tả, Điền từ, Sắp xếp câu.
+6. Tạo đề 20 câu, nộp bài và kiểm tra Lịch sử thi.
+7. Thử Xóa một slot và xác nhận slot trở về trống.
+
+LƯU Ý
+- Không cần npm build.
+- Không mở bằng file:// để kiểm tra PWA.
+- Anonymous Auth không đồng bộ danh tính giữa hai thiết bị. Muốn chuyển thiết bị, dùng Xuất/Nhập sao lưu.

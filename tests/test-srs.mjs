@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import { newCardState, reviewCard, isDue, GRADES } from '../js/modules/srs.js';
+const now = 1_700_000_000_000;
+const first = reviewCard(newCardState(), GRADES.GOOD, now);
+assert.equal(first.repetitions, 1);
+assert.equal(first.correct, 1);
+assert.ok(first.due > now);
+assert.equal(isDue(first, now), false);
+const failed = reviewCard(first, GRADES.AGAIN, now + 1000);
+assert.equal(failed.lapses, 1);
+assert.ok(failed.due > now + 1000);
+assert.ok(failed.due <= now + 11 * 60 * 1000);
+console.log('✓ SRS: lịch ôn mới, đúng/sai và đến hạn.');

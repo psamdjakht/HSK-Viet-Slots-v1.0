@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4fa77f">
+  <meta name="description" content="Ứng dụng học và luyện thi HSK tiếng Việt với 10 slot, SRS, PWA và đồng bộ Supabase tùy chọn.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>HSK Việt – 10 Slot Học</title>
+</head>
+<body>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <section id="slot-screen" class="screen active">
+    <div class="page-shell">
+      <header class="hero">
+        <div class="brand-mark">汉</div>
+        <div class="hero-copy">
+          <p class="eyebrow">HSK Việt • PWA • 10 slot độc lập</p>
+          <h1>Chọn slot học</h1>
+          <p>Mỗi slot lưu riêng tiến độ, sổ từ yếu, kế hoạch và kết quả thi. Không có màn hình đăng nhập.</p>
+          <div class="status-line"><span id="cloud-dot" class="status-dot"></span><span id="cloud-status">Đang khởi tạo…</span></div>
+          <small id="data-summary">Đang tải dữ liệu…</small>
+        </div>
+      </header>
+      <div id="slot-grid" class="slot-grid"></div>
+      <footer class="page-footer">Nếu chưa cấu hình Supabase, dữ liệu vẫn tự lưu trên trình duyệt. Nên xuất bản sao lưu định kỳ.</footer>
+    </div>
+  </section>
+
+  <section id="app-screen" class="screen">
+    <header class="topbar">
+      <div class="identity"><span id="slot-badge" class="slot-badge">Slot 1</span><div><strong id="learner-name"></strong><small id="top-cloud-status">Lưu cục bộ</small></div></div>
+      <div class="top-actions">
+        <button id="stats-btn" class="icon-button" title="Thống kê" aria-label="Thống kê">▥</button>
+        <button id="settings-btn" class="icon-button" title="Cài đặt" aria-label="Cài đặt">⚙</button>
+        <button id="switch-slot-btn" class="btn ghost small">Đổi slot</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section id="dashboard-view">
+        <div class="welcome-card">
+          <div><p class="eyebrow">Lộ trình hiện tại</p><h2><span id="dash-level">HSK 1</span> · <span id="dash-mode">Chữ Hán → nghĩa Việt</span></h2><p id="data-quality-note"></p></div>
+          <div class="level-progress"><div id="level-progress-fill"></div></div><small id="level-progress-text">0/0 từ</small>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric"><strong id="due-count">0</strong><span>Đến hạn</span></div>
+          <div class="metric"><strong id="new-count">0</strong><span>Từ mới</span></div>
+          <div class="metric"><strong id="learned-count">0</strong><span>Đã học</span></div>
+          <div class="metric"><strong id="weak-count">0</strong><span>Từ yếu</span></div>
+          <div class="metric"><strong id="accuracy-count">0%</strong><span>Chính xác</span></div>
+        </div>
+
+        <section class="plan-card">
+          <div><p class="eyebrow">Kế hoạch học</p><h3 id="plan-title">Mục tiêu HSK 4</h3><p id="plan-summary"></p></div>
+          <div class="plan-side"><strong id="plan-required">0 từ/ngày học</strong><span id="plan-track" class="pill">Chưa đủ dữ liệu</span><button id="edit-plan-btn" class="btn ghost small">Chỉnh kế hoạch</button></div>
+        </section>
+
+        <h2 class="section-title">Học và ôn tập</h2>
+        <div class="feature-grid">
+          <article class="feature-card featured"><span class="feature-icon">词</span><div><h3>Trắc nghiệm từ vựng</h3><p>Bốn hướng hỏi, SRS riêng cho từng kỹ năng.</p></div><button id="start-study-btn" class="btn primary">Bắt đầu</button></article>
+          <article class="feature-card"><span class="feature-icon">听</span><div><h3>Nghe chép chính tả</h3><p>Nghe phát âm rồi nhập chữ Hán.</p></div><button id="start-dictation-btn" class="btn secondary">Luyện nghe</button></article>
+          <article class="feature-card"><span class="feature-icon">填</span><div><h3>Điền từ vào câu</h3><p>Chọn từ đúng theo ngữ cảnh câu ví dụ.</p></div><button id="start-fill-btn" class="btn secondary">Luyện câu</button></article>
+          <article class="feature-card"><span class="feature-icon">序</span><div><h3>Sắp xếp câu</h3><p>Ghép các cụm thành câu tiếng Trung đúng.</p></div><button id="start-order-btn" class="btn secondary">Sắp xếp</button></article>
+          <article class="feature-card"><span class="feature-icon">弱</span><div><h3>Sổ từ yếu</h3><p>Ưu tiên từ sai nhiều, khó nhớ hoặc hay quên.</p></div><button id="weak-book-btn" class="btn secondary">Mở sổ từ yếu</button></article>
+          <article class="feature-card"><span class="feature-icon">复</span><div><h3>Ôn đến hạn</h3><p id="review-due-note">Chưa có từ đến hạn.</p></div><button id="review-due-btn" class="btn secondary">Ôn SRS</button></article>
+        </div>
+
+        <section class="exam-card">
+          <div><p class="eyebrow">Giai đoạn P3</p><h2>Luyện thi mô phỏng</h2><p id="bank-summary">Đang tính ngân hàng câu hỏi…</p><small>Đề luyện nội bộ, không phải đề HSK chính thức.</small></div>
+          <div class="exam-actions"><button id="open-exam-btn" class="btn primary large">Tạo đề mô phỏng</button><button id="exam-history-btn" class="btn ghost">Lịch sử thi</button></div>
+        </section>
+      </section>
+
+      <section id="study-view" hidden>
+        <div class="study-topline"><button id="back-dashboard-btn" class="btn ghost small">← Trang chính</button><span id="study-position">1/20</span></div>
+        <div class="study-progress"><div id="study-progress-fill"></div></div>
+        <article class="study-card">
+          <div class="question-head"><span id="activity-label">Trắc nghiệm</span><button id="speak-word-btn" class="speaker" aria-label="Phát âm">🔊</button></div>
+          <div id="question-instruction" class="question-instruction"></div>
+          <div id="question-prompt" class="question-prompt hanzi"></div>
+          <div id="traditional-text" class="traditional"></div><div id="pinyin-hint" class="pinyin-hint"></div>
+          <div id="option-grid" class="option-grid"></div>
+          <div id="text-answer-area" class="text-answer-area" hidden><input id="text-answer-input" autocomplete="off" placeholder="Nhập chữ Hán"><button id="check-text-answer-btn" class="btn primary">Kiểm tra</button></div>
+          <div id="order-area" class="order-area" hidden><div id="order-answer" class="token-zone answer-zone"></div><div id="order-bank" class="token-zone"></div><div class="inline-actions"><button id="reset-order-btn" class="btn ghost small">Xếp lại</button><button id="check-order-btn" class="btn primary">Kiểm tra</button></div></div>
+          <section id="answer-panel" class="answer-panel" hidden>
+            <div class="answer-title-row"><div><div id="answer-result" class="result"></div><strong id="answer-main"></strong></div><span id="verification-badge" class="verification-badge"></span></div>
+            <p id="answer-meaning"></p>
+            <div id="example-card" class="example-card" hidden><div class="example-head"><span>Câu và giải thích</span><button id="speak-example-btn" class="speaker small-speaker">🔊</button></div><strong id="example-zh"></strong><span id="example-pinyin"></span><p id="example-vi"></p></div>
+          </section>
+          <div id="rating-row" class="rating-row" hidden>
+            <button class="rating-btn again" data-grade="0">Quên<small>10 phút</small></button><button class="rating-btn hard" data-grade="1">Khó<small>ngắn</small></button><button class="rating-btn good" data-grade="2">Nhớ<small>chuẩn</small></button><button class="rating-btn easy" data-grade="3">Dễ<small>dài</small></button>
+          </div>
+          <button id="next-word-btn" class="btn primary large" hidden>Tiếp tục với mức “Nhớ”</button>
+        </article>
+      </section>
+
+      <section id="exam-view" hidden>
+        <div class="study-topline"><button id="quit-exam-btn" class="btn ghost small">← Thoát đề</button><span id="exam-timer" class="timer">30:00</span></div>
+        <div class="study-progress"><div id="exam-progress-fill"></div></div>
+        <article class="study-card exam-question-card">
+          <div class="question-head"><span id="exam-type-label">Chọn nghĩa</span><span id="exam-position">1/30</span></div>
+          <button id="exam-speak-btn" class="btn secondary" hidden>🔊 Nghe lại</button>
+          <div id="exam-prompt" class="question-prompt"></div>
+          <div id="exam-option-grid" class="option-grid"></div>
+          <div id="exam-order-area" class="order-area" hidden><div id="exam-order-answer" class="token-zone answer-zone"></div><div id="exam-order-bank" class="token-zone"></div></div>
+          <button id="exam-next-btn" class="btn primary large" disabled>Câu tiếp theo</button>
+        </article>
+      </section>
+
+      <section id="exam-result-view" hidden>
+        <article class="result-hero"><div class="score-ring"><strong id="exam-score">0</strong><span>điểm</span></div><div><p class="eyebrow">Kết quả đề mô phỏng</p><h1 id="exam-result-title">Hoàn thành</h1><p id="exam-result-summary"></p></div></article>
+        <div id="exam-type-scores" class="stats-grid"></div>
+        <div class="result-actions"><button id="exam-result-home-btn" class="btn primary">Về trang chính</button><button id="exam-result-history-btn" class="btn ghost">Xem lịch sử</button></div>
+        <section class="review-section"><h2>Giải thích đáp án</h2><div id="exam-review-list"></div></section>
+      </section>
+    </main>
+  </section>
+
+  <div id="settings-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Cài đặt slot</h2><button class="modal-close">×</button></div>
+    <label>Cấp HSK đang học<select id="level-select"><option value="1">HSK 1</option><option value="2">HSK 2</option><option value="3">HSK 3</option><option value="4">HSK 4</option><option value="5">HSK 5</option><option value="6">HSK 6</option><option value="7">HSK 7–9</option></select></label>
+    <label>Hướng trắc nghiệm<select id="mode-select"><option value="hanzi-vi">Chữ Hán → nghĩa Việt</option><option value="vi-hanzi">Nghĩa Việt → chữ Hán</option><option value="hanzi-pinyin">Chữ Hán → pinyin</option><option value="pinyin-hanzi">Pinyin → chữ Hán</option></select></label>
+    <label>Số câu mỗi phiên<select id="session-size-select"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="50">50</option></select></label>
+    <label class="switch-line"><span>Phát âm tiếng Trung</span><input id="audio-toggle" type="checkbox"></label><label class="switch-line"><span>Hiện chữ phồn thể</span><input id="traditional-toggle" type="checkbox"></label>
+    <div class="cloud-box"><strong id="settings-cloud-status">Đang lưu cục bộ</strong><p>Supabase tự lưu sau thay đổi. Phiên ẩn danh không cần nhập tài khoản, nhưng gắn với trình duyệt hiện tại; chuyển thiết bị nên dùng Xuất/Nhập sao lưu.</p><button id="sync-now-btn" class="btn secondary">Đồng bộ ngay</button></div>
+    <div class="modal-actions"><button id="export-btn" class="btn secondary">Xuất sao lưu</button><button id="import-btn" class="btn secondary">Nhập sao lưu</button><input id="import-file" type="file" accept="application/json" hidden><button id="reset-current-slot-btn" class="btn danger">Xóa slot này</button></div>
+  </div></div>
+
+  <div id="plan-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Kế hoạch học</h2><button class="modal-close">×</button></div>
+    <label>Mục tiêu<select id="plan-target-level"><option value="1">HSK 1</option><option value="2">HSK 2</option><option value="3">HSK 3</option><option value="4">HSK 4</option><option value="5">HSK 5</option><option value="6">HSK 6</option><option value="7">HSK 7–9</option></select></label>
+    <label>Ngày dự kiến hoàn thành<input id="plan-target-date" type="date"></label><label>Phút học mỗi ngày<input id="plan-minutes" type="number" min="5" max="180"></label><label>Số ngày học mỗi tuần<input id="plan-days" type="number" min="1" max="7"></label><label>Từ mới mỗi ngày<input id="plan-new-words" type="number" min="5" max="200"></label>
+    <div id="plan-preview" class="info-card"></div><button id="save-plan-btn" class="btn primary large">Lưu kế hoạch</button>
+  </div></div>
+
+  <div id="stats-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card wide-modal"><div class="modal-head"><h2>Thống kê chuyên sâu</h2><button class="modal-close">×</button></div><div id="stats-content"></div></div></div>
+  <div id="weak-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card wide-modal"><div class="modal-head"><h2>Sổ từ yếu</h2><button class="modal-close">×</button></div><div id="weak-content"></div><button id="start-weak-btn" class="btn primary large">Ôn các từ yếu nhất</button></div></div>
+  <div id="exam-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Tạo đề mô phỏng</h2><button class="modal-close">×</button></div><p id="exam-bank-detail"></p><label>Cấp độ<select id="exam-level-select"><option value="1">HSK 1</option><option value="2">HSK 2</option><option value="3">HSK 3</option><option value="4">HSK 4</option><option value="5">HSK 5</option><option value="6">HSK 6</option><option value="7">HSK 7–9</option></select></label><label>Số câu<select id="exam-size-select"><option value="20">20 câu</option><option value="30" selected>30 câu</option><option value="50">50 câu</option></select></label><div class="warning-box">Đề này mô phỏng kỹ năng từ vựng, pinyin, nghe, điền từ và sắp xếp câu theo dữ liệu ứng dụng; không thay thế đề thi HSK chính thức.</div><button id="start-exam-btn" class="btn primary large">Bắt đầu làm đề</button></div></div>
+  <div id="exam-history-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card wide-modal"><div class="modal-head"><h2>Lịch sử thi</h2><button class="modal-close">×</button></div><div id="exam-history-content"></div></div></div>
+  <div id="session-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card centered"><div class="success-orb">✓</div><h2 id="session-result-title"></h2><p id="session-result-body"></p><button class="btn primary large modal-close">Về trang chính</button></div></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

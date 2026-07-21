@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const required = ['index.html','manifest.webmanifest','sw.js','css/app.css','js/app.js','js/config.js','js/modules/activities.js','js/modules/exam.js','js/modules/sync.js','data/examples.json','supabase/schema.sql','assets/icons/icon-192.png','assets/icons/icon-512.png'];
+for (const file of required) assert.ok(fs.existsSync(new URL(`../${file}`, import.meta.url)), `Thiếu ${file}`);
+const html = fs.readFileSync(new URL('../index.html', import.meta.url),'utf8');
+assert.ok(html.includes('slot-grid'));
+assert.ok(html.includes('type="module"'));
+assert.ok(html.includes('start-dictation-btn'));
+assert.ok(html.includes('open-exam-btn'));
+assert.ok(html.includes('cloud-status'));
+const manifest = JSON.parse(fs.readFileSync(new URL('../manifest.webmanifest', import.meta.url),'utf8'));
+assert.equal(manifest.display,'standalone');
+console.log('✓ PWA/static: đủ tệp lõi, manifest và icon.');

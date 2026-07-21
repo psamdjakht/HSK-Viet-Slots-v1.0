@@ -1,0 +1,11 @@
+import './test-srs.mjs';
+import './test-quiz.mjs';
+import './test-data.mjs';
+import './test-activities.mjs';
+import './test-plan-stats.mjs';
+import './test-exam.mjs';
+import './test-supabase.mjs';
+import './test-storage.mjs';
+import './test-static.mjs';
+import './test-dom-contract.mjs';
+console.log('\n✓ Toàn bộ kiểm thử P0–P3 đã đạt.');

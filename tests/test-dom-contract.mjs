@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const html = fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+const app = fs.readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
+const duplicates = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]).filter((id,i,a)=>a.indexOf(id)!==i);
+assert.deepEqual(duplicates,[],`Trùng id: ${duplicates.join(', ')}`);
+const refs = new Set();
+for (const m of app.matchAll(/\$\(['"]#([A-Za-z0-9_-]+)['"]\)/g)) refs.add(m[1]);
+for (const m of app.matchAll(/getElementById\(['"]([A-Za-z0-9_-]+)['"]\)/g)) refs.add(m[1]);
+const missing = [...refs].filter(id=>!ids.has(id));
+assert.deepEqual(missing,[],`App tham chiếu ID không có trong HTML: ${missing.join(', ')}`);
+console.log(`✓ DOM contract: ${refs.size} ID tĩnh khớp index.html.`);

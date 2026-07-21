@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { buildMockExam, scoreExam, questionBankSummary } from '../js/modules/exam.js';
+const words = Array.from({length:40},(_,i)=>({id:`W${i}`,simplified:`词${i}`,pinyin:`cí${i}`,meaning:`nghĩa ${i}`,senses:[{vi:`nghĩa ${i}`}] }));
+const examples = Array.from({length:12},(_,i)=>({id:`E${i}`,wordId:`W${i}`,level:'1',target:`词${i}`,zh:`我学习词${i}。`,sentencePinyin:`pinyin ${i}`,vi:`Câu ${i}`}));
+const bank = questionBankSummary(words,examples);
+assert.equal(bank.total,144);
+const exam = buildMockExam({words,examples,level:'1',size:30,seed:'fixed'});
+assert.equal(exam.questions.length,30);
+assert.ok(exam.questions.some(q=>q.type==='listening'));
+assert.ok(exam.questions.some(q=>q.type==='fill'));
+assert.ok(exam.questions.some(q=>q.type==='order'));
+const answers = exam.questions.map(q => q.type === 'order' ? q.tokens : q.correct);
+const result = scoreExam(exam,answers);
+assert.equal(result.score,100);
+assert.equal(result.correct,30);
+console.log('✓ P3: ngân hàng, tạo đề, chấm điểm và giải thích.');

@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const sql = fs.readFileSync(new URL('../supabase/schema.sql',import.meta.url),'utf8');
+assert.match(sql,/enable row level security/i);
+assert.match(sql,/auth\.uid\(\)/i);
+assert.match(sql,/slot_id between 1 and 10/i);
+assert.match(sql,/to authenticated/i);
+const config = fs.readFileSync(new URL('../js/config.js',import.meta.url),'utf8');
+assert.match(config,/service_role/i);
+const sync = fs.readFileSync(new URL('../js/modules/sync.js',import.meta.url),'utf8');
+assert.match(sync,/signInAnonymously/);
+assert.match(sync,/upsert/);
+console.log('✓ Supabase: Anonymous Auth, RLS và upsert 10 slot.');

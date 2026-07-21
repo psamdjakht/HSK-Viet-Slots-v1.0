@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "totalWords": 11092,
+  "levels": {
+    "1": 500,
+    "2": 772,
+    "3": 973,
+    "4": 1000,
+    "5": 1071,
+    "6": 1140,
+    "7": 5636
+  },
+  "verification": {
+    "doi_chieu_chinh_xac": 10999,
+    "kiem_tra_thu_cong": 93
+  },
+  "exampleCount": 84,
+  "sources": [
+    "ivankra/hsk30",
+    "ph0ngp/CVDICT"
+  ],
+  "generatedBy": "tools/build_data.py"
+}

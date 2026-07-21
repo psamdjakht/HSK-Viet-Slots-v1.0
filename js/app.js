@@ -1,0 +1,872 @@
+import {
+  SLOT_COUNT, listSlots, ensureSlot, saveSlot, saveSlotLocalOnly, resetSlot,
+  setActiveSlotId, getActiveSlotId, loadSlot, exportSlot, importSlot,
+  configureCloudStorage, allLocalSlots, migrateSlot, getDeletedSlots, clearDeletedSlot
+} from './modules/storage.js';
+import { loadLevel, loadLevelsUpTo, loadMeta, loadExamples, verificationLabel } from './modules/data.js';
+import { MODES, buildStudyQueue, makeQuestion, cardKey, shuffle } from './modules/quiz.js';
+import { reviewCard, GRADES, isDue } from './modules/srs.js';
+import { speakChinese } from './modules/audio.js';
+import { ACTIVITIES, buildDictationQuestion, checkDictation, buildFillQuestion, buildOrderQuestion, checkOrder } from './modules/activities.js';
+import { computeWeakWords } from './modules/weak.js';
+import { planSummary, todayPlan, updateStreak } from './modules/plan.js';
+import { buildAdvancedStats } from './modules/stats.js';
+import { EXAM_TYPES, questionBankSummary, buildMockExam, scoreExam } from './modules/exam.js';
+import { initCloudSync, getCloudStatus, syncNow } from './modules/sync.js';
+import { $, $$, showScreen, toast, formatDate, downloadText } from './modules/ui.js';
+
+const state = {
+  meta: null,
+  examples: [],
+  slot: null,
+  words: [],
+  wordIndex: new Map(),
+  activity: 'quiz',
+  queue: [],
+  index: 0,
+  question: null,
+  pendingCorrect: null,
+  selectedAnswer: null,
+  answeredThisQuestion: false,
+  ratingLocked: false,
+  answerStartedAt: 0,
+  orderAvailable: [],
+  orderSelected: [],
+  weakRows: [],
+  session: emptySession(),
+  cloudAdapter: null,
+  exam: null,
+  examTimer: null
+};
+
+async function boot() {
+  bindStaticEvents();
+  registerServiceWorker();
+  try {
+    [state.meta, state.examples] = await Promise.all([loadMeta(), loadExamples()]);
+    $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • ${state.examples.length} câu ví dụ đã duyệt`;
+  } catch (error) {
+    console.error(error);
+    toast('Không tải được dữ liệu nền. Hãy tải lại trang.', 'error');
+  }
+  await setupCloud();
+  renderSlots();
+  const activeId = getActiveSlotId();
+  if (activeId && loadSlot(activeId)?.profile?.name) await openSlot(activeId);
+  else showScreen('slot-screen');
+}
+
+async function setupCloud() {
+  const result = await initCloudSync();
+  if (result.adapter) await reconcileDeletedSlots(result.adapter);
+  const deleted = getDeletedSlots();
+  const usableRows = (result.rows || []).filter(row => !(String(row.slot_id) in deleted));
+  mergeRemoteRows(usableRows);
+  state.cloudAdapter = result.adapter;
+  configureCloudStorage(result.adapter);
+  if (result.adapter) pushNewerLocalSlots(usableRows, result.adapter);
+  renderCloudStatus();
+}
+
+async function reconcileDeletedSlots(adapter) {
+  const deleted = getDeletedSlots();
+  for (const id of Object.keys(deleted)) {
+    try {
+      const ok = await adapter.deleteSlot(Number(id));
+      if (ok) clearDeletedSlot(Number(id));
+    } catch {}
+  }
+}
+
+function mergeRemoteRows(rows) {
+  for (const row of rows) {
+    const id = Number(row.slot_id);
+    if (id < 1 || id > SLOT_COUNT || !row.data) continue;
+    const remote = migrateSlot(row.data, id);
+    const local = loadSlot(id);
+    const remoteTime = new Date(remote.profile?.updatedAt || row.updated_at || 0).getTime();
+    const localTime = new Date(local?.profile?.updatedAt || 0).getTime();
+    if (!local || remoteTime > localTime) saveSlotLocalOnly(remote);
+  }
+}
+
+function pushNewerLocalSlots(rows, adapter) {
+  const remoteMap = new Map(rows.map(row => [Number(row.slot_id), row]));
+  for (const local of allLocalSlots()) {
+    const remote = remoteMap.get(Number(local.id));
+    const localTime = new Date(local.profile?.updatedAt || 0).getTime();
+    const remoteTime = new Date(remote?.data?.profile?.updatedAt || remote?.updated_at || 0).getTime();
+    if (!remote || localTime > remoteTime) adapter.saveSlot(local);
+  }
+}
+
+function bindStaticEvents() {
+  $('#switch-slot-btn').addEventListener('click', () => { finishSpeech(); clearExamTimer(); renderSlots(); showScreen('slot-screen'); });
+  $('#start-study-btn').addEventListener('click', () => startActivity('quiz'));
+  $('#start-dictation-btn').addEventListener('click', () => startActivity('dictation'));
+  $('#start-fill-btn').addEventListener('click', () => startActivity('fill'));
+  $('#start-order-btn').addEventListener('click', () => startActivity('order'));
+  $('#review-due-btn').addEventListener('click', () => startActivity('quiz', { dueOnly: true }));
+  $('#weak-book-btn').addEventListener('click', openWeakBook);
+  $('#start-weak-btn').addEventListener('click', () => { closeModal($('#weak-modal')); startActivity('weak'); });
+  $('#back-dashboard-btn').addEventListener('click', () => { if (state.session.answered && !confirm('Dừng phiên học hiện tại? Tiến độ các câu đã làm vẫn được lưu.')) return; showDashboard(); });
+  $('#speak-word-btn').addEventListener('click', () => speakCurrentQuestion());
+  $('#speak-example-btn').addEventListener('click', () => {
+    const text = currentExample()?.zh;
+    if (text) speakChinese(text, state.slot?.settings?.audio, 0.78);
+  });
+  $('#next-word-btn').addEventListener('click', () => applyRating(GRADES.GOOD));
+  $$('.rating-btn').forEach(btn => btn.addEventListener('click', () => applyRating(Number(btn.dataset.grade))));
+  $('#check-text-answer-btn').addEventListener('click', checkTextAnswer);
+  $('#text-answer-input').addEventListener('keydown', event => { if (event.key === 'Enter') checkTextAnswer(); });
+  $('#check-order-btn').addEventListener('click', checkOrderAnswer);
+  $('#reset-order-btn').addEventListener('click', resetOrderBuilder);
+
+  $('#settings-btn').addEventListener('click', () => { hydrateSettings(); renderCloudStatus(); openModal('settings-modal'); });
+  $('#stats-btn').addEventListener('click', () => { renderStats(); openModal('stats-modal'); });
+  $('#edit-plan-btn').addEventListener('click', openPlanModal);
+  $('#save-plan-btn').addEventListener('click', savePlan);
+  ['plan-target-level','plan-target-date','plan-minutes','plan-days','plan-new-words'].forEach(id => $(`#${id}`).addEventListener('input', renderPlanPreview));
+  $('#export-btn').addEventListener('click', exportCurrentSlot);
+  $('#import-btn').addEventListener('click', () => $('#import-file').click());
+  $('#import-file').addEventListener('change', handleImport);
+  $('#reset-current-slot-btn').addEventListener('click', resetCurrentSlot);
+  $('#sync-now-btn').addEventListener('click', manualSync);
+
+  $('#open-exam-btn').addEventListener('click', openExamModal);
+  $('#start-exam-btn').addEventListener('click', startExam);
+  $('#exam-history-btn').addEventListener('click', openExamHistory);
+  $('#exam-result-history-btn').addEventListener('click', openExamHistory);
+  $('#exam-result-home-btn').addEventListener('click', showDashboard);
+  $('#quit-exam-btn').addEventListener('click', quitExam);
+  $('#exam-next-btn').addEventListener('click', nextExamQuestion);
+  $('#exam-speak-btn').addEventListener('click', () => {
+    const q = currentExamQuestion();
+    if (q?.audioText) speakChinese(q.audioText, state.slot.settings.audio);
+  });
+
+  $$('.modal-close').forEach(btn => btn.addEventListener('click', () => closeModal(btn.closest('.modal-overlay'))));
+  $$('.modal-overlay').forEach(modal => modal.addEventListener('click', event => { if (event.target === modal) closeModal(modal); }));
+  document.addEventListener('keydown', handleKeyboard);
+}
+
+function renderSlots() {
+  const slots = listSlots();
+  $('#slot-grid').innerHTML = slots.map(slot => `
+    <article class="slot-card ${slot.name ? 'has-data' : ''}" data-slot="${slot.id}">
+      <div class="slot-number">${slot.id}</div>
+      <label for="slot-name-${slot.id}">Tên người học</label>
+      <input id="slot-name-${slot.id}" class="slot-name" maxlength="28" value="${escapeHtml(slot.name)}" placeholder="Ví dụ: Bạn Linh">
+      <div class="slot-meta"><span>HSK ${slot.level}</span><span>${slot.answered.toLocaleString('vi-VN')} lượt</span><span>${formatDate(slot.lastStudyDate)}</span></div>
+      <div class="slot-actions"><button class="btn primary slot-open" data-id="${slot.id}">${slot.name ? 'Vào học' : 'Tạo slot'}</button><button class="btn ghost slot-reset" data-id="${slot.id}" ${slot.name ? '' : 'disabled'}>Xóa slot</button></div>
+    </article>`).join('');
+  $$('.slot-open').forEach(btn => btn.addEventListener('click', async () => {
+    const id = Number(btn.dataset.id);
+    const name = $(`#slot-name-${id}`).value.trim();
+    if (!name) return toast('Hãy nhập tên người học cho slot này.', 'warn');
+    ensureSlot(id, name);
+    await openSlot(id);
+  }));
+  $$('.slot-reset').forEach(btn => btn.addEventListener('click', () => {
+    const id = Number(btn.dataset.id);
+    const slot = loadSlot(id);
+    if (!slot || !confirm(`Xóa toàn bộ dữ liệu Slot ${id} – ${slot.profile.name}, gồm cả bản trên Supabase?`)) return;
+    resetSlot(id);
+    renderSlots();
+    toast(`Đã xóa Slot ${id}.`);
+  }));
+  renderCloudStatus();
+}
+
+async function openSlot(id) {
+  state.slot = loadSlot(id);
+  if (!state.slot) return;
+  setActiveSlotId(id);
+  state.words = await loadLevel(state.slot.settings.level);
+  state.wordIndex = new Map(state.words.map(word => [word.id, word]));
+  $('#slot-badge').textContent = `Slot ${id}`;
+  $('#learner-name').textContent = state.slot.profile.name;
+  hydrateSettings();
+  renderDashboard();
+  showScreen('app-screen');
+  showDashboard();
+}
+
+function hydrateSettings() {
+  if (!state.slot) return;
+  $('#level-select').value = state.slot.settings.level;
+  $('#mode-select').value = state.slot.settings.mode;
+  $('#session-size-select').value = String(state.slot.settings.sessionSize);
+  $('#audio-toggle').checked = state.slot.settings.audio;
+  $('#traditional-toggle').checked = state.slot.settings.showTraditional;
+  $('#level-select').onchange = async event => {
+    state.slot.settings.level = event.target.value;
+    saveSlot(state.slot);
+    state.words = await loadLevel(event.target.value);
+    state.wordIndex = new Map(state.words.map(word => [word.id, word]));
+    renderDashboard();
+  };
+  $('#mode-select').onchange = event => { state.slot.settings.mode = event.target.value; saveSlot(state.slot); renderDashboard(); };
+  $('#session-size-select').onchange = event => { state.slot.settings.sessionSize = Number(event.target.value); saveSlot(state.slot); renderDashboard(); };
+  $('#audio-toggle').onchange = event => { state.slot.settings.audio = event.target.checked; saveSlot(state.slot); };
+  $('#traditional-toggle').onchange = event => { state.slot.settings.showTraditional = event.target.checked; saveSlot(state.slot); };
+}
+
+function renderDashboard() {
+  if (!state.slot) return;
+  const mode = state.slot.settings.mode;
+  const info = buildStudyQueue(state.words, state.slot, mode, state.slot.settings.sessionSize);
+  const learnedIds = new Set(Object.keys(state.slot.cards).filter(key => key.endsWith(`::${mode}`)).map(key => key.split('::')[0]));
+  const accuracy = state.slot.stats.answered ? Math.round(state.slot.stats.correct / state.slot.stats.answered * 100) : 0;
+  state.weakRows = computeWeakWords(state.words, state.slot, 100);
+  $('#dash-level').textContent = `HSK ${state.slot.settings.level}`;
+  $('#dash-mode').textContent = MODES[mode].label;
+  $('#due-count').textContent = info.dueCount.toLocaleString('vi-VN');
+  $('#new-count').textContent = info.newCount.toLocaleString('vi-VN');
+  $('#learned-count').textContent = learnedIds.size.toLocaleString('vi-VN');
+  $('#weak-count').textContent = state.weakRows.length.toLocaleString('vi-VN');
+  $('#accuracy-count').textContent = `${accuracy}%`;
+  $('#review-due-btn').disabled = info.dueCount === 0;
+  $('#review-due-note').textContent = info.dueCount ? `${info.dueCount} thẻ đang đến hạn theo hướng học hiện tại.` : 'Chưa có từ đến hạn.';
+  const pct = Math.min(100, Math.round(learnedIds.size / Math.max(1, state.words.length) * 100));
+  $('#level-progress-fill').style.width = `${pct}%`;
+  $('#level-progress-text').textContent = `${learnedIds.size}/${state.words.length} từ (${pct}%)`;
+  $('#data-quality-note').textContent = `Dữ liệu HSK 3.0 đã làm sạch, mỗi từ và mỗi nghĩa có ID riêng; ${state.examples.length} câu ví dụ đã duyệt dùng cho luyện câu.`;
+  const examples = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
+  const bank = questionBankSummary(state.words, examples);
+  $('#bank-summary').textContent = `Ngân hàng có thể tạo ${bank.total.toLocaleString('vi-VN')} biến thể câu hỏi ở cấp hiện tại: nghĩa, pinyin, nghe, điền từ và sắp xếp câu.`;
+  renderPlanCard(info.dueCount);
+  renderCloudStatus();
+}
+
+function renderPlanCard(dueCount) {
+  const summary = planSummary(state.slot, state.meta);
+  const today = todayPlan(state.slot, dueCount);
+  $('#plan-title').textContent = `Mục tiêu HSK ${summary.target} · ${summary.completionPct}%`;
+  $('#plan-summary').textContent = `Còn khoảng ${summary.remaining.toLocaleString('vi-VN')} từ. Hôm nay: ${today.newTarget} từ mới, tối đa ${today.reviewTarget} thẻ ôn, ${today.minutes} phút.`;
+  $('#plan-required').textContent = summary.studyDays ? `${summary.requiredPerStudyDay} từ/ngày học` : 'Chưa đặt ngày hoàn thành';
+  const track = $('#plan-track');
+  track.classList.toggle('warn', !summary.onTrack);
+  track.textContent = !summary.studyDays ? 'Cần đặt ngày' : summary.recentWordsPerDay === 0 ? 'Chưa đủ dữ liệu' : summary.onTrack ? 'Đang đúng tiến độ' : `Tốc độ gần đây ${summary.recentWordsPerDay} từ/ngày`;
+}
+
+function showDashboard() {
+  finishSpeech();
+  clearExamTimer();
+  $('#dashboard-view').hidden = false;
+  $('#study-view').hidden = true;
+  $('#exam-view').hidden = true;
+  $('#exam-result-view').hidden = true;
+  renderDashboard();
+}
+
+function startActivity(activity, options = {}) {
+  if (!state.slot) return;
+  const limit = state.slot.settings.sessionSize;
+  const mode = activity === 'dictation' ? 'dictation-hanzi' : state.slot.settings.mode;
+  let queue = [];
+  if (activity === 'quiz') {
+    const info = buildStudyQueue(state.words, state.slot, mode, limit);
+    queue = options.dueOnly ? state.words.filter(word => isDue(state.slot.cards[cardKey(word.id, mode)])).slice(0, limit) : info.queue;
+  } else if (activity === 'dictation') {
+    queue = buildStudyQueue(state.words, state.slot, mode, limit).queue;
+  } else if (activity === 'weak') {
+    state.weakRows = computeWeakWords(state.words, state.slot, limit);
+    queue = state.weakRows.map(row => row.word);
+  } else if (activity === 'fill' || activity === 'order') {
+    const examples = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
+    queue = buildExampleQueue(examples, state.slot, activity === 'fill' ? 'fill-sentence' : 'order-sentence', limit);
+  }
+  if (!queue.length) return toast(activity === 'weak' ? 'Chưa có từ yếu. Hãy học thêm để hệ thống phân tích.' : 'Không có dữ liệu phù hợp cho bài luyện này.', 'warn');
+  state.activity = activity;
+  state.queue = queue;
+  state.index = 0;
+  state.session = { ...emptySession(), activity, startedAt: Date.now() };
+  $('#dashboard-view').hidden = true;
+  $('#exam-view').hidden = true;
+  $('#exam-result-view').hidden = true;
+  $('#study-view').hidden = false;
+  renderQuestion();
+}
+
+function buildExampleQueue(examples, slot, mode, limit) {
+  const due = [], fresh = [], learned = [];
+  for (const example of examples) {
+    const card = slot.cards[cardKey(example.wordId, mode)];
+    if (!card) fresh.push(example);
+    else if (isDue(card)) due.push(example);
+    else learned.push(example);
+  }
+  shuffle(due); shuffle(fresh); shuffle(learned);
+  return [...due, ...fresh, ...learned].slice(0, limit);
+}
+
+function renderQuestion() {
+  if (state.index >= state.queue.length) return finishSession();
+  const item = state.queue[state.index];
+  state.pendingCorrect = null;
+  state.selectedAnswer = null;
+  state.answeredThisQuestion = false;
+  state.ratingLocked = false;
+  state.answerStartedAt = Date.now();
+  state.orderAvailable = [];
+  state.orderSelected = [];
+  resetStudyUI();
+  $('#study-position').textContent = `${state.index + 1}/${state.queue.length}`;
+  $('#study-progress-fill').style.width = `${Math.round(state.index / state.queue.length * 100)}%`;
+  $('#activity-label').textContent = ACTIVITIES[state.activity]?.label || 'Bài luyện';
+
+  if (state.activity === 'quiz' || state.activity === 'weak') {
+    state.question = makeQuestion(item, state.words, state.slot.settings.mode);
+    $('#question-instruction').textContent = MODES[state.slot.settings.mode].label;
+    const prompt = $('#question-prompt');
+    prompt.textContent = state.question.prompt;
+    prompt.className = state.question.promptType === 'hanzi' ? 'question-prompt hanzi' : 'question-prompt';
+    $('#traditional-text').textContent = state.slot.settings.showTraditional && item.traditional !== item.simplified ? item.traditional : '';
+    $('#pinyin-hint').textContent = state.slot.settings.mode === 'hanzi-vi' ? item.pinyin : '';
+    renderOptions(state.question.options);
+  } else if (state.activity === 'dictation') {
+    state.question = buildDictationQuestion(item);
+    $('#question-instruction').textContent = state.question.prompt;
+    $('#question-prompt').textContent = '🔊';
+    $('#question-prompt').className = 'question-prompt';
+    $('#text-answer-area').hidden = false;
+    setTimeout(() => speakCurrentQuestion(), 200);
+    setTimeout(() => $('#text-answer-input').focus(), 260);
+  } else if (state.activity === 'fill') {
+    const pool = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
+    state.question = buildFillQuestion(item, pool);
+    $('#question-instruction').textContent = 'Chọn từ phù hợp với chỗ trống';
+    $('#question-prompt').textContent = state.question.prompt;
+    $('#question-prompt').className = 'question-prompt sentence-prompt';
+    renderOptions(state.question.options);
+  } else if (state.activity === 'order') {
+    state.question = buildOrderQuestion(item);
+    $('#question-instruction').textContent = 'Sắp xếp thành câu có nghĩa tiếng Việt bên dưới';
+    $('#question-prompt').textContent = state.question.prompt;
+    $('#question-prompt').className = 'question-prompt sentence-prompt';
+    state.orderAvailable = state.question.shuffled.map((text, index) => ({ id: `${index}-${text}`, text }));
+    $('#order-area').hidden = false;
+    renderOrderBuilder();
+  }
+  $('#speak-word-btn').disabled = !state.slot.settings.audio;
+}
+
+function resetStudyUI() {
+  $('#option-grid').innerHTML = '';
+  $('#text-answer-area').hidden = true;
+  $('#text-answer-input').value = '';
+  $('#order-area').hidden = true;
+  $('#answer-panel').hidden = true;
+  $('#rating-row').hidden = true;
+  $('#next-word-btn').hidden = true;
+  $('#example-card').hidden = true;
+  $('#traditional-text').textContent = '';
+  $('#pinyin-hint').textContent = '';
+}
+
+function renderOptions(options) {
+  $('#option-grid').innerHTML = options.map((option, index) => `<button class="option-btn" data-index="${index}"><span>${index + 1}</span>${escapeHtml(option)}</button>`).join('');
+  $$('.option-btn').forEach(btn => btn.addEventListener('click', () => answerOption(Number(btn.dataset.index), btn)));
+}
+
+function answerOption(index, button) {
+  if (state.answeredThisQuestion) return;
+  const selected = state.question.options[index];
+  const isCorrect = selected === state.question.correct;
+  $$('.option-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    if (state.question.options[i] === state.question.correct) btn.classList.add('correct');
+  });
+  if (!isCorrect) button.classList.add('wrong');
+  completeQuestion(isCorrect, selected);
+}
+
+function checkTextAnswer() {
+  if (state.answeredThisQuestion || state.activity !== 'dictation') return;
+  const answer = $('#text-answer-input').value.trim();
+  if (!answer) return toast('Hãy nhập chữ Hán bạn nghe được.', 'warn');
+  $('#text-answer-input').disabled = true;
+  $('#check-text-answer-btn').disabled = true;
+  completeQuestion(checkDictation(answer, state.question), answer);
+}
+
+function renderOrderBuilder() {
+  $('#order-answer').innerHTML = state.orderSelected.length
+    ? state.orderSelected.map(item => `<button class="token-btn selected" data-order-id="${escapeHtml(item.id)}" data-source="selected">${escapeHtml(item.text)}</button>`).join('')
+    : '<span class="empty-note">Bấm các cụm bên dưới để xếp câu</span>';
+  $('#order-bank').innerHTML = state.orderAvailable.map(item => `<button class="token-btn" data-order-id="${escapeHtml(item.id)}" data-source="available">${escapeHtml(item.text)}</button>`).join('');
+  $$('#order-area .token-btn').forEach(btn => btn.addEventListener('click', () => moveOrderToken(btn.dataset.orderId, btn.dataset.source)));
+}
+
+function moveOrderToken(id, source) {
+  if (state.answeredThisQuestion) return;
+  if (source === 'available') {
+    const index = state.orderAvailable.findIndex(item => item.id === id);
+    if (index >= 0) state.orderSelected.push(state.orderAvailable.splice(index, 1)[0]);
+  } else {
+    const index = state.orderSelected.findIndex(item => item.id === id);
+    if (index >= 0) state.orderAvailable.push(state.orderSelected.splice(index, 1)[0]);
+  }
+  renderOrderBuilder();
+}
+
+function resetOrderBuilder() {
+  if (state.answeredThisQuestion) return;
+  state.orderAvailable.push(...state.orderSelected.splice(0));
+  shuffle(state.orderAvailable);
+  renderOrderBuilder();
+}
+
+function checkOrderAnswer() {
+  if (state.answeredThisQuestion || state.activity !== 'order') return;
+  if (!state.orderSelected.length) return toast('Hãy xếp câu trước khi kiểm tra.', 'warn');
+  const answer = state.orderSelected.map(item => item.text);
+  completeQuestion(checkOrder(answer, state.question), answer.join(''));
+  $$('#order-area button').forEach(btn => { btn.disabled = true; });
+}
+
+function completeQuestion(isCorrect, selected) {
+  state.answeredThisQuestion = true;
+  state.pendingCorrect = isCorrect;
+  state.selectedAnswer = selected;
+  const detail = questionDetail();
+  $('#answer-result').textContent = isCorrect ? 'Đúng rồi' : 'Chưa đúng';
+  $('#answer-result').className = isCorrect ? 'result ok' : 'result error';
+  $('#answer-main').textContent = detail.main;
+  $('#answer-meaning').textContent = detail.meaning;
+  $('#verification-badge').textContent = detail.verification;
+  $('#verification-badge').dataset.status = detail.verificationStatus;
+  $('#answer-panel').hidden = false;
+  $('#rating-row').hidden = false;
+  $('#next-word-btn').hidden = false;
+  if (detail.example) {
+    $('#example-zh').textContent = detail.example.zh;
+    $('#example-pinyin').textContent = detail.example.pinyin;
+    $('#example-vi').textContent = detail.example.vi;
+    $('#example-card').hidden = false;
+  }
+  if (state.slot.settings.audio && state.activity !== 'dictation') speakCurrentQuestion();
+}
+
+function questionDetail() {
+  if (state.activity === 'quiz' || state.activity === 'weak' || state.activity === 'dictation') {
+    const word = state.question.word;
+    return {
+      main: `${word.simplified} · ${word.pinyin}`,
+      meaning: word.senses.map(s => s.vi).slice(0, 4).join('; '),
+      verification: verificationLabel(word.verification), verificationStatus: word.verification,
+      example: word.example ? { zh: word.example.zh, pinyin: word.example.pinyin, vi: word.example.vi } : null
+    };
+  }
+  const ex = state.question.example;
+  return {
+    main: `${ex.target} · ${ex.pinyin}`,
+    meaning: ex.meaning,
+    verification: 'Câu ví dụ đã duyệt', verificationStatus: 'kiem_tra_thu_cong',
+    example: { zh: ex.zh, pinyin: ex.sentencePinyin, vi: ex.vi }
+  };
+}
+
+function currentWordId() {
+  return (state.activity === 'fill' || state.activity === 'order') ? state.question.example.wordId : state.question.word.id;
+}
+
+function currentSrsMode() {
+  return ACTIVITIES[state.activity]?.srsMode(state.slot) || state.slot.settings.mode;
+}
+
+function applyRating(grade) {
+  if (!state.answeredThisQuestion || state.ratingLocked) return;
+  state.ratingLocked = true;
+  const wordId = currentWordId();
+  const mode = currentSrsMode();
+  const key = cardKey(wordId, mode);
+  const effectiveGrade = state.pendingCorrect ? grade : GRADES.AGAIN;
+  state.slot.cards[key] = reviewCard(state.slot.cards[key], effectiveGrade);
+  const responseMs = Math.max(0, Date.now() - state.answerStartedAt);
+  recordAttempt(wordId, state.pendingCorrect, responseMs);
+  updateStreak(state.slot);
+  state.slot.stats.answered += 1;
+  if (state.pendingCorrect) state.slot.stats.correct += 1;
+  state.slot.stats.lastStudyDate = new Date().toISOString();
+  saveSlot(state.slot);
+  state.session.answered += 1;
+  if (state.pendingCorrect) state.session.correct += 1;
+  state.session.responseMs += responseMs;
+  state.index += 1;
+  renderQuestion();
+}
+
+function recordAttempt(wordId, correct, responseMs) {
+  const at = Date.now();
+  state.slot.attemptLog.push({
+    at, wordId, correct: Boolean(correct), activity: state.activity,
+    mode: currentSrsMode(), responseMs, selected: serializeAnswer(state.selectedAnswer),
+    correctAnswer: serializeAnswer(state.question.correct)
+  });
+  state.slot.attemptLog = state.slot.attemptLog.slice(-2000);
+  const date = new Date(at).toISOString().slice(0, 10);
+  const entry = state.slot.history[date] || { answered: 0, correct: 0, words: [], seconds: 0, activities: {} };
+  entry.answered += 1;
+  if (correct) entry.correct += 1;
+  if (!entry.words.includes(wordId)) entry.words.push(wordId);
+  entry.seconds = Number(entry.seconds || 0) + Math.round(responseMs / 1000);
+  entry.activities[state.activity] = Number(entry.activities[state.activity] || 0) + 1;
+  state.slot.history[date] = entry;
+}
+
+async function finishSession() {
+  $('#study-progress-fill').style.width = '100%';
+  const durationSec = Math.max(1, Math.round((Date.now() - state.session.startedAt) / 1000));
+  const accuracy = state.session.answered ? Math.round(state.session.correct / state.session.answered * 100) : 0;
+  state.slot.stats.sessions += 1;
+  state.slot.stats.studySeconds += durationSec;
+  state.slot.sessions.push({
+    id: `S-${Date.now()}`, activity: state.activity, level: state.slot.settings.level,
+    mode: currentSrsMode(), answered: state.session.answered, correct: state.session.correct,
+    accuracy, durationSec, finishedAt: new Date().toISOString()
+  });
+  state.slot.sessions = state.slot.sessions.slice(-180);
+  saveSlot(state.slot);
+  await syncNow(state.slot);
+  renderCloudStatus();
+  $('#session-result-title').textContent = 'Hoàn thành phiên học';
+  $('#session-result-body').textContent = `Đúng ${state.session.correct}/${state.session.answered} câu • Chính xác ${accuracy}% • ${Math.ceil(durationSec / 60)} phút`;
+  showDashboard();
+  openModal('session-modal');
+}
+
+function openWeakBook() {
+  state.weakRows = computeWeakWords(state.words, state.slot, 100);
+  $('#start-weak-btn').disabled = state.weakRows.length === 0;
+  $('#weak-content').innerHTML = state.weakRows.length
+    ? `<p>Điểm yếu kết hợp số lần sai, lapses SRS, độ khó và thời điểm sai gần nhất.</p><div class="weak-list">${state.weakRows.slice(0, 50).map(row => `<div class="weak-row"><span class="hanzi-small">${escapeHtml(row.word.simplified)}</span><div><strong>${escapeHtml(row.word.pinyin)} · ${escapeHtml(row.word.meaning)}</strong><p>${escapeHtml(row.reason)} · Chính xác ${row.accuracy}%</p></div><b>${Math.round(row.score)}</b></div>`).join('')}</div>`
+    : '<div class="info-card">Chưa có đủ câu sai để tạo sổ từ yếu.</div>';
+  openModal('weak-modal');
+}
+
+function openPlanModal() {
+  const plan = state.slot.plan;
+  $('#plan-target-level').value = plan.targetLevel;
+  if (!plan.targetDate) {
+    const defaultDate = new Date();
+    defaultDate.setDate(defaultDate.getDate() + 120);
+    $('#plan-target-date').value = defaultDate.toISOString().slice(0, 10);
+  } else $('#plan-target-date').value = plan.targetDate;
+  $('#plan-minutes').value = plan.minutesPerDay;
+  $('#plan-days').value = plan.daysPerWeek;
+  $('#plan-new-words').value = plan.newWordsPerDay;
+  renderPlanPreview();
+  openModal('plan-modal');
+}
+
+function renderPlanPreview() {
+  const temp = structuredCloneSafe(state.slot);
+  temp.plan = readPlanForm();
+  const summary = planSummary(temp, state.meta);
+  $('#plan-preview').innerHTML = `<h3>Dự kiến</h3><p>Còn ${summary.remaining.toLocaleString('vi-VN')} từ trong mục tiêu. Có khoảng ${summary.studyDays} ngày học; cần trung bình <b>${summary.requiredPerStudyDay} từ/ngày học</b>.</p>`;
+}
+
+function readPlanForm() {
+  return {
+    ...state.slot.plan,
+    targetLevel: $('#plan-target-level').value,
+    targetDate: $('#plan-target-date').value,
+    minutesPerDay: clamp(Number($('#plan-minutes').value), 5, 180),
+    daysPerWeek: clamp(Number($('#plan-days').value), 1, 7),
+    newWordsPerDay: clamp(Number($('#plan-new-words').value), 5, 200)
+  };
+}
+
+function savePlan() {
+  state.slot.plan = readPlanForm();
+  saveSlot(state.slot);
+  closeModal($('#plan-modal'));
+  renderDashboard();
+  toast('Đã lưu kế hoạch học.');
+}
+
+function renderStats() {
+  const stats = buildAdvancedStats(state.slot, 30);
+  const labels = { quiz: 'Trắc nghiệm', weak: 'Sổ từ yếu', dictation: 'Chính tả', fill: 'Điền từ', order: 'Sắp xếp câu', 'hanzi-vi': 'Hán → Việt', 'vi-hanzi': 'Việt → Hán', 'hanzi-pinyin': 'Hán → pinyin', 'pinyin-hanzi': 'Pinyin → Hán' };
+  $('#stats-content').innerHTML = `
+    <div class="stats-grid"><div><strong>${state.slot.stats.answered.toLocaleString('vi-VN')}</strong><span>Tổng lượt trả lời</span></div><div><strong>${stats.accuracy}%</strong><span>Chính xác 30 ngày</span></div><div><strong>${stats.retention}%</strong><span>Độ lưu giữ ước tính</span></div><div><strong>${stats.averageResponseMs ? (stats.averageResponseMs / 1000).toFixed(1) : 0}s</strong><span>Phản hồi trung bình</span></div><div><strong>${stats.currentStreak}</strong><span>Chuỗi ngày hiện tại</span></div><div><strong>${stats.totalMinutes}</strong><span>Tổng phút học</span></div></div>
+    <h3>Hoạt động 30 ngày</h3>${renderBars(stats.byActivity, labels)}
+    <h3>Hướng học</h3>${renderBars(stats.byMode, labels)}
+    <h3>30 ngày gần nhất</h3><div class="heatmap">${stats.daily.map(day => `<div class="heat-cell" data-level="${heatLevel(day.answered)}" title="${day.date}: ${day.answered} câu"></div>`).join('')}</div>
+    <p class="muted-note">Chuỗi dài nhất: ${stats.longestStreak} ngày. Độ lưu giữ là ước tính từ lịch sử đúng/sai của các thẻ đã được ôn ít nhất hai lần.</p>`;
+}
+
+function renderBars(rows, labels) {
+  if (!rows.length) return '<p>Chưa có dữ liệu.</p>';
+  return `<div class="bar-list">${rows.map(row => `<div class="bar-row"><span>${escapeHtml(labels[row.key] || row.key)} · ${row.total} câu</span><div class="bar-track"><div class="bar-fill" style="width:${row.accuracy}%"></div></div><strong>${row.accuracy}%</strong></div>`).join('')}</div>`;
+}
+
+function openExamModal() {
+  $('#exam-level-select').value = state.slot.settings.level;
+  const examples = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
+  const bank = questionBankSummary(state.words, examples);
+  $('#exam-bank-detail').textContent = `Cấp hiện tại có ${state.words.length.toLocaleString('vi-VN')} từ và ${examples.length} câu ví dụ, tạo được khoảng ${bank.total.toLocaleString('vi-VN')} biến thể.`;
+  openModal('exam-modal');
+}
+
+async function startExam() {
+  const level = $('#exam-level-select').value;
+  const size = Number($('#exam-size-select').value);
+  $('#start-exam-btn').disabled = true;
+  $('#start-exam-btn').textContent = 'Đang tạo đề…';
+  try {
+    const words = await loadLevelsUpTo(level);
+    const examples = state.examples.filter(ex => Number(ex.level) <= Number(level));
+    const definition = buildMockExam({ words, examples, level, size, seed: `${Date.now()}-${state.slot.id}` });
+    state.exam = {
+      definition, index: 0, answers: [], currentAnswer: null,
+      orderAvailable: [], orderSelected: [], startedAt: Date.now(),
+      endsAt: Date.now() + definition.durationMinutes * 60000
+    };
+    closeModal($('#exam-modal'));
+    $('#dashboard-view').hidden = true;
+    $('#study-view').hidden = true;
+    $('#exam-result-view').hidden = true;
+    $('#exam-view').hidden = false;
+    startExamTimer();
+    renderExamQuestion();
+  } catch (error) {
+    console.error(error);
+    toast(error.message || 'Không tạo được đề.', 'error');
+  } finally {
+    $('#start-exam-btn').disabled = false;
+    $('#start-exam-btn').textContent = 'Bắt đầu làm đề';
+  }
+}
+
+function renderExamQuestion() {
+  const q = currentExamQuestion();
+  if (!q) return finishExam();
+  state.exam.currentAnswer = null;
+  state.exam.orderAvailable = [];
+  state.exam.orderSelected = [];
+  $('#exam-position').textContent = `${state.exam.index + 1}/${state.exam.definition.questions.length}`;
+  $('#exam-progress-fill').style.width = `${Math.round(state.exam.index / state.exam.definition.questions.length * 100)}%`;
+  $('#exam-type-label').textContent = EXAM_TYPES[q.type];
+  $('#exam-prompt').textContent = q.prompt;
+  $('#exam-prompt').className = ['meaning','pinyin'].includes(q.type) ? 'question-prompt hanzi' : 'question-prompt sentence-prompt';
+  $('#exam-option-grid').innerHTML = '';
+  $('#exam-order-area').hidden = true;
+  $('#exam-speak-btn').hidden = q.type !== 'listening';
+  $('#exam-next-btn').disabled = true;
+  $('#exam-next-btn').textContent = state.exam.index === state.exam.definition.questions.length - 1 ? 'Nộp bài' : 'Câu tiếp theo';
+  if (q.type === 'listening') {
+    $('#exam-prompt').textContent = '🔊';
+    setTimeout(() => speakChinese(q.audioText, state.slot.settings.audio), 180);
+  }
+  if (q.type === 'order') {
+    $('#exam-order-area').hidden = false;
+    state.exam.orderAvailable = q.shuffled.map((text, index) => ({ id: `${index}-${text}`, text }));
+    renderExamOrder();
+  } else {
+    $('#exam-option-grid').innerHTML = q.options.map((option, index) => `<button class="option-btn exam-option" data-index="${index}"><span>${index + 1}</span>${escapeHtml(option)}</button>`).join('');
+    $$('.exam-option').forEach(btn => btn.addEventListener('click', () => selectExamOption(Number(btn.dataset.index), btn)));
+  }
+}
+
+function selectExamOption(index, button) {
+  $$('.exam-option').forEach(btn => btn.classList.remove('selected'));
+  button.classList.add('selected');
+  state.exam.currentAnswer = currentExamQuestion().options[index];
+  $('#exam-next-btn').disabled = false;
+}
+
+function renderExamOrder() {
+  $('#exam-order-answer').innerHTML = state.exam.orderSelected.length ? state.exam.orderSelected.map(item => `<button class="token-btn selected" data-id="${escapeHtml(item.id)}" data-source="selected">${escapeHtml(item.text)}</button>`).join('') : '<span class="empty-note">Xếp câu tại đây</span>';
+  $('#exam-order-bank').innerHTML = state.exam.orderAvailable.map(item => `<button class="token-btn" data-id="${escapeHtml(item.id)}" data-source="available">${escapeHtml(item.text)}</button>`).join('');
+  $$('#exam-order-area .token-btn').forEach(btn => btn.addEventListener('click', () => moveExamToken(btn.dataset.id, btn.dataset.source)));
+  state.exam.currentAnswer = state.exam.orderSelected.map(item => item.text);
+  $('#exam-next-btn').disabled = state.exam.orderSelected.length === 0;
+}
+
+function moveExamToken(id, source) {
+  if (source === 'available') {
+    const index = state.exam.orderAvailable.findIndex(item => item.id === id);
+    if (index >= 0) state.exam.orderSelected.push(state.exam.orderAvailable.splice(index, 1)[0]);
+  } else {
+    const index = state.exam.orderSelected.findIndex(item => item.id === id);
+    if (index >= 0) state.exam.orderAvailable.push(state.exam.orderSelected.splice(index, 1)[0]);
+  }
+  renderExamOrder();
+}
+
+function nextExamQuestion() {
+  if (!state.exam || state.exam.currentAnswer == null) return;
+  state.exam.answers[state.exam.index] = structuredCloneSafe(state.exam.currentAnswer);
+  if (state.exam.index >= state.exam.definition.questions.length - 1) return finishExam();
+  state.exam.index += 1;
+  renderExamQuestion();
+}
+
+async function finishExam() {
+  if (!state.exam || state.exam.submitting) return;
+  state.exam.submitting = true;
+  clearExamTimer();
+  const result = scoreExam(state.exam.definition, state.exam.answers);
+  const durationSec = Math.max(1, Math.round((Date.now() - state.exam.startedAt) / 1000));
+  const attempt = {
+    id: `E-${Date.now()}`, examId: state.exam.definition.id, level: state.exam.definition.level,
+    title: state.exam.definition.title, score: result.score, correct: result.correct, total: result.total,
+    byType: result.byType, details: result.details, durationSec, finishedAt: new Date().toISOString()
+  };
+  state.slot.examAttempts.push(attempt);
+  state.slot.examAttempts = state.slot.examAttempts.slice(-30);
+  state.slot.stats.studySeconds += durationSec;
+  saveSlot(state.slot);
+  await syncNow(state.slot);
+  renderExamResult(attempt);
+  $('#exam-view').hidden = true;
+  $('#exam-result-view').hidden = false;
+  state.exam = null;
+}
+
+function renderExamResult(attempt) {
+  $('#exam-score').textContent = attempt.score;
+  $('.score-ring').style.setProperty('--score-angle', `${attempt.score * 3.6}deg`);
+  $('#exam-result-title').textContent = attempt.score >= 80 ? 'Kết quả tốt' : attempt.score >= 60 ? 'Đã đạt mức khá' : 'Cần ôn thêm';
+  $('#exam-result-summary').textContent = `Đúng ${attempt.correct}/${attempt.total} câu trong ${Math.ceil(attempt.durationSec / 60)} phút.`;
+  $('#exam-type-scores').innerHTML = Object.entries(attempt.byType).map(([type, row]) => `<div><strong>${row.score}%</strong><span>${EXAM_TYPES[type]} · ${row.correct}/${row.total}</span></div>`).join('');
+  $('#exam-review-list').innerHTML = attempt.details.map((row, index) => `<article class="review-item ${row.correct ? '' : 'wrong'}"><h4>Câu ${index + 1} · ${EXAM_TYPES[row.type]} · ${row.correct ? 'Đúng' : 'Sai'}</h4><p><b>Đề:</b> ${escapeHtml(row.prompt)}\n<b>Đáp án của bạn:</b> ${escapeHtml(serializeAnswer(row.answer) || 'Bỏ trống')}\n<b>Đáp án đúng:</b> ${escapeHtml(serializeAnswer(row.correctAnswer))}</p><p>${escapeHtml(row.explanation)}</p></article>`).join('');
+}
+
+function openExamHistory() {
+  const attempts = [...(state.slot.examAttempts || [])].reverse();
+  $('#exam-history-content').innerHTML = attempts.length ? attempts.map(attempt => `
+    <details><summary class="history-exam-row"><span><b>${escapeHtml(attempt.title)}</b><br><small>${formatDate(attempt.finishedAt)} · ${Math.ceil(attempt.durationSec / 60)} phút</small></span><strong>${attempt.score} điểm</strong><span>${attempt.correct}/${attempt.total} câu</span></summary>
+    <div class="bar-list">${Object.entries(attempt.byType || {}).map(([type,row]) => `<div class="bar-row"><span>${EXAM_TYPES[type]}</span><div class="bar-track"><div class="bar-fill" style="width:${row.score}%"></div></div><strong>${row.score}%</strong></div>`).join('')}</div></details>`).join('') : '<div class="info-card">Chưa có lần làm đề nào.</div>';
+  openModal('exam-history-modal');
+}
+
+function startExamTimer() {
+  clearExamTimer();
+  updateExamTimer();
+  state.examTimer = setInterval(updateExamTimer, 1000);
+}
+
+function updateExamTimer() {
+  if (!state.exam) return;
+  const remaining = Math.max(0, state.exam.endsAt - Date.now());
+  $('#exam-timer').textContent = formatClock(Math.ceil(remaining / 1000));
+  if (remaining <= 0) {
+    toast('Hết giờ, hệ thống tự nộp bài.', 'warn');
+    finishExam();
+  }
+}
+
+function quitExam() {
+  if (!confirm('Thoát đề hiện tại? Kết quả chưa nộp sẽ không được lưu.')) return;
+  clearExamTimer();
+  state.exam = null;
+  showDashboard();
+}
+
+function currentExamQuestion() { return state.exam?.definition?.questions?.[state.exam.index] || null; }
+
+function exportCurrentSlot() {
+  const safeName = state.slot.profile.name.replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '') || `slot-${state.slot.id}`;
+  downloadText(`hsk-${safeName}-${new Date().toISOString().slice(0,10)}.json`, exportSlot(state.slot));
+  toast('Đã xuất tệp sao lưu slot.');
+}
+
+async function handleImport(event) {
+  const file = event.target.files?.[0];
+  event.target.value = '';
+  if (!file) return;
+  try {
+    state.slot = importSlot(state.slot.id, await file.text());
+    state.words = await loadLevel(state.slot.settings.level);
+    state.wordIndex = new Map(state.words.map(word => [word.id, word]));
+    hydrateSettings();
+    renderDashboard();
+    closeModal($('#settings-modal'));
+    toast('Đã nhập dữ liệu và xếp hàng đồng bộ.');
+  } catch (error) { toast(error.message || 'Không nhập được tệp.', 'error'); }
+}
+
+function resetCurrentSlot() {
+  if (!confirm(`Xóa toàn bộ tiến độ của ${state.slot.profile.name} trong Slot ${state.slot.id}, gồm cả dữ liệu Supabase?`)) return;
+  const id = state.slot.id;
+  resetSlot(id);
+  state.slot = null;
+  closeModal($('#settings-modal'));
+  renderSlots();
+  showScreen('slot-screen');
+  toast(`Đã xóa Slot ${id}.`);
+}
+
+async function manualSync() {
+  let status = getCloudStatus();
+  if (!status.enabled) return toast('Supabase chưa được cấu hình trong js/config.js.', 'warn');
+  $('#sync-now-btn').disabled = true;
+  if (!status.connected) {
+    await setupCloud();
+    status = getCloudStatus();
+  }
+  if (!status.connected) {
+    $('#sync-now-btn').disabled = false;
+    renderCloudStatus();
+    return toast('Chưa kết nối được Supabase. Dữ liệu vẫn đang lưu cục bộ.', 'warn');
+  }
+  const ok = await syncNow(state.slot);
+  $('#sync-now-btn').disabled = false;
+  renderCloudStatus();
+  toast(ok ? 'Đã đồng bộ slot hiện tại.' : 'Chưa đồng bộ được; dữ liệu cục bộ vẫn an toàn.', ok ? 'ok' : 'warn');
+}
+
+function renderCloudStatus() {
+  const status = getCloudStatus();
+  const text = status.message || (status.connected ? 'Đã đồng bộ Supabase' : 'Đang lưu cục bộ');
+  if ($('#cloud-status')) $('#cloud-status').textContent = text;
+  if ($('#top-cloud-status')) $('#top-cloud-status').textContent = text;
+  if ($('#settings-cloud-status')) $('#settings-cloud-status').textContent = text;
+  const dot = $('#cloud-dot');
+  if (dot) {
+    dot.classList.toggle('connected', Boolean(status.connected));
+    dot.classList.toggle('error', Boolean(status.enabled && !status.connected));
+  }
+}
+
+function speakCurrentQuestion() {
+  const text = state.activity === 'fill' || state.activity === 'order'
+    ? state.question?.example?.zh
+    : state.question?.word?.simplified;
+  if (text) speakChinese(text, state.slot?.settings?.audio);
+}
+
+function currentExample() {
+  if (state.activity === 'fill' || state.activity === 'order') return { zh: state.question.example.zh };
+  const ex = state.question?.word?.example;
+  return ex ? { zh: ex.zh } : null;
+}
+
+function handleKeyboard(event) {
+  if (event.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(closeModal);
+    return;
+  }
+  if ($('#study-view')?.hidden || state.answeredThisQuestion || !['quiz','weak','fill'].includes(state.activity)) return;
+  const number = Number(event.key);
+  if (number >= 1 && number <= 4) $$('.option-btn')[number - 1]?.click();
+}
+
+function openModal(id) { (typeof id === 'string' ? document.getElementById(id) : id)?.classList.add('open'); }
+function closeModal(el) { el?.classList.remove('open'); }
+function finishSpeech() { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }
+function clearExamTimer() { if (state.examTimer) clearInterval(state.examTimer); state.examTimer = null; }
+function emptySession() { return { answered: 0, correct: 0, responseMs: 0, startedAt: null, activity: 'quiz' }; }
+function heatLevel(value) { return value <= 0 ? 0 : value < 10 ? 1 : value < 25 ? 2 : value < 50 ? 3 : 4; }
+function formatClock(seconds) { const m = Math.floor(seconds / 60); const s = seconds % 60; return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`; }
+function clamp(value, min, max) { return Math.max(min, Math.min(max, Number.isFinite(value) ? value : min)); }
+function serializeAnswer(value) { return Array.isArray(value) ? value.join('') : String(value ?? ''); }
+function structuredCloneSafe(value) { return typeof structuredClone === 'function' ? structuredClone(value) : JSON.parse(JSON.stringify(value)); }
+function escapeHtml(value) { return String(value ?? '').replace(/[&<>'"]/g, char => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' }[char])); }
+function registerServiceWorker() { if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(console.warn)); }
+
+boot();
