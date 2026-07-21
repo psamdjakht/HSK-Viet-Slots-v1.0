@@ -32,3 +32,9 @@
 5. Gắn ID riêng cho từng nghĩa.
 6. Gắn trạng thái kiểm chứng.
 7. Chia dữ liệu thành bảy tệp để tải theo cấp.
+
+## Lớp chuẩn hóa HSK 1 P4
+
+`data/hsk1-quality.json` được tạo từ dữ liệu HSK 1 hiện có bằng `tools/build_hsk1_quality.py`. Lớp này làm sạch nghĩa chính, tách lượng từ, gắn chủ đề/từ loại, tạo ghi chú sử dụng và nhóm từ dễ nhầm. Ví dụ dạng “Tôi có thể đọc từ…” chỉ là mẫu hỗ trợ phát âm và có `exerciseEligible: false`, không được dùng để tạo đề.
+
+`data/hsk1-grammar.json` là thư viện 30 cấu trúc nền tảng được biên soạn riêng cho ứng dụng. Nội dung vẫn nên được rà soát trong quá trình sử dụng; quản trị viên có thể sửa học liệu từ vựng trực tiếp trên giao diện.

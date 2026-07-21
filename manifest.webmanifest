@@ -1,7 +1,7 @@
 {
-  "name": "HSK Việt – 10 Slot Học",
+  "name": "HSK Việt – HSK 1 chuẩn hóa",
   "short_name": "HSK Việt",
-  "description": "Học và luyện thi HSK tiếng Việt với 10 slot, SRS, P2/P3 và Supabase tùy chọn.",
+  "description": "Học HSK tiếng Việt với 10 slot, HSK 1 chuẩn hóa, ngữ pháp, SRS, luyện thi và quản trị học liệu.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

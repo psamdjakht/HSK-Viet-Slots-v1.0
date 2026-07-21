@@ -1,49 +1,56 @@
-# HSK Việt – 10 Slot Học P0–P3
+# HSK Việt – 10 Slot Học P0–P4
 
-Ứng dụng web tĩnh tiếng Việt để học và luyện thi HSK trên GitHub Pages. Không có màn hình đăng nhập. Mỗi trình duyệt có 10 slot độc lập; mỗi slot lưu tên, lịch SRS, sổ từ yếu, kế hoạch, thống kê và lịch sử đề thi.
+Ứng dụng web tĩnh tiếng Việt chạy trên GitHub Pages. Không có màn hình đăng nhập người học. Mỗi trình duyệt có 10 slot độc lập để lưu tiến độ, SRS, sổ từ yếu, kế hoạch, thống kê và lịch sử đề thi.
 
-## Tính năng P0/P1
+## P4 – HSK 1 chuẩn hóa
+
+- Phủ đủ 500 mục từ HSK 1 của bộ dữ liệu hiện tại.
+- Mỗi mục có nghĩa chính rút gọn, các nghĩa phụ, từ loại, chủ đề, lượng từ khi có, ghi chú cách dùng, cụm từ thường gặp, từ dễ nhầm và ví dụ.
+- 30 cấu trúc ngữ pháp nền tảng kèm công thức, giải thích, ví dụ và lỗi thường gặp.
+- Phương án nhiễu ưu tiên từ cùng chủ đề, cùng từ loại, gần pinyin hoặc nằm trong nhóm dễ nhầm.
+- Các ví dụ chỉ dùng để tạo bài điền từ/sắp xếp khi trường `exerciseEligible` được bật. Ví dụ đọc từ tự động không được đưa vào đề.
+- Màn hình “Thư viện HSK 1” cho phép tra chữ Hán, pinyin, nghĩa và chủ đề.
+
+> “Chuẩn hóa” trong bản này nghĩa là dữ liệu đã được làm sạch và đưa về cấu trúc học tập thống nhất. Không nên hiểu rằng toàn bộ 500 mục đã được một hội đồng giáo viên kiểm duyệt học thuật. Vì vậy ứng dụng có chức năng quản trị sửa trực tiếp.
+
+## Quản trị học liệu ngay trên giao diện
+
+- Nút `✎` ở thanh trên hoặc nút `Quản trị học liệu` tại trang chọn slot.
+- Mật khẩu mặc định được đặt theo yêu cầu của chủ ứng dụng và không ghi chữ rõ trong repository.
+- Có thể sửa nghĩa chính, nghĩa phụ, từ loại, chủ đề, lượng từ, ghi chú cách dùng, cụm từ, từ dễ nhầm và câu ví dụ.
+- Nội dung mới được dùng ngay trong thẻ học, đáp án, sổ từ yếu, giải thích và ngân hàng đề.
+- Có thể khôi phục riêng từng từ về bản chuẩn hóa ban đầu.
+- Có thể xuất/nhập toàn bộ nội dung đã chỉnh bằng JSON.
+- Có thể đổi mật khẩu quản trị trong giao diện.
+
+### Phạm vi bảo mật
+
+Đây là ứng dụng GitHub Pages dùng trong gia đình, không phải hệ thống quản trị doanh nghiệp. Khi chưa có Supabase, việc kiểm tra mật khẩu diễn ra ở trình duyệt và chỉ phù hợp để ngăn sửa nhầm. Khi đã chạy SQL P4 trên Supabase, việc xác minh và ghi học liệu dùng chung được thực hiện bằng hàm PostgreSQL `SECURITY DEFINER`; mật khẩu lưu dưới dạng bcrypt trong cơ sở dữ liệu.
+
+Không đưa `service_role` key vào GitHub.
+
+## Tính năng P0–P3
 
 - 10 slot học, đổi tên và xóa riêng từng slot.
 - 11.092 mục từ HSK 3.0; 30.431 nghĩa có ID riêng.
 - Bốn hướng trắc nghiệm: Hán → Việt, Việt → Hán, Hán → pinyin, pinyin → Hán.
-- SRS bốn mức Quên, Khó, Nhớ, Dễ; lịch riêng cho từng kỹ năng.
-- Việt hóa, giao diện xanh lá pastel, giản thể/phồn thể, phát âm Web Speech API.
-- 84 câu ví dụ Trung–pinyin–Việt đã duyệt.
-- PWA, cache dữ liệu cấp HSK sau lần mở đầu tiên.
-- Tự nâng cấp dữ liệu localStorage từ bản v1/P0-P1, không xóa tiến độ cũ.
-
-## Tính năng P2
-
-- Nghe chép chính tả: phát âm rồi nhập chữ Hán, chấp nhận giản thể hoặc phồn thể tương ứng.
-- Điền từ vào câu từ bộ câu ví dụ đã duyệt.
-- Sắp xếp cụm từ thành câu đúng.
-- Sổ từ yếu: xếp hạng từ theo số lần sai, lapses SRS, độ khó và lỗi gần đây.
-- Kế hoạch học: cấp mục tiêu, ngày hoàn thành, phút/ngày, ngày/tuần và từ mới/ngày.
-- Thống kê chuyên sâu 30 ngày: độ chính xác theo hoạt động/hướng học, phản hồi trung bình, streak, heatmap, độ lưu giữ ước tính và tổng thời gian.
-
-## Tính năng P3
-
-- Ngân hàng câu hỏi sinh từ dữ liệu từ vựng và câu ví dụ.
-- Đề mô phỏng 20, 30 hoặc 50 câu.
-- Năm dạng: chọn nghĩa, chọn pinyin, nghe chọn từ, điền từ, sắp xếp câu.
-- Đồng hồ đếm ngược, tự nộp khi hết giờ.
-- Chấm thang 100, điểm từng nhóm kỹ năng.
-- Giải thích từng câu bằng chữ Hán, pinyin, nghĩa hoặc bản dịch câu.
-- Lưu tối đa 30 lần thi gần nhất trong từng slot.
+- SRS bốn mức Quên, Khó, Nhớ, Dễ.
+- Nghe chép chính tả, điền từ, sắp xếp câu và sổ từ yếu.
+- Kế hoạch học và thống kê chuyên sâu 30 ngày.
+- Đề mô phỏng 20, 30 hoặc 50 câu, đồng hồ, chấm điểm, giải thích và lịch sử thi.
+- PWA, lưu cục bộ, Supabase Anonymous Auth tùy chọn.
 
 > Đề mô phỏng là bài luyện nội bộ theo dữ liệu ứng dụng, không phải đề thi HSK chính thức.
 
-## Lưu tự động bằng Supabase, không hiện đăng nhập
+## Cập nhật Supabase từ v2 lên v3
 
-Ứng dụng hỗ trợ Supabase Anonymous Auth. Người học không nhập email, tài khoản hoặc mật khẩu. Trình duyệt tự tạo một phiên ẩn danh, sau đó dữ liệu từng slot được `upsert` lên bảng Supabase có RLS.
+1. Mở Supabase `SQL Editor`.
+2. Chạy toàn bộ `supabase/upgrade_v3.sql` hoặc chạy lại `supabase/schema.sql`.
+3. Đảm bảo `Authentication → Providers → Anonymous Sign-Ins` đang bật.
+4. Không cần xóa bảng `hsk_slots`; script dùng `create table if not exists` và không xóa tiến độ.
+5. Sau khi mở ứng dụng, đăng nhập quản trị bằng mật khẩu mặc định rồi đổi mật khẩu.
 
-### Thiết lập
-
-1. Tạo project tại Supabase.
-2. Mở `SQL Editor`, chạy toàn bộ file `supabase/schema.sql`.
-3. Vào `Authentication` → `Providers` và bật `Anonymous Sign-Ins`.
-4. Mở `js/config.js` rồi sửa:
+Cấu hình `js/config.js`:
 
 ```js
 export const SUPABASE_CONFIG = {
@@ -54,38 +61,23 @@ export const SUPABASE_CONFIG = {
 };
 ```
 
-5. Chỉ dùng publishable key hoặc anon key. Không đưa `service_role` key lên GitHub.
-6. Push lại repository. Trên giao diện sẽ hiện “Đã đồng bộ Supabase”.
+## Cách lưu nội dung đã sửa
 
-### Cách tự lưu
-
-- Mỗi lần thay đổi tiến độ, ứng dụng lưu ngay vào localStorage và xếp hàng đồng bộ lên Supabase sau khoảng 0,7 giây.
-- Khi hoàn thành phiên học hoặc nộp đề, ứng dụng gọi đồng bộ ngay.
-- Khi mất mạng hoặc Supabase lỗi, dữ liệu vẫn nằm trên máy và ứng dụng tiếp tục hoạt động.
-- Nút “Đồng bộ ngay” nằm trong Cài đặt.
-- Nút “Xóa slot” xóa cả bản cục bộ và bản Supabase của slot đó.
-
-### Giới hạn quan trọng của chế độ ẩn danh
-
-Phiên Supabase ẩn danh gắn với dữ liệu trình duyệt. Nếu xóa dữ liệu trình duyệt, đăng xuất phiên ẩn danh hoặc mở trên một thiết bị khác, ứng dụng sẽ tạo một danh tính ẩn danh mới và không tự thấy 10 slot cũ. Đây là giới hạn tất yếu khi không có tài khoản hoặc mã khôi phục.
-
-Để tránh mất dữ liệu:
-
-- Không xóa dữ liệu trang khi chưa xuất sao lưu.
-- Dùng nút `Xuất sao lưu` định kỳ.
-- Khi chuyển thiết bị, xuất từng slot rồi nhập vào thiết bị mới.
-
-Nếu cần đồng bộ cùng 10 slot trên nhiều thiết bị mà vẫn không dùng email, phiên bản sau phải bổ sung một “mã không gian học” bí mật. Mã đó về bản chất vẫn là khóa truy cập và phải được bảo vệ.
+- Không có Supabase: lưu trong `localStorage` của trình duyệt.
+- Có Supabase: lưu cục bộ trước, sau đó gọi RPC để lưu vào bảng `hsk_content_overrides` dùng chung cho các thành viên gia đình.
+- Tiến độ người học vẫn nằm trong bảng `hsk_slots`, tách biệt hoàn toàn với học liệu.
+- Xóa/reset slot không xóa học liệu do admin sửa.
 
 ## Đưa lên GitHub Pages
 
-1. Tải toàn bộ nội dung bên trong thư mục này lên nhánh `main`.
-2. Vào `Settings` → `Pages`.
-3. Chọn `Deploy from a branch`.
-4. Chọn `main` và `/(root)`.
-5. Nhấn `Save`.
+1. Sao lưu repository hiện tại.
+2. Chép toàn bộ nội dung thư mục này vào repository và chọn Replace.
+3. Commit và Push bằng GitHub Desktop.
+4. GitHub → `Settings → Pages`.
+5. Chọn `Deploy from a branch`, nhánh `main`, thư mục `/(root)`.
+6. Không chạy `npm build`.
 
-Không chạy `npm build`. Đây là ứng dụng HTML/CSS/JavaScript thuần.
+Do service worker có cache, sau khi cập nhật nên đóng tab cũ, mở lại trang và nhấn `Ctrl+F5` một lần.
 
 ## Kiểm thử
 
@@ -93,22 +85,18 @@ Không chạy `npm build`. Đây là ứng dụng HTML/CSS/JavaScript thuần.
 npm test
 ```
 
-Không cần cài package npm. Node.js 18 trở lên là đủ. GitHub Actions cũng tự chạy bộ kiểm thử khi push.
+Không cần cài package npm. Node.js 18 trở lên là đủ.
 
-## Cấu trúc chính
+## Cấu trúc bổ sung P4
 
 ```text
-index.html
-css/app.css
-js/app.js
-js/config.js
-js/modules/
-data/levels/
-data/examples.json
-supabase/schema.sql
-manifest.webmanifest
-sw.js
-tests/
+data/hsk1-quality.json
+ data/hsk1-grammar.json
+js/modules/content.js
+js/modules/admin.js
+supabase/upgrade_v3.sql
+tools/build_hsk1_quality.py
+tests/test-p4-quality-admin.mjs
 ```
 
 ## Nguồn và giấy phép

@@ -1,4 +1,5 @@
 import { primaryMeaning } from './data.js';
+import { rankDistractorCandidates } from './quiz.js';
 import { segmentChinese, normalizeChinese } from './activities.js';
 
 export const EXAM_TYPES = {
@@ -88,7 +89,8 @@ export function evaluateAnswer(question, answer) {
 function makeWordChoice(type, word, words, rng) {
   const answerFn = type === 'meaning' ? primaryMeaning : type === 'pinyin' ? w => w.pinyin : w => w.simplified;
   const correct = answerFn(word);
-  const pool = sample(words.filter(item => item.id !== word.id && answerFn(item) !== correct), 24, rng);
+  const ranked = rankDistractorCandidates(word, words.filter(item => item.id !== word.id && answerFn(item) !== correct), type === 'pinyin' ? 'hanzi-pinyin' : type === 'listening' ? 'pinyin-hanzi' : 'hanzi-vi');
+  const pool = ranked.slice(0, 24);
   const options = [correct];
   for (const item of pool) {
     const value = answerFn(item);

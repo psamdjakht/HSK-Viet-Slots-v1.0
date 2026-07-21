@@ -4,6 +4,8 @@ import {
   configureCloudStorage, allLocalSlots, migrateSlot, getDeletedSlots, clearDeletedSlot
 } from './modules/storage.js';
 import { loadLevel, loadLevelsUpTo, loadMeta, loadExamples, verificationLabel } from './modules/data.js';
+import { initContentSystem, loadGrammar, applyContentToWords, buildEffectiveExamples, getContentOverride, saveLocalContentOverride, deleteLocalContentOverride, exportContentOverrides, importContentOverrides, qualitySummary } from './modules/content.js';
+import { unlockAdmin, lockAdmin, isAdminUnlocked, getAdminPassword, getAdminSource, changeLocalAdminPassword, setLocalAdminPassword } from './modules/admin.js';
 import { MODES, buildStudyQueue, makeQuestion, cardKey, shuffle } from './modules/quiz.js';
 import { reviewCard, GRADES, isDue } from './modules/srs.js';
 import { speakChinese } from './modules/audio.js';
@@ -12,12 +14,17 @@ import { computeWeakWords } from './modules/weak.js';
 import { planSummary, todayPlan, updateStreak } from './modules/plan.js';
 import { buildAdvancedStats } from './modules/stats.js';
 import { EXAM_TYPES, questionBankSummary, buildMockExam, scoreExam } from './modules/exam.js';
-import { initCloudSync, getCloudStatus, syncNow } from './modules/sync.js';
+import { initCloudSync, getCloudStatus, syncNow, verifyAdminPassword, saveRemoteContentOverride, deleteRemoteContentOverride, changeRemoteAdminPassword } from './modules/sync.js';
 import { $, $$, showScreen, toast, formatDate, downloadText } from './modules/ui.js';
 
 const state = {
   meta: null,
+  baseExamples: [],
   examples: [],
+  grammar: [],
+  hsk1Words: [],
+  contentMeta: null,
+  adminSelectedWordId: null,
   slot: null,
   words: [],
   wordIndex: new Map(),
@@ -43,13 +50,14 @@ async function boot() {
   bindStaticEvents();
   registerServiceWorker();
   try {
-    [state.meta, state.examples] = await Promise.all([loadMeta(), loadExamples()]);
-    $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • ${state.examples.length} câu ví dụ đã duyệt`;
+    [state.meta, state.baseExamples] = await Promise.all([loadMeta(), loadExamples()]);
+    $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • đang nạp gói chuẩn hóa HSK 1`;
   } catch (error) {
     console.error(error);
     toast('Không tải được dữ liệu nền. Hãy tải lại trang.', 'error');
   }
   await setupCloud();
+  $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • HSK 1 chuẩn hóa ${state.hsk1Words.length} từ • ${state.grammar.length} điểm ngữ pháp`;
   renderSlots();
   const activeId = getActiveSlotId();
   if (activeId && loadSlot(activeId)?.profile?.name) await openSlot(activeId);
@@ -58,6 +66,10 @@ async function boot() {
 
 async function setupCloud() {
   const result = await initCloudSync();
+  state.contentMeta = await initContentSystem(result.contentRows || []);
+  state.grammar = (await loadGrammar()).items || [];
+  state.hsk1Words = applyContentToWords(await loadLevel('1'));
+  state.examples = buildEffectiveExamples(state.baseExamples, state.hsk1Words);
   if (result.adapter) await reconcileDeletedSlots(result.adapter);
   const deleted = getDeletedSlots();
   const usableRows = (result.rows || []).filter(row => !(String(row.slot_id) in deleted));
@@ -145,9 +157,44 @@ function bindStaticEvents() {
     if (q?.audioText) speakChinese(q.audioText, state.slot.settings.audio);
   });
 
+  $('#hsk1-library-btn').addEventListener('click', openHsk1Library);
+  $('#open-hsk1-library-btn').addEventListener('click', openHsk1Library);
+  $('#hsk1-library-search').addEventListener('input', renderHsk1LibraryWords);
+  $('#hsk1-library-topic').addEventListener('change', renderHsk1LibraryWords);
+  $('#admin-btn').addEventListener('click', openAdminEntry);
+  $('#admin-home-btn').addEventListener('click', openAdminEntry);
+  $('#admin-login-submit').addEventListener('click', submitAdminLogin);
+  $('#admin-password-input').addEventListener('keydown', event => { if (event.key === 'Enter') submitAdminLogin(); });
+  $('#admin-word-search').addEventListener('input', renderAdminWordList);
+  $('#admin-editor').addEventListener('submit', saveAdminWord);
+  $('#admin-reset-word-btn').addEventListener('click', resetAdminWord);
+  $('#admin-lock-btn').addEventListener('click', lockAdminUi);
+  $('#admin-change-password-btn').addEventListener('click', () => openModal('admin-password-modal'));
+  $('#admin-change-password-submit').addEventListener('click', submitAdminPasswordChange);
+  $('#admin-export-content-btn').addEventListener('click', () => downloadText(`hsk1-noi-dung-sua-${new Date().toISOString().slice(0,10)}.json`, exportContentOverrides()));
+  $('#admin-import-content-btn').addEventListener('click', () => $('#admin-import-content-file').click());
+  $('#admin-import-content-file').addEventListener('change', importAdminContentFile);
+  $('#admin-edit-current-btn').addEventListener('click', () => { const id = $('#admin-edit-current-btn').dataset.wordId; if (id) { state.adminSelectedWordId = id; openAdminPanel(); } });
+
   $$('.modal-close').forEach(btn => btn.addEventListener('click', () => closeModal(btn.closest('.modal-overlay'))));
   $$('.modal-overlay').forEach(modal => modal.addEventListener('click', event => { if (event.target === modal) closeModal(modal); }));
   document.addEventListener('keydown', handleKeyboard);
+}
+
+async function loadEffectiveLevel(level) {
+  const words = applyContentToWords(await loadLevel(level));
+  if (String(level) === '1') state.hsk1Words = words;
+  return words;
+}
+
+async function refreshContentState() {
+  state.hsk1Words = applyContentToWords(await loadLevel('1'));
+  state.examples = buildEffectiveExamples(state.baseExamples, state.hsk1Words);
+  if (state.slot && String(state.slot.settings.level) === '1') {
+    state.words = state.hsk1Words;
+    state.wordIndex = new Map(state.words.map(word => [word.id, word]));
+    renderDashboard();
+  }
 }
 
 function renderSlots() {
@@ -182,7 +229,7 @@ async function openSlot(id) {
   state.slot = loadSlot(id);
   if (!state.slot) return;
   setActiveSlotId(id);
-  state.words = await loadLevel(state.slot.settings.level);
+  state.words = await loadEffectiveLevel(state.slot.settings.level);
   state.wordIndex = new Map(state.words.map(word => [word.id, word]));
   $('#slot-badge').textContent = `Slot ${id}`;
   $('#learner-name').textContent = state.slot.profile.name;
@@ -202,7 +249,7 @@ function hydrateSettings() {
   $('#level-select').onchange = async event => {
     state.slot.settings.level = event.target.value;
     saveSlot(state.slot);
-    state.words = await loadLevel(event.target.value);
+    state.words = await loadEffectiveLevel(event.target.value);
     state.wordIndex = new Map(state.words.map(word => [word.id, word]));
     renderDashboard();
   };
@@ -231,7 +278,10 @@ function renderDashboard() {
   const pct = Math.min(100, Math.round(learnedIds.size / Math.max(1, state.words.length) * 100));
   $('#level-progress-fill').style.width = `${pct}%`;
   $('#level-progress-text').textContent = `${learnedIds.size}/${state.words.length} từ (${pct}%)`;
-  $('#data-quality-note').textContent = `Dữ liệu HSK 3.0 đã làm sạch, mỗi từ và mỗi nghĩa có ID riêng; ${state.examples.length} câu ví dụ đã duyệt dùng cho luyện câu.`;
+  const quality = qualitySummary(state.hsk1Words);
+  $('#data-quality-note').textContent = String(state.slot.settings.level) === '1'
+    ? `HSK 1 đã chuẩn hóa ${quality.words} từ: nghĩa chính gọn, từ loại, chủ đề, cách dùng, từ dễ nhầm và ${state.grammar.length} điểm ngữ pháp. ${quality.overridden} từ đã được quản trị viên chỉnh.`
+    : `Dữ liệu HSK 3.0 đã làm sạch; HSK 1 có gói chất lượng riêng, các cấp cao hơn giữ dữ liệu đối chiếu hiện tại.`;
   const examples = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
   const bank = questionBankSummary(state.words, examples);
   $('#bank-summary').textContent = `Ngân hàng có thể tạo ${bank.total.toLocaleString('vi-VN')} biến thể câu hỏi ở cấp hiện tại: nghĩa, pinyin, nghe, điền từ và sắp xếp câu.`;
@@ -361,6 +411,9 @@ function resetStudyUI() {
   $('#rating-row').hidden = true;
   $('#next-word-btn').hidden = true;
   $('#example-card').hidden = true;
+  $('#answer-extra').hidden = true;
+  $('#answer-extra').innerHTML = '';
+  $('#admin-edit-current-btn').hidden = true;
   $('#traditional-text').textContent = '';
   $('#pinyin-hint').textContent = '';
 }
@@ -438,6 +491,10 @@ function completeQuestion(isCorrect, selected) {
   $('#verification-badge').textContent = detail.verification;
   $('#verification-badge').dataset.status = detail.verificationStatus;
   $('#answer-panel').hidden = false;
+  renderAnswerExtra(detail);
+  const editableWord = detail.word && String(detail.word.level) === '1';
+  $('#admin-edit-current-btn').hidden = !(editableWord && isAdminUnlocked());
+  if (editableWord) $('#admin-edit-current-btn').dataset.wordId = detail.word.id;
   $('#rating-row').hidden = false;
   $('#next-word-btn').hidden = false;
   if (detail.example) {
@@ -456,7 +513,8 @@ function questionDetail() {
       main: `${word.simplified} · ${word.pinyin}`,
       meaning: word.senses.map(s => s.vi).slice(0, 4).join('; '),
       verification: verificationLabel(word.verification), verificationStatus: word.verification,
-      example: word.example ? { zh: word.example.zh, pinyin: word.example.pinyin, vi: word.example.vi } : null
+      example: word.example ? { zh: word.example.zh, pinyin: word.example.pinyin, vi: word.example.vi } : null,
+      word
     };
   }
   const ex = state.question.example;
@@ -464,7 +522,8 @@ function questionDetail() {
     main: `${ex.target} · ${ex.pinyin}`,
     meaning: ex.meaning,
     verification: 'Câu ví dụ đã duyệt', verificationStatus: 'kiem_tra_thu_cong',
-    example: { zh: ex.zh, pinyin: ex.sentencePinyin, vi: ex.vi }
+    example: { zh: ex.zh, pinyin: ex.sentencePinyin, vi: ex.vi },
+    word: state.wordIndex.get(ex.wordId) || null
   };
 }
 
@@ -617,7 +676,7 @@ async function startExam() {
   $('#start-exam-btn').disabled = true;
   $('#start-exam-btn').textContent = 'Đang tạo đề…';
   try {
-    const words = await loadLevelsUpTo(level);
+    const words = applyContentToWords(await loadLevelsUpTo(level));
     const examples = state.examples.filter(ex => Number(ex.level) <= Number(level));
     const definition = buildMockExam({ words, examples, level, size, seed: `${Date.now()}-${state.slot.id}` });
     state.exam = {
@@ -781,7 +840,7 @@ async function handleImport(event) {
   if (!file) return;
   try {
     state.slot = importSlot(state.slot.id, await file.text());
-    state.words = await loadLevel(state.slot.settings.level);
+    state.words = await loadEffectiveLevel(state.slot.settings.level);
     state.wordIndex = new Map(state.words.map(word => [word.id, word]));
     hydrateSettings();
     renderDashboard();
@@ -845,6 +904,157 @@ function currentExample() {
   const ex = state.question?.word?.example;
   return ex ? { zh: ex.zh } : null;
 }
+
+function openHsk1Library() {
+  renderHsk1QualitySummary();
+  const topics = [...new Set(state.hsk1Words.map(word => word.topic).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'vi'));
+  $('#hsk1-library-topic').innerHTML = '<option value="">Tất cả chủ đề</option>' + topics.map(topic => `<option value="${escapeHtml(topic)}">${escapeHtml(topic)}</option>`).join('');
+  $('#hsk1-library-search').value = '';
+  renderHsk1LibraryWords();
+  renderGrammarLibrary();
+  openModal('hsk1-library-modal');
+}
+
+function renderHsk1QualitySummary() {
+  const q = qualitySummary(state.hsk1Words);
+  $('#hsk1-quality-summary').innerHTML = [
+    [q.words,'Từ chuẩn hóa'],[q.withUsageNote,'Có ghi chú'],[q.withExample,'Có ví dụ đọc/dùng'],[q.exerciseExamples,'Câu dùng luyện tập'],[q.overridden,'Admin đã sửa']
+  ].map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('');
+}
+
+function filteredHsk1Words(searchId, topicId = null) {
+  const query = ($(searchId)?.value || '').trim().toLowerCase();
+  const topic = topicId ? ($(topicId)?.value || '') : '';
+  return state.hsk1Words.filter(word => {
+    const haystack = `${word.simplified} ${word.traditional} ${word.pinyin} ${word.meaning} ${word.topic}`.toLowerCase();
+    return (!query || haystack.includes(query)) && (!topic || word.topic === topic);
+  });
+}
+
+function renderHsk1LibraryWords() {
+  const rows = filteredHsk1Words('#hsk1-library-search','#hsk1-library-topic').slice(0,300);
+  $('#hsk1-word-list').innerHTML = rows.length ? rows.map(word => `<button class="word-library-row" data-word-id="${word.id}"><span class="hanzi-small">${escapeHtml(word.simplified)}</span><span><strong>${escapeHtml(word.pinyin)} · ${escapeHtml(word.meaning)}</strong><small>${escapeHtml((word.pos || []).join(', ') || 'chưa phân loại')}</small></span><span class="word-topic">${escapeHtml(word.topic || '')}</span></button>`).join('') : '<div class="info-card">Không tìm thấy từ phù hợp.</div>';
+  $$('#hsk1-word-list .word-library-row').forEach(btn => btn.addEventListener('click', () => renderHsk1WordDetail(btn.dataset.wordId)));
+  if (rows[0]) renderHsk1WordDetail(rows[0].id);
+}
+
+function renderHsk1WordDetail(wordId) {
+  const word = state.hsk1Words.find(item => item.id === wordId);
+  if (!word) return;
+  $('#hsk1-word-detail').innerHTML = `<h2>${escapeHtml(word.simplified)}</h2><strong>${escapeHtml(word.pinyin)} · ${escapeHtml(word.meaning)}</strong><div class="tag-row">${[...(word.pos||[]),word.topic,...(word.measureWords||[]).map(x=>`LT ${x}`)].filter(Boolean).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div><section><b>Cách dùng</b><p>${escapeHtml(word.usageNote || 'Chưa có ghi chú.')}</p></section><section><b>Cụm thường gặp</b>${listHtml(word.collocations)}</section><section><b>Từ dễ nhầm</b>${listHtml(word.confusables)}</section>${word.example?`<section><b>Ví dụ</b><div class="grammar-example"><strong>${escapeHtml(word.example.zh)}</strong><span>${escapeHtml(word.example.pinyin)}</span><p>${escapeHtml(word.example.vi)}</p></div></section>`:''}`;
+}
+
+function renderGrammarLibrary() {
+  $('#hsk1-grammar-list').innerHTML = state.grammar.map(item => `<details class="grammar-item"><summary>${escapeHtml(item.title)}</summary><p><span class="grammar-formula">${escapeHtml(item.formula)}</span></p><p>${escapeHtml(item.explanation)}</p>${(item.examples||[]).map(ex=>`<div class="grammar-example"><strong>${escapeHtml(ex.zh)}</strong><span>${escapeHtml(ex.pinyin)}</span><p>${escapeHtml(ex.vi)}</p></div>`).join('')}<p><b>Lỗi thường gặp:</b> ${escapeHtml(item.mistake || '')}</p></details>`).join('');
+}
+
+function listHtml(items) { return items?.length ? `<ul>${items.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul>` : '<p>Chưa bổ sung.</p>'; }
+
+function openAdminEntry() {
+  if (isAdminUnlocked()) return openAdminPanel();
+  $('#admin-password-input').value = '';
+  openModal('admin-login-modal');
+  setTimeout(()=>$('#admin-password-input').focus(),80);
+}
+
+async function submitAdminLogin() {
+  const button = $('#admin-login-submit'); button.disabled = true;
+  try {
+    const result = await unlockAdmin($('#admin-password-input').value, getCloudStatus().connected ? verifyAdminPassword : null);
+    if (!result.ok) return toast(result.message,'error');
+    closeModal($('#admin-login-modal'));
+    toast('Đã mở quyền quản trị.');
+    openAdminPanel();
+  } catch (error) { toast(error.message || 'Không mở được quản trị.','error'); }
+  finally { button.disabled = false; }
+}
+
+function openAdminPanel() {
+  if (!isAdminUnlocked()) return openAdminEntry();
+  $('#admin-source-badge').textContent = getAdminSource() === 'supabase' ? 'Mật khẩu Supabase' : 'Mật khẩu cục bộ';
+  renderAdminWordList();
+  if (state.adminSelectedWordId) selectAdminWord(state.adminSelectedWordId);
+  openModal('admin-modal');
+}
+
+function renderAdminWordList() {
+  const rows = filteredHsk1Words('#admin-word-search').slice(0,500);
+  $('#admin-word-list').innerHTML = rows.map(word => `<button class="admin-word-row ${word.id===state.adminSelectedWordId?'active':''}" data-word-id="${word.id}"><b>${escapeHtml(word.simplified)}</b><span><strong>${escapeHtml(word.pinyin)}</strong><small>${escapeHtml(word.meaning)}</small></span></button>`).join('');
+  $$('#admin-word-list .admin-word-row').forEach(btn=>btn.addEventListener('click',()=>selectAdminWord(btn.dataset.wordId)));
+}
+
+function selectAdminWord(wordId) {
+  const word = state.hsk1Words.find(item=>item.id===wordId); if (!word) return;
+  state.adminSelectedWordId = wordId; renderAdminWordList();
+  $('#admin-editor-empty').hidden = true; $('#admin-editor').hidden = false;
+  $('#admin-edit-hanzi').textContent = word.simplified; $('#admin-edit-pinyin').textContent = word.pinyin; $('#admin-edit-id').textContent = `${word.id} · ${word.contentSource==='admin'?'đã sửa':'bản chuẩn hóa'}`;
+  $('#admin-primary-meaning').value = word.meaning || '';
+  $('#admin-senses').value = (word.senses||[]).map(s=>s.vi).join('\n');
+  $('#admin-pos').value = (word.pos||[]).join(', '); $('#admin-topic').value = word.topic || '';
+  $('#admin-measure-words').value = (word.measureWords||[]).join(', '); $('#admin-usage-note').value = word.usageNote || '';
+  $('#admin-collocations').value = (word.collocations||[]).join('\n'); $('#admin-confusables').value = (word.confusables||[]).join('\n');
+  $('#admin-example-zh').value = word.example?.zh || ''; $('#admin-example-pinyin').value = word.example?.pinyin || ''; $('#admin-example-vi').value = word.example?.vi || ''; $('#admin-example-eligible').checked = Boolean(word.example?.exerciseEligible);
+}
+
+function adminPatchFromForm() {
+  return { primaryMeaning:$('#admin-primary-meaning').value, senses:splitLines($('#admin-senses').value), pos:splitLines($('#admin-pos').value), topic:$('#admin-topic').value, measureWords:splitLines($('#admin-measure-words').value), usageNote:$('#admin-usage-note').value, collocations:splitLines($('#admin-collocations').value), confusables:splitLines($('#admin-confusables').value), example:{zh:$('#admin-example-zh').value,pinyin:$('#admin-example-pinyin').value,vi:$('#admin-example-vi').value,exerciseEligible:$('#admin-example-eligible').checked} };
+}
+
+async function saveAdminWord(event) {
+  event.preventDefault(); if (!state.adminSelectedWordId || !isAdminUnlocked()) return;
+  const patch = saveLocalContentOverride(state.adminSelectedWordId, adminPatchFromForm());
+  let remoteOk = false;
+  if (getCloudStatus().connected && getAdminPassword()) {
+    try { remoteOk = await saveRemoteContentOverride(getAdminPassword(), state.adminSelectedWordId, patch); }
+    catch (error) { toast(error.message || 'Đã lưu trên máy nhưng chưa lưu được Supabase.','warn'); }
+  }
+  await refreshContentState(); selectAdminWord(state.adminSelectedWordId); renderHsk1QualitySummary();
+  toast(remoteOk ? 'Đã lưu nội dung dùng chung lên Supabase.' : 'Đã lưu nội dung trên trình duyệt.');
+}
+
+async function resetAdminWord() {
+  const id=state.adminSelectedWordId; if (!id || !confirm('Khôi phục từ này về bản chuẩn hóa ban đầu?')) return;
+  deleteLocalContentOverride(id);
+  if (getCloudStatus().connected && getAdminPassword()) { try { await deleteRemoteContentOverride(getAdminPassword(),id); } catch(error){ toast(error.message || 'Chưa xóa được bản Supabase.','warn'); } }
+  await refreshContentState(); selectAdminWord(id); renderHsk1QualitySummary(); toast('Đã khôi phục bản chuẩn hóa.');
+}
+
+function lockAdminUi() { lockAdmin(); closeModal($('#admin-modal')); $('#admin-edit-current-btn').hidden=true; toast('Đã khóa quyền quản trị.'); }
+
+async function submitAdminPasswordChange() {
+  const current=$('#admin-current-password').value, next=$('#admin-new-password').value, confirmValue=$('#admin-confirm-password').value;
+  if (next.length<8) return toast('Mật khẩu mới phải có ít nhất 8 ký tự.','warn');
+  if (next!==confirmValue) return toast('Hai lần nhập mật khẩu mới không khớp.','warn');
+  try {
+    let ok=false;
+    if (getCloudStatus().connected) ok=await changeRemoteAdminPassword(current,next);
+    if (ok) await setLocalAdminPassword(next); else ok=await changeLocalAdminPassword(current,next);
+    if (!ok) return toast('Mật khẩu hiện tại không đúng.','error');
+    closeModal($('#admin-password-modal')); $('#admin-current-password').value=''; $('#admin-new-password').value=''; $('#admin-confirm-password').value='';
+    toast('Đã đổi mật khẩu quản trị.');
+  } catch(error){ toast(error.message || 'Không đổi được mật khẩu.','error'); }
+}
+
+async function importAdminContentFile(event) {
+  const file=event.target.files?.[0]; event.target.value=''; if(!file)return;
+  try { const count=importContentOverrides(await file.text()); await refreshContentState(); renderAdminWordList(); toast(`Đã nhập ${count} nội dung chỉnh sửa trên máy.`); }
+  catch(error){ toast(error.message || 'Không nhập được tệp.','error'); }
+}
+
+function renderAnswerExtra(detail) {
+  const word=detail.word;
+  if (!word || String(word.level)!=='1') return;
+  const html=[];
+  const tags=[...(word.pos||[]),word.topic,...(word.measureWords||[]).map(x=>`Lượng từ: ${x}`)].filter(Boolean);
+  if(tags.length)html.push(`<div class="tag-row">${tags.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div>`);
+  if(word.usageNote)html.push(`<p><b>Cách dùng:</b> ${escapeHtml(word.usageNote)}</p>`);
+  if(word.collocations?.length)html.push(`<p><b>Cụm thường gặp:</b> ${escapeHtml(word.collocations.join(' · '))}</p>`);
+  if(word.confusables?.length)html.push(`<p><b>Dễ nhầm:</b> ${escapeHtml(word.confusables.join(' · '))}</p>`);
+  if(!html.length)return;
+  $('#answer-extra').innerHTML=html.join(''); $('#answer-extra').hidden=false;
+}
+
+function splitLines(value) { return [...new Set(String(value||'').split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean))]; }
 
 function handleKeyboard(event) {
   if (event.key === 'Escape') {

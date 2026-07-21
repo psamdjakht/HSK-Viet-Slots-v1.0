@@ -9,7 +9,7 @@
   <link rel="icon" href="./assets/icons/icon-192.png">
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
   <link rel="stylesheet" href="./css/app.css">
-  <title>HSK Việt – 10 Slot Học</title>
+  <title>HSK Việt – HSK 1 chuẩn hóa & 10 Slot</title>
 </head>
 <body>
   <div id="toast" role="status" aria-live="polite"></div>
@@ -22,7 +22,7 @@
           <h1>Chọn slot học</h1>
           <p>Mỗi slot lưu riêng tiến độ, sổ từ yếu, kế hoạch và kết quả thi. Không có màn hình đăng nhập.</p>
           <div class="status-line"><span id="cloud-dot" class="status-dot"></span><span id="cloud-status">Đang khởi tạo…</span></div>
-          <small id="data-summary">Đang tải dữ liệu…</small>
+          <small id="data-summary">Đang tải dữ liệu…</small><div class="hero-actions"><button id="admin-home-btn" class="btn ghost small">Quản trị học liệu</button></div>
         </div>
       </header>
       <div id="slot-grid" class="slot-grid"></div>
@@ -35,6 +35,8 @@
       <div class="identity"><span id="slot-badge" class="slot-badge">Slot 1</span><div><strong id="learner-name"></strong><small id="top-cloud-status">Lưu cục bộ</small></div></div>
       <div class="top-actions">
         <button id="stats-btn" class="icon-button" title="Thống kê" aria-label="Thống kê">▥</button>
+        <button id="hsk1-library-btn" class="icon-button" title="Thư viện HSK 1" aria-label="Thư viện HSK 1">书</button>
+        <button id="admin-btn" class="icon-button" title="Quản trị học liệu" aria-label="Quản trị học liệu">✎</button>
         <button id="settings-btn" class="icon-button" title="Cài đặt" aria-label="Cài đặt">⚙</button>
         <button id="switch-slot-btn" class="btn ghost small">Đổi slot</button>
       </div>
@@ -68,6 +70,7 @@
           <article class="feature-card"><span class="feature-icon">序</span><div><h3>Sắp xếp câu</h3><p>Ghép các cụm thành câu tiếng Trung đúng.</p></div><button id="start-order-btn" class="btn secondary">Sắp xếp</button></article>
           <article class="feature-card"><span class="feature-icon">弱</span><div><h3>Sổ từ yếu</h3><p>Ưu tiên từ sai nhiều, khó nhớ hoặc hay quên.</p></div><button id="weak-book-btn" class="btn secondary">Mở sổ từ yếu</button></article>
           <article class="feature-card"><span class="feature-icon">复</span><div><h3>Ôn đến hạn</h3><p id="review-due-note">Chưa có từ đến hạn.</p></div><button id="review-due-btn" class="btn secondary">Ôn SRS</button></article>
+          <article class="feature-card quality-card"><span class="feature-icon">书</span><div><h3>HSK 1 chuẩn hóa</h3><p>Tra nghĩa, cách dùng, cụm từ, từ dễ nhầm và 30 điểm ngữ pháp.</p></div><button id="open-hsk1-library-btn" class="btn secondary">Mở thư viện</button></article>
         </div>
 
         <section class="exam-card">
@@ -90,6 +93,8 @@
           <section id="answer-panel" class="answer-panel" hidden>
             <div class="answer-title-row"><div><div id="answer-result" class="result"></div><strong id="answer-main"></strong></div><span id="verification-badge" class="verification-badge"></span></div>
             <p id="answer-meaning"></p>
+            <div id="answer-extra" class="answer-extra" hidden></div>
+            <button id="admin-edit-current-btn" class="btn ghost small" hidden>Sửa từ này</button>
             <div id="example-card" class="example-card" hidden><div class="example-head"><span>Câu và giải thích</span><button id="speak-example-btn" class="speaker small-speaker">🔊</button></div><strong id="example-zh"></strong><span id="example-pinyin"></span><p id="example-vi"></p></div>
           </section>
           <div id="rating-row" class="rating-row" hidden>
@@ -141,6 +146,39 @@
   <div id="exam-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Tạo đề mô phỏng</h2><button class="modal-close">×</button></div><p id="exam-bank-detail"></p><label>Cấp độ<select id="exam-level-select"><option value="1">HSK 1</option><option value="2">HSK 2</option><option value="3">HSK 3</option><option value="4">HSK 4</option><option value="5">HSK 5</option><option value="6">HSK 6</option><option value="7">HSK 7–9</option></select></label><label>Số câu<select id="exam-size-select"><option value="20">20 câu</option><option value="30" selected>30 câu</option><option value="50">50 câu</option></select></label><div class="warning-box">Đề này mô phỏng kỹ năng từ vựng, pinyin, nghe, điền từ và sắp xếp câu theo dữ liệu ứng dụng; không thay thế đề thi HSK chính thức.</div><button id="start-exam-btn" class="btn primary large">Bắt đầu làm đề</button></div></div>
   <div id="exam-history-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card wide-modal"><div class="modal-head"><h2>Lịch sử thi</h2><button class="modal-close">×</button></div><div id="exam-history-content"></div></div></div>
   <div id="session-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card centered"><div class="success-orb">✓</div><h2 id="session-result-title"></h2><p id="session-result-body"></p><button class="btn primary large modal-close">Về trang chính</button></div></div>
+
+  <div id="hsk1-library-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card extra-wide-modal"><div class="modal-head"><div><p class="eyebrow">Gói chất lượng HSK 1</p><h2>Thư viện từ vựng và ngữ pháp</h2></div><button class="modal-close">×</button></div>
+    <div id="hsk1-quality-summary" class="stats-grid quality-stats"></div>
+    <div class="library-toolbar"><input id="hsk1-library-search" placeholder="Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt"><select id="hsk1-library-topic"><option value="">Tất cả chủ đề</option></select></div>
+    <div class="library-layout"><div><h3>Từ vựng</h3><div id="hsk1-word-list" class="word-library-list"></div></div><div><div id="hsk1-word-detail" class="content-detail info-card">Chọn một từ để xem nội dung chuẩn hóa.</div><h3>Ngữ pháp nền tảng</h3><div id="hsk1-grammar-list" class="grammar-list"></div></div></div>
+  </div></div>
+
+  <div id="admin-login-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Mở quyền quản trị</h2><button class="modal-close">×</button></div>
+    <div class="warning-box">Quyền này cho phép sửa học liệu dùng chung cho cả 10 slot. Nhập mật khẩu quản trị đã được thiết lập. Nên đổi mật khẩu sau lần mở đầu tiên.</div>
+    <label>Mật khẩu quản trị<input id="admin-password-input" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu"></label>
+    <button id="admin-login-submit" class="btn primary large">Mở quản trị</button>
+  </div></div>
+
+  <div id="admin-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card extra-wide-modal"><div class="modal-head"><div><p class="eyebrow">Quản trị học liệu HSK 1</p><h2>Sửa nội dung dùng chung</h2></div><button class="modal-close">×</button></div>
+    <div class="admin-status-row"><span id="admin-source-badge" class="pill">Đang mở</span><button id="admin-lock-btn" class="btn ghost small">Khóa quản trị</button><button id="admin-change-password-btn" class="btn ghost small">Đổi mật khẩu</button><button id="admin-export-content-btn" class="btn ghost small">Xuất nội dung sửa</button><button id="admin-import-content-btn" class="btn ghost small">Nhập nội dung sửa</button><input id="admin-import-content-file" type="file" accept="application/json" hidden></div>
+    <div class="admin-layout"><aside><input id="admin-word-search" placeholder="Tìm từ HSK 1"><div id="admin-word-list" class="admin-word-list"></div></aside><section id="admin-editor-empty" class="info-card">Chọn một từ HSK 1 ở danh sách bên trái để sửa.</section><form id="admin-editor" hidden>
+      <div class="admin-word-title"><span id="admin-edit-hanzi" class="hanzi-editor"></span><div><strong id="admin-edit-pinyin"></strong><small id="admin-edit-id"></small></div></div>
+      <label>Nghĩa chính<input id="admin-primary-meaning" required></label>
+      <label>Các nghĩa phụ<textarea id="admin-senses" rows="3" placeholder="Mỗi nghĩa một dòng"></textarea></label>
+      <div class="two-col"><label>Từ loại<input id="admin-pos" placeholder="danh từ, động từ"></label><label>Chủ đề<input id="admin-topic"></label></div>
+      <label>Lượng từ thường gặp<input id="admin-measure-words" placeholder="个, 本..."></label>
+      <label>Ghi chú cách dùng<textarea id="admin-usage-note" rows="3"></textarea></label>
+      <label>Cụm từ thường gặp<textarea id="admin-collocations" rows="3" placeholder="Mỗi cụm một dòng"></textarea></label>
+      <label>Từ dễ nhầm<textarea id="admin-confusables" rows="2" placeholder="Mỗi từ một dòng"></textarea></label>
+      <fieldset><legend>Câu ví dụ</legend><label>Chữ Hán<input id="admin-example-zh"></label><label>Pinyin<input id="admin-example-pinyin"></label><label>Dịch Việt<input id="admin-example-vi"></label><label class="switch-line"><span>Cho phép dùng câu này trong bài điền từ/sắp xếp câu</span><input id="admin-example-eligible" type="checkbox"></label></fieldset>
+      <div class="admin-actions"><button id="admin-save-word-btn" type="submit" class="btn primary">Lưu nội dung</button><button id="admin-reset-word-btn" type="button" class="btn danger">Khôi phục bản chuẩn hóa</button></div>
+    </form></div>
+  </div></div>
+
+  <div id="admin-password-modal" class="modal-overlay" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Đổi mật khẩu quản trị</h2><button class="modal-close">×</button></div>
+    <label>Mật khẩu hiện tại<input id="admin-current-password" type="password"></label><label>Mật khẩu mới<input id="admin-new-password" type="password" minlength="8"></label><label>Nhập lại mật khẩu mới<input id="admin-confirm-password" type="password" minlength="8"></label><button id="admin-change-password-submit" class="btn primary large">Đổi mật khẩu</button>
+  </div></div>
+
   <script type="module" src="./js/app.js"></script>
 </body>
 </html>

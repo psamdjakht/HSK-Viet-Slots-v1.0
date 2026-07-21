@@ -14,7 +14,7 @@ export async function initCloudSync() {
   const cfg = SUPABASE_CONFIG || {};
   if (!cfg.enabled || !isValidUrl(cfg.url) || !cfg.anonKey) {
     status = { enabled: false, connected: false, message: 'Đang lưu cục bộ' };
-    return { status: getCloudStatus(), rows: [], adapter: null };
+    return { status: getCloudStatus(), rows: [], contentRows: [], adapter: null };
   }
   status = { enabled: true, connected: false, message: 'Đang kết nối Supabase…' };
   try {
@@ -32,12 +32,13 @@ export async function initCloudSync() {
     user = sessionData.session?.user || null;
     if (!user) throw new Error('Không tạo được phiên ẩn danh.');
     const rows = await fetchRemoteSlots();
+    const contentRows = await fetchRemoteContentOverridesSafe();
     status = { enabled: true, connected: true, message: 'Đã đồng bộ Supabase', userId: user.id };
-    return { status: getCloudStatus(), rows, adapter: buildAdapter() };
+    return { status: getCloudStatus(), rows, contentRows, adapter: buildAdapter() };
   } catch (error) {
     console.error('Supabase init:', error);
     status = { enabled: true, connected: false, message: `Không kết nối được: ${error.message || error}` };
-    return { status: getCloudStatus(), rows: [], adapter: null };
+    return { status: getCloudStatus(), rows: [], contentRows: [], adapter: null };
   }
 }
 
@@ -112,6 +113,54 @@ async function deleteRemoteSlotNow(slotId) {
     return false;
   }
   return true;
+}
+
+
+export async function fetchRemoteContentOverridesSafe() {
+  if (!client) return [];
+  try {
+    const { data, error } = await client.from('hsk_content_overrides').select('word_id,patch,updated_at').order('word_id');
+    if (error) throw error;
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.warn('Chưa tải được nội dung quản trị:', error?.message || error);
+    return [];
+  }
+}
+
+export async function verifyAdminPassword(password) {
+  if (!status.connected || !client) return null;
+  try {
+    const { data, error } = await client.rpc('admin_verify_hsk_password', { p_password: String(password || '') });
+    if (error) throw error;
+    return data === true;
+  } catch (error) {
+    console.warn('RPC kiểm tra admin chưa sẵn sàng:', error?.message || error);
+    return null;
+  }
+}
+
+export async function saveRemoteContentOverride(password, wordId, patch) {
+  if (!status.connected || !client) return false;
+  const { data, error } = await client.rpc('admin_save_hsk_content', {
+    p_password: String(password || ''), p_word_id: String(wordId || ''), p_patch: patch || {}
+  });
+  if (error) throw error;
+  return data === true;
+}
+
+export async function deleteRemoteContentOverride(password, wordId) {
+  if (!status.connected || !client) return false;
+  const { data, error } = await client.rpc('admin_delete_hsk_content', { p_password: String(password || ''), p_word_id: String(wordId || '') });
+  if (error) throw error;
+  return data === true;
+}
+
+export async function changeRemoteAdminPassword(currentPassword, newPassword) {
+  if (!status.connected || !client) return false;
+  const { data, error } = await client.rpc('admin_change_hsk_password', { p_current_password: String(currentPassword || ''), p_new_password: String(newPassword || '') });
+  if (error) throw error;
+  return data === true;
 }
 
 export async function retryCloudConnection() {

@@ -1,38 +1,41 @@
-HƯỚNG DẪN ĐƯA HSK VIỆT P0–P3 LÊN GITHUB PAGES
+HƯỚNG DẪN CẬP NHẬT HSK VIỆT P4 LÊN GITHUB PAGES
 
-A. CẬP NHẬT REPOSITORY ĐANG CÓ
-1. Sao lưu repository hiện tại.
+A. CẬP NHẬT REPOSITORY
+1. Sao lưu repository hoặc tạo commit hiện trạng trước khi thay file.
 2. Giải nén ZIP mới.
-3. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v2.0 vào repository cũ, chọn Replace khi được hỏi.
-4. Không xóa thư mục data/levels.
+3. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v3.0 vào repository cũ.
+4. Chọn Replace khi Windows hỏi ghi đè.
 5. Commit và Push bằng GitHub Desktop.
-6. Dữ liệu người học của bản P0/P1 sẽ tự chuyển từ schema v2 sang v3 khi mở trang.
+6. Không cần npm build.
+7. Sau khi GitHub Pages deploy xong, mở trang và nhấn Ctrl+F5 một lần để service worker nhận bản v3.
 
-B. BẬT GITHUB PAGES
-1. GitHub > repository > Settings > Pages.
-2. Source: Deploy from a branch.
-3. Branch: main, Folder: /(root).
-4. Save.
+B. NÂNG CẤP SUPABASE
+1. Mở Supabase > SQL Editor.
+2. Chạy file supabase/upgrade_v3.sql.
+3. File này giữ nguyên bảng hsk_slots và tiến độ cũ.
+4. Nó tạo thêm bảng hsk_content_overrides, bảng cấu hình mật khẩu và các RPC quản trị.
+5. Đảm bảo Authentication > Providers > Anonymous Sign-Ins đang bật.
+6. Không dùng service_role key trong js/config.js.
 
-C. CẤU HÌNH SUPABASE TÙY CHỌN
-1. Tạo Supabase project.
-2. Chạy file supabase/schema.sql trong SQL Editor.
-3. Authentication > Providers > bật Anonymous Sign-Ins.
-4. Mở js/config.js.
-5. Đổi enabled thành true, điền Project URL và publishable/anon key.
-6. Tuyệt đối không dùng service_role key.
-7. Commit và Push lại.
+C. QUẢN TRỊ HỌC LIỆU
+1. Tại trang chọn slot, bấm Quản trị học liệu; hoặc vào slot rồi bấm nút hình bút ✎.
+2. Nhập mật khẩu mặc định mà chủ ứng dụng đã yêu cầu khi tạo phiên bản này.
+3. Chọn từ HSK 1 cần sửa.
+4. Sửa nghĩa, từ loại, cách dùng, cụm từ, từ dễ nhầm hoặc câu ví dụ.
+5. Bấm Lưu nội dung.
+6. Nếu Supabase hoạt động, thông báo phải ghi đã lưu dùng chung lên Supabase.
+7. Vào Đổi mật khẩu để thay mật khẩu mặc định.
 
 D. KIỂM TRA SAU KHI DEPLOY
-1. Trang chọn đủ 10 slot.
-2. Dòng trạng thái ghi “Đã đồng bộ Supabase” nếu đã cấu hình.
-3. Tạo Slot 1, làm vài câu, tải lại trang và kiểm tra tiến độ còn nguyên.
-4. Vào Cài đặt, nhấn Đồng bộ ngay.
-5. Thử Nghe chép chính tả, Điền từ, Sắp xếp câu.
-6. Tạo đề 20 câu, nộp bài và kiểm tra Lịch sử thi.
-7. Thử Xóa một slot và xác nhận slot trở về trống.
+1. Trang chọn đủ 10 slot và tiến độ cũ còn nguyên.
+2. Vào HSK 1, mở Thư viện HSK 1 và kiểm tra có 500 từ, 30 điểm ngữ pháp.
+3. Đăng nhập admin và sửa thử nghĩa của một từ.
+4. Mở thẻ học của từ đó, kiểm tra nghĩa mới xuất hiện.
+5. Tải lại trang, kiểm tra nội dung sửa còn nguyên.
+6. Nếu có thiết bị thứ hai cùng Supabase, mở lại trang và kiểm tra học liệu đã sửa được tải về.
+7. Bấm Khôi phục bản chuẩn hóa để thử hoàn tác một từ.
 
-LƯU Ý
-- Không cần npm build.
-- Không mở bằng file:// để kiểm tra PWA.
-- Anonymous Auth không đồng bộ danh tính giữa hai thiết bị. Muốn chuyển thiết bị, dùng Xuất/Nhập sao lưu.
+LƯU Ý BẢO MẬT
+- Mật khẩu trong ứng dụng tĩnh chỉ phù hợp dùng gia đình.
+- Supabase RPC bảo vệ thao tác ghi tốt hơn kiểm tra cục bộ, nhưng không thay thế hệ thống tài khoản/quyền chuyên nghiệp.
+- Hãy đổi mật khẩu mặc định sau khi triển khai.
