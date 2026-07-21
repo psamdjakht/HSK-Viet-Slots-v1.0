@@ -38,3 +38,25 @@
 `data/hsk1-quality.json` được tạo từ dữ liệu HSK 1 hiện có bằng `tools/build_hsk1_quality.py`. Lớp này làm sạch nghĩa chính, tách lượng từ, gắn chủ đề/từ loại, tạo ghi chú sử dụng và nhóm từ dễ nhầm. Ví dụ dạng “Tôi có thể đọc từ…” chỉ là mẫu hỗ trợ phát âm và có `exerciseEligible: false`, không được dùng để tạo đề.
 
 `data/hsk1-grammar.json` là thư viện 30 cấu trúc nền tảng được biên soạn riêng cho ứng dụng. Nội dung vẫn nên được rà soát trong quá trình sử dụng; quản trị viên có thể sửa học liệu từ vựng trực tiếp trên giao diện.
+
+## Lớp chuẩn hóa HSK 2–4 P5
+
+Các tệp `data/hsk2-quality.json`, `data/hsk3-quality.json` và `data/hsk4-quality.json` được tạo bằng `tools/build_hsk2_4_quality.py` từ các tệp cấp độ đã có. Quy trình chỉ bổ sung lớp học liệu, không sửa danh sách từ gốc:
+
+1. Giữ nguyên ID, chữ giản thể/phồn thể và pinyin.
+2. Loại ghi chú lượng từ/biến thể khỏi nghĩa chính khi chúng không phải nghĩa độc lập.
+3. Ưu tiên một số nghĩa thông dụng đã xác định cho các mục dễ bị chọn nhầm nghĩa phụ.
+4. Phân loại chủ đề dựa trên nghĩa tiếng Việt và từ loại.
+5. Sinh ghi chú cách dùng an toàn theo loại từ, đồng thời bổ sung ghi chú riêng cho các từ chức năng quan trọng.
+6. Xếp từ dễ nhầm bằng độ gần pinyin, chữ Hán, từ loại, chủ đề và nghĩa.
+7. Chỉ cho phép câu gốc hoặc câu biên soạn trong gói ngữ pháp tham gia bài tập; mẫu đọc từ tự động bị khóa khỏi ngân hàng đề.
+
+Các tệp `data/hsk2-grammar.json`, `data/hsk3-grammar.json` và `data/hsk4-grammar.json` là thư viện cấu trúc trọng tâm được biên soạn riêng cho ứng dụng. Đây là tài liệu học hỗ trợ, không tuyên bố thay thế giáo trình hay danh mục ngữ pháp chính thức.
+
+## Lớp chuẩn hóa HSK 5–7–9 P6
+
+Các tệp `data/hsk5-quality.json`, `data/hsk6-quality.json` và `data/hsk7-quality.json` được tạo bằng `tools/build_hsk5_7_quality.py`. Cấp `7` trong app tương ứng gói HSK 7–9 của dữ liệu HSK 3.0 hiện tại.
+
+Quy trình giữ nguyên ID từ gốc, làm sạch nghĩa, phân loại chủ đề, thêm ghi chú cách dùng, cụm từ tuyển chọn và câu ví dụ an toàn. Từ dễ nhầm được tìm bằng chỉ mục chữ Hán, pinyin, chủ đề và từ loại để xử lý hiệu quả tập dữ liệu 5.636 từ.
+
+Các tệp `data/hsk5-grammar.json`, `data/hsk6-grammar.json` và `data/hsk7-grammar.json` là thư viện cấu trúc trọng tâm được biên soạn riêng cho ứng dụng. Pinyin câu ví dụ được tạo bằng thư viện `pypinyin` trong công cụ xây dữ liệu và vẫn nên được rà soát khi sử dụng thực tế.

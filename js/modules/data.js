@@ -45,6 +45,12 @@ export function verificationLabel(status) {
     doi_chieu_chinh_xac: 'Đối chiếu đúng chữ và pinyin',
     kiem_tra_thu_cong: 'Đã kiểm tra thủ công',
     chuan_hoa_hsk1: 'HSK 1 chuẩn hóa ban đầu',
+    chuan_hoa_hsk2: 'HSK 2 chuẩn hóa hệ thống',
+    chuan_hoa_hsk3: 'HSK 3 chuẩn hóa hệ thống',
+    chuan_hoa_hsk4: 'HSK 4 chuẩn hóa hệ thống',
+    chuan_hoa_hsk5: 'HSK 5 chuẩn hóa hệ thống',
+    chuan_hoa_hsk6: 'HSK 6 chuẩn hóa hệ thống',
+    chuan_hoa_hsk7: 'HSK 7–9 chuẩn hóa hệ thống',
     admin_da_sua: 'Đã được quản trị viên sửa',
     can_ra_soat: 'Cần rà soát thêm'
   }[status] || 'Chưa xác định';

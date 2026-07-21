@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "level": "7",
+    "displayLevel": "7–9",
+    "version": "5.0.0",
+    "itemCount": 60,
+    "description": "Các cấu trúc ngữ pháp trọng tâm HSK 7–9, có công thức, giải thích, ví dụ và lỗi thường gặp."
+  },
+  "items": [
+    {
+      "id": "V7-01",
+      "title": "Không ngại thử",
+      "formula": "不妨 + V",
+      "explanation": "Đưa ra đề nghị nhẹ nhàng: có thể thử làm.",
+      "examples": [
+        {
+          "zh": "遇到困难时，不妨换一个角度思考。",
+          "pinyin": "Yù dào kùn nán shí， bù fáng huàn yí gè jiǎo dù sī kǎo。",
+          "vi": "Khi gặp khó khăn, có thể thử suy nghĩ từ góc độ khác."
+        }
+      ],
+      "mistake": "Không mang nghĩa bắt buộc."
+    },
+    {
+      "id": "V7-02",
+      "title": "Không đến mức",
+      "formula": "不至于 + V/Adj",
+      "explanation": "Phủ định hậu quả hoặc mức độ quá nghiêm trọng.",
+      "examples": [
+        {
+          "zh": "一次失败还不至于让整个计划停止。",
+          "pinyin": "Yī cì shī bài hái bù zhì yú ràng zhěng gè jì huà tíng zhǐ。",
+          "vi": "Một lần thất bại chưa đến mức khiến cả kế hoạch dừng lại."
+        }
+      ],
+      "mistake": "Không dùng để phủ định hoàn toàn khả năng."
+    },
+    {
+      "id": "V7-03",
+      "title": "Chưa chắc",
+      "formula": "不见得 + mệnh đề",
+      "explanation": "Bày tỏ nghi ngờ về một phán đoán.",
+      "examples": [
+        {
+          "zh": "投入越多，效果不见得越好。",
+          "pinyin": "Tóu rù yuè duō， xiào guǒ bú jiàn de yuè hǎo。",
+          "vi": "Đầu tư càng nhiều, hiệu quả chưa chắc càng tốt."
+        }
+      ],
+      "mistake": "Không đồng nghĩa với chắc chắn sai."
+    },
+    {
+      "id": "V7-04",
+      "title": "Cũng không phải không thể",
+      "formula": "未尝不可",
+      "explanation": "Công nhận một phương án có thể thử hoặc chấp nhận.",
+      "examples": [
+        {
+          "zh": "在条件允许的情况下，推迟一周未尝不可。",
+          "pinyin": "Zài tiáo jiàn yǔn xǔ de qíng kuàng xià， tuī chí yī zhōu wèi cháng bù kě。",
+          "vi": "Khi điều kiện cho phép, hoãn một tuần cũng không phải không thể."
+        }
+      ],
+      "mistake": "Sắc thái dè dặt, không phải đồng ý mạnh."
+    },
+    {
+      "id": "V7-05",
+      "title": "Không có gì đáng trách",
+      "formula": "无可厚非",
+      "explanation": "Công nhận hành động có lý do và không nên chỉ trích quá mức.",
+      "examples": [
+        {
+          "zh": "他首先考虑家庭利益，这本身无可厚非。",
+          "pinyin": "Tā shǒu xiān kǎo lǜ jiā tíng lì yì， zhè běn shēn wú kě hòu fēi。",
+          "vi": "Anh ấy ưu tiên lợi ích gia đình, bản thân điều đó không có gì đáng trách."
+        }
+      ],
+      "mistake": "Không có nghĩa hành động hoàn toàn đúng trong mọi mặt."
+    },
+    {
+      "id": "V7-06",
+      "title": "Không cần nghi ngờ",
+      "formula": "毋庸置疑",
+      "explanation": "Khẳng định mạnh một sự thật rõ ràng.",
+      "examples": [
+        {
+          "zh": "毋庸置疑，数据质量会影响最终结论。",
+          "pinyin": "Wú yōng zhì yí， shù jù zhì liàng huì yǐng xiǎng zuì zhōng jié lùn。",
+          "vi": "Không cần nghi ngờ, chất lượng dữ liệu ảnh hưởng kết luận cuối."
+        }
+      ],
+      "mistake": "Chỉ dùng khi có căn cứ vững chắc."
+    },
+    {
+      "id": "V7-07",
+      "title": "Có thể tưởng tượng",
+      "formula": "可想而知",
+      "explanation": "Kết quả hiển nhiên có thể suy ra.",
+      "examples": [
+        {
+          "zh": "缺乏准备的后果可想而知。",
+          "pinyin": "Quē fá zhǔn bèi de hòu guǒ kě xiǎng ér zhī。",
+          "vi": "Hậu quả của việc thiếu chuẩn bị có thể tưởng tượng được."
+        }
+      ],
+      "mistake": "Thường thay cho kết quả tiêu cực/đáng kể không cần nói hết."
+    },
+    {
+      "id": "V7-08",
+      "title": "Không nói cũng rõ",
+      "formula": "不言而喻",
+      "explanation": "Ý nghĩa hoặc kết luận quá rõ không cần giải thích.",
+      "examples": [
+        {
+          "zh": "诚信对企业的重要性不言而喻。",
+          "pinyin": "Chéng xìn duì qǐ yè de zhòng yào xìng bù yán ér yù。",
+          "vi": "Tầm quan trọng của thành tín đối với doanh nghiệp không nói cũng rõ."
+        }
+      ],
+      "mistake": "Tránh dùng khi kết luận còn tranh cãi."
+    },
+    {
+      "id": "V7-09",
+      "title": "Không thể tránh khỏi",
+      "formula": "不可避免",
+      "explanation": "Một kết quả chắc chắn khó loại bỏ hoàn toàn.",
+      "examples": [
+        {
+          "zh": "改革过程中出现一些困难是不可避免的。",
+          "pinyin": "Gǎi gé guò chéng zhōng chū xiàn yī xiē kùn nán shì bù kě bì miǎn de。",
+          "vi": "Xuất hiện một số khó khăn trong quá trình cải cách là không thể tránh khỏi."
+        }
+      ],
+      "mistake": "Không dùng để biện minh cho sai sót có thể phòng tránh."
+    },
+    {
+      "id": "V7-10",
+      "title": "Bất luận có… hay không",
+      "formula": "无论…与否，都…",
+      "explanation": "Kết quả không đổi dù trạng thái có hay không.",
+      "examples": [
+        {
+          "zh": "无论计划能否通过，我们都要做好准备。",
+          "pinyin": "Wú lùn jì huà néng fǒu tōng guò， wǒ men dōu yào zuò hǎo zhǔn bèi。",
+          "vi": "Dù kế hoạch có được thông qua hay không, chúng ta đều phải chuẩn bị."
+        }
+      ],
+      "mistake": "与否 đi sau động từ/tính từ hai khả năng."
+    },
+    {
+      "id": "V7-11",
+      "title": "Thay vì… chi bằng…",
+      "formula": "与其…倒不如…",
+      "explanation": "Đưa lời khuyên mạnh hơn chọn vế sau.",
+      "examples": [
+        {
+          "zh": "与其不断争论，倒不如先收集证据。",
+          "pinyin": "Yǔ qí bù duàn zhēng lùn， dào bù rú xiān shōu jí zhèng jù。",
+          "vi": "Thay vì tranh luận mãi, chi bằng thu thập bằng chứng trước."
+        }
+      ],
+      "mistake": "倒 làm tăng sắc thái chuyển hướng."
+    },
+    {
+      "id": "V7-12",
+      "title": "Dẫu… vẫn…",
+      "formula": "纵然…也…",
+      "explanation": "Nhượng bộ giả định mang sắc thái văn viết.",
+      "examples": [
+        {
+          "zh": "纵然条件有限，我们也不能降低标准。",
+          "pinyin": "Zòng rán tiáo jiàn yǒu xiàn， wǒ men yě bù néng jiàng dī biāo zhǔn。",
+          "vi": "Dẫu điều kiện hạn chế, chúng ta cũng không thể hạ tiêu chuẩn."
+        }
+      ],
+      "mistake": "纵然 trang trọng hơn 即使."
+    },
+    {
+      "id": "V7-13",
+      "title": "Dù vậy",
+      "formula": "即便如此，…",
+      "explanation": "Thừa nhận toàn bộ tình huống trước nhưng kết luận vẫn khác.",
+      "examples": [
+        {
+          "zh": "风险已经降低，即便如此，仍需持续监督。",
+          "pinyin": "Fēng xiǎn yǐ jīng jiàng dī， jí biàn rú cǐ， réng xū chí xù jiān dū。",
+          "vi": "Rủi ro đã giảm, dù vậy vẫn cần giám sát liên tục."
+        }
+      ],
+      "mistake": "如此 phải có nội dung trước để thay thế."
+    },
+    {
+      "id": "V7-14",
+      "title": "Tạm thời cứ…",
+      "formula": "姑且 + V",
+      "explanation": "Chấp nhận hoặc làm tạm một phương án chưa hoàn hảo.",
+      "examples": [
+        {
+          "zh": "证据还不充分，我们姑且保留这个判断。",
+          "pinyin": "Zhèng jù hái bù chōng fèn， wǒ men gū qiě bǎo liú zhè ge pàn duàn。",
+          "vi": "Bằng chứng chưa đủ, chúng ta tạm giữ phán đoán này."
+        }
+      ],
+      "mistake": "Có sắc thái tạm thời, không phải kết luận cuối."
+    },
+    {
+      "id": "V7-15",
+      "title": "Ngay cả… huống hồ…",
+      "formula": "尚且…何况…",
+      "explanation": "Từ trường hợp đã khó/đúng suy ra trường hợp mạnh hơn.",
+      "examples": [
+        {
+          "zh": "专业人员尚且需要核实，何况普通读者。",
+          "pinyin": "Zhuān yè rén yuán shàng qiě xū yào hé shí， hé kuàng pǔ tōng dú zhě。",
+          "vi": "Người chuyên môn còn cần kiểm tra, huống hồ độc giả bình thường."
+        }
+      ],
+      "mistake": "Quan hệ mức độ phải hợp logic."
+    },
+    {
+      "id": "V7-16",
+      "title": "Một là… hai là…",
+      "formula": "一则…二则…",
+      "explanation": "Liệt kê hai lý do trong văn viết.",
+      "examples": [
+        {
+          "zh": "选择这个方案，一则成本较低，二则风险可控。",
+          "pinyin": "Xuǎn zé zhè ge fāng àn， yī zé chéng běn jiào dī， èr zé fēng xiǎn kě kòng。",
+          "vi": "Chọn phương án này, một là chi phí thấp, hai là rủi ro kiểm soát được."
+        }
+      ],
+      "mistake": "Thường dùng đúng hai lý do chính."
+    },
+    {
+      "id": "V7-17",
+      "title": "Thứ nhất… thứ hai…",
+      "formula": "其一…其二…",
+      "explanation": "Phân chia hai luận điểm hoặc nguyên nhân.",
+      "examples": [
+        {
+          "zh": "问题有两个方面：其一是资金，其二是人才。",
+          "pinyin": "Wèn tí yǒu liǎng gè fāng miàn： qí yī shì zī jīn， qí èr shì rén cái。",
+          "vi": "Vấn đề có hai mặt: thứ nhất là vốn, thứ hai là nhân lực."
+        }
+      ],
+      "mistake": "Cấu trúc dùng trong trình bày có tổ chức."
+    },
+    {
+      "id": "V7-18",
+      "title": "Vừa phải… vừa phải…",
+      "formula": "既要…又要…",
+      "explanation": "Hai mục tiêu hoặc yêu cầu phải đồng thời đạt.",
+      "examples": [
+        {
+          "zh": "发展经济既要重视速度，又要保证质量。",
+          "pinyin": "Fā zhǎn jīng jì jì yào zhòng shì sù dù， yòu yào bǎo zhèng zhì liàng。",
+          "vi": "Phát triển kinh tế vừa phải coi trọng tốc độ vừa bảo đảm chất lượng."
+        }
+      ],
+      "mistake": "Hai vế nên cân đối."
+    },
+    {
+      "id": "V7-19",
+      "title": "Cố nhiên… nhưng…",
+      "formula": "固然…但是…",
+      "explanation": "Công nhận điều đúng trước rồi bổ sung giới hạn hoặc phản biện.",
+      "examples": [
+        {
+          "zh": "经验固然重要，但是学习能力同样关键。",
+          "pinyin": "Jīng yàn gù rán zhòng yào， dàn shì xué xí néng lì tóng yàng guān jiàn。",
+          "vi": "Kinh nghiệm cố nhiên quan trọng, nhưng năng lực học cũng then chốt."
+        }
+      ],
+      "mistake": "固然 thường dẫn điều được công nhận."
+    },
+    {
+      "id": "V7-20",
+      "title": "Quả thật… tuy nhiên…",
+      "formula": "诚然…然而…",
+      "explanation": "Công nhận luận điểm rồi chuyển sang ý đối lập trong văn viết.",
+      "examples": [
+        {
+          "zh": "诚然，技术提高了效率，然而也带来了新风险。",
+          "pinyin": "Chéng rán， jì shù tí gāo le xiào lǜ， rán ér yě dài lái le xīn fēng xiǎn。",
+          "vi": "Quả thật công nghệ tăng hiệu suất, tuy nhiên cũng mang rủi ro mới."
+        }
+      ],
+      "mistake": "Phù hợp lập luận trang trọng."
+    },
+    {
+      "id": "V7-21",
+      "title": "Mặc dù… vẫn…",
+      "formula": "尽管…仍然…",
+      "explanation": "Nhấn mạnh kết quả vẫn duy trì bất chấp trở ngại thực tế.",
+      "examples": [
+        {
+          "zh": "尽管争议不断，改革仍然在推进。",
+          "pinyin": "Jǐn guǎn zhēng yì bù duàn， gǎi gé réng rán zài tuī jìn。",
+          "vi": "Mặc dù tranh cãi liên tục, cải cách vẫn tiến triển."
+        }
+      ],
+      "mistake": "尽管 nêu sự thật, không phải giả định thuần túy."
+    },
+    {
+      "id": "V7-22",
+      "title": "Trừ phi… nếu không…",
+      "formula": "除非…不然…",
+      "explanation": "Điều kiện duy nhất để tránh kết quả sau.",
+      "examples": [
+        {
+          "zh": "除非及时调整，不然问题会进一步扩大。",
+          "pinyin": "Chú fēi jí shí diào zhěng， bù rán wèn tí huì jìn yí bù kuò dà。",
+          "vi": "Trừ khi điều chỉnh kịp thời, nếu không vấn đề sẽ mở rộng."
+        }
+      ],
+      "mistake": "不然 tương đương 否则, khẩu ngữ hơn."
+    },
+    {
+      "id": "V7-23",
+      "title": "Chỉ cần… là…",
+      "formula": "只要…便…",
+      "explanation": "Điều kiện đủ dẫn đến kết quả, văn viết hơn 就.",
+      "examples": [
+        {
+          "zh": "只要证据充分，便可以作出判断。",
+          "pinyin": "Zhǐ yào zhèng jù chōng fèn， biàn kě yǐ zuò chū pàn duàn。",
+          "vi": "Chỉ cần bằng chứng đầy đủ là có thể phán đoán."
+        }
+      ],
+      "mistake": "Không nhầm với 只有…才…."
+    },
+    {
+      "id": "V7-24",
+      "title": "Một khi… thì…",
+      "formula": "一旦…便…",
+      "explanation": "Kết quả xảy ra ngay khi điều kiện quan trọng xuất hiện.",
+      "examples": [
+        {
+          "zh": "一旦制度失去约束，便可能产生风险。",
+          "pinyin": "Yí dàn zhì dù shī qù yuē shù， biàn kě néng chǎn shēng fēng xiǎn。",
+          "vi": "Một khi chế độ mất ràng buộc thì có thể phát sinh rủi ro."
+        }
+      ],
+      "mistake": "Thường nói hậu quả khó đảo ngược."
+    },
+    {
+      "id": "V7-25",
+      "title": "Chỉ có… mới…",
+      "formula": "唯有…才…",
+      "explanation": "Nhấn mạnh điều kiện hoặc con đường duy nhất.",
+      "examples": [
+        {
+          "zh": "唯有持续学习，才不会被变化淘汰。",
+          "pinyin": "Wéi yǒu chí xù xué xí， cái bú huì bèi biàn huà táo tài。",
+          "vi": "Chỉ có học liên tục mới không bị thay đổi đào thải."
+        }
+      ],
+      "mistake": "Sắc thái mạnh hơn 只有."
+    },
+    {
+      "id": "V7-26",
+      "title": "Hễ là… đều…",
+      "formula": "凡是…都…",
+      "explanation": "Khái quát mọi đối tượng thuộc phạm vi.",
+      "examples": [
+        {
+          "zh": "凡是涉及安全的问题都必须认真处理。",
+          "pinyin": "Fán shì shè jí ān quán de wèn tí dōu bì xū rèn zhēn chǔ lǐ。",
+          "vi": "Mọi vấn đề liên quan an toàn đều phải xử lý nghiêm túc."
+        }
+      ],
+      "mistake": "Tránh khái quát quá mức nếu có ngoại lệ."
+    },
+    {
+      "id": "V7-27",
+      "title": "Mỗi khi… liền…",
+      "formula": "每逢…便…",
+      "explanation": "Sự việc lặp lại vào một dịp hoặc điều kiện.",
+      "examples": [
+        {
+          "zh": "每逢年末，公司便会总结全年工作。",
+          "pinyin": "Měi féng nián mò， gōng sī biàn huì zǒng jié quán nián gōng zuò。",
+          "vi": "Mỗi dịp cuối năm, công ty sẽ tổng kết công việc cả năm."
+        }
+      ],
+      "mistake": "每逢 thường đi với dịp lặp định kỳ."
+    },
+    {
+      "id": "V7-28",
+      "title": "Tính đến…",
+      "formula": "截至 + thời điểm",
+      "explanation": "Xác định giới hạn thời gian của số liệu hoặc tiến độ.",
+      "examples": [
+        {
+          "zh": "截至今年六月，项目已完成百分之八十。",
+          "pinyin": "Jié zhì jīn nián liù yuè， xiàng mù yǐ wán chéng bǎi fēn zhī bā shí。",
+          "vi": "Tính đến tháng sáu năm nay, dự án đã hoàn thành 80%."
+        }
+      ],
+      "mistake": "Không dùng cho điểm bắt đầu; điểm bắt đầu dùng 自/从."
+    },
+    {
+      "id": "V7-29",
+      "title": "Kể từ… đến nay",
+      "formula": "自…以来",
+      "explanation": "Khoảng thời gian bắt đầu từ một mốc và kéo dài đến hiện tại/điểm quy chiếu.",
+      "examples": [
+        {
+          "zh": "自政策实施以来，情况明显改善。",
+          "pinyin": "Zì zhèng cè shí shī yǐ lái， qíng kuàng míng xiǎn gǎi shàn。",
+          "vi": "Kể từ khi chính sách được thực hiện, tình hình cải thiện rõ."
+        }
+      ],
+      "mistake": "Vế sau thường là thay đổi hoặc trạng thái kéo dài."
+    },
+    {
+      "id": "V7-30",
+      "title": "Dựa trên",
+      "formula": "基于 + căn cứ",
+      "explanation": "Đưa ra hành động hoặc kết luận trên một nền tảng.",
+      "examples": [
+        {
+          "zh": "该结论是基于长期调查得出的。",
+          "pinyin": "Gāi jié lùn shì jī yú cháng qī diào chá dé chū de。",
+          "vi": "Kết luận này được đưa ra dựa trên khảo sát dài hạn."
+        }
+      ],
+      "mistake": "Căn cứ phải được nêu rõ, tránh dùng mơ hồ."
+    },
+    {
+      "id": "V7-31",
+      "title": "Với tinh thần/nguyên tắc",
+      "formula": "本着 + nguyên tắc + V",
+      "explanation": "Hành động theo một mục đích hoặc nguyên tắc cơ bản.",
+      "examples": [
+        {
+          "zh": "我们本着实事求是的原则处理问题。",
+          "pinyin": "Wǒ men běn zhe shí shì qiú shì de yuán zé chǔ lǐ wèn tí。",
+          "vi": "Chúng tôi xử lý vấn đề theo nguyên tắc tôn trọng sự thật."
+        }
+      ],
+      "mistake": "Thường dùng trong văn bản trang trọng."
+    },
+    {
+      "id": "V7-32",
+      "title": "Xoay quanh",
+      "formula": "围绕 + chủ đề + V",
+      "explanation": "Tổ chức hoạt động tập trung vào một chủ đề trung tâm.",
+      "examples": [
+        {
+          "zh": "会议围绕质量管理展开讨论。",
+          "pinyin": "Huì yì wéi rào zhì liàng guǎn lǐ zhǎn kāi tǎo lùn。",
+          "vi": "Cuộc họp thảo luận xoay quanh quản lý chất lượng."
+        }
+      ],
+      "mistake": "Không nhầm với 周围 chỉ không gian xung quanh."
+    },
+    {
+      "id": "V7-33",
+      "title": "Nhắm vào",
+      "formula": "针对 + đối tượng + V",
+      "explanation": "Đưa biện pháp có mục tiêu cụ thể.",
+      "examples": [
+        {
+          "zh": "针对存在的问题，专家提出了改进建议。",
+          "pinyin": "Zhēn duì cún zài de wèn tí， zhuān jiā tí chū le gǎi jìn jiàn yì。",
+          "vi": "Nhằm vào các vấn đề tồn tại, chuyên gia đưa kiến nghị cải tiến."
+        }
+      ],
+      "mistake": "Đối tượng sau 针对 phải rõ."
+    },
+    {
+      "id": "V7-34",
+      "title": "Xét vì",
+      "formula": "鉴于 + tình hình",
+      "explanation": "Đưa căn cứ trang trọng cho quyết định.",
+      "examples": [
+        {
+          "zh": "鉴于风险尚未消除，项目暂缓启动。",
+          "pinyin": "Jiàn yú fēng xiǎn shàng wèi xiāo chú， xiàng mù zàn huǎn qǐ dòng。",
+          "vi": "Xét vì rủi ro chưa được loại bỏ, dự án tạm hoãn khởi động."
+        }
+      ],
+      "mistake": "Không dùng cho nguyên nhân cảm xúc thông thường."
+    },
+    {
+      "id": "V7-35",
+      "title": "Xét điều này",
+      "formula": "有鉴于此，…",
+      "explanation": "Dựa trên toàn bộ thông tin trước để đưa quyết định.",
+      "examples": [
+        {
+          "zh": "市场变化很快，有鉴于此，我们必须及时调整。",
+          "pinyin": "Shì chǎng biàn huà hěn kuài， yǒu jiàn yú cǐ， wǒ men bì xū jí shí diào zhěng。",
+          "vi": "Thị trường thay đổi nhanh; xét điều này, chúng ta phải điều chỉnh kịp thời."
+        }
+      ],
+      "mistake": "此 thay cho căn cứ đã nêu trước."
+    },
+    {
+      "id": "V7-36",
+      "title": "Về việc này",
+      "formula": "就此 + V",
+      "explanation": "Hành động hoặc phát biểu liên quan trực tiếp nội dung vừa nêu.",
+      "examples": [
+        {
+          "zh": "双方将就此展开进一步谈判。",
+          "pinyin": "Shuāng fāng jiāng jiù cǐ zhǎn kāi jìn yí bù tán pàn。",
+          "vi": "Hai bên sẽ tiến hành đàm phán thêm về việc này."
+        }
+      ],
+      "mistake": "就此 có thể nghĩa “từ đây kết thúc” tùy động từ."
+    },
+    {
+      "id": "V7-37",
+      "title": "Nhân đây",
+      "formula": "借此 + V",
+      "explanation": "Tận dụng cơ hội/sự việc này để làm điều khác.",
+      "examples": [
+        {
+          "zh": "我想借此机会感谢所有参与者。",
+          "pinyin": "Wǒ xiǎng jiè cǐ jī huì gǎn xiè suǒ yǒu cān yù zhě。",
+          "vi": "Tôi muốn nhân cơ hội này cảm ơn mọi người tham gia."
+        }
+      ],
+      "mistake": "借此 phải có cơ hội hoặc phương tiện trước."
+    },
+    {
+      "id": "V7-38",
+      "title": "Từ đó",
+      "formula": "由此 + V/结论",
+      "explanation": "Nêu kết quả hoặc điểm xuất phát từ nội dung trước.",
+      "examples": [
+        {
+          "zh": "由此产生的成本需要重新评估。",
+          "pinyin": "Yóu cǐ chǎn shēng de chéng běn xū yào chóng xīn píng gū。",
+          "vi": "Chi phí phát sinh từ đó cần được đánh giá lại."
+        }
+      ],
+      "mistake": "由此 có thể nối danh từ hoặc kết luận."
+    },
+    {
+      "id": "V7-39",
+      "title": "Từ đó có thể thấy",
+      "formula": "由此可见，…",
+      "explanation": "Rút kết luận rõ từ bằng chứng.",
+      "examples": [
+        {
+          "zh": "由此可见，单一措施难以解决复杂问题。",
+          "pinyin": "Yóu cǐ kě jiàn， dān yī cuò shī nán yǐ jiě jué fù zá wèn tí。",
+          "vi": "Từ đó có thể thấy, một biện pháp đơn lẻ khó giải quyết vấn đề phức tạp."
+        }
+      ],
+      "mistake": "Không suy diễn vượt dữ liệu."
+    },
+    {
+      "id": "V7-40",
+      "title": "Xét đến cùng",
+      "formula": "归根结底，…",
+      "explanation": "Nêu nguyên nhân hoặc bản chất cuối cùng.",
+      "examples": [
+        {
+          "zh": "归根结底，竞争力来自持续创新。",
+          "pinyin": "Guī gēn jié dǐ， jìng zhēng lì lái zì chí xù chuàng xīn。",
+          "vi": "Xét đến cùng, năng lực cạnh tranh đến từ đổi mới liên tục."
+        }
+      ],
+      "mistake": "Dùng ở kết luận bản chất, không thay cho nguyên nhân trực tiếp."
+    },
+    {
+      "id": "V7-41",
+      "title": "Theo một nghĩa nào đó",
+      "formula": "从某种意义上说，…",
+      "explanation": "Đưa nhận xét đúng trong một phạm vi diễn giải.",
+      "examples": [
+        {
+          "zh": "从某种意义上说，失败也是一种资源。",
+          "pinyin": "Cóng mǒu zhǒng yì yì shàng shuō， shī bài yě shì yī zhǒng zī yuán。",
+          "vi": "Theo một nghĩa nào đó, thất bại cũng là một nguồn lực."
+        }
+      ],
+      "mistake": "Cụm này giới hạn mức khẳng định, không chứng minh luận điểm."
+    },
+    {
+      "id": "V7-42",
+      "title": "Ở mức độ lớn",
+      "formula": "在很大程度上",
+      "explanation": "Nêu tác động hoặc mức đúng khá cao nhưng không tuyệt đối.",
+      "examples": [
+        {
+          "zh": "结果在很大程度上取决于执行质量。",
+          "pinyin": "Jié guǒ zài hěn dà chéng dù shàng qǔ jué yú zhí xíng zhì liàng。",
+          "vi": "Kết quả phần lớn phụ thuộc chất lượng thực hiện."
+        }
+      ],
+      "mistake": "Không đồng nghĩa hoàn toàn với 完全."
+    },
+    {
+      "id": "V7-43",
+      "title": "So sánh ra",
+      "formula": "相形之下，…",
+      "explanation": "Qua đối chiếu, một bên hiện rõ hơn về đặc điểm.",
+      "examples": [
+        {
+          "zh": "传统方法成本较高，相形之下，新方法更灵活。",
+          "pinyin": "Chuán tǒng fāng fǎ chéng běn jiào gāo， xiāng xíng zhī xià， xīn fāng fǎ gèng líng huó。",
+          "vi": "Phương pháp truyền thống chi phí cao; so ra phương pháp mới linh hoạt hơn."
+        }
+      ],
+      "mistake": "Cần có hai đối tượng so sánh."
+    },
+    {
+      "id": "V7-44",
+      "title": "Nhìn ngược lại",
+      "formula": "反观 + đối tượng",
+      "explanation": "Chuyển sang xem xét đối tượng trái ngược để so sánh.",
+      "examples": [
+        {
+          "zh": "反观另一组数据，变化并不明显。",
+          "pinyin": "Fǎn guān lìng yī zǔ shù jù， biàn huà bìng bù míng xiǎn。",
+          "vi": "Nhìn ngược lại nhóm dữ liệu kia, thay đổi không rõ."
+        }
+      ],
+      "mistake": "Thường dùng trong lập luận so sánh."
+    },
+    {
+      "id": "V7-45",
+      "title": "Tiến thêm một bước",
+      "formula": "进而 + V",
+      "explanation": "Kết quả hoặc hành động phát triển thêm từ bước trước.",
+      "examples": [
+        {
+          "zh": "先改善流程，进而提高整体效率。",
+          "pinyin": "Xiān gǎi shàn liú chéng， jìn ér tí gāo zhěng tǐ xiào lǜ。",
+          "vi": "Trước hết cải thiện quy trình, tiến tới nâng hiệu suất tổng thể."
+        }
+      ],
+      "mistake": "Hai bước phải có quan hệ phát triển logic."
+    },
+    {
+      "id": "V7-46",
+      "title": "Tiếp đó",
+      "formula": "继而 + V",
+      "explanation": "Hành động tiếp nối theo trình tự tương đối trang trọng.",
+      "examples": [
+        {
+          "zh": "双方先交换意见，继而讨论合作细节。",
+          "pinyin": "Shuāng fāng xiān jiāo huàn yì jiàn， jì ér tǎo lùn hé zuò xì jié。",
+          "vi": "Hai bên trước trao đổi ý kiến, tiếp đó thảo luận chi tiết hợp tác."
+        }
+      ],
+      "mistake": "继而 thiên về trình tự, 进而 thiên về phát triển logic."
+    },
+    {
+      "id": "V7-47",
+      "title": "Theo đó",
+      "formula": "随之 + V",
+      "explanation": "Sự việc sau thay đổi cùng sự việc trước.",
+      "examples": [
+        {
+          "zh": "需求下降，价格也随之发生变化。",
+          "pinyin": "Xū qiú xià jiàng， jià gé yě suí zhī fā shēng biàn huà。",
+          "vi": "Nhu cầu giảm, giá cũng theo đó thay đổi."
+        }
+      ],
+      "mistake": "Phải có yếu tố thay đổi trước."
+    },
+    {
+      "id": "V7-48",
+      "title": "Cho đến, thậm chí",
+      "formula": "乃至 + N/V",
+      "explanation": "Mở rộng phạm vi theo mức tăng tiến.",
+      "examples": [
+        {
+          "zh": "这一问题影响个人、家庭乃至整个社会。",
+          "pinyin": "Zhè yī wèn tí yǐng xiǎng gè rén、 jiā tíng nǎi zhì zhěng gè shè huì。",
+          "vi": "Vấn đề này ảnh hưởng cá nhân, gia đình, thậm chí toàn xã hội."
+        }
+      ],
+      "mistake": "Sắp xếp phạm vi từ nhỏ đến lớn."
+    },
+    {
+      "id": "V7-49",
+      "title": "Đến mức",
+      "formula": "以至 + kết quả",
+      "explanation": "Nêu kết quả phát triển đến mức cao.",
+      "examples": [
+        {
+          "zh": "信息过多，以至人们难以判断重点。",
+          "pinyin": "Xìn xī guò duō， yǐ zhì rén men nán yǐ pàn duàn zhòng diǎn。",
+          "vi": "Thông tin quá nhiều đến mức người ta khó xác định trọng điểm."
+        }
+      ],
+      "mistake": "Vế trước phải giải thích được kết quả."
+    },
+    {
+      "id": "V7-50",
+      "title": "Dẫn đến",
+      "formula": "致使 + kết quả",
+      "explanation": "Nêu nguyên nhân gây kết quả, thường tiêu cực và trang trọng.",
+      "examples": [
+        {
+          "zh": "管理混乱致使项目进度严重落后。",
+          "pinyin": "Guǎn lǐ hùn luàn zhì shǐ xiàng mù jìn dù yán zhòng luò hòu。",
+          "vi": "Quản lý hỗn loạn khiến tiến độ dự án chậm nghiêm trọng."
+        }
+      ],
+      "mistake": "Chủ ngữ trước 致使 phải là nguyên nhân."
+    },
+    {
+      "id": "V7-51",
+      "title": "Từ đó đạt…",
+      "formula": "从而 + kết quả",
+      "explanation": "Nêu kết quả logic hoặc mục tiêu đạt được.",
+      "examples": [
+        {
+          "zh": "建立统一标准，从而降低沟通成本。",
+          "pinyin": "Jiàn lì tǒng yī biāo zhǔn， cóng ér jiàng dī gōu tōng chéng běn。",
+          "vi": "Thiết lập tiêu chuẩn thống nhất, từ đó giảm chi phí giao tiếp."
+        }
+      ],
+      "mistake": "Không dùng chỉ để nối hai sự việc đồng thời."
+    },
+    {
+      "id": "V7-52",
+      "title": "Để tiện",
+      "formula": "以便 + mục đích",
+      "explanation": "Nêu mục đích tạo thuận lợi cho bước sau.",
+      "examples": [
+        {
+          "zh": "请保留原始数据，以便日后核查。",
+          "pinyin": "Qǐng bǎo liú yuán shǐ shù jù， yǐ biàn rì hòu hé chá。",
+          "vi": "Hãy giữ dữ liệu gốc để tiện kiểm tra sau này."
+        }
+      ],
+      "mistake": "Mục đích chưa phải kết quả thực tế."
+    },
+    {
+      "id": "V7-53",
+      "title": "Để tránh",
+      "formula": "以免 + hậu quả xấu",
+      "explanation": "Thực hiện hành động nhằm tránh rủi ro.",
+      "examples": [
+        {
+          "zh": "应明确责任，以免出现相互推诿。",
+          "pinyin": "Yīng míng què zé rèn， yǐ miǎn chū xiàn xiāng hù tuī wěi。",
+          "vi": "Nên làm rõ trách nhiệm để tránh đùn đẩy lẫn nhau."
+        }
+      ],
+      "mistake": "Vế sau là hậu quả cần phòng."
+    },
+    {
+      "id": "V7-54",
+      "title": "Để không đến nỗi",
+      "formula": "不致 + V/Adj",
+      "explanation": "Nêu kết quả tiêu cực được tránh hoặc mức không quá nghiêm trọng.",
+      "examples": [
+        {
+          "zh": "及时调整可以使损失不致扩大。",
+          "pinyin": "Jí shí diào zhěng kě yǐ shǐ sǔn shī bù zhì kuò dà。",
+          "vi": "Điều chỉnh kịp thời có thể khiến tổn thất không mở rộng."
+        }
+      ],
+      "mistake": "不致 thường dùng trong văn viết."
+    },
+    {
+      "id": "V7-55",
+      "title": "Phụ thuộc vào, nhờ vào",
+      "formula": "有赖于 + N/V",
+      "explanation": "Kết quả cần dựa vào một điều kiện hoặc sự hỗ trợ.",
+      "examples": [
+        {
+          "zh": "制度能否落实有赖于有效监督。",
+          "pinyin": "Zhì dù néng fǒu luò shí yǒu lài yú yǒu xiào jiān dū。",
+          "vi": "Chế độ có được thực hiện hay không phụ thuộc vào giám sát hiệu quả."
+        }
+      ],
+      "mistake": "Có thể mang nghĩa điều kiện cần, không chỉ nguyên nhân."
+    },
+    {
+      "id": "V7-56",
+      "title": "Tùy thuộc vào",
+      "formula": "取决于 + N/V",
+      "explanation": "Kết quả do yếu tố sau quyết định.",
+      "examples": [
+        {
+          "zh": "方案是否可行取决于实际条件。",
+          "pinyin": "Fāng àn shì fǒu kě xíng qǔ jué yú shí jì tiáo jiàn。",
+          "vi": "Phương án có khả thi hay không tùy thuộc điều kiện thực tế."
+        }
+      ],
+      "mistake": "Chủ thể kết quả đứng trước 取决于."
+    },
+    {
+      "id": "V7-57",
+      "title": "Nhằm mục đích",
+      "formula": "旨在 + V",
+      "explanation": "Nêu mục tiêu chính thức của chính sách hoặc hành động.",
+      "examples": [
+        {
+          "zh": "新措施旨在提高公共服务效率。",
+          "pinyin": "Xīn cuò shī zhǐ zài tí gāo gōng gòng fú wù xiào lǜ。",
+          "vi": "Biện pháp mới nhằm nâng hiệu suất dịch vụ công."
+        }
+      ],
+      "mistake": "旨在 không mô tả kết quả đã đạt."
+    },
+    {
+      "id": "V7-58",
+      "title": "Có ý định",
+      "formula": "意在 + V",
+      "explanation": "Nêu dụng ý hoặc mục đích, đôi khi mang tính phân tích.",
+      "examples": [
+        {
+          "zh": "这一调整意在回应市场变化。",
+          "pinyin": "Zhè yī tiáo zhěng yì zài huí yìng shì chǎng biàn huà。",
+          "vi": "Điều chỉnh này nhằm phản hồi thay đổi thị trường."
+        }
+      ],
+      "mistake": "Có thể hàm ý suy đoán về ý đồ."
+    },
+    {
+      "id": "V7-59",
+      "title": "Liên quan đến",
+      "formula": "涉及 + N",
+      "explanation": "Nội dung chạm đến một hoặc nhiều lĩnh vực/đối tượng.",
+      "examples": [
+        {
+          "zh": "该问题涉及法律、技术和管理多个方面。",
+          "pinyin": "Gāi wèn tí shè jí fǎ lǜ、 jì shù hé guǎn lǐ duō gè fāng miàn。",
+          "vi": "Vấn đề này liên quan nhiều mặt pháp luật, kỹ thuật và quản lý."
+        }
+      ],
+      "mistake": "涉及 là động từ, không cần 对 trước tân ngữ."
+    },
+    {
+      "id": "V7-60",
+      "title": "Bao gồm toàn bộ",
+      "formula": "涵盖 + N",
+      "explanation": "Phạm vi nội dung bao quát các phần.",
+      "examples": [
+        {
+          "zh": "课程涵盖听、说、读、写等技能。",
+          "pinyin": "Kè chéng hán gài tīng、 shuō、 dú、 xiě děng jì néng。",
+          "vi": "Khóa học bao quát các kỹ năng nghe, nói, đọc, viết."
+        }
+      ],
+      "mistake": "Phân biệt 涵盖 phạm vi với 包括 liệt kê trung tính."
+    }
+  ]
+}

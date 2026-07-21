@@ -1,7 +1,7 @@
 {
-  "name": "HSK Việt – HSK 1 chuẩn hóa",
+  "name": "HSK Việt – HSK 1–6 và HSK 7–9 chuẩn hóa",
   "short_name": "HSK Việt",
-  "description": "Học HSK tiếng Việt với 10 slot, HSK 1 chuẩn hóa, ngữ pháp, SRS, luyện thi và quản trị học liệu.",
+  "description": "Học HSK tiếng Việt với 10 slot, gói chuẩn hóa HSK 1–6 và HSK 7–9, ngữ pháp, SRS, luyện thi và quản trị học liệu.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

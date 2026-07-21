@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "level": "2",
+    "version": "4.0.0",
+    "itemCount": 25,
+    "description": "Các cấu trúc ngữ pháp trọng tâm HSK 2, có công thức, giải thích, ví dụ và lỗi thường gặp."
+  },
+  "items": [
+    {
+      "id": "G2-01",
+      "title": "Đã từng với 过",
+      "formula": "V + 过 + O",
+      "explanation": "Diễn tả kinh nghiệm đã từng có, không nhấn mạnh thời điểm cụ thể.",
+      "examples": [
+        {
+          "zh": "我去过北京。",
+          "pinyin": "Wǒ qùguo Běijīng.",
+          "vi": "Tôi đã từng đến Bắc Kinh."
+        }
+      ],
+      "mistake": "Không dùng 过 để kể một sự việc quá khứ có thời điểm cụ thể khi chỉ muốn nói hành động đã hoàn tất."
+    },
+    {
+      "id": "G2-02",
+      "title": "Đang diễn ra với 正在",
+      "formula": "S + 正在 + V + O",
+      "explanation": "Nhấn mạnh hành động đang diễn ra tại thời điểm nói.",
+      "examples": [
+        {
+          "zh": "他正在做作业。",
+          "pinyin": "Tā zhèngzài zuò zuòyè.",
+          "vi": "Cậu ấy đang làm bài tập."
+        }
+      ],
+      "mistake": "Không đặt 了 chỉ hoàn thành ngay sau động từ đang diễn ra."
+    },
+    {
+      "id": "G2-03",
+      "title": "Trạng thái duy trì với 着",
+      "formula": "V + 着 + trạng thái",
+      "explanation": "Diễn tả tư thế hoặc trạng thái đang được duy trì.",
+      "examples": [
+        {
+          "zh": "门开着。",
+          "pinyin": "Mén kāizhe.",
+          "vi": "Cửa đang mở."
+        }
+      ],
+      "mistake": "Không đồng nhất 着 với 正在; 着 thiên về trạng thái duy trì."
+    },
+    {
+      "id": "G2-04",
+      "title": "Hành động sắp xảy ra",
+      "formula": "快/要/快要…了",
+      "explanation": "Diễn tả sự việc sắp xảy ra; 了 đặt cuối câu báo hiệu thay đổi gần kề.",
+      "examples": [
+        {
+          "zh": "火车快要到了。",
+          "pinyin": "Huǒchē kuàiyào dào le.",
+          "vi": "Tàu sắp đến rồi."
+        }
+      ],
+      "mistake": "Không dùng trước một mốc thời gian còn rất xa."
+    },
+    {
+      "id": "G2-05",
+      "title": "So sánh với 比",
+      "formula": "A + 比 + B + Adj",
+      "explanation": "So sánh A có tính chất hơn B.",
+      "examples": [
+        {
+          "zh": "今天比昨天冷。",
+          "pinyin": "Jīntiān bǐ zuótiān lěng.",
+          "vi": "Hôm nay lạnh hơn hôm qua."
+        }
+      ],
+      "mistake": "Không đặt 很 trực tiếp sau tính từ trong cấu trúc so sánh cơ bản."
+    },
+    {
+      "id": "G2-06",
+      "title": "Không bằng với 没有",
+      "formula": "A + 没有 + B + Adj",
+      "explanation": "Nói A không đạt mức độ như B.",
+      "examples": [
+        {
+          "zh": "我没有他高。",
+          "pinyin": "Wǒ méiyǒu tā gāo.",
+          "vi": "Tôi không cao bằng anh ấy."
+        }
+      ],
+      "mistake": "Không dùng 不有; phủ định 有 là 没有."
+    },
+    {
+      "id": "G2-07",
+      "title": "Càng hơn với 更",
+      "formula": "S + 更 + Adj/V",
+      "explanation": "So sánh ngầm với một chuẩn đã biết và nhấn mạnh mức độ cao hơn.",
+      "examples": [
+        {
+          "zh": "这个办法更简单。",
+          "pinyin": "Zhège bànfǎ gèng jiǎndān.",
+          "vi": "Cách này đơn giản hơn."
+        }
+      ],
+      "mistake": "Cần có ngữ cảnh hoặc đối tượng so sánh ngầm."
+    },
+    {
+      "id": "G2-08",
+      "title": "Tốt nhất với 最",
+      "formula": "S + 最 + Adj/V",
+      "explanation": "Biểu thị mức cao nhất trong phạm vi được hiểu.",
+      "examples": [
+        {
+          "zh": "她唱得最好。",
+          "pinyin": "Tā chàng de zuì hǎo.",
+          "vi": "Cô ấy hát hay nhất."
+        }
+      ],
+      "mistake": "Phải xác định hoặc ngầm hiểu phạm vi so sánh."
+    },
+    {
+      "id": "G2-09",
+      "title": "Bổ ngữ mức độ với 得",
+      "formula": "V + 得 + Adj",
+      "explanation": "Đánh giá mức độ hoặc trạng thái của hành động.",
+      "examples": [
+        {
+          "zh": "他说得很快。",
+          "pinyin": "Tā shuō de hěn kuài.",
+          "vi": "Anh ấy nói rất nhanh."
+        }
+      ],
+      "mistake": "Không viết 的/地 thay cho 得 trong cấu trúc này."
+    },
+    {
+      "id": "G2-10",
+      "title": "Bổ ngữ kết quả cơ bản",
+      "formula": "V + 完/好/到/见",
+      "explanation": "Cho biết kết quả đạt được sau hành động.",
+      "examples": [
+        {
+          "zh": "我看完这本书了。",
+          "pinyin": "Wǒ kànwán zhè běn shū le.",
+          "vi": "Tôi đã đọc xong cuốn sách này."
+        }
+      ],
+      "mistake": "Không tách bổ ngữ kết quả khỏi động từ nếu không có cấu trúc đặc biệt."
+    },
+    {
+      "id": "G2-11",
+      "title": "Thời lượng hành động",
+      "formula": "V + thời lượng",
+      "explanation": "Nói hành động kéo dài bao lâu.",
+      "examples": [
+        {
+          "zh": "我学了两年中文。",
+          "pinyin": "Wǒ xué le liǎng nián Zhōngwén.",
+          "vi": "Tôi đã học tiếng Trung hai năm."
+        }
+      ],
+      "mistake": "Với tân ngữ là đại từ/người, vị trí thời lượng cần điều chỉnh theo mẫu."
+    },
+    {
+      "id": "G2-12",
+      "title": "Tần suất với 次",
+      "formula": "V + số + 次",
+      "explanation": "Cho biết hành động xảy ra bao nhiêu lần.",
+      "examples": [
+        {
+          "zh": "我看过两次。",
+          "pinyin": "Wǒ kànguo liǎng cì.",
+          "vi": "Tôi đã xem hai lần."
+        }
+      ],
+      "mistake": "次 đếm số lần, không thay cho thời lượng."
+    },
+    {
+      "id": "G2-13",
+      "title": "Vừa… vừa…",
+      "formula": "一边…一边…",
+      "explanation": "Hai hành động diễn ra đồng thời bởi cùng một chủ thể.",
+      "examples": [
+        {
+          "zh": "她一边听音乐，一边学习。",
+          "pinyin": "Tā yìbiān tīng yīnyuè, yìbiān xuéxí.",
+          "vi": "Cô ấy vừa nghe nhạc vừa học."
+        }
+      ],
+      "mistake": "Không dùng khi hai hành động không thể diễn ra đồng thời."
+    },
+    {
+      "id": "G2-14",
+      "title": "Trình tự trước–sau",
+      "formula": "先…然后/再…",
+      "explanation": "Sắp xếp hai hoặc nhiều hành động theo thứ tự.",
+      "examples": [
+        {
+          "zh": "我先吃饭，然后去上班。",
+          "pinyin": "Wǒ xiān chīfàn, ránhòu qù shàngbān.",
+          "vi": "Tôi ăn cơm trước rồi đi làm."
+        }
+      ],
+      "mistake": "再 trong mẫu này chỉ hành động tiếp theo, không phải “lại” đã xảy ra."
+    },
+    {
+      "id": "G2-15",
+      "title": "Nguyên nhân–kết quả",
+      "formula": "因为…所以…",
+      "explanation": "Nêu nguyên nhân và kết quả rõ ràng.",
+      "examples": [
+        {
+          "zh": "因为下雨，所以我没去。",
+          "pinyin": "Yīnwèi xiàyǔ, suǒyǐ wǒ méi qù.",
+          "vi": "Vì trời mưa nên tôi không đi."
+        }
+      ],
+      "mistake": "Trong hội thoại có thể lược một vế, nhưng bài học nên nhận diện đủ cặp."
+    },
+    {
+      "id": "G2-16",
+      "title": "Nhượng bộ cơ bản",
+      "formula": "虽然…但是…",
+      "explanation": "Vế đầu thừa nhận tình huống, vế sau nêu kết quả trái kỳ vọng.",
+      "examples": [
+        {
+          "zh": "虽然很累，但是他还在工作。",
+          "pinyin": "Suīrán hěn lèi, dànshì tā hái zài gōngzuò.",
+          "vi": "Tuy rất mệt nhưng anh ấy vẫn làm việc."
+        }
+      ],
+      "mistake": "Không dùng 所以 ở vế sau của mẫu nhượng bộ."
+    },
+    {
+      "id": "G2-17",
+      "title": "Lựa chọn trong câu hỏi",
+      "formula": "A 还是 B？",
+      "explanation": "Dùng 还是 để hỏi lựa chọn giữa hai khả năng.",
+      "examples": [
+        {
+          "zh": "你喝茶还是咖啡？",
+          "pinyin": "Nǐ hē chá háishi kāfēi?",
+          "vi": "Bạn uống trà hay cà phê?"
+        }
+      ],
+      "mistake": "Trong câu trần thuật lựa chọn thường dùng 或者."
+    },
+    {
+      "id": "G2-18",
+      "title": "Hoặc trong câu trần thuật",
+      "formula": "A 或者 B",
+      "explanation": "Nối các khả năng hoặc lựa chọn trong câu kể.",
+      "examples": [
+        {
+          "zh": "周末我看书或者运动。",
+          "pinyin": "Zhōumò wǒ kànshū huòzhě yùndòng.",
+          "vi": "Cuối tuần tôi đọc sách hoặc tập thể dục."
+        }
+      ],
+      "mistake": "Không dùng 或者 thay 还是 trong câu hỏi lựa chọn trực tiếp."
+    },
+    {
+      "id": "G2-19",
+      "title": "Xin phép với 可以",
+      "formula": "可以 + V + 吗？",
+      "explanation": "Hỏi hoặc cho phép thực hiện hành động.",
+      "examples": [
+        {
+          "zh": "我可以进来吗？",
+          "pinyin": "Wǒ kěyǐ jìnlái ma?",
+          "vi": "Tôi có thể vào không?"
+        }
+      ],
+      "mistake": "Phân biệt 可以 về điều kiện/cho phép với 会 về kỹ năng."
+    },
+    {
+      "id": "G2-20",
+      "title": "Khả năng kỹ năng với 会",
+      "formula": "会 + V",
+      "explanation": "Nói kỹ năng đã học hoặc khả năng dự đoán.",
+      "examples": [
+        {
+          "zh": "我会开车。",
+          "pinyin": "Wǒ huì kāichē.",
+          "vi": "Tôi biết lái xe."
+        }
+      ],
+      "mistake": "Không dùng 会 cho điều kiện khách quan khi 能 phù hợp hơn."
+    },
+    {
+      "id": "G2-21",
+      "title": "Khả năng điều kiện với 能",
+      "formula": "能 + V",
+      "explanation": "Nói khả năng dựa trên sức lực, điều kiện hoặc hoàn cảnh.",
+      "examples": [
+        {
+          "zh": "今天我不能来。",
+          "pinyin": "Jīntiān wǒ bù néng lái.",
+          "vi": "Hôm nay tôi không thể đến."
+        }
+      ],
+      "mistake": "Không dùng 不会 nếu ý là điều kiện không cho phép."
+    },
+    {
+      "id": "G2-22",
+      "title": "Làm lại trong tương lai với 再",
+      "formula": "再 + V",
+      "explanation": "Hành động sẽ lặp lại hoặc tiếp tục sau thời điểm nói.",
+      "examples": [
+        {
+          "zh": "请再说一遍。",
+          "pinyin": "Qǐng zài shuō yí biàn.",
+          "vi": "Xin nói lại một lần nữa."
+        }
+      ],
+      "mistake": "Việc đã lặp lại trong quá khứ thường dùng 又."
+    },
+    {
+      "id": "G2-23",
+      "title": "Lại xảy ra với 又",
+      "formula": "又 + V/Adj",
+      "explanation": "Hành động hoặc tình trạng đã lặp lại, thường là điều đã xảy ra.",
+      "examples": [
+        {
+          "zh": "他昨天又迟到了。",
+          "pinyin": "Tā zuótiān yòu chídào le.",
+          "vi": "Hôm qua anh ấy lại đến muộn."
+        }
+      ],
+      "mistake": "Không dùng 又 cho lời yêu cầu làm lại trong tương lai."
+    },
+    {
+      "id": "G2-24",
+      "title": "Câu sai khiến với 让",
+      "formula": "A + 让 + B + V",
+      "explanation": "A bảo, cho phép hoặc khiến B làm gì.",
+      "examples": [
+        {
+          "zh": "老师让我们读课文。",
+          "pinyin": "Lǎoshī ràng wǒmen dú kèwén.",
+          "vi": "Giáo viên bảo chúng tôi đọc bài khóa."
+        }
+      ],
+      "mistake": "Xác định rõ người ra tác động và người thực hiện hành động."
+    },
+    {
+      "id": "G2-25",
+      "title": "Câu tồn hiện với 有",
+      "formula": "Nơi chốn + 有 + người/vật",
+      "explanation": "Giới thiệu sự tồn tại của người/vật tại một nơi.",
+      "examples": [
+        {
+          "zh": "桌子上有一本书。",
+          "pinyin": "Zhuōzi shàng yǒu yì běn shū.",
+          "vi": "Trên bàn có một cuốn sách."
+        }
+      ],
+      "mistake": "Không dùng 是 để thay 有 khi mục đích là giới thiệu sự tồn tại."
+    }
+  ]
+}

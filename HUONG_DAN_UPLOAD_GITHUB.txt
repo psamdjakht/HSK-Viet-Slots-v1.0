@@ -1,41 +1,35 @@
-HƯỚNG DẪN CẬP NHẬT HSK VIỆT P4 LÊN GITHUB PAGES
+HƯỚNG DẪN CẬP NHẬT HSK VIỆT V5.0 LÊN GITHUB PAGES
 
-A. CẬP NHẬT REPOSITORY
-1. Sao lưu repository hoặc tạo commit hiện trạng trước khi thay file.
-2. Giải nén ZIP mới.
-3. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v3.0 vào repository cũ.
-4. Chọn Replace khi Windows hỏi ghi đè.
+A. BẢO TOÀN CẤU HÌNH
+1. Tạo commit hoặc sao lưu repository hiện tại.
+2. Sao chép riêng js/config.js nếu file đã có Supabase URL và anon key.
+3. Không xóa dữ liệu Supabase và không chạy lại SQL nếu bản hiện tại đang hoạt động.
+
+B. CẬP NHẬT REPOSITORY
+1. Giải nén ZIP mới.
+2. Chép toàn bộ nội dung bên trong thư mục HSK-Viet-Slots-v5.0 vào repository cũ.
+3. Chọn Replace khi Windows hỏi ghi đè.
+4. Nếu config.js bị thay bằng mẫu trống, chép lại URL và anon key đã lưu.
 5. Commit và Push bằng GitHub Desktop.
 6. Không cần npm build.
-7. Sau khi GitHub Pages deploy xong, mở trang và nhấn Ctrl+F5 một lần để service worker nhận bản v3.
+7. Sau khi GitHub Pages deploy, mở trang và nhấn Ctrl+F5 một lần.
 
-B. NÂNG CẤP SUPABASE
-1. Mở Supabase > SQL Editor.
-2. Chạy file supabase/upgrade_v3.sql.
-3. File này giữ nguyên bảng hsk_slots và tiến độ cũ.
-4. Nó tạo thêm bảng hsk_content_overrides, bảng cấu hình mật khẩu và các RPC quản trị.
-5. Đảm bảo Authentication > Providers > Anonymous Sign-Ins đang bật.
-6. Không dùng service_role key trong js/config.js.
-
-C. QUẢN TRỊ HỌC LIỆU
-1. Tại trang chọn slot, bấm Quản trị học liệu; hoặc vào slot rồi bấm nút hình bút ✎.
-2. Nhập mật khẩu mặc định mà chủ ứng dụng đã yêu cầu khi tạo phiên bản này.
-3. Chọn từ HSK 1 cần sửa.
-4. Sửa nghĩa, từ loại, cách dùng, cụm từ, từ dễ nhầm hoặc câu ví dụ.
-5. Bấm Lưu nội dung.
-6. Nếu Supabase hoạt động, thông báo phải ghi đã lưu dùng chung lên Supabase.
-7. Vào Đổi mật khẩu để thay mật khẩu mặc định.
+C. KHÔNG CẦN NÂNG CẤP SUPABASE
+1. Dùng nguyên bảng hsk_slots và hsk_content_overrides.
+2. Dùng nguyên RPC quản trị từ v3.0.
+3. Không chạy file SQL mới.
+4. Nội dung sửa HSK 5, HSK 6 và HSK 7–9 tự lưu bằng ID L5-..., L6-..., L7-....
 
 D. KIỂM TRA SAU KHI DEPLOY
-1. Trang chọn đủ 10 slot và tiến độ cũ còn nguyên.
-2. Vào HSK 1, mở Thư viện HSK 1 và kiểm tra có 500 từ, 30 điểm ngữ pháp.
-3. Đăng nhập admin và sửa thử nghĩa của một từ.
-4. Mở thẻ học của từ đó, kiểm tra nghĩa mới xuất hiện.
-5. Tải lại trang, kiểm tra nội dung sửa còn nguyên.
-6. Nếu có thiết bị thứ hai cùng Supabase, mở lại trang và kiểm tra học liệu đã sửa được tải về.
-7. Bấm Khôi phục bản chuẩn hóa để thử hoàn tác một từ.
+1. Kiểm tra đủ 10 slot và tiến độ cũ còn nguyên.
+2. Mở thư viện và chuyển lần lượt HSK 1, 2, 3, 4, 5, 6, 7–9.
+3. Xác nhận số từ: 500, 772, 973, 1000, 1071, 1140, 5636.
+4. Mở quản trị và sửa thử một từ HSK 5 hoặc HSK 7–9.
+5. Tải lại trang để kiểm tra nội dung sửa vẫn còn.
+6. Kiểm tra nội dung HSK 1–4 cũ và các bản admin đã sửa trước đây không mất.
+7. Nếu PWA còn cache cũ, nhấn Ctrl+F5 hoặc gỡ rồi cài lại PWA.
 
-LƯU Ý BẢO MẬT
-- Mật khẩu trong ứng dụng tĩnh chỉ phù hợp dùng gia đình.
-- Supabase RPC bảo vệ thao tác ghi tốt hơn kiểm tra cục bộ, nhưng không thay thế hệ thống tài khoản/quyền chuyên nghiệp.
-- Hãy đổi mật khẩu mặc định sau khi triển khai.
+LƯU Ý
+- Không xóa localStorage nếu chưa xuất sao lưu tiến độ.
+- Không đưa service_role key vào GitHub.
+- Gói chuẩn hóa là nền biên tập; admin nên sửa khi phát hiện nội dung chưa phù hợp.

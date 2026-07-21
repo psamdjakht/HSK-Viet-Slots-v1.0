@@ -1,0 +1,430 @@
+{
+  "meta": {
+    "level": "3",
+    "version": "4.0.0",
+    "itemCount": 30,
+    "description": "Các cấu trúc ngữ pháp trọng tâm HSK 3, có công thức, giải thích, ví dụ và lỗi thường gặp."
+  },
+  "items": [
+    {
+      "id": "G3-01",
+      "title": "Câu chữ 把",
+      "formula": "S + 把 + O + V + kết quả",
+      "explanation": "Nhấn mạnh việc xử lý một tân ngữ xác định và kết quả của hành động.",
+      "examples": [
+        {
+          "zh": "请把门关上。",
+          "pinyin": "Qǐng bǎ mén guānshang.",
+          "vi": "Hãy đóng cửa lại."
+        }
+      ],
+      "mistake": "Sau động từ thường cần kết quả, phương hướng, số lượng hoặc thành phần bổ sung."
+    },
+    {
+      "id": "G3-02",
+      "title": "Câu bị động với 被",
+      "formula": "O + 被 + S + V",
+      "explanation": "Nhấn mạnh đối tượng chịu tác động; tác nhân có thể lược.",
+      "examples": [
+        {
+          "zh": "我的手机被他拿走了。",
+          "pinyin": "Wǒ de shǒujī bèi tā názǒu le.",
+          "vi": "Điện thoại của tôi bị anh ấy mang đi."
+        }
+      ],
+      "mistake": "Không phải mọi câu bị động tiếng Việt đều cần dùng 被 trong tiếng Trung."
+    },
+    {
+      "id": "G3-03",
+      "title": "Bổ ngữ khả năng",
+      "formula": "V + 得/不 + kết quả",
+      "explanation": "Cho biết hành động có thể hoặc không thể đạt kết quả.",
+      "examples": [
+        {
+          "zh": "这本书我看得懂。",
+          "pinyin": "Zhè běn shū wǒ kàn de dǒng.",
+          "vi": "Cuốn sách này tôi đọc hiểu được."
+        }
+      ],
+      "mistake": "Phân biệt 看不懂 với 没看懂: không thể hiểu và đã không hiểu."
+    },
+    {
+      "id": "G3-04",
+      "title": "Bổ ngữ phương hướng đơn",
+      "formula": "V + 来/去",
+      "explanation": "Cho biết hành động hướng về hoặc rời xa người nói/điểm quy chiếu.",
+      "examples": [
+        {
+          "zh": "请进来坐。",
+          "pinyin": "Qǐng jìnlái zuò.",
+          "vi": "Mời vào ngồi."
+        }
+      ],
+      "mistake": "Chọn 来/去 theo điểm nhìn, không chỉ theo nghĩa tiếng Việt."
+    },
+    {
+      "id": "G3-05",
+      "title": "Bổ ngữ phương hướng kép",
+      "formula": "V + 上/下/进/出/回/过/起 + 来/去",
+      "explanation": "Diễn tả hướng chuyển động chi tiết.",
+      "examples": [
+        {
+          "zh": "他跑上楼去了。",
+          "pinyin": "Tā pǎoshàng lóu qù le.",
+          "vi": "Anh ấy chạy lên lầu."
+        }
+      ],
+      "mistake": "Tân ngữ địa điểm có vị trí riêng giữa các thành phần phương hướng."
+    },
+    {
+      "id": "G3-06",
+      "title": "Càng ngày càng",
+      "formula": "越来越 + Adj/V",
+      "explanation": "Mức độ tăng dần theo thời gian.",
+      "examples": [
+        {
+          "zh": "天气越来越热了。",
+          "pinyin": "Tiānqì yuèláiyuè rè le.",
+          "vi": "Thời tiết ngày càng nóng."
+        }
+      ],
+      "mistake": "Không thêm 更 ngay trước tính từ trong cùng cấu trúc."
+    },
+    {
+      "id": "G3-07",
+      "title": "Càng A càng B",
+      "formula": "越 A 越 B",
+      "explanation": "Mức độ B thay đổi theo mức độ A.",
+      "examples": [
+        {
+          "zh": "你越练习，说得越好。",
+          "pinyin": "Nǐ yuè liànxí, shuō de yuè hǎo.",
+          "vi": "Bạn càng luyện thì nói càng tốt."
+        }
+      ],
+      "mistake": "Hai vế phải có quan hệ biến đổi tương ứng."
+    },
+    {
+      "id": "G3-08",
+      "title": "Vừa… đã…",
+      "formula": "一…就…",
+      "explanation": "Vế sau xảy ra ngay khi vế trước hoàn thành/xuất hiện.",
+      "examples": [
+        {
+          "zh": "我一到家就给你打电话。",
+          "pinyin": "Wǒ yí dào jiā jiù gěi nǐ dǎ diànhuà.",
+          "vi": "Tôi vừa về đến nhà là gọi cho bạn."
+        }
+      ],
+      "mistake": "Chú ý biến điệu 一 trong lời nói."
+    },
+    {
+      "id": "G3-09",
+      "title": "Ngoài… còn…",
+      "formula": "除了…以外，还/也…",
+      "explanation": "Bổ sung thông tin ngoài đối tượng đã nêu.",
+      "examples": [
+        {
+          "zh": "除了中文以外，他还会英语。",
+          "pinyin": "Chúle Zhōngwén yǐwài, tā hái huì Yīngyǔ.",
+          "vi": "Ngoài tiếng Trung, anh ấy còn biết tiếng Anh."
+        }
+      ],
+      "mistake": "Nếu biểu thị ngoại lệ toàn bộ, vế sau thường dùng 都."
+    },
+    {
+      "id": "G3-10",
+      "title": "Không những… mà còn…",
+      "formula": "不但…而且…",
+      "explanation": "Tăng tiến từ thông tin thứ nhất sang thông tin thứ hai.",
+      "examples": [
+        {
+          "zh": "她不但聪明，而且很努力。",
+          "pinyin": "Tā búdàn cōngming, érqiě hěn nǔlì.",
+          "vi": "Cô ấy không những thông minh mà còn rất chăm chỉ."
+        }
+      ],
+      "mistake": "Hai vế nên cùng chủ ngữ hoặc bố trí chủ ngữ nhất quán."
+    },
+    {
+      "id": "G3-11",
+      "title": "Chỉ cần… thì…",
+      "formula": "只要…就…",
+      "explanation": "Nêu điều kiện đủ để kết quả xảy ra.",
+      "examples": [
+        {
+          "zh": "只要努力，就会进步。",
+          "pinyin": "Zhǐyào nǔlì, jiù huì jìnbù.",
+          "vi": "Chỉ cần cố gắng thì sẽ tiến bộ."
+        }
+      ],
+      "mistake": "Không nhầm với 只有…才… là điều kiện cần/duy nhất."
+    },
+    {
+      "id": "G3-12",
+      "title": "Chỉ có… mới…",
+      "formula": "只有…才…",
+      "explanation": "Nêu điều kiện cần hoặc con đường duy nhất dẫn đến kết quả.",
+      "examples": [
+        {
+          "zh": "只有多练习，才能说得好。",
+          "pinyin": "Zhǐyǒu duō liànxí, cái néng shuō de hǎo.",
+          "vi": "Chỉ có luyện nhiều mới nói tốt được."
+        }
+      ],
+      "mistake": "Không thay 才 bằng 就 nếu muốn nhấn mạnh điều kiện bắt buộc."
+    },
+    {
+      "id": "G3-13",
+      "title": "Nếu… thì…",
+      "formula": "如果…就…",
+      "explanation": "Nêu điều kiện giả định và kết quả.",
+      "examples": [
+        {
+          "zh": "如果明天下雨，我们就不去。",
+          "pinyin": "Rúguǒ míngtiān xiàyǔ, wǒmen jiù bú qù.",
+          "vi": "Nếu mai mưa thì chúng tôi không đi."
+        }
+      ],
+      "mistake": "Có thể lược 如果 hoặc 就 trong hội thoại nhưng cần giữ logic điều kiện."
+    },
+    {
+      "id": "G3-14",
+      "title": "Cho dù… vẫn…",
+      "formula": "即使…也…",
+      "explanation": "Nêu giả định nhượng bộ: kết quả không thay đổi dù điều kiện xảy ra.",
+      "examples": [
+        {
+          "zh": "即使很忙，他也会来。",
+          "pinyin": "Jíshǐ hěn máng, tā yě huì lái.",
+          "vi": "Dù rất bận anh ấy vẫn sẽ đến."
+        }
+      ],
+      "mistake": "Không dùng 所以 ở vế kết quả."
+    },
+    {
+      "id": "G3-15",
+      "title": "Vừa mới với 刚/刚才",
+      "formula": "刚 + V; 刚才 + mệnh đề",
+      "explanation": "刚 là phó từ chỉ hành động vừa xảy ra; 刚才 là danh từ thời gian.",
+      "examples": [
+        {
+          "zh": "我刚吃完饭。",
+          "pinyin": "Wǒ gāng chīwán fàn.",
+          "vi": "Tôi vừa ăn cơm xong."
+        }
+      ],
+      "mistake": "刚才 có thể đứng đầu câu; 刚 thường đứng sát động từ."
+    },
+    {
+      "id": "G3-16",
+      "title": "Muộn/mới với 才",
+      "formula": "thời gian/số lượng + 才 + V",
+      "explanation": "Nhấn mạnh sự việc xảy ra muộn, ít hoặc khó hơn kỳ vọng.",
+      "examples": [
+        {
+          "zh": "他十点才到。",
+          "pinyin": "Tā shí diǎn cái dào.",
+          "vi": "Mười giờ anh ấy mới đến."
+        }
+      ],
+      "mistake": "Sắc thái trái với 就: 才 muộn/khó, 就 sớm/dễ."
+    },
+    {
+      "id": "G3-17",
+      "title": "Sớm/ngay với 就",
+      "formula": "thời gian/điều kiện + 就 + V",
+      "explanation": "Nhấn mạnh xảy ra sớm, nhanh hoặc ngay khi có điều kiện.",
+      "examples": [
+        {
+          "zh": "他八点就到了。",
+          "pinyin": "Tā bā diǎn jiù dào le.",
+          "vi": "Tám giờ anh ấy đã đến rồi."
+        }
+      ],
+      "mistake": "Không dịch máy móc 就 luôn là “thì”."
+    },
+    {
+      "id": "G3-18",
+      "title": "Dù thế nào với 不管",
+      "formula": "不管…都/也…",
+      "explanation": "Kết quả không thay đổi trước nhiều điều kiện khác nhau.",
+      "examples": [
+        {
+          "zh": "不管多忙，他都坚持学习。",
+          "pinyin": "Bùguǎn duō máng, tā dōu jiānchí xuéxí.",
+          "vi": "Dù bận thế nào anh ấy cũng kiên trì học."
+        }
+      ],
+      "mistake": "Vế sau thường cần 都 hoặc 也."
+    },
+    {
+      "id": "G3-19",
+      "title": "Mục đích với 为了",
+      "formula": "为了 + mục đích，S + V",
+      "explanation": "Nêu mục đích của hành động ở vế chính.",
+      "examples": [
+        {
+          "zh": "为了身体健康，他每天跑步。",
+          "pinyin": "Wèile shēntǐ jiànkāng, tā měitiān pǎobù.",
+          "vi": "Vì sức khỏe, anh ấy chạy mỗi ngày."
+        }
+      ],
+      "mistake": "Phân biệt 为了 nêu mục đích với 因为 nêu nguyên nhân."
+    },
+    {
+      "id": "G3-20",
+      "title": "Theo/đối với với 对",
+      "formula": "S + 对 + O + V/Adj",
+      "explanation": "Nêu đối tượng của thái độ, hành vi hoặc đánh giá.",
+      "examples": [
+        {
+          "zh": "老师对我们很耐心。",
+          "pinyin": "Lǎoshī duì wǒmen hěn nàixīn.",
+          "vi": "Giáo viên rất kiên nhẫn với chúng tôi."
+        }
+      ],
+      "mistake": "Không đặt 对 sau động từ nếu nó đang dẫn đối tượng của cả cụm."
+    },
+    {
+      "id": "G3-21",
+      "title": "Ngay cả… cũng…",
+      "formula": "连…都/也…",
+      "explanation": "Nhấn mạnh một trường hợp cực đoan hoặc bất ngờ.",
+      "examples": [
+        {
+          "zh": "他忙得连饭都没吃。",
+          "pinyin": "Tā máng de lián fàn dōu méi chī.",
+          "vi": "Anh ấy bận đến mức cơm cũng chưa ăn."
+        }
+      ],
+      "mistake": "Phải có 都/也 để hoàn chỉnh sắc thái nhấn mạnh."
+    },
+    {
+      "id": "G3-22",
+      "title": "Mức độ đến nỗi",
+      "formula": "Adj/V + 得 + mệnh đề",
+      "explanation": "Bổ ngữ mức độ dẫn đến một kết quả hoặc trạng thái cụ thể.",
+      "examples": [
+        {
+          "zh": "孩子高兴得跳了起来。",
+          "pinyin": "Háizi gāoxìng de tiào le qǐlái.",
+          "vi": "Đứa trẻ vui đến mức nhảy lên."
+        }
+      ],
+      "mistake": "Phân biệt 得 nối bổ ngữ với 地 nối trạng ngữ."
+    },
+    {
+      "id": "G3-23",
+      "title": "Gần như với 差点儿",
+      "formula": "差点儿 + V",
+      "explanation": "Nói một việc suýt xảy ra hoặc suýt không đạt được.",
+      "examples": [
+        {
+          "zh": "我差点儿迟到。",
+          "pinyin": "Wǒ chàdiǎnr chídào.",
+          "vi": "Tôi suýt đến muộn."
+        }
+      ],
+      "mistake": "Cần dựa vào ngữ cảnh để hiểu kết quả thực tế có xảy ra hay không."
+    },
+    {
+      "id": "G3-24",
+      "title": "Tiếp tục với 继续",
+      "formula": "继续 + V/O",
+      "explanation": "Hành động được tiếp tục sau một khoảng dừng hoặc trạng thái trước đó.",
+      "examples": [
+        {
+          "zh": "休息以后，我们继续工作。",
+          "pinyin": "Xiūxi yǐhòu, wǒmen jìxù gōngzuò.",
+          "vi": "Sau khi nghỉ, chúng tôi tiếp tục làm việc."
+        }
+      ],
+      "mistake": "Không nhầm với 一直 là liên tục không ngắt."
+    },
+    {
+      "id": "G3-25",
+      "title": "Liên tục với 一直",
+      "formula": "一直 + V/Adj",
+      "explanation": "Diễn tả trạng thái/hành động kéo dài liên tục trong một khoảng.",
+      "examples": [
+        {
+          "zh": "我一直住在这里。",
+          "pinyin": "Wǒ yìzhí zhù zài zhèlǐ.",
+          "vi": "Tôi luôn sống ở đây."
+        }
+      ],
+      "mistake": "Không nhất thiết mang nghĩa “mãi mãi”; cần giới hạn thời gian theo ngữ cảnh."
+    },
+    {
+      "id": "G3-26",
+      "title": "Ngày nào cũng/cứ mỗi",
+      "formula": "每 + N + 都…",
+      "explanation": "Nói quy luật áp dụng cho từng thành viên/thời điểm.",
+      "examples": [
+        {
+          "zh": "我每天都复习生词。",
+          "pinyin": "Wǒ měitiān dōu fùxí shēngcí.",
+          "vi": "Ngày nào tôi cũng ôn từ mới."
+        }
+      ],
+      "mistake": "Vế sau thường cần 都 để bao quát."
+    },
+    {
+      "id": "G3-27",
+      "title": "Động tác thử/nhẹ với 一下",
+      "formula": "V + 一下",
+      "explanation": "Làm hành động ngắn, thử hoặc làm yêu cầu mềm hơn.",
+      "examples": [
+        {
+          "zh": "你看一下这个问题。",
+          "pinyin": "Nǐ kàn yíxià zhège wèntí.",
+          "vi": "Bạn xem thử vấn đề này."
+        }
+      ],
+      "mistake": "Không dùng với động từ trạng thái không phù hợp."
+    },
+    {
+      "id": "G3-28",
+      "title": "Lặp động từ",
+      "formula": "AA / A一A / ABAB",
+      "explanation": "Biểu thị hành động ngắn, thử hoặc nhẹ nhàng.",
+      "examples": [
+        {
+          "zh": "我们一起讨论讨论吧。",
+          "pinyin": "Wǒmen yìqǐ tǎolun tǎolun ba.",
+          "vi": "Chúng ta cùng thảo luận một chút nhé."
+        }
+      ],
+      "mistake": "Không lặp tùy tiện mọi động từ; động từ hai âm tiết thường dùng ABAB."
+    },
+    {
+      "id": "G3-29",
+      "title": "Ước lượng số lượng",
+      "formula": "số + 多/左右",
+      "explanation": "Nói số lượng hơn một chút hoặc xấp xỉ.",
+      "examples": [
+        {
+          "zh": "会议开了两个多小时。",
+          "pinyin": "Huìyì kāi le liǎng ge duō xiǎoshí.",
+          "vi": "Cuộc họp kéo dài hơn hai giờ."
+        }
+      ],
+      "mistake": "Vị trí 多 phụ thuộc đơn vị số lượng."
+    },
+    {
+      "id": "G3-30",
+      "title": "Câu phản vấn với 不是…吗",
+      "formula": "不是…吗？",
+      "explanation": "Dùng để nhắc lại điều người nói cho là đã rõ hoặc bày tỏ ngạc nhiên.",
+      "examples": [
+        {
+          "zh": "你不是说今天来吗？",
+          "pinyin": "Nǐ bú shì shuō jīntiān lái ma?",
+          "vi": "Chẳng phải bạn nói hôm nay đến sao?"
+        }
+      ],
+      "mistake": "Sắc thái có thể mạnh; tránh dùng trong tình huống cần quá lịch sự."
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import {
   configureCloudStorage, allLocalSlots, migrateSlot, getDeletedSlots, clearDeletedSlot
 } from './modules/storage.js';
 import { loadLevel, loadLevelsUpTo, loadMeta, loadExamples, verificationLabel } from './modules/data.js';
-import { initContentSystem, loadGrammar, applyContentToWords, buildEffectiveExamples, getContentOverride, saveLocalContentOverride, deleteLocalContentOverride, exportContentOverrides, importContentOverrides, qualitySummary } from './modules/content.js';
+import { initContentSystem, loadGrammar, applyContentToWords, buildEffectiveExamples, getContentOverride, saveLocalContentOverride, deleteLocalContentOverride, exportContentOverrides, importContentOverrides, qualitySummary, standardizedLevels, isStandardizedLevel } from './modules/content.js';
 import { unlockAdmin, lockAdmin, isAdminUnlocked, getAdminPassword, getAdminSource, changeLocalAdminPassword, setLocalAdminPassword } from './modules/admin.js';
 import { MODES, buildStudyQueue, makeQuestion, cardKey, shuffle } from './modules/quiz.js';
 import { reviewCard, GRADES, isDue } from './modules/srs.js';
@@ -17,12 +17,18 @@ import { EXAM_TYPES, questionBankSummary, buildMockExam, scoreExam } from './mod
 import { initCloudSync, getCloudStatus, syncNow, verifyAdminPassword, saveRemoteContentOverride, deleteRemoteContentOverride, changeRemoteAdminPassword } from './modules/sync.js';
 import { $, $$, showScreen, toast, formatDate, downloadText } from './modules/ui.js';
 
+function levelDisplay(level) { return String(level) === '7' ? '7–9' : String(level); }
+
 const state = {
   meta: null,
   baseExamples: [],
   examples: [],
   grammar: [],
+  grammarByLevel: new Map(),
+  qualityWordsByLevel: new Map(),
   hsk1Words: [],
+  libraryLevel: '1',
+  adminLevel: '1',
   contentMeta: null,
   adminSelectedWordId: null,
   slot: null,
@@ -51,13 +57,15 @@ async function boot() {
   registerServiceWorker();
   try {
     [state.meta, state.baseExamples] = await Promise.all([loadMeta(), loadExamples()]);
-    $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • đang nạp gói chuẩn hóa HSK 1`;
+    $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • đang nạp gói chuẩn hóa HSK 1–6 và HSK 7–9`;
   } catch (error) {
     console.error(error);
     toast('Không tải được dữ liệu nền. Hãy tải lại trang.', 'error');
   }
   await setupCloud();
-  $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • HSK 1 chuẩn hóa ${state.hsk1Words.length} từ • ${state.grammar.length} điểm ngữ pháp`;
+  const standardizedCount = [...state.qualityWordsByLevel.values()].reduce((sum, rows) => sum + rows.length, 0);
+  const grammarCount = [...state.grammarByLevel.values()].reduce((sum, rows) => sum + rows.length, 0);
+  $('#data-summary').textContent = `${state.meta.totalWords.toLocaleString('vi-VN')} từ HSK 3.0 • HSK 1–6 và HSK 7–9 chuẩn hóa ${standardizedCount.toLocaleString('vi-VN')} từ • ${grammarCount} điểm ngữ pháp`;
   renderSlots();
   const activeId = getActiveSlotId();
   if (activeId && loadSlot(activeId)?.profile?.name) await openSlot(activeId);
@@ -67,9 +75,15 @@ async function boot() {
 async function setupCloud() {
   const result = await initCloudSync();
   state.contentMeta = await initContentSystem(result.contentRows || []);
-  state.grammar = (await loadGrammar()).items || [];
-  state.hsk1Words = applyContentToWords(await loadLevel('1'));
-  state.examples = buildEffectiveExamples(state.baseExamples, state.hsk1Words);
+  for (const level of standardizedLevels()) {
+    const words = applyContentToWords(await loadLevel(level));
+    const grammar = (await loadGrammar(level)).items || [];
+    state.qualityWordsByLevel.set(level, words);
+    state.grammarByLevel.set(level, grammar);
+  }
+  state.hsk1Words = state.qualityWordsByLevel.get('1') || [];
+  state.grammar = state.grammarByLevel.get('1') || [];
+  state.examples = buildEffectiveExamples(state.baseExamples, [...state.qualityWordsByLevel.values()].flat());
   if (result.adapter) await reconcileDeletedSlots(result.adapter);
   const deleted = getDeletedSlots();
   const usableRows = (result.rows || []).filter(row => !(String(row.slot_id) in deleted));
@@ -161,17 +175,19 @@ function bindStaticEvents() {
   $('#open-hsk1-library-btn').addEventListener('click', openHsk1Library);
   $('#hsk1-library-search').addEventListener('input', renderHsk1LibraryWords);
   $('#hsk1-library-topic').addEventListener('change', renderHsk1LibraryWords);
+  $('#quality-library-level').addEventListener('change', event => { state.libraryLevel = event.target.value; prepareLibraryLevel(); });
   $('#admin-btn').addEventListener('click', openAdminEntry);
   $('#admin-home-btn').addEventListener('click', openAdminEntry);
   $('#admin-login-submit').addEventListener('click', submitAdminLogin);
   $('#admin-password-input').addEventListener('keydown', event => { if (event.key === 'Enter') submitAdminLogin(); });
   $('#admin-word-search').addEventListener('input', renderAdminWordList);
+  $('#admin-level-select').addEventListener('change', event => { state.adminLevel = event.target.value; state.adminSelectedWordId = null; renderAdminWordList(); $('#admin-editor').hidden = true; $('#admin-editor-empty').hidden = false; });
   $('#admin-editor').addEventListener('submit', saveAdminWord);
   $('#admin-reset-word-btn').addEventListener('click', resetAdminWord);
   $('#admin-lock-btn').addEventListener('click', lockAdminUi);
   $('#admin-change-password-btn').addEventListener('click', () => openModal('admin-password-modal'));
   $('#admin-change-password-submit').addEventListener('click', submitAdminPasswordChange);
-  $('#admin-export-content-btn').addEventListener('click', () => downloadText(`hsk1-noi-dung-sua-${new Date().toISOString().slice(0,10)}.json`, exportContentOverrides()));
+  $('#admin-export-content-btn').addEventListener('click', () => downloadText(`hsk1-4-noi-dung-sua-${new Date().toISOString().slice(0,10)}.json`, exportContentOverrides()));
   $('#admin-import-content-btn').addEventListener('click', () => $('#admin-import-content-file').click());
   $('#admin-import-content-file').addEventListener('change', importAdminContentFile);
   $('#admin-edit-current-btn').addEventListener('click', () => { const id = $('#admin-edit-current-btn').dataset.wordId; if (id) { state.adminSelectedWordId = id; openAdminPanel(); } });
@@ -182,16 +198,21 @@ function bindStaticEvents() {
 }
 
 async function loadEffectiveLevel(level) {
-  const words = applyContentToWords(await loadLevel(level));
-  if (String(level) === '1') state.hsk1Words = words;
+  const key = String(level);
+  const words = applyContentToWords(await loadLevel(key));
+  if (isStandardizedLevel(key)) state.qualityWordsByLevel.set(key, words);
+  if (key === '1') state.hsk1Words = words;
   return words;
 }
 
 async function refreshContentState() {
-  state.hsk1Words = applyContentToWords(await loadLevel('1'));
-  state.examples = buildEffectiveExamples(state.baseExamples, state.hsk1Words);
-  if (state.slot && String(state.slot.settings.level) === '1') {
-    state.words = state.hsk1Words;
+  for (const level of standardizedLevels()) {
+    state.qualityWordsByLevel.set(level, applyContentToWords(await loadLevel(level)));
+  }
+  state.hsk1Words = state.qualityWordsByLevel.get('1') || [];
+  state.examples = buildEffectiveExamples(state.baseExamples, [...state.qualityWordsByLevel.values()].flat());
+  if (state.slot && isStandardizedLevel(state.slot.settings.level)) {
+    state.words = state.qualityWordsByLevel.get(String(state.slot.settings.level)) || [];
     state.wordIndex = new Map(state.words.map(word => [word.id, word]));
     renderDashboard();
   }
@@ -278,10 +299,13 @@ function renderDashboard() {
   const pct = Math.min(100, Math.round(learnedIds.size / Math.max(1, state.words.length) * 100));
   $('#level-progress-fill').style.width = `${pct}%`;
   $('#level-progress-text').textContent = `${learnedIds.size}/${state.words.length} từ (${pct}%)`;
-  const quality = qualitySummary(state.hsk1Words);
-  $('#data-quality-note').textContent = String(state.slot.settings.level) === '1'
-    ? `HSK 1 đã chuẩn hóa ${quality.words} từ: nghĩa chính gọn, từ loại, chủ đề, cách dùng, từ dễ nhầm và ${state.grammar.length} điểm ngữ pháp. ${quality.overridden} từ đã được quản trị viên chỉnh.`
-    : `Dữ liệu HSK 3.0 đã làm sạch; HSK 1 có gói chất lượng riêng, các cấp cao hơn giữ dữ liệu đối chiếu hiện tại.`;
+  const levelKey = String(state.slot.settings.level);
+  const qualityWords = state.qualityWordsByLevel.get(levelKey) || [];
+  const quality = qualitySummary(qualityWords, levelKey);
+  const grammarCount = (state.grammarByLevel.get(levelKey) || []).length;
+  $('#data-quality-note').textContent = isStandardizedLevel(levelKey)
+    ? `HSK ${levelDisplay(levelKey)} đã có gói chuẩn hóa ${quality.words} từ: nghĩa làm sạch, từ loại, chủ đề, cách dùng, từ dễ nhầm và ${grammarCount} điểm ngữ pháp. ${quality.overridden} từ đã được quản trị viên chỉnh.`
+    : `Dữ liệu HSK 3.0 đã làm sạch; gói chuẩn hóa chuyên sâu hiện áp dụng cho HSK 1–6 và HSK 7–9.`;
   const examples = state.examples.filter(ex => Number(ex.level) <= Number(state.slot.settings.level));
   const bank = questionBankSummary(state.words, examples);
   $('#bank-summary').textContent = `Ngân hàng có thể tạo ${bank.total.toLocaleString('vi-VN')} biến thể câu hỏi ở cấp hiện tại: nghĩa, pinyin, nghe, điền từ và sắp xếp câu.`;
@@ -492,7 +516,7 @@ function completeQuestion(isCorrect, selected) {
   $('#verification-badge').dataset.status = detail.verificationStatus;
   $('#answer-panel').hidden = false;
   renderAnswerExtra(detail);
-  const editableWord = detail.word && String(detail.word.level) === '1';
+  const editableWord = detail.word && isStandardizedLevel(detail.word.level);
   $('#admin-edit-current-btn').hidden = !(editableWord && isAdminUnlocked());
   if (editableWord) $('#admin-edit-current-btn').dataset.wordId = detail.word.id;
   $('#rating-row').hidden = false;
@@ -905,47 +929,64 @@ function currentExample() {
   return ex ? { zh: ex.zh } : null;
 }
 
+function currentQualityWords(level = state.libraryLevel) {
+  return state.qualityWordsByLevel.get(String(level)) || [];
+}
+
 function openHsk1Library() {
+  const preferred = String(state.slot?.settings?.level || '1');
+  state.libraryLevel = isStandardizedLevel(preferred) ? preferred : '1';
+  $('#quality-library-level').value = state.libraryLevel;
+  prepareLibraryLevel();
+  openModal('hsk1-library-modal');
+}
+
+function prepareLibraryLevel() {
+  const words = currentQualityWords();
+  $('#quality-library-eyebrow').textContent = `Gói chất lượng HSK ${levelDisplay(state.libraryLevel)}`;
+  $('#quality-library-title').textContent = `Thư viện HSK ${levelDisplay(state.libraryLevel)}: từ vựng và ngữ pháp`;
   renderHsk1QualitySummary();
-  const topics = [...new Set(state.hsk1Words.map(word => word.topic).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'vi'));
+  const topics = [...new Set(words.map(word => word.topic).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'vi'));
   $('#hsk1-library-topic').innerHTML = '<option value="">Tất cả chủ đề</option>' + topics.map(topic => `<option value="${escapeHtml(topic)}">${escapeHtml(topic)}</option>`).join('');
   $('#hsk1-library-search').value = '';
   renderHsk1LibraryWords();
   renderGrammarLibrary();
-  openModal('hsk1-library-modal');
 }
 
 function renderHsk1QualitySummary() {
-  const q = qualitySummary(state.hsk1Words);
+  const words = currentQualityWords();
+  const q = qualitySummary(words, state.libraryLevel);
   $('#hsk1-quality-summary').innerHTML = [
-    [q.words,'Từ chuẩn hóa'],[q.withUsageNote,'Có ghi chú'],[q.withExample,'Có ví dụ đọc/dùng'],[q.exerciseExamples,'Câu dùng luyện tập'],[q.overridden,'Admin đã sửa']
+    [q.words,'Từ chuẩn hóa'],[q.withUsageNote,'Có ghi chú'],[q.withExample,'Có ví dụ đọc/dùng'],[q.exerciseExamples,'Câu dùng luyện tập'],[q.withCollocations,'Có cụm từ'],[q.overridden,'Admin đã sửa']
   ].map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('');
 }
 
-function filteredHsk1Words(searchId, topicId = null) {
+function filteredQualityWords(searchId, topicId = null, level = state.libraryLevel) {
   const query = ($(searchId)?.value || '').trim().toLowerCase();
   const topic = topicId ? ($(topicId)?.value || '') : '';
-  return state.hsk1Words.filter(word => {
-    const haystack = `${word.simplified} ${word.traditional} ${word.pinyin} ${word.meaning} ${word.topic}`.toLowerCase();
+  return currentQualityWords(level).filter(word => {
+    const haystack = `${word.simplified} ${word.traditional} ${word.pinyin} ${word.meaning} ${word.topic} ${(word.senses||[]).map(s=>s.vi).join(' ')}`.toLowerCase();
     return (!query || haystack.includes(query)) && (!topic || word.topic === topic);
   });
 }
 
 function renderHsk1LibraryWords() {
-  const rows = filteredHsk1Words('#hsk1-library-search','#hsk1-library-topic').slice(0,300);
+  const rows = filteredQualityWords('#hsk1-library-search','#hsk1-library-topic').slice(0,500);
   $('#hsk1-word-list').innerHTML = rows.length ? rows.map(word => `<button class="word-library-row" data-word-id="${word.id}"><span class="hanzi-small">${escapeHtml(word.simplified)}</span><span><strong>${escapeHtml(word.pinyin)} · ${escapeHtml(word.meaning)}</strong><small>${escapeHtml((word.pos || []).join(', ') || 'chưa phân loại')}</small></span><span class="word-topic">${escapeHtml(word.topic || '')}</span></button>`).join('') : '<div class="info-card">Không tìm thấy từ phù hợp.</div>';
   $$('#hsk1-word-list .word-library-row').forEach(btn => btn.addEventListener('click', () => renderHsk1WordDetail(btn.dataset.wordId)));
   if (rows[0]) renderHsk1WordDetail(rows[0].id);
+  else $('#hsk1-word-detail').textContent = 'Không có từ phù hợp để hiển thị.';
 }
 
 function renderHsk1WordDetail(wordId) {
-  const word = state.hsk1Words.find(item => item.id === wordId);
+  const word = currentQualityWords().find(item => item.id === wordId);
   if (!word) return;
-  $('#hsk1-word-detail').innerHTML = `<h2>${escapeHtml(word.simplified)}</h2><strong>${escapeHtml(word.pinyin)} · ${escapeHtml(word.meaning)}</strong><div class="tag-row">${[...(word.pos||[]),word.topic,...(word.measureWords||[]).map(x=>`LT ${x}`)].filter(Boolean).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div><section><b>Cách dùng</b><p>${escapeHtml(word.usageNote || 'Chưa có ghi chú.')}</p></section><section><b>Cụm thường gặp</b>${listHtml(word.collocations)}</section><section><b>Từ dễ nhầm</b>${listHtml(word.confusables)}</section>${word.example?`<section><b>Ví dụ</b><div class="grammar-example"><strong>${escapeHtml(word.example.zh)}</strong><span>${escapeHtml(word.example.pinyin)}</span><p>${escapeHtml(word.example.vi)}</p></div></section>`:''}`;
+  $('#hsk1-word-detail').innerHTML = `<h2>${escapeHtml(word.simplified)}</h2><strong>${escapeHtml(word.pinyin)} · ${escapeHtml(word.meaning)}</strong><div class="tag-row">${[...(word.pos||[]),word.topic,...(word.measureWords||[]).map(x=>`LT ${x}`)].filter(Boolean).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div><section><b>Các nghĩa</b>${listHtml((word.senses||[]).map(s=>s.vi))}</section><section><b>Cách dùng</b><p>${escapeHtml(word.usageNote || 'Chưa có ghi chú.')}</p></section><section><b>Cụm thường gặp</b>${listHtml(word.collocations)}</section><section><b>Từ dễ nhầm</b>${listHtml(word.confusables)}</section>${word.example?`<section><b>Ví dụ</b><div class="grammar-example"><strong>${escapeHtml(word.example.zh)}</strong><span>${escapeHtml(word.example.pinyin)}</span><p>${escapeHtml(word.example.vi)}</p>${word.example.exerciseEligible?'':'<small>Mẫu hỗ trợ đọc từ, chưa dùng tạo đề.</small>'}</div></section>`:''}`;
 }
 
 function renderGrammarLibrary() {
-  $('#hsk1-grammar-list').innerHTML = state.grammar.map(item => `<details class="grammar-item"><summary>${escapeHtml(item.title)}</summary><p><span class="grammar-formula">${escapeHtml(item.formula)}</span></p><p>${escapeHtml(item.explanation)}</p>${(item.examples||[]).map(ex=>`<div class="grammar-example"><strong>${escapeHtml(ex.zh)}</strong><span>${escapeHtml(ex.pinyin)}</span><p>${escapeHtml(ex.vi)}</p></div>`).join('')}<p><b>Lỗi thường gặp:</b> ${escapeHtml(item.mistake || '')}</p></details>`).join('');
+  const grammar = state.grammarByLevel.get(String(state.libraryLevel)) || [];
+  $('#hsk1-grammar-list').innerHTML = grammar.map(item => `<details class="grammar-item"><summary>${escapeHtml(item.title)}</summary><p><span class="grammar-formula">${escapeHtml(item.formula)}</span></p><p>${escapeHtml(item.explanation)}</p>${(item.examples||[]).map(ex=>`<div class="grammar-example"><strong>${escapeHtml(ex.zh)}</strong><span>${escapeHtml(ex.pinyin)}</span><p>${escapeHtml(ex.vi)}</p></div>`).join('')}<p><b>Lỗi thường gặp:</b> ${escapeHtml(item.mistake || '')}</p></details>`).join('') || '<div class="info-card">Chưa có gói ngữ pháp cho cấp này.</div>';
 }
 
 function listHtml(items) { return items?.length ? `<ul>${items.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul>` : '<p>Chưa bổ sung.</p>'; }
@@ -972,22 +1013,33 @@ async function submitAdminLogin() {
 function openAdminPanel() {
   if (!isAdminUnlocked()) return openAdminEntry();
   $('#admin-source-badge').textContent = getAdminSource() === 'supabase' ? 'Mật khẩu Supabase' : 'Mật khẩu cục bộ';
+  const selectedLevel = state.adminSelectedWordId?.match(/^L([1-7])-/)?.[1];
+  const preferred = selectedLevel || String(state.slot?.settings?.level || state.adminLevel || '1');
+  state.adminLevel = isStandardizedLevel(preferred) ? preferred : '1';
+  $('#admin-level-select').value = state.adminLevel;
+  $('#admin-panel-eyebrow').textContent = `Quản trị học liệu HSK ${levelDisplay(state.adminLevel)}`;
   renderAdminWordList();
   if (state.adminSelectedWordId) selectAdminWord(state.adminSelectedWordId);
   openModal('admin-modal');
 }
 
 function renderAdminWordList() {
-  const rows = filteredHsk1Words('#admin-word-search').slice(0,500);
-  $('#admin-word-list').innerHTML = rows.map(word => `<button class="admin-word-row ${word.id===state.adminSelectedWordId?'active':''}" data-word-id="${word.id}"><b>${escapeHtml(word.simplified)}</b><span><strong>${escapeHtml(word.pinyin)}</strong><small>${escapeHtml(word.meaning)}</small></span></button>`).join('');
+  $('#admin-panel-eyebrow').textContent = `Quản trị học liệu HSK ${levelDisplay(state.adminLevel)}`;
+  const rows = filteredQualityWords('#admin-word-search', null, state.adminLevel).slice(0,1000);
+  $('#admin-word-list').innerHTML = rows.map(word => `<button class="admin-word-row ${word.id===state.adminSelectedWordId?'active':''}" data-word-id="${word.id}"><b>${escapeHtml(word.simplified)}</b><span><strong>${escapeHtml(word.pinyin)}</strong><small>${escapeHtml(word.meaning)}</small></span></button>`).join('') || '<div class="info-card">Không tìm thấy từ.</div>';
   $$('#admin-word-list .admin-word-row').forEach(btn=>btn.addEventListener('click',()=>selectAdminWord(btn.dataset.wordId)));
 }
 
 function selectAdminWord(wordId) {
-  const word = state.hsk1Words.find(item=>item.id===wordId); if (!word) return;
+  const level = wordId?.match(/^L([1-7])-/)?.[1] || state.adminLevel;
+  if (isStandardizedLevel(level) && level !== state.adminLevel) {
+    state.adminLevel = level;
+    $('#admin-level-select').value = level;
+  }
+  const word = currentQualityWords(state.adminLevel).find(item=>item.id===wordId); if (!word) return;
   state.adminSelectedWordId = wordId; renderAdminWordList();
   $('#admin-editor-empty').hidden = true; $('#admin-editor').hidden = false;
-  $('#admin-edit-hanzi').textContent = word.simplified; $('#admin-edit-pinyin').textContent = word.pinyin; $('#admin-edit-id').textContent = `${word.id} · ${word.contentSource==='admin'?'đã sửa':'bản chuẩn hóa'}`;
+  $('#admin-edit-hanzi').textContent = word.simplified; $('#admin-edit-pinyin').textContent = word.pinyin; $('#admin-edit-id').textContent = `${word.id} · HSK ${levelDisplay(word.level)} · ${word.contentSource==='admin'?'đã sửa':'bản chuẩn hóa'}`;
   $('#admin-primary-meaning').value = word.meaning || '';
   $('#admin-senses').value = (word.senses||[]).map(s=>s.vi).join('\n');
   $('#admin-pos').value = (word.pos||[]).join(', '); $('#admin-topic').value = word.topic || '';
@@ -1043,7 +1095,7 @@ async function importAdminContentFile(event) {
 
 function renderAnswerExtra(detail) {
   const word=detail.word;
-  if (!word || String(word.level)!=='1') return;
+  if (!word || !isStandardizedLevel(word.level)) return;
   const html=[];
   const tags=[...(word.pos||[]),word.topic,...(word.measureWords||[]).map(x=>`Lượng từ: ${x}`)].filter(Boolean);
   if(tags.length)html.push(`<div class="tag-row">${tags.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div>`);
