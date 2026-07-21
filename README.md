@@ -5,7 +5,7 @@
 
 ## P8 – Đọc hiểu HSK 6 và HSK 7–9
 
-Bản v7.0 chỉ mở rộng mô-đun đọc hiểu, giữ nguyên toàn bộ phần đã chuẩn hóa và tiến độ cũ.
+Bản v7.1 giữ nguyên toàn bộ phần đã chuẩn hóa và tiến độ cũ, đồng thời bổ sung thêm 5 bài đọc HSK 7–9 khoảng 1.500 chữ Hán mỗi bài.
 
 - HSK 6: 5 bài, khoảng 1.000 chữ Hán/bài.
 - HSK 7–9: 5 bài, khoảng 1.500 chữ Hán/bài.
@@ -73,7 +73,7 @@ Mỗi bài có:
 1. Tạo commit hoặc sao lưu repository hiện tại.
 2. Sao chép riêng `js/config.js` nếu đã điền Supabase URL và anon key.
 3. Giải nén ZIP.
-4. Chép toàn bộ nội dung bên trong `HSK-Viet-Slots-v7.0` vào repository cũ và chọn Replace.
+4. Chép toàn bộ nội dung bên trong `HSK-Viet-Slots-v7.1` vào repository cũ và chọn Replace.
 5. Chép lại cấu hình Supabase vào `js/config.js` nếu cần.
 6. Commit và Push.
 7. Không chạy `npm build`.

@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'hsk-viet-slots-v7.0.0';
+const CACHE_VERSION = 'hsk-viet-slots-v7.1.0';
 const CORE = [
   './','./index.html','./css/app.css','./js/app.js','./js/config.js',
   './js/modules/storage.js','./js/modules/data.js','./js/modules/srs.js','./js/modules/quiz.js',

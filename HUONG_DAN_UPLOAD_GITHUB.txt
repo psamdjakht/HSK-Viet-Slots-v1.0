@@ -8,7 +8,7 @@ A. BẢO TOÀN DỮ LIỆU
 
 B. CẬP NHẬT
 1. Giải nén file ZIP.
-2. Mở thư mục HSK-Viet-Slots-v7.0.
+2. Mở thư mục HSK-Viet-Slots-v7.1.
 3. Chép toàn bộ nội dung bên trong vào repository GitHub cũ.
 4. Chọn Replace khi Windows hỏi ghi đè.
 5. Chép lại js/config.js đã lưu nếu file cấu hình bị thay bằng mẫu trống.

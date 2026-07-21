@@ -24,9 +24,9 @@ for (const [level, target] of Object.entries(targets)) {
 }
 
 const meta = JSON.parse(fs.readFileSync(new URL('../data/reading/meta.json', import.meta.url), 'utf8'));
-assert.equal(meta.version, '7.0.0');
+assert.ok(['7.0.0','7.1.0'].includes(meta.version));
 assert.equal(meta.levels['6'].passages, 5);
-assert.equal(meta.levels['7'].passages, 5);
+assert.ok(meta.levels['7'].passages >= 5);
 
 const html = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
 assert.ok(html.includes('value="6"'), 'Thiếu lựa chọn HSK 6');

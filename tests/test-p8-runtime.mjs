@@ -9,7 +9,7 @@ globalThis.fetch = async url => {
 const reading = await import(`../js/modules/reading.js?p8=${Date.now()}`);
 for (const level of ['6','7']) {
   const pack = await reading.loadReadingLevel(level);
-  assert.equal(pack.passages.length, 5);
+  assert.ok(pack.passages.length >= 5);
   const words = [];
   for (let current = 1; current <= Number(level); current++) {
     const base = JSON.parse(fs.readFileSync(new URL(`../data/hsk${current}-quality.json`, import.meta.url), 'utf8')).words;

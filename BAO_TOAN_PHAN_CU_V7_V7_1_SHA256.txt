@@ -1,0 +1,22 @@
+Đối chiếu v7.0 → v7.1
+
+Năm bài HSK 7–9 cũ giữ nguyên toàn bộ trường dữ liệu.
+Tệp cũ giống byte: 94
+Tệp cũ thay đổi có chủ đích: 9
+Tệp mới bổ sung: 2
+Tệp cũ bị thiếu: 0
+
+Tệp thay đổi có chủ đích:
+sw.js
+package.json
+README.md
+HUONG_DAN_UPLOAD_GITHUB.txt
+tests/run-tests.mjs
+tests/test-p8-reading-hsk6-7.mjs
+tests/test-p8-runtime.mjs
+data/reading/meta.json
+data/reading/hsk7.json
+
+Tệp mới:
+BAO_CAO_P9_BO_SUNG_DOC_HIEU_HSK7.md
+tests/test-p9-more-hsk7-reading.mjs
